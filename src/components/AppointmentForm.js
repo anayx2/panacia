@@ -19,6 +19,22 @@ const timeSlots = Array.from({ length: 9 }, (_, i) => {
     return `${hour}:00 ${hour < 12 ? 'AM' : 'PM'}`;
 });
 
+const services = [
+    'Anti Wrinkle',
+    'Mesotherapy',
+    'Fat Dissolving',
+    'Microneedling',
+    'Vitamin B12 injection',
+    'Hopi Ear Candle',
+    'IV Drip',
+    'Bio Filler',
+    'PRP Hair Loss',
+    'PRP Facial',
+    'PDO threads',
+    'Skin Booster',
+    'Dermaplaning'
+];
+
 export default function MultiStepBooking() {
     const [step, setStep] = useState(1);
     const [formData, setFormData] = useState({
@@ -26,6 +42,7 @@ export default function MultiStepBooking() {
         lastName: '',
         email: '',
         mobile: '',
+        service: '',
         date: null,
         time: '',
     });
@@ -41,6 +58,9 @@ export default function MultiStepBooking() {
             newErrors.email = 'Please enter a valid email address';
         if (formData.mobile.length < 10)
             newErrors.mobile = 'Please enter a valid mobile number';
+        if (!formData.service)
+            newErrors.service = 'Please select a service';
+
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
@@ -56,6 +76,10 @@ export default function MultiStepBooking() {
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData((prev) => ({ ...prev, [name]: value }));
+    };
+
+    const handleServiceChange = (value) => {
+        setFormData((prev) => ({ ...prev, service: value }));
     };
 
     const handleDateChange = (date) => {
@@ -200,7 +224,29 @@ export default function MultiStepBooking() {
                                 <p className="mt-1 text-sm text-red-600">{errors.mobile}</p>
                             )}
                         </div>
-
+                        <div>
+                            <label
+                                htmlFor="service"
+                                className="block text-sm font-medium text-gray-700"
+                            >
+                                Select Service
+                            </label>
+                            <Select onValueChange={handleServiceChange} value={formData.service}>
+                                <SelectTrigger>
+                                    <SelectValue placeholder="Choose a service" />
+                                </SelectTrigger>
+                                <SelectContent>
+                                    {services.map((service) => (
+                                        <SelectItem key={service} value={service}>
+                                            {service}
+                                        </SelectItem>
+                                    ))}
+                                </SelectContent>
+                            </Select>
+                            {errors.service && (
+                                <p className="mt-1 text-sm text-red-600">{errors.service}</p>
+                            )}
+                        </div>
                         <Button
                             type="submit"
                             className="w-full mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black"

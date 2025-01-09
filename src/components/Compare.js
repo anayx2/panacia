@@ -52,7 +52,7 @@ export default function ImageComparison({
             {/* Before Image */}
             <div className="absolute inset-0">
                 <img src={beforeImage} alt="Before" className="h-full w-full object-cover" />
-                <div className="absolute left-4 top-4 rounded-full bg-black/50 px-3 py-1 text-sm text-white">
+                <div className="absolute right-4 top-4 rounded-full bg-black/50 px-3 py-1 text-sm text-white">
                     {beforeLabel}
                 </div>
             </div>
@@ -63,7 +63,7 @@ export default function ImageComparison({
                 style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
             >
                 <img src={afterImage} alt="After" className="h-full w-full object-cover" />
-                <div className="absolute right-4 top-4 rounded-full bg-black/50 px-3 py-1 text-sm text-white">
+                <div className="absolute left-4 top-4 rounded-full bg-black/50 px-3 py-1 text-sm text-white">
                     {afterLabel}
                 </div>
             </div>
