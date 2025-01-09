@@ -19,7 +19,6 @@ const page = () => {
                 </div>
             </section>
             <section>
-
                 <MultiStepBooking />
             </section>
         </>)

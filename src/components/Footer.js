@@ -14,7 +14,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer className="bg-rose-400 text-black px-4 py-16">
+            <footer className="bg-gradient-to-b from-rose-100 to-rose-300 text-black px-4 py-16">
                 <div className="container mx-auto flex justify-center items-center">
                     <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4 text-center w-[90%]">
                         {/* Logo and Contact Info */}
