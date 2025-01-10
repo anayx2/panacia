@@ -6,7 +6,7 @@ import React from 'react'
 const page = () => {
     return (
         <>
-            <section className='relative h-[40dvh] w-full'>
+            <section className='relative h-[60dvh] w-full'>
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
