@@ -3,6 +3,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation"; // Import useRouter
+import { Facebook, Linkedin, Twitter, Pin } from 'lucide-react'
+import { Button } from "./ui/button";
 
 const navItems = [
     { href: "/", label: "Home" },
@@ -18,6 +20,36 @@ const Navbar = () => {
     return (
         <>
             <section className="absolute z-50 top-0 w-full">
+                <div className="w-full border-b py-2">
+                    <div className="container mx-auto flex flex-wrap items-center justify-between gap-2 px-4 text-sm text-white">
+                        {/* Contact Information */}
+                        <div className="flex flex-wrap items-center gap-x-8 gap-y-2">
+                            <a href="tel:000-123-456789" className="hover:text-gray-900">
+                                07388869697                            </a>
+                            <a href="mailto:info@panacea-clinic.co.uk" className="hover:text-gray-900">
+                                info@panacea-clinic.co.uk                            </a>
+                            <address className="not-italic">
+                                Pharmacentre Pharmacy,149 Edgware Rd,
+                                Tyburnia, London W2 2HU                            </address>
+                        </div>
+
+                        {/* Social Links */}
+                        <div className="flex items-center gap-4 ">
+                            <Link href="#" className="hover:text-gray-900 bg-[#D59395] rounded-full p-1">
+                                <Facebook className="h-5 w-5" />
+                            </Link>
+                            <Link href="#" className="hover:text-gray-900  bg-[#D59395] rounded-full p-1">
+                                <Linkedin className="h-5 w-5" />
+                            </Link>
+                            <Link href="#" className="hover:text-gray-900  bg-[#D59395] rounded-full p-1">
+                                <Twitter className="h-5 w-5" />
+                            </Link>
+                            <Link href="#" className="hover:text-gray-900 bg-[#D59395] rounded-full p-1">
+                                <Pin className="h-5 w-5" />
+                            </Link>
+                        </div>
+                    </div>
+                </div>
                 <nav>
                     <div className="max-w-[90%] mx-auto flex items-center justify-between p-4 ">
                         {/* Logo */}
@@ -25,10 +57,10 @@ const Navbar = () => {
                             <Image
                                 src="/logo.png"
                                 alt="Logo"
-                                width={100}
-                                height={100}
+                                width={400}
+                                height={400}
                                 priority
-                                className="h-16 w-auto"
+                                className="h-14 w-auto"
                             />
                         </Link>
 
@@ -56,8 +88,8 @@ const Navbar = () => {
                                         <Link
                                             href={href}
                                             className={`block py-2 px-3 rounded md:p-0 ${router.pathname === href
-                                                ? "text-[#fea6a4] text-xl font-semibold border-b border-[#fea6a4]"
-                                                : "text-[#fea6a4] text-xl"
+                                                ? "text-[#fff] text-xl font-semibold border-b border-[#fea6a4]"
+                                                : "text-[#fff] text-xl"
                                                 }`}
                                             aria-current={router.pathname === href ? "page" : undefined}
                                         >
@@ -66,6 +98,11 @@ const Navbar = () => {
                                     </li>
                                 ))}
                             </ul>
+                        </div>
+                        <div>
+                            <button className=" rounded-lg text-white p-2 px-8 bg-[#D59395]">
+                                Book an Appointment
+                            </button>
                         </div>
                     </div>
                 </nav>
