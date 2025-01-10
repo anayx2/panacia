@@ -4,7 +4,7 @@ import React from 'react'
 const Hero = () => {
     return (
         <>
-            <section className="relative h-[100dvh] w-full overflow-hidden">
+            <section className="relative h-[120dvh] w-full overflow-hidden">
                 {/* Background Video */}
                 <video
                     autoPlay
@@ -64,9 +64,23 @@ const Hero = () => {
                             >
                                 Skin Care & Beauty Treatments
                             </p>
+                            <div className='flex gap-10 '>
+                                <span className='flex flex-col'>
+                                    <h2> 100%</h2>
+                                    <p> Experties</p>
+                                </span>
+                                <span className='flex flex-col'>
+                                    <h2> 100%</h2>
+                                    <p> Costumer Satisfaction</p>
+                                </span>
+                                <span className='flex flex-col'>
+                                    <h2>0</h2>
+                                    <p> Complaints</p>
+                                </span>
+                            </div>
                             <button
                                 type="submit"
-                                className="flex justify-center gap-2 items-center shadow-xl text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#fea6a4] hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group animate-fade-up [animation-delay:600ms] [animation-fill-mode:forwards] opacity-0"
+                                className="flex justify-center gap-2 mt-5 items-center shadow-xl text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#fea6a4] hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group animate-fade-up [animation-delay:600ms] [animation-fill-mode:forwards] opacity-0"
                             >
                                 Schedule Free Consultation
                                 <svg
