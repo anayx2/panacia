@@ -21,7 +21,6 @@ export default function BlogLayout({ children }) {
                     <main className="flex-1">
                         {children}
                     </main>
-
                     {/* Sidebar */}
                     <aside className="w-full lg:w-[280px] space-y-8">
                         {/* Archives */}
