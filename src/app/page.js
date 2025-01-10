@@ -3,12 +3,13 @@ import ContactSection from '@/components/Contact'
 import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
+import TreatmentsSection from '@/components/NewServices'
 import Reviews from '@/components/Reviews'
 import Services from '@/components/Services'
 import Testimonial from '@/components/Testimonial'
 import { Button } from '@/components/ui/button'
 import Whyus from '@/components/Whyus'
-import { Check } from 'lucide-react'
+import { ArrowUpRight, Check } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 const page = () => {
@@ -83,7 +84,8 @@ const page = () => {
         <h2>
           Discover our range of aesthetic treatments
         </h2>
-        <Services />
+        {/* <Services /> */}
+        <TreatmentsSection />
       </section>
       <section className='flex flex-col text-center items-center justify-center py-10 mt-20 gap-20'>
         <h2>
@@ -129,6 +131,7 @@ const page = () => {
         <h2 className='text-center'> Why Panacea</h2>
         <Whyus />
       </section>
+
       <section className='mt-20'>
       </section>
       {/* <Footer /> */}
