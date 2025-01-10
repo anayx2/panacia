@@ -28,7 +28,7 @@ const about = () => {
                 <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
                     {/* Content */}
                     <div className="space-y-6">
-                        <h1 className="font-serif text-4xl font-light tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
+                        <h1 className="">
                             Panacea Aesthetic Clinic
                         </h1>
 

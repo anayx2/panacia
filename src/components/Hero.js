@@ -14,12 +14,12 @@ const Hero = () => {
                     className="absolute top-0 left-0 min-h-full min-w-full object-cover"
                     aria-hidden="true"
                 >
-                    <source src="/herovid.mp4" type="video/mp4" />
+                    <source src="/website_3.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
 
                 {/* Overlay to ensure text visibility */}
-                <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-30"></div>
 
                 {/* CTA Container */}
                 <div className="relative z-10 flex h-full items-center justify-center px-4 sm:px-6 lg:px-8">
