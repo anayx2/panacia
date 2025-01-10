@@ -10,7 +10,7 @@ const navItems = [
     { href: "/", label: "Home" },
     { href: "/about-us", label: "About" },
     { href: "/services", label: "Services" },
-    { href: "/", label: "Gallary" },
+    { href: "/gallery", label: "Gallery" },
     { href: "/contact-us", label: "Contact" },
 ];
 
@@ -100,9 +100,11 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <div>
-                            <button className=" rounded-lg text-white p-2 px-8 bg-[#D59395]">
-                                Book an Appointment
-                            </button>
+                            <Link href={'/book-an-appointment'}>
+                                <button className=" rounded-lg text-white p-2 px-8 bg-[#D59395]">
+                                    Book an Appointment
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </nav>
