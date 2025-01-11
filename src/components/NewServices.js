@@ -238,7 +238,7 @@ const TreatmentsSection = () => {
                                                 <ul>
                                                     <li key="0">
                                                         <a
-                                                            href="/treatments/lip-filler"
+                                                            href="/servicesr"
                                                             aria-label="Learn more about Lip Filler treatment to enhance and volumize your lips."
                                                         >
                                                             Lip Filler
@@ -246,7 +246,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="1">
                                                         <a
-                                                            href="/treatments/tear-trough"
+                                                            href="/services"
                                                             aria-label="Discover Tear Trough Filler treatment to reduce under-eye hollows and rejuvenate your appearance."
                                                         >
                                                             Tear Trough Filler
@@ -254,7 +254,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="2">
                                                         <a
-                                                            href="/treatments/cheek-filler"
+                                                            href="/services"
                                                             aria-label="Explore Cheek Filler treatment to add volume and contour to your cheeks."
                                                         >
                                                             Cheek Filler
@@ -262,7 +262,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="3">
                                                         <a
-                                                            href="/treatments/chin-filler"
+                                                            href="/services"
                                                             aria-label="Explore Chin Correction Filler treatment to refine and balance your facial profile."
                                                         >
                                                             Chin Correction Filler
@@ -270,7 +270,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="4">
                                                         <a
-                                                            href="/treatments/nose-filler"
+                                                            href="/services"
                                                             aria-label="Learn about Non-Surgical Nose Filler treatment for a straighter, smoother nose."
                                                         >
                                                             Nose Filler
@@ -281,7 +281,7 @@ const TreatmentsSection = () => {
                                         </div>
                                         <div className="icon">
                                             <a
-                                                href="/treatments"
+                                                href="/services"
                                                 aria-label="Explore Our Range Of Treatments at GHB Clinic London - Enhance Your Natural Beauty"
                                                 className="iconBox"
                                             >
@@ -335,7 +335,7 @@ const TreatmentsSection = () => {
                                                 <ul>
                                                     <li key="0">
                                                         <a
-                                                            href="/treatments/deep-cleansing-treatment"
+                                                            href="/services"
                                                             aria-label="Discover our Deep Cleansing Facial treatment for purified and refreshed skin."
                                                         >
                                                             Deep Cleansing Treatment
@@ -343,7 +343,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="1">
                                                         <a
-                                                            href="/treatments/hyperpigmentation-treatment"
+                                                            href="/services"
                                                             aria-label="Explore our Brightening Treatment to reduce hyperpigmentation and achieve radiant, even-toned skin."
                                                         >
                                                             Brightening Treatment
@@ -352,7 +352,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="2">
                                                         <a
-                                                            href="/treatments/acne-treatment"
+                                                            href="/services"
                                                             aria-label="Learn more about our effective Acne Treatments for clear, healthy skin."
                                                         >
                                                             Acne Treatments
@@ -360,7 +360,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="3">
                                                         <a
-                                                            href="/treatments/red-carpet-facial"
+                                                            href="/services"
                                                             aria-label="Experience the Red Carpet Facial for radiant, glowing skin before your next event."
                                                         >
                                                             Red Carpet Facial
@@ -368,7 +368,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="4">
                                                         <a
-                                                            href="/treatments/deep-hydration-facial"
+                                                            href="/services"
                                                             aria-label="Hydrate and nourish your skin deeply with our Deep Hydration Facial treatment."
                                                         >
                                                             Deep Hydration Facial
@@ -379,7 +379,7 @@ const TreatmentsSection = () => {
                                         </div>
                                         <div className="icon">
                                             <a
-                                                href="/treatments"
+                                                href="/services"
                                                 aria-label="Explore Our Range Of Treatments at GHB Clinic London - Enhance Your Natural Beauty"
                                                 className="iconBox"
                                             >
@@ -433,7 +433,7 @@ const TreatmentsSection = () => {
                                                 <ul>
                                                     <li key="0">
                                                         <a
-                                                            href="/treatments/p2-chemical-peel"
+                                                            href="/services"
                                                             aria-label="Learn more about the P2 Chemical Peel to rejuvenate and refresh your skin."
                                                         >
                                                             P2 Chemical Peel
@@ -441,7 +441,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="1">
                                                         <a
-                                                            href="/treatments/p3-chemical-peel"
+                                                            href="/services"
                                                             aria-label="Discover the P3 Chemical Peel for deep exfoliation and skin renewal."
                                                         >
                                                             P3 Chemical Peel
@@ -449,7 +449,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="2">
                                                         <a
-                                                            href="/treatments/green-peel"
+                                                            href="/services"
                                                             aria-label="Explore the Green Peel for natural skin rejuvenation and glowing results."
                                                         >
                                                             Green Peel
@@ -457,7 +457,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="3">
                                                         <a
-                                                            href="/treatments/botanical-peel"
+                                                            href="/services"
                                                             aria-label="Find out about the Botanical Peel for gentle and effective skin renewal."
                                                         >
                                                             Botanical Peel
@@ -468,7 +468,7 @@ const TreatmentsSection = () => {
                                         </div>
                                         <div className="icon">
                                             <a
-                                                href="/treatments"
+                                                href="/services"
                                                 aria-label="Explore Our Range Of Treatments at GHB Clinic London - Enhance Your Natural Beauty"
                                                 className="iconBox"
                                             >
@@ -566,7 +566,7 @@ const TreatmentsSection = () => {
                                         </div>
                                         <div className="icon">
                                             <a
-                                                href="/treatments"
+                                                href="/services"
                                                 aria-label="Explore Our Range Of Treatments at GHB Clinic London - Enhance Your Natural Beauty"
                                                 className="iconBox"
                                             >
@@ -663,7 +663,7 @@ const TreatmentsSection = () => {
                                         </div>
                                         <div className="icon">
                                             <a
-                                                href="/treatments"
+                                                href="/services"
                                                 aria-label="Explore Our Range Of Treatments at GHB Clinic London - Enhance Your Natural Beauty"
                                                 className="iconBox"
                                             >
@@ -761,7 +761,7 @@ const TreatmentsSection = () => {
                                         </div>
                                         <div className="icon">
                                             <a
-                                                href="/treatments"
+                                                href="/services"
                                                 aria-label="Explore Our Range Of Treatments at GHB Clinic London - Enhance Your Natural Beauty"
                                                 className="iconBox"
                                             >

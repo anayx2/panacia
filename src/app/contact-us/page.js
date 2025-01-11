@@ -50,7 +50,7 @@ const page = () => {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
-                        backgroundImage: "url('/aboutcover.jpg')"
+                        backgroundImage: "url('/sample/8.png')"
                     }}
                 />
                 <div className="absolute inset-0 bg-black/60" />

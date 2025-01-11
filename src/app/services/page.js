@@ -4,43 +4,43 @@ import Link from 'next/link'
 const services = [
     {
         id: 1,
-        title: "Wellness Consultation",
-        description: "Begin your wellness journey with a personalized consultation where we assess your unique needs and create a tailored treatment plan to help you achieve optimal health and balance.",
+        title: "Anti-Wrinkle Treatments",
+        description: "Smooth out fine lines and wrinkles with our advanced anti-wrinkle treatments, designed to rejuvenate your skin and restore youthful vitality.",
         image: "/blog.png",
         href: "/services/wellness-consultation"
     },
     {
         id: 2,
-        title: "Abhyanga",
-        description: "Abhyanga is a form of Ayurvedic massage that involves the use of warm herbalized oil and a combination of gentle massage to stimulate circulation, promote relaxation, and improve overall health and wellbeing.",
+        title: "Mesotherapy",
+        description: "A non-invasive treatment to target problem areas, delivering a blend of vitamins and nutrients directly into the skin to improve tone and texture.",
         image: "/blog1.png",
         href: "/services/abhyanga"
     },
     {
         id: 3,
-        title: "Shirodhara",
-        description: "Shirodhara is a traditional Ayurvedic therapy in which warm herbalized oil is poured on the forehead. It provides deep relaxation, activates the parasympathetic nervous system, reduces anxiety, reduces stress and promotes better sleep.",
+        title: "Fat Dissolving",
+        description: "Achieve a more contoured appearance with fat-dissolving injections, which target stubborn fat areas for a slimmer silhouette.",
         image: "/aboutcover.jpg",
         href: "/services/shirodhara"
     },
     {
         id: 4,
-        title: "Kati Basti",
-        description: "A specialized treatment for lower back pain where warm medicated oil is pooled on the lower back region, providing relief from chronic pain and improving spinal health.",
+        title: "Microneedling",
+        description: "Promote collagen production and improve skin texture with this advanced treatment, ideal for reducing scarring, fine lines, and pore size.",
         image: "/aboutcover.jpg",
         href: "/services/kati-basti"
     },
     {
         id: 5,
-        title: "Prushta Basti",
-        description: "Similar to Kati Basti, this treatment focuses on the entire back area, using warm oils to relieve tension, reduce pain, and promote healing throughout the back muscles and spine.",
+        title: "Vitamin B12 Injection",
+        description: "Boost your energy levels, enhance mood, and improve overall wellness with our safe and effective Vitamin B12 injections.",
         image: "/blog.png",
         href: "/services/prushta-basti"
     },
     {
         id: 6,
-        title: "Netra Basti",
-        description: "A gentle eye treatment where warm herbal ghee is placed around the eyes to nourish, strengthen and rejuvenate the eye muscles and improve vision.",
+        title: "Hopi Ear Candle",
+        description: "A relaxing treatment to help clear blocked sinuses and improve ear health, promoting relaxation and comfort.",
         image: "/blog1.png",
         href: "/services/netra-basti"
     }
@@ -52,7 +52,7 @@ export default function ServicesPage() {
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: "url('/aboutcover.jpg')"
+                    backgroundImage: "url('/sample/4.png')"
                 }}
             />
             <div className="absolute inset-0 bg-black/60" />
@@ -81,7 +81,7 @@ export default function ServicesPage() {
 
                                 {/* Content Container */}
                                 <div className='flex w-full justify-center -mt-5 z-50'>
-                                    <div className="bg-gradient-to-r from-[#FEC2BA] to-[#FFA7A9] w-[95%] z-50 rounded-2xl">
+                                    <div className="bg-gradient-to-b from-rose-100 to-rose-300 w-[95%] z-50 rounded-2xl">
                                         {/* Title - Static */}
                                         <h3 className="p-4 text-center text-xl font-semibold text-black">
                                             {service.title}

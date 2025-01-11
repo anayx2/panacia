@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import Navbar from '@/components/Navbar'
 import CounterSection from '@/components/about/Counter'
 import TeamSlider from '@/components/about/Team'
+import Link from 'next/link'
 
 const about = () => {
     return (
@@ -41,11 +42,12 @@ const about = () => {
 
                             We welcome patients from all walks of life and encourage you to bring any question or concern to your consultation. We look forward to the opportunity to have you as a patient as we continue our mission to bring natural, beautiful, and effective aesthetic treatments to the men and women in London.
                         </p>
-
-                        <Button
-                            variant="default" className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black">
-                            READ MORE →
-                        </Button>
+                        <Link href="/about-us">
+                            <Button
+                                variant="default" className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black">
+                                READ MORE →
+                            </Button>
+                        </Link>
                     </div>
 
                     {/* Image */}
