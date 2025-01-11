@@ -31,7 +31,7 @@ const teamMembers = [
     },
     {
         name: "Dr. James Anderson",
-        role: "Hair Restoration Specialist",
+        role: "Skin Expert",
         image: "/doc2.jpg",
         qualification: "MD, FISHRS"
     },
@@ -59,7 +59,7 @@ export default function TeamSlider() {
                         Meet Our Experts
                     </h2>
                     <p className="mt-4 text-lg">
-                        Our team of highly qualified specialists is here to provide you with the best care
+                        Meet the Experts Behind Your Health Transformation
                     </p>
                 </div>
 

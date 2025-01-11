@@ -30,22 +30,15 @@ const about = () => {
                     {/* Content */}
                     <div className="space-y-6">
                         <h1 className="">
-                            Panacea Aesthetic Clinic
-                        </h1>
+                            Empowering Your Health with Expert Care                        </h1>
 
                         <p className="">
-                            Beauty is found in the clinic. This is our belief, and the core of our clinic Method. Though aesthetics can help rejuvenate your skin or body, it is truly the confidence you find within that exudes true beauty. Here, at Panacea Health & Beauty Clinic, our.
-
-                            passion is to help each and every patient flourish confidently from the inside, out.
-
-                            We pride ourselves on treating our patients with state-of-the-art products and technology, safely and effectively.
-
-                            We welcome patients from all walks of life and encourage you to bring any question or concern to your consultation. We look forward to the opportunity to have you as a patient as we continue our mission to bring natural, beautiful, and effective aesthetic treatments to the men and women in London.
+                            At Panacea Clinic, we combine cutting-edge treatments and compassionate care to provide personalized solutions for your well-being. Join us on your journey to better health with our trusted team of professionals.
                         </p>
                         <Link href="/about-us">
                             <Button
                                 variant="default" className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black">
-                                READ MORE →
+                                Book Your Consultation Today
                             </Button>
                         </Link>
                     </div>
