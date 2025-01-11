@@ -13,32 +13,32 @@ import {
 export default function Reviews() {
     const testimonials = [
         {
-            quote: "I am so thankful that Treehouse has allowed me to get started and follow something that I'm truly passionate about.",
-            name: "Jon Farrell",
+            quote: "Panacea Clinic has truly changed my life! The team is so professional and caring. I’ve had the anti-wrinkle treatment, and I couldn’t be happier with the results!",
+            name: "John T.",
             location: "Sydney, Australia",
             image: "/avatar.png"
         },
         {
-            quote: "Watching the Treehouse videos, I was having little \"Ahaaa, that makes sense!\" moments, the videos are broken down into just the right amount to be able to absorb, without getting too frustrated.",
-            name: "Toby Powell",
+            quote: "I had PRP for my hair loss and the results have been amazing! My hair is thicker, and I feel more confident. Highly recommend the clinic!",
+            name: "Sophia L.",
             location: "Bangkok, Thailand",
             image: "/avatar-male.png"
         },
         {
-            quote: "I'm starting a business based on the web, and that's huge to me. I am attributing this to Treehouse because it gave me the skills under my belt, and the confidence to start my own business.",
-            name: "Martha Chumo",
+            quote: "I went in for a Vitamin B12 injection, and I’ve never felt more energized. The staff was so welcoming, and I’ll definitely be coming back for more treatments.",
+            name: "David P.",
             location: "Nairobi, Kenya",
             image: "/avatar.png"
         },
         {
-            quote: "The step-by-step approach and practical projects helped me build a strong foundation in web development.",
-            name: "Sarah Johnson",
+            quote: "I recently tried their dermaplaning service, and I’m beyond impressed with how smooth and refreshed my skin feels. This clinic truly cares about its clients.",
+            name: "Olivia M.",
             location: "Toronto, Canada",
             image: "/avatar-male.png"
         },
         {
-            quote: "The community support and comprehensive curriculum made my learning journey enjoyable and effective.",
-            name: "David Chen",
+            quote: "Had the PDO threads treatment for a more lifted look, and the results are incredible. The procedure was quick and painless, and the staff made me feel at ease throughout",
+            name: "Linda H.",
             location: "Singapore",
             image: "/avatar.png"
         }
@@ -59,12 +59,12 @@ export default function Reviews() {
                             key={index}
                             className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/4"
                         >
-                            <div className="h-full rounded-2xl bg-rose-50 p-6 shadow-sm flex flex-col justify-between">
+                            <div className="h-full rounded-2xl bg-gradient-to-b from-rose-100 to-rose-300 p-6 shadow-sm flex flex-col justify-between">
                                 {/* Quote Icon */}
                                 <Quote className="mb-4 h-6 w-6 text-rose-500" />
 
                                 {/* Testimonial Text */}
-                                <blockquote className="mb-6 line-clamp-4 text-sm text-gray-600">
+                                <blockquote className="mb-6 line-clamp-4 text-sm text-left text-gray-600">
                                     "{testimonial.quote}"
                                 </blockquote>
 

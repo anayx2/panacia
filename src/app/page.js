@@ -19,7 +19,7 @@ const page = () => {
         <Navbar />
       </section>
       <Hero />
-      <section className="container mx-auto grid gap-12 px-4 py-16 md:grid-cols-2 md:items-center md:gap-16 lg:gap-24">
+      <section className="container mx-auto grid gap-12 px-4 py-16 md:grid-cols-2 md:items-center md:gap-16 lg:gap-24 max-w-[90%] ">
         {/* Image Column */}
         <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-rose-100">
           <Image
@@ -35,20 +35,19 @@ const page = () => {
           {/* Section Label */}
           <div className="space-y-3">
             {/* <p className="text-lg font-medium text-gray-600">{'>'}Who We Are</p> */}
-            <h2 className="text-4xl font-bold tracking-tight lg:text-5xl">
-              QUALITY & NATURAL BEAUTY SALON
+            <h2>
+              Your Health, Our Commitment
             </h2>
           </div>
           {/* Description */}
           <p className="text-lg leading-relaxed text-gray-600">
-            Sed ut persiciatis unde omnis iste natus error sit voluptate maccusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explic aboemo enim ipsa
-          </p>
+            At Panacea Clinic, we're committed to offering top-notch healthcare with a human touch. Our team of skilled experts is dedicated to treating your medical issues with empathy and knowledge. We make sure that every stage of your trip is smooth, whether you're looking for specialist treatments or preventative care. Our first priorities are your health and wellbeing.           </p>
           {/* Features List */}
           <ul className="space-y-4">
             {[
-              'Natural Beauty Salon',
-              'Professional Women Spa Service',
-              'Experience Hair Treatments'
+              'Comprehensive and personalized medical services for all ages.',
+              'A team of highly qualified doctors and healthcare professionals.',
+              'A patient-centered approach focused on trust, care, and results.'
             ].map((feature, index) => (
               <li key={index} className="flex items-center gap-3">
                 <div className="flex h-7 w-7 items-center justify-center rounded-full bg-rose-100">
@@ -82,24 +81,29 @@ const page = () => {
       </section> */}
       <section className='flex flex-col text-center items-center justify-center py-10 bg-rose-50 pt-20 gap-20'>
         <h2>
-          Discover our range of aesthetic treatments
+          Discover Our Comprehensive Range <br />of  Aesthetic Treatments
         </h2>
         {/* <Services /> */}
         <TreatmentsSection />
       </section>
       <section className='flex flex-col text-center items-center justify-center py-10 mt-20 gap-20'>
         <h2>
-          Testimonials</h2>
+          Real Stories, Real Results…
+
+        </h2>
         <div className='w-[90%]'>
           <Testimonial />
         </div>
       </section>
-      <section className='mt-20 flex flex-col text-center gap-20'>
+      <section className='mt-20 flex flex-col text-center gap-20 items-center'>
         <h2>
-          Transformations at Panacea Health & Beauty Clinic
+          See the Incredible Results: Before and After
         </h2>
+        {/* <h2>
+          Transformations at Panacea<br /> Health & Beauty Clinic
+        </h2> */}
 
-        <div className='flex justify-center items-center gap-6 p-2'>
+        <div className='flex lg:flex-row md:flex-row sm:flex-col justify-center items-center gap-6 p-2 w-[90%]'>
 
           <ImageComparison
             beforeImage="/image1.jpg"

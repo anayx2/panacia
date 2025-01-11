@@ -27,13 +27,11 @@ const Hero = () => {
                                 <h1
                                     className=" uppercase mb-4 text-3xl font-extrabold tracking-tight text-black sm:text-5xl md:text-5xl animate-fade-down [animation-delay:200ms] [animation-fill-mode:forwards] opacity-0"
                                 >
-                                    Panacea Health & Beauty Clinic
-                                </h1>
+                                    Advanced Care for a Healthier Tomorrow.                                </h1>
                                 <p
                                     className="mb-8 text-lg text-black sm:text-xl animate-fade-down [animation-delay:400ms] [animation-fill-mode:forwards] opacity-0"
                                 >
-                                    Skin Care & Beauty Treatments
-                                </p>
+                                    At Panacea Clinic, we put your health first. Learn about individualized therapies created to support your success.                                </p>
                                 <div className='flex gap-10 text-center '>
                                     <span className='flex flex-col  items-center'>
                                         <h2 className='text-3xl font-extrabold tracking-tight text-black sm:text-5xl md:text-4xl'> 100%</h2>
@@ -44,19 +42,19 @@ const Hero = () => {
                                         <p className='text-sm uppercase'> Experties</p>
                                     </span>
                                     <span className='flex flex-col  items-center'>
-                                        <h2 className='text-3xl font-extrabold tracking-tight text-black sm:text-5xl md:text-4xl'>0</h2>
+                                        <h2 className='text-3xl font-extrabold tracking-tight text-black sm:text-5xl md:text-4xl'>0%</h2>
                                         <p className='text-sm uppercase'> Complaints</p>
                                     </span>
                                     <span className='flex flex-col  items-center'>
-                                        <h2 className='text-3xl font-extrabold tracking-tight text-black sm:text-5xl md:text-4xl'>100</h2>
+                                        <h2 className='text-3xl font-extrabold tracking-tight text-black sm:text-5xl md:text-4xl'>100%</h2>
                                         <p className='text-sm uppercase'> Efficiency</p>
                                     </span>
                                 </div>
                                 <button
                                     type="submit"
-                                    className="flex justify-center gap-2 mt-5 items-center shadow-xl text-lg bg-rose-300 backdrop-blur-md lg:font-semibold isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#D59395] hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group animate-fade-up [animation-delay:600ms] [animation-fill-mode:forwards] opacity-0"
+                                    className="flex justify-center gap-2 mt-5 items-center shadow-xl text-lg bg-rose-300 backdrop-blur-md lg:font-semibold isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full  hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group animate-fade-up [animation-delay:600ms] [animation-fill-mode:forwards] opacity-0"
                                 >
-                                    Schedule Free Consultation
+                                    Book Your Appointment Today
                                     <svg
                                         className="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-gray-50 text-gray-50 ease-linear duration-300 rounded-full border border-gray-700 group-hover:border-none p-2 rotate-45"
                                         viewBox="0 0 16 19"

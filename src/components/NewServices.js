@@ -1,23 +1,25 @@
 'use client';
 
 import React from 'react';
+import { Button } from './ui/button';
+import Link from 'next/link';
 
-const treatmentsData = [
-    {
-        id: 0,
-        title: "Dermal Fillers",
-        image: "https://www.ghbclinic.co.uk/home/DermaFillers.webp",
-        description: "Enhance your natural beauty with expert dermal filler treatments, tailored for volume, contour, and youthful rejuvenation.",
-        treatments: [
-            { id: 0, name: "Lip Filler", link: "/treatments/lip-filler", ariaLabel: "Learn more about Lip Filler treatment to enhance and volumize your lips." },
-            { id: 1, name: "Tear Trough Filler", link: "/treatments/tear-trough", ariaLabel: "Discover Tear Trough Filler treatment to reduce under-eye hollows and rejuvenate your appearance." },
-            { id: 2, name: "Cheek Filler", link: "/treatments/cheek-filler", ariaLabel: "Explore Cheek Filler treatment to add volume and contour to your cheeks." },
-            { id: 3, name: "Chin Correction Filler", link: "/treatments/chin-filler", ariaLabel: "Explore Chin Correction Filler treatment to refine and balance your facial profile." },
-            { id: 4, name: "Nose Filler", link: "/treatments/nose-filler", ariaLabel: "Learn about Non-Surgical Nose Filler treatment for a straighter, smoother nose." }
-        ]
-    },
-    // Add all other treatments data following the same structure...
-];
+// const treatmentsData = [
+//     {
+//         id: 0,
+//         title: "Dermal Fillers",
+//         image: "https://www.ghbclinic.co.uk/home/DermaFillers.webp",
+//         description: "Enhance your natural beauty with expert dermal filler treatments, tailored for volume, contour, and youthful rejuvenation.",
+//         treatments: [
+//             { id: 0, name: "Lip Filler", link: "/treatments/lip-filler", ariaLabel: "Learn more about Lip Filler treatment to enhance and volumize your lips." },
+//             { id: 1, name: "Tear Trough Filler", link: "/treatments/tear-trough", ariaLabel: "Discover Tear Trough Filler treatment to reduce under-eye hollows and rejuvenate your appearance." },
+//             { id: 2, name: "Cheek Filler", link: "/treatments/cheek-filler", ariaLabel: "Explore Cheek Filler treatment to add volume and contour to your cheeks." },
+//             { id: 3, name: "Chin Correction Filler", link: "/treatments/chin-filler", ariaLabel: "Explore Chin Correction Filler treatment to refine and balance your facial profile." },
+//             { id: 4, name: "Nose Filler", link: "/treatments/nose-filler", ariaLabel: "Learn about Non-Surgical Nose Filler treatment for a straighter, smoother nose." }
+//         ]
+//     },
+//     // Add all other treatments data following the same structure...
+// ];
 
 const TreatmentsSection = () => {
     return (
@@ -127,6 +129,9 @@ const TreatmentsSection = () => {
                 flex-wrap: wrap;
                 gap: 0.625rem;
             }
+    .treatments-content{
+    text-align: left;
+    }
 
             .card .card-inner .box .imgBox .treatments-list ul li {
                 background-color: #712a61c2 !important;
@@ -203,7 +208,7 @@ const TreatmentsSection = () => {
                 display: inline-block;
                 text-decoration: none;
                 color: #fff0f1;
-                background: #e8c7c8;
+                background: #fb7286;
                 position: absolute;
                 inset: 0.625rem;
                 border-radius: 50%;
@@ -214,10 +219,9 @@ const TreatmentsSection = () => {
             }
             `}</style>
 
-            <section className="our-treatments testSection">
-                <p className="content">
-                    Each treatment is customized to suit your unique needs and to
-                    achieve results that are subtle, natural, and perfectly you.
+            <section className="our-treatments testSection" style={{ width: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+                <p className="content" style={{ width: "80%", textAlign: "center" }} >
+                    At Panacea Clinic, we offer a wide range of treatments designed to rejuvenate, enhance, and maintain your natural beauty and well-being. Our expert team provides personalized care to help you look and feel your best.
                 </p>
                 <div className="treatments-gallery">
                     <section className="whole-container">
@@ -312,11 +316,10 @@ const TreatmentsSection = () => {
                                     </div>
                                 </div>
                                 <div className="treatments-content">
-                                    <h3>Dermal Fillers</h3>
-                                    <p>
-                                        Enhance your natural beauty with expert
-                                        dermal filler treatments, tailored for
-                                        volume, contour, and youthful rejuvenation.
+                                    <h3>Anti-Wrinkle Treatments</h3>
+                                    <p className='text-left'>
+                                        Smooth out fine lines and wrinkles with our advanced anti-wrinkle treatments, designed to rejuvenate your skin and restore youthful vitality.
+
                                     </p>
                                 </div>
                             </div>
@@ -411,11 +414,10 @@ const TreatmentsSection = () => {
                                     </div>
                                 </div>
                                 <div className="treatments-content">
-                                    <h3>Acne &amp; Facial Treatments</h3>
+                                    <h3>Mesotherapy</h3>
                                     <p>
-                                        Achieve clear, glowing skin with treatments
-                                        designed to target acne and enhance your
-                                        complexion.
+                                        A non-invasive treatment to target problem areas, delivering a blend of vitamins and nutrients directly into the skin to improve tone and texture.
+
                                     </p>
                                 </div>
                             </div>
@@ -501,11 +503,10 @@ const TreatmentsSection = () => {
                                     </div>
                                 </div>
                                 <div className="treatments-content">
-                                    <h3>Chemical Peels</h3>
+                                    <h3>Fat Dissolving</h3>
                                     <p>
-                                        Reveal radiant, refreshed skin with targeted
-                                        exfoliation and renewal. Click to explore
-                                        all Chemical Peel treatments.
+                                        Achieve a more contoured appearance with fat-dissolving injections, which target stubborn fat areas for a slimmer silhouette.
+
                                     </p>
                                 </div>
                             </div>
@@ -600,12 +601,10 @@ const TreatmentsSection = () => {
                                     </div>
                                 </div>
                                 <div className="treatments-content">
-                                    <h3>Laser Skin &amp; Lesion Treatments</h3>
+                                    <h3>Microneedling</h3>
                                     <p>
-                                        Transform your skin with laser treatments
-                                        for scars, pigmentation, and more. Click to
-                                        explore all Laser Skin &amp; Lesion
-                                        Treatments.
+                                        Promote collagen production and improve skin texture with this advanced treatment, ideal for reducing scarring, fine lines, and pore size.
+
                                     </p>
                                 </div>
                             </div>
@@ -698,12 +697,107 @@ const TreatmentsSection = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="treatments-content">
-                                    <h3>Skin Rejuvenation &amp; Anti Aging</h3>
+                                <div class="treatments-content" style={{ textAlign: "left" }}>
+                                    <h3>Vitamin B12 Injection
+                                    </h3>
                                     <p>
-                                        Enhance your natural beauty with expert
-                                        dermal filler treatments, tailored for
-                                        volume, contour, and youthful rejuvenation.
+                                        Boost your energy levels, enhance mood, and improve overall wellness with our safe and effective Vitamin B12 injections.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="card" key="5">
+                                <div className="card-inner" style={{ color: "#fff" }}>
+                                    <div className="box">
+                                        <div className="imgBox">
+                                            <img
+                                                src="https://www.ghbclinic.co.uk/home/DermaFillers.webp"
+                                                alt="Skin Rejuvenation &amp; Anti Aging"
+                                            />
+                                            <div className="treatments-list">
+                                                <ul>
+                                                    <li key="0">
+                                                        <a
+                                                            href="/treatments/anti-wrinkle-injections"
+                                                            aria-label="Discover Botox for Wrinkles treatment to smooth fine lines and rejuvenate your skin."
+                                                        >
+                                                            Anti Wrinkle Injections
+                                                        </a>
+                                                    </li>
+                                                    <li key="1">
+                                                        <a
+                                                            href="/treatments/microneedling"
+                                                            aria-label="Learn about Dermapen4 Microneedling for enhanced skin texture and collagen production."
+                                                        >
+                                                            Dermapen4 Microneedling
+                                                        </a>
+                                                    </li>
+                                                    <li key="2">
+                                                        <a
+                                                            href="/treatments/plasma-pen-treatment"
+                                                            aria-label="Find out about Plasma Pen Treatment for skin tightening and wrinkle reduction."
+                                                        >
+                                                            Plasma Pen Treatment
+                                                        </a>
+                                                    </li>
+                                                    <li key="3">
+                                                        <a
+                                                            href="/treatments/profhilo"
+                                                            aria-label="Learn more about Profhilo treatment for deep skin hydration and elasticity improvement."
+                                                        >
+                                                            Profhilo
+                                                        </a>
+                                                    </li>
+                                                    <li key="4">
+                                                        <a
+                                                            href="/treatments/mesotherapy"
+                                                            aria-label="Discover Mesotherapy treatment for revitalized and rejuvenated skin."
+                                                        >
+                                                            Mesotherapy
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className="icon">
+                                            <a
+                                                href="/treatments"
+                                                aria-label="Explore Our Range Of Treatments at GHB Clinic London - Enhance Your Natural Beauty"
+                                                className="iconBox"
+                                            >
+                                                <span
+                                                    class="material-symbols-outlined"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="#FFF"
+                                                        strokeWidth="2"
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        class="feather feather-arrow-up-right"
+                                                    >
+                                                        <line
+                                                            x1="7"
+                                                            y1="17"
+                                                            x2="17"
+                                                            y2="7"
+                                                        ></line>
+                                                        <polyline
+                                                            points="7 7 17 7 17 17"
+                                                        ></polyline>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="treatments-content" style={{ textAlign: "left" }}>
+                                    <h3>Hopi Ear Candle</h3>
+                                    <p> A relaxing treatment to help clear blocked sinuses and improve ear health, promoting relaxation and comfort.
                                     </p>
                                 </div>
                             </div>
@@ -712,6 +806,14 @@ const TreatmentsSection = () => {
                     </section>
                 </div>
             </section>
+            <Link href={'/services'}>
+                <Button
+                    variant="default"
+                    className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black"
+                >
+                    VIEW MORE
+                </Button>
+            </Link>
         </section>
     );
 };

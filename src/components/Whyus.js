@@ -4,23 +4,23 @@ import { Award, Fingerprint, Heart, ScanFace } from 'lucide-react'
 const features = [
     {
         icon: Award,
-        title: "25+ Years Of Industry-Leading Expertise",
-        description: "Our team of highly skilled professionals is led by top experts in aesthetic medicine, combining years of experience with the latest advancements to deliver exceptional results."
+        title: "Expertise and Experience",
+        description: "Our team consists of highly qualified professionals with extensive experience in delivering effective and personalized treatments."
     },
     {
         icon: Fingerprint,
-        title: "Tailored Treatments for Natural Enhancement",
-        description: "We believe in enhancing your unique features, not altering them. Each treatment plan is carefully personalized to refine your appearance while maintaining your natural beauty."
+        title: "Tailored Solutions",
+        description: "We offer treatments customized to your unique needs, ensuring optimal results for your health and aesthetic goals."
     },
     {
         icon: Heart,
-        title: "Commitment to Safety and Excellence",
-        description: "With a focus on safety and precision, we use only the highest quality FDA approved products and techniques, ensuring that every treatment is performed with the utmost care and professionalism"
+        title: "State-of-the-Art Technology",
+        description: "We use advanced, cutting-edge equipment to deliver the best results in the most comfortable and efficient way possible."
     },
     {
         icon: ScanFace,
-        title: "Proven Results You Can Trust",
-        description: "Our clients trust us for our consistent, beautiful outcomes. See for yourself with our real before and after transformations that showcase the subtle yet stunning enhancements we achieve."
+        title: "Commitment to Care",
+        description: "We prioritize your well-being with a compassionate, patient-centered approach, ensuring you feel supported at every stage of your journey."
     }
 ]
 const Whyus = () => {
@@ -32,7 +32,7 @@ const Whyus = () => {
                         {features.map((feature, index) => (
                             <div
                                 key={index}
-                                className="flex flex-col items-center text-center border border-rose-300 rounded-xl p-5"
+                                className="flex flex-col items-center justify-between text-center border border-rose-300 rounded-xl p-5"
                             >
                                 {/* Icon */}
                                 <div className="mb-6 rounded-full bg-rose-50 p-4">
@@ -40,6 +40,7 @@ const Whyus = () => {
                                 </div>
 
                                 {/* Title */}
+
                                 <h3 className="mb-4 text-xl font-semibold text-rose-400">
                                     {feature.title}
                                 </h3>
