@@ -45,13 +45,13 @@ export default function Reviews() {
     ]
 
     return (
-        <section className="container mx-auto px-4 py-16 overflow-hidden">
+        <section className="container flex items-center justify-center mx-auto px-4 py-16 overflow-hidden">
             <Carousel
                 opts={{
                     align: "start",
                     loop: true,
                 }}
-                className="w-full"
+                className="lg:max-w-7xl md:max-w-6xl sm:max-w-auto"
             >
                 <CarouselContent className="-ml-2 md:-ml-4">
                     {testimonials.map((testimonial, index) => (
