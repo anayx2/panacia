@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/navigation"; // Import useRouter
+import { useRouter, usePathname } from "next/navigation";
 import { Facebook, Linkedin, Twitter, Pin } from 'lucide-react'
 import { Button } from "./ui/button";
 
@@ -10,48 +10,21 @@ const navItems = [
     { href: "/", label: "Home" },
     { href: "/about-us", label: "About" },
     { href: "/services", label: "Services" },
+    { href: "/blogs", label: "Blogs" },
     { href: "/gallery", label: "Gallery" },
     { href: "/contact-us", label: "Contact" },
 ];
 
 const Navbar = () => {
-    const router = useRouter(); // Get the current route
+    const router = useRouter();
+    const pathname = usePathname();
+    const isHomepage = pathname === "/";
 
     return (
         <>
-            <section className="absolute z-50 top-0 w-full">
-                <div className="w-full border-b py-2">
-                    <div className="container mx-auto flex flex-wrap items-center justify-between gap-2 px-4 text-sm text-white">
-                        {/* Contact Information */}
-                        <div className="flex flex-wrap items-center gap-x-8 gap-y-2">
-                            <a href="tel:000-123-456789" className="hover:text-gray-900">
-                                07388869697                            </a>
-                            <a href="mailto:info@panacea-clinic.co.uk" className="hover:text-gray-900">
-                                info@panacea-clinic.co.uk                            </a>
-                            <address className="not-italic">
-                                Pharmacentre Pharmacy,149 Edgware Rd,
-                                Tyburnia, London W2 2HU                            </address>
-                        </div>
-
-                        {/* Social Links */}
-                        <div className="flex items-center gap-4 ">
-                            <Link href="#" className="hover:text-gray-900 bg-[#D59395] rounded-full p-1">
-                                <Facebook className="h-5 w-5" />
-                            </Link>
-                            <Link href="#" className="hover:text-gray-900  bg-[#D59395] rounded-full p-1">
-                                <Linkedin className="h-5 w-5" />
-                            </Link>
-                            <Link href="#" className="hover:text-gray-900  bg-[#D59395] rounded-full p-1">
-                                <Twitter className="h-5 w-5" />
-                            </Link>
-                            <Link href="#" className="hover:text-gray-900 bg-[#D59395] rounded-full p-1">
-                                <Pin className="h-5 w-5" />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-                <nav>
-                    <div className="max-w-[90%] mx-auto flex items-center justify-between p-4 ">
+            <section className={`absolute z-50 top-0 w-full ${isHomepage ? 'bg-black bg-opacity-10' : ''}`}>
+                <nav className="z-60">
+                    <div className="max-w-[90%] mx-auto flex items-center justify-between p-4">
                         {/* Logo */}
                         <Link href="/" className="flex items-center">
                             <Image
@@ -83,25 +56,44 @@ const Navbar = () => {
                             role="navigation"
                         >
                             <ul className="flex flex-col md:flex-row md:space-x-8 p-4 md:p-0 bg-gray-50 border rounded-lg md:border-none bg-transparent">
-                                {navItems.map(({ href, label }) => (
-                                    <li key={label}>
-                                        <Link
-                                            href={href}
-                                            className={`block py-2 px-3 rounded md:p-0 ${router.pathname === href
-                                                ? "text-[#fff] text-xl font-semibold border-b border-[#fea6a4]"
-                                                : "text-[#fff] text-xl"
-                                                }`}
-                                            aria-current={router.pathname === href ? "page" : undefined}
-                                        >
-                                            {label}
-                                        </Link>
-                                    </li>
-                                ))}
+                                {navItems.map(({ href, label }) => {
+                                    const isActive = pathname === href;
+                                    return (
+                                        <li key={label}>
+                                            <Link
+                                                href={href}
+                                                className={`
+                                                    block py-2 px-3 md:p-0 
+                                                    text-[#fff] text-xl
+                                                    relative
+                                                    transition-all duration-300
+                                                    ${isActive ?
+                                                        "border-b-2 border-white font-semibold" :
+                                                        `hover:text-rose-300
+                                                        after:content-['']
+                                                        after:absolute
+                                                        after:w-0
+                                                        after:h-0.5
+                                                        after:bg-white
+                                                        after:left-0
+                                                        after:-bottom-1
+                                                        after:transition-all
+                                                        after:duration-300
+                                                        hover:after:w-full`
+                                                    }
+                                                `}
+                                                aria-current={isActive ? "page" : undefined}
+                                            >
+                                                {label}
+                                            </Link>
+                                        </li>
+                                    );
+                                })}
                             </ul>
                         </div>
                         <div>
                             <Link href={'/book-an-appointment'}>
-                                <button className=" rounded-lg text-white p-2 px-8 bg-[#D59395]">
+                                <button className="rounded-lg text-white p-2 px-8 bg-rose-300 transition-all duration-300 hover:bg-rose-400">
                                     Book an Appointment
                                 </button>
                             </Link>
