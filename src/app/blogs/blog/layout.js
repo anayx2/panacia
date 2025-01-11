@@ -4,8 +4,8 @@ import Link from 'next/link'
 export default function BlogLayout({ children }) {
     return (
         <>
-            <section className='relative h-[20dvh] w-full'>
-                {/* <div
+            <section className='relative h-[30dvh] w-full mb-10'>
+                <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
                         backgroundImage: "url('/aboutcover.jpg')"
@@ -13,7 +13,7 @@ export default function BlogLayout({ children }) {
                 />
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative z-10 flex h-full items-center justify-center px-4 text-white">
-                </div> */}
+                </div>
             </section>
             <div className="container mx-auto px-4 max-w-[90%]">
                 <div className="flex flex-col lg:flex-row gap-10 ">
