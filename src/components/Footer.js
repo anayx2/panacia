@@ -3,8 +3,8 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Facebook, Linkedin, Twitter, Pin } from 'lucide-react'
-
+import { Facebook, Linkedin, Twitter, Pin, Music2 } from 'lucide-react'
+import { ImageGallery } from './FooterGallery'
 
 const Footer = () => {
     const [mounted, setMounted] = useState(false)
@@ -15,9 +15,8 @@ const Footer = () => {
     return (
         <>
             <footer className="bg-gradient-to-b from-rose-100 to-rose-300 text-black px-4 py-16">
-                {/* <footer className="bg-gradient-to-r from-[#FEC2BA] to-[#FFA7A9] text-black px-4 py-16"> */}
                 <div className="container mx-auto flex justify-center items-center">
-                    <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4  w-[90%]">
+                    <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4 w-[90%]">
                         {/* Logo and Contact Info */}
                         <div className={`space-y-6 transition-all duration-500 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                             <Link href="/" className="inline-block">
@@ -35,34 +34,44 @@ const Footer = () => {
                             </div>
                             <div className='flex w-full gap-5'>
                                 <span className='bg-rose-400 p-2 rounded-full'>
-                                    <Facebook />
+                                    <Link href={'#'}>
+                                        <Facebook />
+                                    </Link>
                                 </span>
                                 <span className='bg-rose-400 p-2 rounded-full'>
-                                    <Linkedin />                                </span>
-                                <span className='bg-rose-400 p-2 rounded-full'>
-                                    <Twitter />                                </span>
-                                <span className='bg-rose-400 p-2 rounded-full'>
+                                    <Link href={'https://www.instagram.com/panaceaskinclinic/'}>
 
-                                    <Pin />                                </span>
+                                        <Linkedin />
+                                    </Link>
+                                </span>
+                                <span className='bg-rose-400 p-2 rounded-full'>
+                                    <Link href={'https://www.tiktok.com/@panaceaskinclinic'}>
+                                        <Music2 />
+                                    </Link>
+                                </span>
 
+                                <span className='bg-rose-400 p-2 rounded-full'>
+                                    <Link href={'#'}>
+                                        <Pin />
+                                    </Link>
+                                </span>
                             </div>
                         </div>
 
-                        {/* About Us */}
+                        {/* Quick Links */}
                         <div className={`transition-all duration-500 delay-200 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                             <h3 className="mb-6 text-2xl font-semibold">Quick Links</h3>
                             <ul className="space-y-4">
                                 {[
-                                    'ABOUT US',
-                                    'OUR SERVICES',
-                                    'BLOGS',
-                                    'FAQ',
-                                    'GALLERY',
-                                    'CONTACT US',
-
+                                    { name: 'ABOUT US', href: '/about-us' },
+                                    { name: 'OUR SERVICES', href: '/services' },
+                                    { name: 'BLOGS', href: '/blogs' },
+                                    { name: 'FAQ', href: '/faq' },
+                                    { name: 'GALLERY', href: '/gallery' },
+                                    { name: 'CONTACT US', href: '/contact-us' },
                                 ].map((item, index) => (
                                     <li
-                                        key={item}
+                                        key={item.name}
                                         className="transition-all duration-500"
                                         style={{
                                             opacity: mounted ? 1 : 0,
@@ -71,29 +80,34 @@ const Footer = () => {
                                         }}
                                     >
                                         <Link
-                                            href="#"
+                                            href={item.href}
                                             className="text-black transition-colors hover:text-white"
                                         >
-                                            {item}
+                                            {item.name}
                                         </Link>
                                     </li>
                                 ))}
                             </ul>
                         </div>
 
-                        {/* Patient Resources */}
+                        {/* Services */}
                         <div className={`transition-all duration-500 delay-300 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                             <h3 className="mb-6 text-2xl font-semibold">Services</h3>
                             <ul className="space-y-4 uppercase">
                                 {[
-                                    'Anti-Wrinkle Treatments',
-                                    'Mesotherapy',
-                                    'Fat Dissolving',
-                                    'Microneedling',
-                                    'Vitamin B12 Injection',
+                                    { name: 'Anti-Wrinkle Treatments', href: '#' },
+                                    { name: 'Mesotherapy', href: '#' },
+                                    { name: 'Fat Dissolving', href: '#' },
+                                    { name: 'Microneedling', href: '#' },
+                                    { name: 'Vitamin B12 Injection', href: '#' },
+                                    // { name: 'Anti-Wrinkle Treatments', href: '/services/anti-wrinkle-treatments' },
+                                    // { name: 'Mesotherapy', href: '/services/mesotherapy' },
+                                    // { name: 'Fat Dissolving', href: '/services/fat-dissolving' },
+                                    // { name: 'Microneedling', href: '/services/microneedling' },
+                                    // { name: 'Vitamin B12 Injection', href: '/services/vitamin-b12-injection' },
                                 ].map((item, index) => (
                                     <li
-                                        key={item}
+                                        key={item.name}
                                         className="transition-all duration-500"
                                         style={{
                                             opacity: mounted ? 1 : 0,
@@ -102,31 +116,20 @@ const Footer = () => {
                                         }}
                                     >
                                         <Link
-                                            href="#"
+                                            href={item.href}
                                             className="text-black transition-colors hover:text-white"
                                         >
-                                            {item}
+                                            {item.name}
                                         </Link>
                                     </li>
                                 ))}
                             </ul>
                         </div>
 
-                        {/* Join The Community */}
+                        {/* Map */}
                         <div className={`transition-all duration-500 delay-400 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                            {/* <h3 className="mb-6 text-2xl font-semibold">Join The Community</h3> */}
-                            <div className="h-[150px] overflow-hidden w-[100%] rounded-lg md:h-[200px]">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19862.214288866795!2d-0.166726!3d51.517311!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ab507196af5%3A0xe5cfb58af2aabf40!2sPharmacentre!5e0!3m2!1sen!2sus!4v1736402860884!5m2!1sen!2sus"
-                                    width="100%"
-                                    height="100%"
-                                    style={{ border: 0 }}
-                                    allowFullScreen
-                                    loading="lazy"
-                                    referrerPolicy="no-referrer-when-downgrade"
-                                    title="GHB Clinic Location"
-                                />
-                            </div>
+                            <h3 className="mb-6 text-2xl font-semibold">Gallery</h3>
+                            <ImageGallery />
                         </div>
                     </div>
                 </div>

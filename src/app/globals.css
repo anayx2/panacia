@@ -58,3 +58,36 @@ body {
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
+.scroll-feed {
+  /* Copy all the CSS from the original style tag */
+  /* Replace $variables with actual colors */
+}
+
+/* Additional required styles for modal and carousel functionality */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+}
+
+.container-modal {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Add responsive styles as needed */

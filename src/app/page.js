@@ -2,6 +2,7 @@ import ImageComparison from '@/components/Compare'
 import ContactSection from '@/components/Contact'
 import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
+import InstagramFeed from '@/components/InstagramPost'
 import Navbar from '@/components/Navbar'
 import TreatmentsSection from '@/components/NewServices'
 import Reviews from '@/components/Reviews'
@@ -11,6 +12,7 @@ import { Button } from '@/components/ui/button'
 import Whyus from '@/components/Whyus'
 import { ArrowUpRight, Check } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 const page = () => {
   return (
@@ -50,7 +52,7 @@ const page = () => {
               'A patient-centered approach focused on trust, care, and results.'
             ].map((feature, index) => (
               <li key={index} className="flex items-center gap-3">
-                <div className="flex h-7 w-7 items-center justify-center rounded-full bg-rose-100">
+                <div className="flex p-2 items-center justify-center rounded-full bg-rose-100">
                   <Check className="h-4 w-4 text-rose-600" />
 
                 </div>
@@ -60,12 +62,14 @@ const page = () => {
           </ul>
 
           {/* CTA Button */}
-          <Button
-            variant="default"
-            className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black"
-          >
-            READ MORE →
-          </Button>
+          <Link href={'/about-us'}>
+            <Button
+              variant="default"
+              className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black"
+            >
+              READ MORE →
+            </Button>
+          </Link>
         </div>
       </section>
 
@@ -120,7 +124,7 @@ const page = () => {
         </div>
       </section>
       <section className='py-20 mt-20 text-center'>
-        instagram section
+        <InstagramFeed />
       </section>
       <section className='flex flex-col text-center items-center justify-center py-10 mt-20 gap-10'>
         <h2>

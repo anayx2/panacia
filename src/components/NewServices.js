@@ -30,6 +30,80 @@ const TreatmentsSection = () => {
                 margin: 0;
                 box-sizing: border-box;
             }
+                /* Modify the base li styles */
+.card .card-inner .box .imgBox .treatments-list ul li {
+    background-color: #712a61c2 !important;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(20px);
+    /* Set base transition properties */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 22;
+    text-transform: uppercase;
+    color: #282828;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 0.375rem 0.625rem;
+    border-radius: 0.188rem;
+    /* Reset any existing transition delays */
+    transition-delay: 0s !important;
+}
+
+/* Sequential appearance on hover - based on position */
+.card .card-inner:hover .treatments-list ul li:nth-child(1) {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition-delay: 0s !important;
+}
+
+.card .card-inner:hover .treatments-list ul li:nth-child(2) {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition-delay: 0.1s !important;
+}
+
+.card .card-inner:hover .treatments-list ul li:nth-child(3) {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition-delay: 0.2s !important;
+}
+
+.card .card-inner:hover .treatments-list ul li:nth-child(4) {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition-delay: 0.3s !important;
+}
+
+.card .card-inner:hover .treatments-list ul li:nth-child(5) {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition-delay: 0.4s !important;
+}
+
+/* Sequential disappearance when hover ends - reverse order */
+.card .card-inner .box .imgBox .treatments-list ul li {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card .card-inner .box .imgBox .treatments-list ul li:nth-child(1) {
+    transition-delay: 0s !important;
+}
+
+.card .card-inner .box .imgBox .treatments-list ul li:nth-child(2) {
+    transition-delay: 0.1s !important;
+}
+
+.card .card-inner .box .imgBox .treatments-list ul li:nth-child(3) {
+    transition-delay: 0.2s !important;
+}
+
+.card .card-inner .box .imgBox .treatments-list ul li:nth-child(4) {
+    transition-delay: 0.3s !important;
+}
+
+.card .card-inner .box .imgBox .treatments-list ul li:nth-child(5) {
+    transition-delay: 0.4s !important;
+}
             a {
                 text-decoration: none;
             }

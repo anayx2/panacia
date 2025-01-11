@@ -39,23 +39,18 @@ export default function ContactSection() {
                             <p className="text-gray-600">Tyburnia, London W2 2HU</p>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
-                        <div className="flex flex-col items-center text-center">
-                            <MapPin className="mb-2 h-6 w-6 " />
-                            <p className="text-sm ">
-                                63 Shelton Street,<br />London WC2H 9HE
-                            </p>
-                        </div>
+                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+
                         <div className="flex flex-col items-center text-center">
                             <Mail className="mb-2 h-6 w-6 " />
-                            <a href="mailto:info@ghbclinic.co.uk" className="text-sm  hover:text-blue-600">
-                                info@ghbclinic.co.uk
+                            <a href="mailto:info@panacea-clinic.co.uk" className="text-sm  hover:text-blue-600">
+                                info@panacea-clinic.co.uk
                             </a>
                         </div>
                         <div className="flex flex-col items-center text-center">
                             <Phone className="mb-2 h-6 w-6 " />
-                            <a href="tel:02035152525" className="text-sm  hover:text-blue-600">
-                                02035152525
+                            <a href="tel:07388869697" className="text-sm  hover:text-blue-600">
+                                07388869697
                             </a>
                         </div>
                     </div>
