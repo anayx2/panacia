@@ -68,11 +68,11 @@ const about = () => {
                         <section className="mb-20">
                             <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
                                 <div className="flex flex-col justify-center space-y-4">
-                                    <h2 className="text-3xl font-bold tracking-tight text-[#1B4B5A] sm:text-4xl">
+                                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
                                         Your Journey Starts With Our Personalised Consultations
                                     </h2>
                                     <p className="text-lg leading-relaxed text-muted-foreground">
-                                        At GHB Clinic, we believe that every individual is unique, and so should be their aesthetic
+                                        At Panacea Health & Beauty Clinic, we believe that every individual is unique, and so should be their aesthetic
                                         journey. We take the time to understand your personal goals, crafting bespoke treatment plans
                                         that enhance your natural features, not alter them. Your satisfaction and comfort are our top
                                         priorities from start to finish.
@@ -104,7 +104,7 @@ const about = () => {
                                     />
                                 </div>
                                 <div className="flex flex-col justify-center space-y-4 lg:order-2">
-                                    <h2 className="text-3xl font-bold tracking-tight text-[#1B4B5A] sm:text-4xl">
+                                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
                                         Advanced Techniques and Expertise
                                     </h2>
                                     <p className="text-lg leading-relaxed text-muted-foreground">
@@ -121,7 +121,7 @@ const about = () => {
                         <section>
                             <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
                                 <div className="flex flex-col justify-center space-y-4">
-                                    <h2 className="text-3xl font-bold tracking-tight text-[#1B4B5A] sm:text-4xl">
+                                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
                                         A Gentle, Holistic Approach
                                     </h2>
                                     <p className="text-lg leading-relaxed text-muted-foreground">
@@ -175,7 +175,7 @@ const about = () => {
 
                     {/* Content */}
                     <div className="space-y-6">
-                        <h2 className="">
+                        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
                             Our medical specialists
                         </h2>
 

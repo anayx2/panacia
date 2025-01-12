@@ -1,10 +1,11 @@
 'use client'
 import React, { useState } from 'react'
-import { MapPin, Mail, Phone } from 'lucide-react'
+import { MapPin, Mail, Phone, User2 } from 'lucide-react'
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent } from "@/components/ui/card"
+import Link from 'next/link';
 
 const contacts = [
     {
@@ -62,10 +63,10 @@ const page = () => {
                 <div className="container w-[90%]">
                     <div className="grid gap-6 md:grid-cols-3">
                         {contacts.map((contact, index) => (
-                            <Card key={index} className="border-none bg-rose-50">
+                            <Card key={index} className="border-none bg-gradient-to-r from-rose-100 to-rose-300">
                                 <CardContent className="flex flex-col items-center p-6 text-center">
-                                    <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-rose-300 shadow-sm">
-                                        <contact.icon className="h-8 w-8 text-rose-100" />
+                                    <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-sm">
+                                        <contact.icon className="h-8 w-8 text-rose-00" />
                                     </div>
                                     <h3 className="mb-2 text-xl font-semibold text-gray-900">{contact.title}</h3>
                                     <div className="space-y-1">
@@ -91,64 +92,71 @@ const page = () => {
                         allowFullScreen
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                        title="GHB Clinic Location"
+                        title="Panacea Health & Beauty Clinic Location"
                     />
                 </div>
             </section>
-            <section className='flex justify-center w-full py-20 bg-rose-50'>
-                <div className='w-full max-w-2xl bg-white rounded-2xl p-8'>
-                    <form onSubmit={handleSubmit} className="grid gap-6 w-full">
-                        <div className="grid gap-6 md:grid-cols-2 w-full">
-                            <div className="w-full">
-                                <Input
-                                    name="fullName"
-                                    placeholder="Full Name"
-                                    value={formData.fullName}
-                                    onChange={handleChange}
-                                    className="w-full border-gray-200"
-                                    required
-                                />
-                            </div>
-                            <div className="w-full">
-                                <Input
-                                    name="email"
-                                    type="email"
-                                    placeholder="Your Email"
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    className="w-full border-gray-200"
-                                    required
-                                />
-                            </div>
+            <section className="w-full py-16 md:py-24 lg:py-32 flex justify-center ">
+                <div className="container px-4 md:px-6 max-w-6xl bg-rose-50 py-10 rounded-2xl">
+                    <div className="flex flex-col items-center space-y-4 text-center">
+                        <h2 className="">SEND US MESSAGE</h2>
+                        <div className="w-full max-w-3xl">
+                            <form onSubmit={handleSubmit} className="grid gap-6">
+                                <div className="grid gap-4 sm:grid-cols-3">
+                                    <div className="w-full relative">
+                                        <Input
+                                            name="fullName"
+                                            placeholder="Full Name"
+                                            value={formData.fullName}
+                                            onChange={handleChange}
+                                            className="w-full bg-white border-gray-200 pr-10"
+                                            required
+                                        />
+                                        <User2 className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+                                    </div>
+                                    <div className="w-full relative">
+                                        <Input
+                                            name="email"
+                                            type="email"
+                                            placeholder="Email Us"
+                                            value={formData.email}
+                                            onChange={handleChange}
+                                            className="w-full bg-white border-gray-200 pr-10"
+                                            required
+                                        />
+                                        <Mail className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+                                    </div>
+                                    <div className="w-full relative">
+                                        <Input
+                                            name="website"
+                                            type="url"
+                                            placeholder="Website"
+                                            value={formData.website}
+                                            onChange={handleChange}
+                                            className="w-full bg-white border-gray-200 pr-10"
+                                        />
+                                        {/* <Link className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" /> */}
+                                    </div>
+                                </div>
+                                <div className="w-full">
+                                    <Textarea
+                                        name="message"
+                                        placeholder="Write Message"
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        className="w-full min-h-[200px] bg-white border-gray-200"
+                                        required
+                                    />
+                                </div>
+                                <Button
+                                    type="submit"
+                                    className="w-full bg-rose-400 text-white font-medium py-6"
+                                >
+                                    SEND MESSAGE →
+                                </Button>
+                            </form>
                         </div>
-                        <div className="w-full">
-                            <Input
-                                name="mobile"
-                                type="tel"
-                                placeholder="Mobile Number"
-                                value={formData.mobile}
-                                onChange={handleChange}
-                                className="w-full border-gray-200"
-                                required
-                            />
-                        </div>
-                        <div className="w-full">
-                            <Textarea
-                                name="message"
-                                placeholder="Message"
-                                value={formData.message}
-                                onChange={handleChange}
-                                className="w-full min-h-[120px] border-gray-200"
-                                required
-                            />
-                        </div>
-                        <Button
-                            type="submit"
-                            className="w-full bg-rose-300 text-gray-800 hover:bg-rose-300 hover:text-white transition-colors"
-                        >
-                            Submit Details
-                        </Button>
-                    </form>
+                    </div>
                 </div>
             </section>
         </>)

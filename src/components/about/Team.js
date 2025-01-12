@@ -78,7 +78,7 @@ export default function TeamSlider() {
                                 key={index}
                                 className="pl-2 md:pl-4 sm:basis-1/2 md:basis-1/5"
                             >
-                                <Card className="border-0 bg-rose-100">
+                                <Card className="border-0 bg-gradient-to-b from-rose-100 to-rose-300">
                                     <CardContent className="p-2">
                                         <div className="group relative overflow-hidden">
                                             {/* Image Container */}

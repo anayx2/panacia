@@ -742,7 +742,7 @@ const TreatmentsSection = () => {
                                                 className="iconBox"
                                             >
                                                 <span
-                                                    class="material-symbols-outlined"
+                                                    className="material-symbols-outlined"
                                                 >
                                                     <svg
                                                         xmlns="http://www.w3.org/2000/svg"
@@ -754,7 +754,7 @@ const TreatmentsSection = () => {
                                                         strokeWidth="2"
                                                         strokeLinecap="round"
                                                         strokeLinejoin="round"
-                                                        class="feather feather-arrow-up-right"
+                                                        className="feather feather-arrow-up-right"
                                                     >
                                                         <line
                                                             x1="7"
@@ -771,7 +771,7 @@ const TreatmentsSection = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="treatments-content" style={{ textAlign: "left" }}>
+                                <div className="treatments-content" style={{ textAlign: "left" }}>
                                     <h3>Vitamin B12 Injection
                                     </h3>
                                     <p>
@@ -840,7 +840,7 @@ const TreatmentsSection = () => {
                                                 className="iconBox"
                                             >
                                                 <span
-                                                    class="material-symbols-outlined"
+                                                    className="material-symbols-outlined"
                                                 >
                                                     <svg
                                                         xmlns="http://www.w3.org/2000/svg"
@@ -852,7 +852,7 @@ const TreatmentsSection = () => {
                                                         strokeWidth="2"
                                                         strokeLinecap="round"
                                                         strokeLinejoin="round"
-                                                        class="feather feather-arrow-up-right"
+                                                        className="feather feather-arrow-up-right"
                                                     >
                                                         <line
                                                             x1="7"
@@ -869,7 +869,7 @@ const TreatmentsSection = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="treatments-content" style={{ textAlign: "left" }}>
+                                <div className="treatments-content" style={{ textAlign: "left" }}>
                                     <h3>Hopi Ear Candle</h3>
                                     <p> A relaxing treatment to help clear blocked sinuses and improve ear health, promoting relaxation and comfort.
                                     </p>

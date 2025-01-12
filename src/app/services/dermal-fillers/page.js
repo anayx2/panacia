@@ -48,7 +48,7 @@ const page = () => {
                     <h2>Dermal Fillers</h2>
                 </div>
             </section>
-            <section className="max-w-7xl mx-auto px-4 py-12 md:py-16">
+            <section className="max-w-7xl mx-auto px-4 py-12 md:py-16 w-[90%]">
                 <div className="grid md:grid-cols-[1fr,400px] gap-8">
                     <div className="space-y-8">
                         <div className="space-y-4">
@@ -65,7 +65,7 @@ const page = () => {
                             the cheek area. As we age, our cheeks may lose their youthful fullness due to a decrease in collagen
                             and elastin production, resulting in a flattened or sagging appearance. This change can be influenced
                             by factors like genetics, lifestyle, and environmental elements, which may leave you looking tired or
-                            less vibrant. At GHB Clinic London, we focus on enhancing your natural beauty with cheek fillers,
+                            less vibrant. At Panacea Health & Beauty Clinic London, we focus on enhancing your natural beauty with cheek fillers,
                             utilising high-quality, hyaluronic acid-based products to achieve a fuller, more youthful appearance.
                             This treatment not only restores volume but also helps lift the midface area, creating a natural-looking
                             contour that can enhance your overall facial aesthetics. The results can last anywhere from 6 to 12 months.
@@ -116,32 +116,35 @@ const page = () => {
                 </div>
             </section>
             <section>
-                <h3>
-                    Real Results: Cheek Filler Before & After
+                <div className='flex flex-col justify-center items-center w-[100%]'>
 
-                </h3>
-                <div className='flex justify-center items-center gap-6 p-2'>
-                    <ImageComparison
-                        beforeImage="/image1.jpg"
-                        afterImage="/services/Dermal.jpg"
-                    />
-                    <ImageComparison
-                        beforeImage="/image1.jpg"
-                        afterImage="/services/Dermal.jpg"
-                    />
-                    <ImageComparison
-                        beforeImage="/image1.jpg"
-                        afterImage="/services/Dermal.jpg"
-                    />
+                    <h3 className='text-center my-5'>
+                        Real Results: Cheek Filler Before & After
+                    </h3>
+                    <div className='flex lg:flex-row md:flex-row sm:flex-col justify-center items-center gap-6 p-2 w-[90%]'>
+                        <ImageComparison
+                            beforeImage="/image1.jpg"
+                            afterImage="/services/Dermal.jpg"
+                        />
+                        <ImageComparison
+                            beforeImage="/image1.jpg"
+                            afterImage="/services/Dermal.jpg"
+                        />
+                        <ImageComparison
+                            beforeImage="/image1.jpg"
+                            afterImage="/services/Dermal.jpg"
+                        />
+                    </div>
                 </div>
+
             </section>
-            <section className="max-w-7xl mx-auto px-4 py-12 md:py-16">
-                <h3 className="">
+            <section className="max-w-7xl mx-auto px-4 py-12 md:py-16 w-[90%]">
+                <h3 className="text-center">
                     Who Are Cheek Fillers Suitable For?
                 </h3>
 
                 <p className="mt-5">
-                    This treatment is suitable for those seeking a refreshed, youthful appearance without the need for invasive surgery. A consultation with us, at GHB Clinic London will help determine if cheek fillers align with your aesthetic goals.Cheek dermal fillers may be an excellent option if you're experiencing
+                    This treatment is suitable for those seeking a refreshed, youthful appearance without the need for invasive surgery. A consultation with us, at Panacea  Clinic London will help determine if cheek fillers align with your aesthetic goals.Cheek dermal fillers may be an excellent option if you're experiencing
                 </p>
 
                 <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
@@ -185,11 +188,11 @@ const page = () => {
                     </div>
                 </div>
             </section>
-            <section className="max-w-7xl mx-auto px-4 py-12 md:py-16">
+            <section className="max-w-7xl mx-auto px-4 py-12 md:py-16 w-[90%]">
                 <div className="grid md:grid-cols-[1fr,500px] gap-8 items-center">
                     <div className="space-y-8">
                         <h3>
-                            How Cheek Enhancement Treatment Is Performed at GHB Clinic London
+                            How Cheek Enhancement Treatment Is Performed at Panacea Health & Beauty Clinic London
                         </h3>
 
                         <div className="space-y-4">
@@ -197,7 +200,7 @@ const page = () => {
                                 Consultation
                             </h4>
                             <p className=" leading-relaxed">
-                                Your journey begins with a free consultation at GHB Clinic, where our experienced practitioners assess your cheek area to determine if fillers are right for you. We'll discuss your goals, including whether you want to restore lost volume, contour for definition, or achieve a lifted or fuller look. Our aim is to enhance your natural beauty, and we believe that a unique approach to each face is essential for achieving the best results.
+                                Your journey begins with a free consultation at Panacea Health & Beauty Clinic, where our experienced practitioners assess your cheek area to determine if fillers are right for you. We'll discuss your goals, including whether you want to restore lost volume, contour for definition, or achieve a lifted or fuller look. Our aim is to enhance your natural beauty, and we believe that a unique approach to each face is essential for achieving the best results.
                             </p>
                         </div>
 
@@ -223,7 +226,7 @@ const page = () => {
                     <div className="relative aspect-[4/3] w-full">
                         <Image
                             src="/image1.jpg"
-                            alt="GHB Clinic consultation with practitioner"
+                            alt="Panacea Health & Beauty Clinic consultation with practitioner"
                             fill
                             className="object-cover rounded-lg"
                         />
@@ -236,7 +239,7 @@ const page = () => {
                 </h3>
                 <Reviews />
             </section>
-            <section className="max-w-7xl mx-auto px-4 py-12 md:py-16">
+            <section className="max-w-7xl mx-auto px-4 py-12 md:py-16 w-[90%]">
                 <h3 className='text-center mb-10'>
                     Frequently Asked Questions for Cheek Fillers
 

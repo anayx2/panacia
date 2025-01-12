@@ -21,12 +21,10 @@ const FilteredGallery = () => {
     const categories = ["Show All", "Anti Wrinkle", "Mesotherapy", "Fat Dissolving", "Microneedling", "Bio Filler"];
     const [activeFilter, setActiveFilter] = useState("Show All");
 
-    // Filter images based on selected category
     const filteredImages = activeFilter === "Show All"
         ? galleryData
         : galleryData.filter(img => img.category === activeFilter);
 
-    // Distribute images evenly across columns
     const distributeImages = () => {
         const columns = {
             col1: [],
@@ -95,14 +93,21 @@ const FilteredGallery = () => {
                             column.length > 0 && (
                                 <div key={colIndex} className="flex flex-col gap-4">
                                     {column.map((image) => (
-                                        <div key={image.id} className="w-full">
+                                        <div key={image.id} className="relative w-full group">
                                             <Image
-                                                className="h-auto w-full rounded-lg transition-all duration-300 hover:opacity-80"
+                                                className="h-auto w-full rounded-lg transition-all duration-300 group-hover:opacity-80"
                                                 width={500}
                                                 height={500}
                                                 src={image.src}
                                                 alt={`Gallery image - ${image.category}`}
                                             />
+                                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                                <div className="bg-gradient-to-r from-rose-100 to-rose-300 px-4 py-2 rounded-md shadow-lg transform scale-95 group-hover:scale-100 transition-transform duration-300">
+                                                    <span className="text-gray-800 font-medium text-sm">
+                                                        {image.category}
+                                                    </span>
+                                                </div>
+                                            </div>
                                         </div>
                                     ))}
                                 </div>
