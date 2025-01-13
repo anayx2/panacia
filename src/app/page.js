@@ -127,13 +127,13 @@ const page = () => {
       <section className='py-20 mt-20 text-center'>
         <InstagramFeed />
       </section>
-      <section className='flex flex-col text-center items-center justify-center py-5 '>
+      <section className='flex flex-col text-center items-center justify-center  '>
         <h2>
           Google Reviews
         </h2>
         <Reviews />
       </section>
-      <section className='flex flex-col text-center items-center justify-center py-10 mt-20 gap-10'>
+      <section className='flex flex-col text-center items-center justify-center py-10 mt-10 gap-10'>
         <ContactSection />
         {/* <ContactNew /> */}
       </section>

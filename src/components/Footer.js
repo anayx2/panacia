@@ -92,14 +92,16 @@ const Footer = () => {
 
                         {/* Services */}
                         <div className={`transition-all duration-500 delay-300 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                            <h3 className="mb-6 text-2xl font-semibold">SERVICES</h3>
+                            <h3 className="mb-6 text-2xl font-semibold uppercase">Working Hours
+
+                            </h3>
                             <ul className="space-y-4 ">
                                 {[
-                                    { name: 'Anti-Wrinkle Treatments', href: '#' },
-                                    { name: 'Mesotherapy', href: '#' },
-                                    { name: 'Fat Dissolving', href: '#' },
-                                    { name: 'Microneedling', href: '#' },
-                                    { name: 'Vitamin B12 Injection', href: '#' },
+                                    { name: 'Mon: 11 am - 7 pm', href: '' },
+                                    { name: 'Wed: 11 am - 7 pm', href: '' },
+                                    { name: 'Fri: 11 am - 7 pm', href: '' },
+                                    { name: 'Sat: 11 am - 7 pm', href: '' },
+
                                     // { name: 'Anti-Wrinkle Treatments', href: '/services/anti-wrinkle-treatments' },
                                     // { name: 'Mesotherapy', href: '/services/mesotherapy' },
                                     // { name: 'Fat Dissolving', href: '/services/fat-dissolving' },
@@ -115,12 +117,12 @@ const Footer = () => {
                                             transitionDelay: `${600 + (index * 100)}ms`
                                         }}
                                     >
-                                        <Link
-                                            href={item.href}
+                                        <span
+                                            // href={item.href}
                                             className="text-black transition-colors hover:text-white"
                                         >
                                             {item.name}
-                                        </Link>
+                                        </span>
                                     </li>
                                 ))}
                             </ul>

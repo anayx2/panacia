@@ -1,5 +1,6 @@
 
 'use client'
+import Image from 'next/image';
 import React, { useRef, useState, useEffect } from 'react';
 
 const InstagramFeed = () => {
@@ -96,7 +97,14 @@ const InstagramFeed = () => {
                             {/* Instagram Post Header */}
                             <div className="p-2 flex items-center space-x-2">
                                 <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 p-[2px]">
-                                    <div className="w-full h-full rounded-full bg-white" />
+                                    {/* <div className="w-full h-full rounded-full bg-white" /> */}
+                                    <Image
+                                        src={'/logo.png'}
+                                        width={300}
+                                        height={300}
+                                        alt='logo'
+                                        className='w-full h-full rounded-full bg-white'
+                                    />
                                 </div>
                                 <div className="text-sm text-left">
                                     <p className="font-medium text-sm">Panacea Skin Clinic</p>
@@ -132,7 +140,6 @@ const InstagramFeed = () => {
                     </div>
                 ))}
             </div>
-
 
 
             {/* iPhone Mockup */}

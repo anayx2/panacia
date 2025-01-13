@@ -270,7 +270,7 @@ const ContactNew = () => {
                                 </h2>
                             </div>
                             <Link
-                                href="#directions"
+                                href="https://www.google.com/maps/dir//Pharmacentre+149+Edgware+Rd+Tyburnia,+London+W2+2HU+United+Kingdom/@51.5173113,-0.1667256,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x48761ab507196af5:0xe5cfb58af2aabf40!2m2!1d-0.1666838!2d51.5173291?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D"
                                 className="inline-block rounded-full bg-rose-400 px-8 py-3 text-center font-medium text-white transition-colors "
                             >
                                 Get Directions
@@ -296,8 +296,9 @@ const ContactNew = () => {
 
                                 <div className="flex items-start text-left gap-2">
                                     <MapPin className="h-5 w-5 flex-shrink-0 text-rose-400" />
-
-                                    Pharmacentre Pharmacy,149 Edgware Rd, Tyburnia, London W2 2HU
+                                    <Link href="https://www.google.com/maps/dir//Pharmacentre+149+Edgware+Rd+Tyburnia,+London+W2+2HU+United+Kingdom/@51.5173113,-0.1667256,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x48761ab507196af5:0xe5cfb58af2aabf40!2m2!1d-0.1666838!2d51.5173291?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D" className="hover:text-rose-400">
+                                        Pharmacentre Pharmacy,149 Edgware Rd, Tyburnia, London W2 2HU
+                                    </Link>
 
                                 </div>
                             </div>
