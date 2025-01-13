@@ -128,111 +128,192 @@
 //     );
 // }
 
-'use client'
+// 'use client'
 
-import { Phone, Mail, MapPin } from 'lucide-react'
+// import { Phone, Mail, MapPin } from 'lucide-react'
+// import Link from 'next/link'
+
+// export default function LocationSection() {
+//     return (<>
+
+//         <div className="relative h-[80dvh] w-full">
+//             {/* Map Container */}
+//             <div >
+//                 <div className="absolute inset-0">
+//                     <iframe
+//                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19862.214288866795!2d-0.166726!3d51.517311!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ab507196af5%3A0xe5cfb58af2aabf40!2sPharmacentre!5e0!3m2!1sen!2sus!4v1736402860884!5m2!1sen!2sus"
+//                         width="100%"
+//                         height="100%"
+//                         style={{ border: 0 }}
+//                         allowFullScreen
+//                         loading="lazy"
+//                         referrerPolicy="no-referrer-when-downgrade"
+//                         title="Panacea Health & Beauty Clinic Location"
+//                         className="h-full w-full"
+//                     />
+//                     {/* Overlay to make cards more readable */}
+//                     <div className="absolute inset-0 bg-black/5" />
+//                 </div>
+//             </div>
+
+//             {/* Cards Container - Using percentage-based positioning */}
+//             <div className="absolute inset-0">
+//                 <div className="relative mx-auto h-full max-w-[1800px]">
+//                     {/* Left Card - Positioned at 20% from left */}
+//                     <div className="absolute left-[5%] top-1/2 w-[400px] -translate-y-1/2 transform rounded-2xl bg-white p-8 shadow-xl lg:left-[20%]">
+//                         <div className="mb-6">
+//                             <h4 className="text-sm font-medium uppercase tracking-wider text-rose-300">
+//                                 Our Location
+//                             </h4>
+//                             <h2 className="mt-2 text-4xl font-bold text-gray-900">
+//                                 Visit the Best Salon in London Today!
+//                             </h2>
+//                         </div>
+//                         <Link
+//                             href="#directions"
+//                             className="inline-block rounded-full bg-gradient-to-b from-rose-200 to-rose-300 px-8 py-3 text-center font-medium text-white transition-colors hover:bg-orange-600"
+//                         >
+//                             Get Directions
+//                         </Link>
+//                     </div>
+
+//                     {/* Right Card - Positioned at 20% from right */}
+//                     <div className="absolute right-[20%] top-1/2 hidden w-[400px] -translate-y-1/2 transform rounded-2xl bg-gradient-to-r from-rose-100 to-rose-300 p-8 text-black shadow-xl lg:right-[10%] lg:block">
+//                         <h2 className="mb-8 text-4xl font-bold">Visit Us</h2>
+//                         <div className="mb-8 space-y-4">
+//                             <div className="flex items-center gap-3">
+//                                 <Phone className="h-5 w-5 text-rose-400" />
+//                                 <Link href="tel:02074313373" className="hover:text-rose-400">
+//                                     020 7431 3373
+//                                 </Link>
+//                             </div>
+
+//                             <div className="flex items-center gap-3">
+//                                 <Mail className="h-5 w-5 text-rose-400" />
+//                                 <Link href="mailto:bojangleshairsalons@gmail.com" className="hover:text-rose-400">
+//                                     bojangleshairsalons@gmail.com
+//                                 </Link>
+//                             </div>
+
+//                             <div className="flex items-start text-left gap-2">
+//                                 <MapPin className="h-5 w-5 flex-shrink-0 text-rose-400" />
+
+//                                 3, 158 Frognal, Finchley Rd, London NW3 5HH, United Kingdom
+
+//                             </div>
+//                         </div>
+
+//                         <Link
+//                             href="/book"
+//                             className="inline-block w-full rounded-full bg-rose-400 px-8 py-3 text-center font-medium text-white transition-colors"
+//                         >
+//                             Book Your Visit
+//                         </Link>
+//                     </div>
+//                 </div>
+//             </div>
+
+//             {/* Mobile Contact Bar */}
+//             <div className="fixed bottom-0 left-0 right-0 bg-black p-4 text-white lg:hidden">
+//                 <div className="flex items-center justify-between">
+//                     <Link
+//                         href="tel:02074313373"
+//                         className="flex items-center gap-2"
+//                     >
+//                         <Phone className="h-5 w-5 text-orange-500" />
+//                         <span>Call Us</span>
+//                     </Link>
+//                     <Link
+//                         href="/book"
+//                         className="rounded-full bg-orange-500 px-6 py-2 text-sm font-medium text-white"
+//                     >
+//                         Book Now
+//                     </Link>
+//                 </div>
+//             </div>
+//         </div>
+//     </>
+//     )
+// }
+
+import { Mail, MapPin, Phone } from 'lucide-react'
 import Link from 'next/link'
+import React from 'react'
 
-export default function LocationSection() {
-    return (<>
-
-        <div className="relative h-[80dvh] w-full">
-            {/* Map Container */}
-            <div >
-                <div className="absolute inset-0">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19862.214288866795!2d-0.166726!3d51.517311!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ab507196af5%3A0xe5cfb58af2aabf40!2sPharmacentre!5e0!3m2!1sen!2sus!4v1736402860884!5m2!1sen!2sus"
-                        width="100%"
-                        height="100%"
-                        style={{ border: 0 }}
-                        allowFullScreen
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                        title="Panacea Health & Beauty Clinic Location"
-                        className="h-full w-full"
-                    />
-                    {/* Overlay to make cards more readable */}
-                    <div className="absolute inset-0 bg-black/5" />
-                </div>
-            </div>
-
-            {/* Cards Container - Using percentage-based positioning */}
-            <div className="absolute inset-0">
-                <div className="relative mx-auto h-full max-w-[1800px]">
-                    {/* Left Card - Positioned at 20% from left */}
-                    <div className="absolute left-[5%] top-1/2 w-[400px] -translate-y-1/2 transform rounded-2xl bg-white p-8 shadow-xl lg:left-[20%]">
-                        <div className="mb-6">
-                            <h4 className="text-sm font-medium uppercase tracking-wider text-rose-300">
-                                Our Location
-                            </h4>
-                            <h2 className="mt-2 text-4xl font-bold text-gray-900">
-                                Visit the Best Salon in London Today!
-                            </h2>
-                        </div>
-                        <Link
-                            href="#directions"
-                            className="inline-block rounded-full bg-gradient-to-b from-rose-200 to-rose-300 px-8 py-3 text-center font-medium text-white transition-colors hover:bg-orange-600"
-                        >
-                            Get Directions
-                        </Link>
-                    </div>
-
-                    {/* Right Card - Positioned at 20% from right */}
-                    <div className="absolute right-[20%] top-1/2 hidden w-[400px] -translate-y-1/2 transform rounded-2xl bg-gradient-to-r from-rose-100 to-rose-300 p-8 text-black shadow-xl lg:right-[10%] lg:block">
-                        <h2 className="mb-8 text-4xl font-bold">Visit Us</h2>
-                        <div className="mb-8 space-y-4">
-                            <div className="flex items-center gap-3">
-                                <Phone className="h-5 w-5 text-rose-400" />
-                                <Link href="tel:02074313373" className="hover:text-rose-400">
-                                    020 7431 3373
-                                </Link>
+const ContactNew = () => {
+    return (
+        <>
+            <section>
+                <div>
+                    <div className="relative">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19862.214288866795!2d-0.166726!3d51.517311!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ab507196af5%3A0xe5cfb58af2aabf40!2sPharmacentre!5e0!3m2!1sen!2sus!4v1736402860884!5m2!1sen!2sus"
+                            width="100%"
+                            height="100%"
+                            style={{ border: 0 }}
+                            allowFullScreen
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            title="Panacea Health & Beauty Clinic Location"
+                            className="lg:w-[70dvw] md:w-[100dvw] sm:w-[100dvh] h-[80dvh]"
+                        />
+                        {/* Overlay to make cards more readable */}
+                        {/* Left Card - Positioned at 20% from left */}
+                        <div className="absolute md:left-[5%]  sm:left-0 top-1/2 lg:w-[500px] md:w-[300px] sm:w-[200px] -translate-y-1/2 transform rounded-2xl bg-white p-8 shadow-xl lg:-left-20">
+                            <div className="mb-6">
+                                <h4 className="text-sm font-medium uppercase tracking-wider text-rose-300">
+                                    Our Location
+                                </h4>
+                                <h2 className="mt-2 md:text-2xl lg:text-4xl  font-bold text-gray-900">
+                                    Visit the Aesthetic Clinic in London Today!
+                                </h2>
                             </div>
-
-                            <div className="flex items-center gap-3">
-                                <Mail className="h-5 w-5 text-rose-400" />
-                                <Link href="mailto:bojangleshairsalons@gmail.com" className="hover:text-rose-400">
-                                    bojangleshairsalons@gmail.com
-                                </Link>
-                            </div>
-
-                            <div className="flex items-start text-left gap-2">
-                                <MapPin className="h-5 w-5 flex-shrink-0 text-rose-400" />
-
-                                3, 158 Frognal, Finchley Rd, London NW3 5HH, United Kingdom
-
-                            </div>
+                            <Link
+                                href="#directions"
+                                className="inline-block rounded-full bg-gradient-to-b from-rose-200 to-rose-300 px-8 py-3 text-center font-medium text-white transition-colors hover:bg-orange-600"
+                            >
+                                Get Directions
+                            </Link>
                         </div>
 
-                        <Link
-                            href="/book"
-                            className="inline-block w-full rounded-full bg-rose-400 px-8 py-3 text-center font-medium text-white transition-colors"
-                        >
-                            Book Your Visit
-                        </Link>
+                        {/* Right Card - Positioned at 20% from right */}
+                        <div className="absolute right-[10%] top-1/2 hidden w-[400px] -translate-y-1/2 transform rounded-2xl bg-gradient-to-r from-rose-100 to-rose-300 p-8 text-black shadow-xl lg:-right-20 lg:block">
+                            <h2 className="mb-8 text-4xl font-bold">Visit Us</h2>
+                            <div className="mb-8 space-y-4">
+                                <div className="flex items-center gap-3">
+                                    <Phone className="h-5 w-5 text-rose-400" />
+                                    <Link href="tel:07388869697" className="hover:text-rose-400">
+                                        07388869697                                    </Link>
+                                </div>
+
+                                <div className="flex items-center gap-3">
+                                    <Mail className="h-5 w-5 text-rose-400" />
+                                    <Link href="mailto:info@panacea-clinic.co.uk" className="hover:text-rose-400">
+                                        info@panacea-clinic.co.uk
+                                    </Link>
+                                </div>
+
+                                <div className="flex items-start text-left gap-2">
+                                    <MapPin className="h-5 w-5 flex-shrink-0 text-rose-400" />
+
+                                    Pharmacentre Pharmacy,149 Edgware Rd, Tyburnia, London W2 2HU
+
+                                </div>
+                            </div>
+
+                            <Link
+                                href="/book"
+                                className="inline-block w-full rounded-full bg-rose-400 px-8 py-3 text-center font-medium text-white transition-colors"
+                            >
+                                Book Your Visit
+                            </Link>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-
-            {/* Mobile Contact Bar */}
-            <div className="fixed bottom-0 left-0 right-0 bg-black p-4 text-white lg:hidden">
-                <div className="flex items-center justify-between">
-                    <Link
-                        href="tel:02074313373"
-                        className="flex items-center gap-2"
-                    >
-                        <Phone className="h-5 w-5 text-orange-500" />
-                        <span>Call Us</span>
-                    </Link>
-                    <Link
-                        href="/book"
-                        className="rounded-full bg-orange-500 px-6 py-2 text-sm font-medium text-white"
-                    >
-                        Book Now
-                    </Link>
-                </div>
-            </div>
-        </div>
-    </>
+            </section>       </>
     )
 }
 
+
+export default ContactNew

@@ -27,7 +27,7 @@ const Whyus = () => {
     return (
         <>
             <section className="bg-white py-16 w-full ">
-                <div className="container mx-auto px-4 max-w-7xl md:max-w-6xl">
+                <div className="container mx-auto px-4 max-w-7xl ">
                     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                         {features.map((feature, index) => (
                             <div
@@ -46,7 +46,7 @@ const Whyus = () => {
                                 </h3>
 
                                 {/* Description */}
-                                <p className="text-gray-600">
+                                <p className="">
                                     {feature.description}
                                 </p>
                             </div>

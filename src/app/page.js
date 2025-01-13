@@ -1,16 +1,14 @@
 import ImageComparison from '@/components/Compare'
 import ContactSection from '@/components/Contact'
-import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
 import InstagramFeed from '@/components/InstagramPost'
 import Navbar from '@/components/Navbar'
 import TreatmentsSection from '@/components/NewServices'
 import Reviews from '@/components/Reviews'
-import Services from '@/components/Services'
 import Testimonial from '@/components/Testimonial'
 import { Button } from '@/components/ui/button'
 import Whyus from '@/components/Whyus'
-import { ArrowUpRight, Check } from 'lucide-react'
+import { Check } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -126,7 +124,7 @@ const page = () => {
       <section className='py-20 mt-20 text-center'>
         <InstagramFeed />
       </section>
-      <section className='flex flex-col text-center items-center justify-center py-10 mt-20 gap-10'>
+      <section className='flex flex-col text-center items-center justify-center py-5 gap-5'>
         <h2>
           Google Reviews
         </h2>
@@ -134,8 +132,9 @@ const page = () => {
       </section>
       <section className='flex flex-col text-center items-center justify-center py-10 mt-20 gap-10'>
         <ContactSection />
+        {/* <ContactNew /> */}
       </section>
-      <section className='mt-20 flex flex-col text-center gap-10'>
+      <section className='mt-20 flex flex-col text-center gap-5'>
         <h2 className='text-center'> Why Panacea</h2>
         <Whyus />
       </section>

@@ -91,9 +91,8 @@ const InstagramFeed = () => {
                 {duplicatedPosts.map((post, index) => (
                     <div
                         key={`${post.id}-${index}`}
-                        className="flex-shrink-0 w-[300px] md:w-[250px] mx-2 transition-transform duration-300 ease-out"
-                    >
-                        <div className="relative rounded-xl overflow-hidden bg-white shadow-lg">
+                        className="flex-shrink-0 w-[300px] md:w-[250px] mx-2 transform transition-transform duration-300 hover:scale-105"                    >
+                        <div className="relative rounded-xl overflow-hidden bg-white shadow-lg hover:shadow-xl transition-all duration-300">
                             {/* Instagram Post Header */}
                             <div className="p-2 flex items-center space-x-2">
                                 <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 p-[2px]">
