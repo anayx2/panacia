@@ -70,7 +70,7 @@ const page = () => {
           </Link>
         </div>
       </section>
-      <section className='flex flex-col text-center items-center justify-center bg-rose-50 pt-20 gap-10'>
+      <section className='flex flex-col text-center items-center justify-center bg-rose-50 py-20 gap-10'>
         <h2>
           Discover Our Comprehensive Range <br />of  Aesthetic Treatments
         </h2>
@@ -92,7 +92,7 @@ const page = () => {
         </div>
       </section> */}
 
-      <section className='flex flex-col text-center items-center justify-center py-10 mt-20 gap-20'>
+      <section className='flex flex-col text-center items-center justify-center py-10 gap-20'>
         <h2>
           Our Treatments in Action
         </h2>
@@ -127,7 +127,7 @@ const page = () => {
       <section className='py-20 mt-20 text-center'>
         <InstagramFeed />
       </section>
-      <section className='flex flex-col text-center items-center justify-center py-5 gap-5'>
+      <section className='flex flex-col text-center items-center justify-center py-5 '>
         <h2>
           Google Reviews
         </h2>
@@ -136,7 +136,7 @@ const page = () => {
       <section className='flex flex-col text-center items-center justify-center py-10 mt-20 gap-10'>
         <ContactSection />
         {/* <ContactNew /> */}
-      </section>  
+      </section>
       <section className='mt-20'>
       </section>
       {/* <Footer /> */}

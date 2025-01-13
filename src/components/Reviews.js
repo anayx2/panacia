@@ -9,6 +9,8 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
+
 
 export default function Reviews() {
     const testimonials = [
@@ -51,6 +53,11 @@ export default function Reviews() {
                     align: "start",
                     loop: true,
                 }}
+                plugins={[
+                    Autoplay({
+                        delay: 2000,
+                    }),
+                ]}
                 className="lg:max-w-7xl md:max-w-6xl sm:max-w-auto"
             >
                 <CarouselContent className="-ml-2 md:-ml-4">

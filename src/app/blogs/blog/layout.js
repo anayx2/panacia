@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function BlogLayout({ children }) {
     return (
         <>
-            <section className='relative h-[30dvh] w-full mb-10'>
+            <section className='relative h-[60dvh] w-full mb-10'>
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{

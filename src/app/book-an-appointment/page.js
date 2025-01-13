@@ -126,7 +126,7 @@ const page = () => {
                 </div>
 
             </section>
-            <section className='flex flex-col text-center items-center justify-center py-5 gap-10'>
+            <section className='flex flex-col text-center items-center justify-center py-10 mt-20 gap-10'>
                 <ContactSection />
             </section>
         </>)
