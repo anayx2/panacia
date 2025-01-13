@@ -25,7 +25,7 @@ const about = () => {
             </section>
 
 
-            <section className="container mx-auto px-4 py-16 lg:min-h-[80vh] lg:py-24 max-w-[90%]">
+            <section className="container mx-auto px-4 py-10 lg:min-h-[80vh] lg:py-20 max-w-[90%]">
                 <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
                     {/* Content */}
                     <div className="space-y-6">
@@ -33,9 +33,10 @@ const about = () => {
                             Empowering Your Health with Expert Care                        </h1>
 
                         <p className="">
-                            At Panacea Clinic, we combine cutting-edge treatments and compassionate care to provide personalized solutions for your well-being. Join us on your journey to better health with our trusted team of professionals.
+                            Welcome to Panacea Clinic, where personalized care meets cutting-edge healthcare solutions. Our mission is to empower individuals with exceptional medical services designed to nurture health and well-being. With a team of highly skilled doctors and healthcare specialists, we are committed to delivering tailored care for every patient.
+                            By combining the latest advancements in medical technology with a compassionate approach, we ensure the best possible outcomes. At Panacea Clinic, we believe every patient’s journey to health is unique, and we are here to guide you every step of the way. Choose Panacea Clinic for expertise, trust, and unparalleled care that prioritizes your well-being. Together, let’s build a healthier, happier future.
                         </p>
-                        <Link href="/about-us">
+                        <Link href="/book-an-appointment">
                             <Button
                                 variant="default" className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black">
                                 Book Your Consultation Today
@@ -69,13 +70,9 @@ const about = () => {
                             <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
                                 <div className="flex flex-col justify-center space-y-4">
                                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                                        Your Journey Starts With Our Personalised Consultations
-                                    </h2>
+                                        Comprehensive Care for All                                    </h2>
                                     <p className="text-lg leading-relaxed text-muted-foreground">
-                                        At Panacea Health & Beauty Clinic, we believe that every individual is unique, and so should be their aesthetic
-                                        journey. We take the time to understand your personal goals, crafting bespoke treatment plans
-                                        that enhance your natural features, not alter them. Your satisfaction and comfort are our top
-                                        priorities from start to finish.
+                                        Panacea Clinic delivers personalized healthcare services designed to meet individual needs. From preventive care to advanced treatments, we ensure a patient-centered approach. Our holistic methods focus on physical, mental, and emotional well-being, offering complete solutions under one roof. Trust us to prioritize your health with compassion and unmatched expertise.
                                     </p>
                                 </div>
                                 <div className="relative h-[300px] overflow-hidden rounded-lg lg:h-[400px]">
@@ -105,13 +102,9 @@ const about = () => {
                                 </div>
                                 <div className="flex flex-col justify-center space-y-4 lg:order-2">
                                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                                        Advanced Techniques and Expertise
-                                    </h2>
+                                        State-of-the-Art Facilities                                    </h2>
                                     <p className="text-lg leading-relaxed text-muted-foreground">
-                                        Safety is at the core of everything we do. We use only the highest quality, FDA-approved products
-                                        and adhere to strict safety protocols to ensure that every treatment is performed with the utmost
-                                        care and professionalism. Our commitment to excellence means you can trust us to deliver
-                                        consistent, beautiful outcomes every time and use the latest technology in the market.
+                                        Experience world-class healthcare at Panacea Clinic, equipped with cutting-edge medical technologies. Our advanced tools enable precise diagnostics and effective treatments. We consistently update our facilities to align with the latest healthcare innovations, ensuring you receive the highest standard of care. Modern technology meets compassionate service for optimal patient outcomes.
                                     </p>
                                 </div>
                             </div>
@@ -122,15 +115,9 @@ const about = () => {
                             <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
                                 <div className="flex flex-col justify-center space-y-4">
                                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                                        A Gentle, Holistic Approach
-                                    </h2>
+                                        Experienced Medical Professionals                                    </h2>
                                     <p className="text-lg leading-relaxed text-muted-foreground">
-                                        Aesthetic treatments aren't just about visible results; they're about how you feel before,
-                                        during, and after the process. Our clinic is more than a treatment space. It's a sanctuary
-                                        where you can unwind and trust our experienced team. We follow a gentle, holistic approach to
-                                        ensure your comfort and well-being at every stage. From your initial consultation to the final
-                                        outcome, we are committed to delivering exceptional care and results that leave you feeling
-                                        confident and at ease.
+                                        Our team of skilled doctors and specialists brings unparalleled expertise to your care. With years of experience and dedication, they provide accurate diagnoses and effective treatments tailored to your needs. At Panacea Clinic, you’ll benefit from a collaborative approach that ensures the best outcomes for your overall health and wellness.
                                     </p>
                                 </div>
                                 <div className="relative h-[300px] overflow-hidden rounded-lg lg:h-[400px]">
@@ -163,7 +150,7 @@ const about = () => {
                         </div>
 
                         {/* Second Image */}
-                        <div className="absolute bottom-0 right-0 aspect-[4/3] w-2/3 overflow-hidden rounded-3xl">
+                        <div className="absolute bottom-10 right-0 aspect-[4/3] w-2/3 overflow-hidden rounded-3xl">
                             <Image
                                 src="/aboutcover.jpg"
                                 alt="TMAN Clinic signage"
@@ -176,21 +163,20 @@ const about = () => {
                     {/* Content */}
                     <div className="space-y-6">
                         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                            Our medical specialists
-                        </h2>
+                            Commitment to Patient Satisfaction                        </h2>
 
                         <p className="text-lg ">
-                            Our attentively selected medical excellence team binds together decades of transformative
-                            specialized care and represents the cornerstone of our philosophy and discipline behind designing
-                            each program and procedure with your distinctive goals at its center.
+                            Patient satisfaction drives everything we do at Panacea Clinic. We prioritize building trust by delivering compassionate, high-quality care. Our goal is to exceed expectations, creating a positive healthcare experience for every individual. From your first visit to follow-ups, we are here to support your journey toward better health and well-being.
                         </p>
 
-                        <Button
-                            variant="default"
-                            className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black"
-                        >
-                            READ MORE →
-                        </Button>
+                        <Link href={'/services'}>
+                            <Button
+                                variant="default"
+                                className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black"
+                            >
+                                READ MORE →
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </section>

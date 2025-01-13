@@ -8,27 +8,51 @@ import React from 'react'
 
 const faqItems = [
     {
-        question: "Which cheek filler lasts the longest?",
-        answer: "Premium hyaluronic acid fillers used in our clinic typically last between 12-18 months, with some varieties lasting up to 24 months depending on the specific product and individual factors."
+        question: "What services do you offer?",
+        answer: "We provide a range of aesthetic treatments including mesotherapy, dermal fillers, anti-wrinkle injections, and more."
     },
     {
-        question: "How long do cheek fillers last?",
-        answer: "Cheek fillers generally last between 6-12 months, though this can vary depending on the type of filler used, the amount injected, and individual factors such as metabolism and lifestyle."
+        question: "Are your treatments safe?",
+        answer: "Yes, all our treatments are performed by highly trained professionals using safe, advanced techniques."
     },
     {
-        question: "How long do cheek fillers take to settle?",
-        answer: "Initial swelling typically subsides within 1-2 weeks, with final results visible after 2-4 weeks when the filler has fully integrated with your tissue."
+        question: "How can I book an appointment?",
+        answer: "You can book online through our website or contact us directly via phone or email."
     },
     {
-        question: "What does cheek filler do?",
-        answer: "Cheek fillers restore volume, enhance facial contours, lift sagging skin, and create a more youthful appearance by replacing lost volume and supporting facial structure."
+        question: "Do you offer consultations?",
+        answer: "Yes, we offer personalized consultations to understand your needs and recommend suitable treatments."
     },
     {
-        question: "How much are cheek fillers?",
-        answer: "The cost varies depending on the amount of filler needed and the specific product used. We provide detailed pricing during your consultation."
+        question: "What are the benefits of mesotherapy?",
+        answer: "Mesotherapy rejuvenates and tightens skin, improves hair quality, and helps with fat removal."
+    },
+    {
+        question: "Is there any downtime after treatments?",
+        answer: "Most treatments have minimal to no downtime, though some may cause mild redness temporarily."
     },
 
+];
+
+const faq2 = [
+    {
+        question: "How soon can I see results?",
+        answer: "Results vary by treatment, but many clients see improvements immediately or within a few days."
+    },
+    {
+        question: "Are your treatments suitable for all skin types?",
+        answer: "Yes, we customize treatments to suit different skin types and individual needs."
+    },
+    {
+        question: "How experienced are your staff?",
+        answer: "Our team consists of highly skilled professionals with years of experience in aesthetic treatments."
+    },
+    {
+        question: "What makes Panacea Clinic different from others?",
+        answer: "We combine cutting-edge treatments with personalized care, ensuring the best results and patient satisfaction."
+    }
 ]
+
 
 const page = () => {
     return (
@@ -42,7 +66,7 @@ const page = () => {
                 />
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative z-10 flex h-full items-center justify-center px-4 text-white">
-                    <h2>Book an Appointment</h2>
+                    <h2>Frequently Asked Questions </h2>
                 </div>
             </section>
             <section className="max-w-7xl mx-auto px-4 py-16">
@@ -53,24 +77,22 @@ const page = () => {
                             Asked Questions
                         </span>
                         <h2 className="text-4xl font-bold mb-6">
-                            HAVE ANY QUESTIONS ON MINDS! TAKE A LOOK COMPANY FAQS
-                        </h2>
+                            Got Questions on Your Mind? Check Out Our Company FAQs                        </h2>
 
                     </div>
                     <div>
                         <p className="text-gray-600">
-                            Sed perspiciatis unde omnis natus error voluptatem accusantium doloremque laudantium totam aperiam eaque ipsa quillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                        </p>
+                            Enhance your appearance with our professional and effective aesthetic treatments at Panacea Health & Beauty.                        </p>
                     </div>
                     {/* Right Column - FAQ Accordion */}
                 </div>
-                <div className="flex gap-10 mt-10">
+                <div className="flex gap-10 mt-10 lg:flex-row md:flex-row flex-col">
                     <Accordion type="single" collapsible className="w-full space-y-4">
                         {faqItems.map((item, index) => (
                             <AccordionItem
                                 key={index}
                                 value={`item-${index}`}
-                                className="border rounded-lg bg-rose-50 hover:bg-gray-100 transition-colors"
+                                className="border rounded-lg bg-rose-300 hover:bg-gradient-to-r from-rose-100 to-rose-300 transition-colors"
                             >
                                 <AccordionTrigger className="hover:no-underline px-6 py-4 [&[data-state=open]>div>svg]:rotate-180">
                                     <div className="flex items-center justify-between w-full">
@@ -85,11 +107,11 @@ const page = () => {
                         ))}
                     </Accordion>
                     <Accordion type="single" collapsible className="w-full space-y-4">
-                        {faqItems.map((item, index) => (
+                        {faq2.map((item, index) => (
                             <AccordionItem
                                 key={index}
                                 value={`item-${index}`}
-                                className="border rounded-lg bg-rose-50 hover:bg-gray-100 transition-colors"
+                                className="border rounded-lg bg-rose-300 hover:bg-gradient-to-r from-rose-100 to-rose-300 transition-colors"
                             >
                                 <AccordionTrigger className="hover:no-underline px-6 py-4 [&[data-state=open]>div>svg]:rotate-180">
                                     <div className="flex items-center justify-between w-full">

@@ -1,24 +1,26 @@
+
 import React from 'react'
 import { Award, Fingerprint, Heart, ScanFace } from 'lucide-react'
+import Image from 'next/image'
 
 const features = [
     {
-        icon: Award,
+        icon: '/icons/ExpertiseandExperience.svg',
         title: "Expertise and Experience",
         description: "Our team consists of highly qualified professionals with extensive experience in delivering effective and personalized treatments."
     },
     {
-        icon: Fingerprint,
+        icon: '/icons/TailoredSolutions.svg',
         title: "Tailored Solutions",
         description: "We offer treatments customized to your unique needs, ensuring optimal results for your health and aesthetic goals."
     },
     {
-        icon: Heart,
+        icon: '/icons/ArtTechnology.svg',
         title: "State-of-the-Art Technology",
         description: "We use advanced, cutting-edge equipment to deliver the best results in the most comfortable and efficient way possible."
     },
     {
-        icon: ScanFace,
+        icon: '/icons/CommitmenttoCare.svg',
         title: "Commitment to Care",
         description: "We prioritize your well-being with a compassionate, patient-centered approach, ensuring you feel supported at every stage of your journey."
     }
@@ -36,7 +38,9 @@ const Whyus = () => {
                             >
                                 {/* Icon */}
                                 <div className="mb-6 rounded-full bg-rose-50 p-4">
-                                    <feature.icon className="h-8 w-8 text-rose-400" />
+                                    {/* <feature.icon className="h-8 w-8 text-rose-400" /> */}
+                                    <Image src={feature.icon} alt="icon" width={50} height={50} />
+
                                 </div>
 
                                 {/* Title */}

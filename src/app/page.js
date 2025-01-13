@@ -70,7 +70,17 @@ const page = () => {
           </Link>
         </div>
       </section>
-
+      <section className='flex flex-col text-center items-center justify-center bg-rose-50 pt-20 gap-10'>
+        <h2>
+          Discover Our Comprehensive Range <br />of  Aesthetic Treatments
+        </h2>
+        {/* <Services /> */}
+        <TreatmentsSection />
+      </section>
+      <section className='mt-20 flex flex-col text-center gap-5'>
+        <h2 className='text-center'> Why Panacea</h2>
+        <Whyus />
+      </section>
       {/* <section className='flex w-full justify-center items-center'>
         <div className='w-[90%] bg-green-50 flex items-center rounded-2xl justify-evenly py-12'>
           <h2 className='text-3xl'>
@@ -81,17 +91,10 @@ const page = () => {
           </Button>
         </div>
       </section> */}
-      <section className='flex flex-col text-center items-center justify-center py-10 bg-rose-50 pt-20 gap-20'>
-        <h2>
-          Discover Our Comprehensive Range <br />of  Aesthetic Treatments
-        </h2>
-        {/* <Services /> */}
-        <TreatmentsSection />
-      </section>
+
       <section className='flex flex-col text-center items-center justify-center py-10 mt-20 gap-20'>
         <h2>
-          Real Stories, Real Results…
-
+          Our Treatments in Action
         </h2>
         <div className='w-[90%]'>
           <Testimonial />
@@ -133,12 +136,7 @@ const page = () => {
       <section className='flex flex-col text-center items-center justify-center py-10 mt-20 gap-10'>
         <ContactSection />
         {/* <ContactNew /> */}
-      </section>
-      <section className='mt-20 flex flex-col text-center gap-5'>
-        <h2 className='text-center'> Why Panacea</h2>
-        <Whyus />
-      </section>
-
+      </section>  
       <section className='mt-20'>
       </section>
       {/* <Footer /> */}

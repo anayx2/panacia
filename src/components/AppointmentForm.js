@@ -47,7 +47,11 @@ export default function MultiStepBooking() {
         time: '',
     });
     const [errors, setErrors] = useState({});
-
+    const formatDate = (date) => {
+        if (!date) return null;
+        const { year, month, day } = date;
+        return `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+    };
     const validatePersonalInfo = () => {
         const newErrors = {};
         if (formData.firstName.length < 2)
@@ -100,11 +104,15 @@ export default function MultiStepBooking() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (validateAppointment()) {
+            const formattedData = {
+                ...formData,
+                date: formatDate(formData.date),
+            };
             try {
                 const response = await fetch('/api/appointments', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(formData),
+                    body: JSON.stringify(formattedData),
                 });
                 if (response.ok) {
                     alert('Appointment booked successfully!');
@@ -120,11 +128,11 @@ export default function MultiStepBooking() {
 
 
     return (
-        <section className="container mx-auto px-4 py-16">
-            <div className="mx-auto max-w-xl">
+        <section className="py-10 ">
+            <div className="mx-auto max-w-xl border border-rose-300 p-5 rounded-xl bg-white">
                 {/* Step Indicator */}
                 <div className="mb-8">
-                    <div className="relative mx-auto mb-4 flex max-w-[240px] justify-between">
+                    <div className="relative mx-auto mb-4 flex max-w-[240px] justify-between ">
                         <div
                             className={`h-8 w-8 rounded-full ${step >= 1 ? 'bg-rose-400' : 'bg-rose-200'
                                 } flex items-center justify-center text-white`}
@@ -148,173 +156,78 @@ export default function MultiStepBooking() {
                 {step === 1 ? (
                     <form onSubmit={handleNextStep} className="space-y-6">
                         <div>
-                            <label
-                                htmlFor="firstName"
-                                className="block text-sm font-medium text-gray-700"
-                            >
-                                First Name
-                            </label>
-                            <Input
-                                id="firstName"
-                                name="firstName"
-                                value={formData.firstName}
-                                onChange={handleInputChange}
-                                placeholder="Enter your first name"
-                            />
-                            {errors.firstName && (
-                                <p className="mt-1 text-sm text-red-600">{errors.firstName}</p>
-                            )}
+                            <label className="block text-sm font-medium text-gray-700">First Name</label>
+                            <Input name="firstName" value={formData.firstName} onChange={handleInputChange} placeholder="Enter your first name" />
+                            {errors.firstName && <p className="mt-1 text-sm text-red-600">{errors.firstName}</p>}
                         </div>
 
                         <div>
-                            <label
-                                htmlFor="lastName"
-                                className="block text-sm font-medium text-gray-700"
-                            >
-                                Last Name
-                            </label>
-                            <Input
-                                id="lastName"
-                                name="lastName"
-                                value={formData.lastName}
-                                onChange={handleInputChange}
-                                placeholder="Enter your last name"
-                            />
-                            {errors.lastName && (
-                                <p className="mt-1 text-sm text-red-600">{errors.lastName}</p>
-                            )}
+                            <label className="block text-sm font-medium text-gray-700">Last Name</label>
+                            <Input name="lastName" value={formData.lastName} onChange={handleInputChange} placeholder="Enter your last name" />
+                            {errors.lastName && <p className="mt-1 text-sm text-red-600">{errors.lastName}</p>}
                         </div>
 
                         <div>
-                            <label
-                                htmlFor="email"
-                                className="block text-sm font-medium text-gray-700"
-                            >
-                                Email
-                            </label>
-                            <Input
-                                id="email"
-                                name="email"
-                                type="email"
-                                value={formData.email}
-                                onChange={handleInputChange}
-                                placeholder="Enter your email"
-                            />
-                            {errors.email && (
-                                <p className="mt-1 text-sm text-red-600">{errors.email}</p>
-                            )}
+                            <label className="block text-sm font-medium text-gray-700">Email</label>
+                            <Input name="email" type="email" value={formData.email} onChange={handleInputChange} placeholder="Enter your email" />
+                            {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
                         </div>
 
                         <div>
-                            <label
-                                htmlFor="mobile"
-                                className="block text-sm font-medium text-gray-700"
-                            >
-                                Mobile Number
-                            </label>
-                            <Input
-                                id="mobile"
-                                name="mobile"
-                                type="tel"
-                                value={formData.mobile}
-                                onChange={handleInputChange}
-                                placeholder="Enter your mobile number"
-                            />
-                            {errors.mobile && (
-                                <p className="mt-1 text-sm text-red-600">{errors.mobile}</p>
-                            )}
+                            <label className="block text-sm font-medium text-gray-700">Mobile Number</label>
+                            <Input name="mobile" type="tel" value={formData.mobile} onChange={handleInputChange} placeholder="Enter your mobile number" />
+                            {errors.mobile && <p className="mt-1 text-sm text-red-600">{errors.mobile}</p>}
                         </div>
+
                         <div>
-                            <label
-                                htmlFor="service"
-                                className="block text-sm font-medium text-gray-700"
-                            >
-                                Select Service
-                            </label>
+                            <label className="block text-sm font-medium text-gray-700">Select Service</label>
                             <Select onValueChange={handleServiceChange} value={formData.service}>
                                 <SelectTrigger>
                                     <SelectValue placeholder="Choose a service" />
                                 </SelectTrigger>
                                 <SelectContent>
                                     {services.map((service) => (
-                                        <SelectItem key={service} value={service}>
-                                            {service}
-                                        </SelectItem>
+                                        <SelectItem key={service} value={service}>{service}</SelectItem>
                                     ))}
                                 </SelectContent>
                             </Select>
-                            {errors.service && (
-                                <p className="mt-1 text-sm text-red-600">{errors.service}</p>
-                            )}
+                            {errors.service && <p className="mt-1 text-sm text-red-600">{errors.service}</p>}
                         </div>
-                        <Button
-                            type="submit"
-                            className="w-full mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black"
-                        >
+
+                        <Button type="submit" className="w-full mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-500 hover:text-white">
                             Next Step
                         </Button>
                     </form>
                 ) : (
-                    <form
-                        onSubmit={handleSubmit}
-                        className="space-y-6 flex flex-col justify-center"
-                    >
-                        <div className="flex justify-between border border-rose-200 p-5 rounded-lg">
-                            <div className="flex justify-center text center flex-col">
-                                <label className="block text-sm font-medium text-gray-700">
-                                    Select Date
-                                </label>
-                                <div className="flex jusitfy-center">
-                                    <Calendar
-                                        aria-label="Appointment Date"
-                                        selected={formData.date}
-                                        onChange={handleDateChange}
-                                        minValue={parseDate(new Date().toISOString().split('T')[0])}
-                                    />
-                                </div>
-                                {errors.date && (
-                                    <p className="mt-1 text-sm text-red-600">{errors.date}</p>
-                                )}
+                    <form onSubmit={handleSubmit} className="space-y-6">
+                        <div className="flex gap-6">
+                            <div className="w-1/2">
+                                <label className="block text-sm font-medium text-gray-700">Select Date</label>
+                                <Calendar aria-label="Appointment Date" selected={formData.date} onChange={handleDateChange} minValue={parseDate(new Date().toISOString().split('T')[0])} />
+                                {errors.date && <p className="mt-1 text-sm text-red-600">{errors.date}</p>}
                             </div>
 
-                            <div>
-                                <label
-                                    htmlFor="time"
-                                    className="block text-sm font-medium text-gray-700"
-                                >
-                                    Select Time
-                                </label>
+                            <div className="w-1/2">
+                                <label className="block text-sm font-medium text-gray-700">Select Time</label>
                                 <Select onValueChange={handleTimeChange} value={formData.time}>
                                     <SelectTrigger>
                                         <SelectValue placeholder="Select a time slot" />
                                     </SelectTrigger>
                                     <SelectContent>
                                         {timeSlots.map((time) => (
-                                            <SelectItem key={time} value={time}>
-                                                {time}
-                                            </SelectItem>
+                                            <SelectItem key={time} value={time}>{time}</SelectItem>
                                         ))}
                                     </SelectContent>
                                 </Select>
-                                {errors.time && (
-                                    <p className="mt-1 text-sm text-red-600">{errors.time}</p>
-                                )}
+                                {errors.time && <p className="mt-1 text-sm text-red-600">{errors.time}</p>}
                             </div>
                         </div>
 
-                        <div className="flex item-center gap-4">
-                            <Button
-                                type="button"
-                                variant="outline"
-                                className="w-full py-6 text-lg"
-                                onClick={() => setStep(1)}
-                            >
+                        <div className="flex gap-4">
+                            <Button type="button" variant="outline" className="py-6 w-full" onClick={() => setStep(1)}>
                                 Back
                             </Button>
-                            <Button
-                                type="submit"
-                                className="w-full bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black"
-                            >
+                            <Button type="submit" className="w-full bg-rose-400 px-8 py-6 text-base hover:bg-rose-500 hover:text-white">
                                 Book Appointment
                             </Button>
                         </div>

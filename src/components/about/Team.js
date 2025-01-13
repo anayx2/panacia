@@ -92,10 +92,10 @@ export default function TeamSlider() {
                                             </div>
 
                                             {/* Overlay with member info */}
-                                            <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/70 to-transparent p-4 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                                <h3 className="text-lg font-semibold">{member.name}</h3>
+                                            <div className="rounded-xl absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/70 to-transparent p-4 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                                {/* <h3 className="text-lg font-semibold">{member.name}</h3>
                                                 <p className="text-sm text-gray-200">{member.role}</p>
-                                                <p className="text-xs text-gray-300">{member.qualification}</p>
+                                                <p className="text-xs text-gray-300">{member.qualification}</p> */}
                                             </div>
                                         </div>
                                     </CardContent>

@@ -60,15 +60,15 @@ const Footer = () => {
 
                         {/* Quick Links */}
                         <div className={`transition-all duration-500 delay-200 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                            <h3 className="mb-6 text-2xl font-semibold">Quick Links</h3>
+                            <h3 className="mb-6 text-2xl font-semibold">QUICK LINKS</h3>
                             <ul className="space-y-4">
                                 {[
-                                    { name: 'ABOUT US', href: '/about-us' },
-                                    { name: 'OUR SERVICES', href: '/services' },
-                                    { name: 'BLOGS', href: '/blogs' },
-                                    { name: 'FAQ', href: '/faq' },
-                                    { name: 'GALLERY', href: '/gallery' },
-                                    { name: 'CONTACT US', href: '/contact-us' },
+                                    { name: 'About Us', href: '/about-us' },
+                                    { name: 'Our Services', href: '/services' },
+                                    { name: 'Blogs', href: '/blogs' },
+                                    { name: 'Faq', href: '/faq' },
+                                    { name: 'Gallery', href: '/gallery' },
+                                    { name: 'Contact Us', href: '/contact-us' },
                                 ].map((item, index) => (
                                     <li
                                         key={item.name}
@@ -92,8 +92,8 @@ const Footer = () => {
 
                         {/* Services */}
                         <div className={`transition-all duration-500 delay-300 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                            <h3 className="mb-6 text-2xl font-semibold">Services</h3>
-                            <ul className="space-y-4 uppercase">
+                            <h3 className="mb-6 text-2xl font-semibold">SERVICES</h3>
+                            <ul className="space-y-4 ">
                                 {[
                                     { name: 'Anti-Wrinkle Treatments', href: '#' },
                                     { name: 'Mesotherapy', href: '#' },
@@ -128,7 +128,7 @@ const Footer = () => {
 
                         {/* Map */}
                         <div className={`transition-all duration-500 delay-400 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                            <h3 className="mb-6 text-2xl font-semibold">Gallery</h3>
+                            <h3 className="mb-6 text-2xl font-semibold">GALLERY</h3>
                             <ImageGallery />
                         </div>
                     </div>

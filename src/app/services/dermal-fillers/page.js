@@ -36,7 +36,7 @@ const faqData = [
 const page = () => {
     return (
         <>
-            <section className='relative h-[100dvh] w-full'>
+            <section className='relative h-[60dvh] w-full'>
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{

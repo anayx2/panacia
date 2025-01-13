@@ -239,6 +239,7 @@
 import { Mail, MapPin, Phone } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
+import { Button } from './ui/button'
 
 const ContactNew = () => {
     return (
@@ -270,7 +271,7 @@ const ContactNew = () => {
                             </div>
                             <Link
                                 href="#directions"
-                                className="inline-block rounded-full bg-gradient-to-b from-rose-200 to-rose-300 px-8 py-3 text-center font-medium text-white transition-colors hover:bg-orange-600"
+                                className="inline-block rounded-full bg-rose-400 px-8 py-3 text-center font-medium text-white transition-colors "
                             >
                                 Get Directions
                             </Link>
@@ -302,7 +303,7 @@ const ContactNew = () => {
                             </div>
 
                             <Link
-                                href="/book"
+                                href="/book-an-appointment"
                                 className="inline-block w-full rounded-full bg-rose-400 px-8 py-3 text-center font-medium text-white transition-colors"
                             >
                                 Book Your Visit
@@ -311,7 +312,7 @@ const ContactNew = () => {
 
                     </div>
                 </div>
-            </section>       </>
+            </section></>
     )
 }
 

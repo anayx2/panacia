@@ -86,6 +86,8 @@ export default function Reviews() {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
             </Carousel>
         </section>
     )

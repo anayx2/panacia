@@ -101,7 +101,7 @@ export default function BlogSection() {
             </div>
         </section>
         <section className="container mx-auto px-4 py-16 flex justify-center">
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-[90%]">
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-[95%]">
                 {blogs.map((blog) => (
                     <Link
                         key={blog.id}

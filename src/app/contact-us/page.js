@@ -12,16 +12,19 @@ const contacts = [
         icon: MapPin,
         title: "Location",
         details: ["Pharmacentre Pharmacy 149 Edgware Rd", " Tyburnia London W2 2HU"],
+        href: 'https://www.google.com/maps/dir//Pharmacentre+149+Edgware+Rd+Tyburnia,+London+W2+2HU+United+Kingdom/@51.5173113,-0.1667256,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x48761ab507196af5:0xe5cfb58af2aabf40!2m2!1d-0.1666838!2d51.5173291?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D'
     },
     {
         icon: Mail,
         title: "Email Us",
         details: ["info@panacea-clinic.co.uk"],
+        href: 'mailto:info@panacea-clinic.co.uk'
     },
     {
         icon: Phone,
         title: "Call Us",
         details: ["07388869697"],
+        href: 'tel:07388869697'
     },
 ]
 const page = () => {
@@ -56,27 +59,34 @@ const page = () => {
                 />
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative z-10 flex h-full items-center justify-center px-4 text-white">
-                    <h2>Contact Us</h2>
+                    <h2>Get in Touch with Us
+                    </h2>
                 </div>
             </section>
             <section className="py-12 md:py-16 flex justify-center">
                 <div className="container w-[90%]">
+                    <h4 className='text-center my-10'>
+                        We'd love to hear from you! Whether you have a question, want to book a consultation, or need more information about our services, our team is here to help.
+                    </h4>
                     <div className="grid gap-6 md:grid-cols-3">
                         {contacts.map((contact, index) => (
+
                             <Card key={index} className="border-none bg-gradient-to-r from-rose-100 to-rose-300">
-                                <CardContent className="flex flex-col items-center p-6 text-center">
-                                    <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-sm">
-                                        <contact.icon className="h-8 w-8 text-rose-00" />
-                                    </div>
-                                    <h3 className="mb-2 text-xl font-semibold text-gray-900">{contact.title}</h3>
-                                    <div className="space-y-1">
-                                        {contact.details.map((detail, idx) => (
-                                            <p key={idx} className="text-muted-foreground">
-                                                {detail}
-                                            </p>
-                                        ))}
-                                    </div>
-                                </CardContent>
+                                <Link href={contact.href}>
+                                    <CardContent className="flex flex-col items-center p-6 text-center">
+                                        <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-sm">
+                                            <contact.icon className="h-8 w-8 text-rose-400" />
+                                        </div>
+                                        <h3 className="mb-2 text-xl font-semibold text-gray-900">{contact.title}</h3>
+                                        <div className="space-y-1">
+                                            {contact.details.map((detail, idx) => (
+                                                <p key={idx} className="text-muted-foreground">
+                                                    {detail}
+                                                </p>
+                                            ))}
+                                        </div>
+                                    </CardContent>
+                                </Link>
                             </Card>
                         ))}
                     </div>
@@ -128,15 +138,17 @@ const page = () => {
                                     </div>
                                     <div className="w-full relative">
                                         <Input
-                                            name="website"
-                                            type="url"
-                                            placeholder="Website"
-                                            value={formData.website}
+                                            name="Phone"
+                                            type="number"
+                                            placeholder="Phone"
+                                            value={formData.phone}
                                             onChange={handleChange}
-                                            className="w-full bg-white border-gray-200 pr-10"
+                                            className="w-full bg-white border-gray-200 pr-10 appearance-none"
+                                            style={{ MozAppearance: 'textfield' }} // Hides arrows in Firefox
                                         />
-                                        {/* <Link className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" /> */}
+                                        <Phone className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
                                     </div>
+
                                 </div>
                                 <div className="w-full">
                                     <Textarea
