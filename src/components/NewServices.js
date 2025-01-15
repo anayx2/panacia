@@ -402,7 +402,9 @@ const TreatmentsSection = () => {
                                     <div className="box">
                                         <div className="imgBox">
                                             <img
-                                                src="/services1/b12.jpg"
+                                                // src="/services1/b12.jpg"
+                                                src="/services1/young-woman-getting-prp-treatment-high-angle.jpg"
+
                                                 alt="Acne &amp; Facial Treatments"
                                             />
                                             <div className="treatments-list">
@@ -687,7 +689,8 @@ const TreatmentsSection = () => {
                                     <div className="box">
                                         <div className="imgBox">
                                             <img
-                                                src="/services1/young-woman-getting-prp-treatment-high-angle.jpg"
+                                                src="/services1/b12.jpg"
+
                                                 alt="Skin Rejuvenation &amp; Anti Aging"
                                             />
                                             <div className="treatments-list">

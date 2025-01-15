@@ -1,12 +1,11 @@
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React from 'react'
 
 const Hero = () => {
 
     return (
         <>
             <section className="relative lg:h-[100dvh] md:h-[100dvh] sm:h-[auto] w-full overflow-hidden pt-[100px] pb-5">
-
                 {/* Background Video */}
                 <video
                     autoPlay
