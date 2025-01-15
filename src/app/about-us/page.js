@@ -46,9 +46,9 @@ const about = () => {
                     </div>
 
                     {/* Image */}
-                    <div className="relative aspect-[2/3] overflow-hidden rounded-lg lg:aspect-[2/2] shadow-lg">
+                    <div className="relative aspect-[2/3] overflow-hidden rounded-lg lg:aspect-[2/2] ">
                         <Image
-                            src="/homesec2.jpg"
+                            src="/about.png"
                             alt="Biolite Aesthetic Clinic Interior"
                             fill
                             className="object-cover"
@@ -78,7 +78,7 @@ const about = () => {
                                 </div>
                                 <div className="relative h-[300px] overflow-hidden rounded-lg lg:h-[400px]">
                                     <Image
-                                        src="/aboutcover.jpg"
+                                        src="/Comprehensive.jpg"
                                         alt="Professional consultation session"
                                         fill
                                         className="object-cover"
@@ -142,7 +142,7 @@ const about = () => {
                         {/* First Image */}
                         <div className="relative aspect-square w-4/5 overflow-hidden rounded-3xl">
                             <Image
-                                src="/about-img1.jpg"
+                                src="/Commitment1.jpg"
                                 alt="Medical specialist performing treatment"
                                 fill
                                 className="object-cover"
@@ -153,7 +153,7 @@ const about = () => {
                         {/* Second Image */}
                         <div className="absolute -bottom-20 right-0 aspect-[4/3] w-2/3 overflow-hidden rounded-3xl">
                             <Image
-                                src="/aboutcover.jpg"
+                                src="/Commitment.jpg"
                                 alt="TMAN Clinic signage"
                                 fill
                                 className="object-cover"

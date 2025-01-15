@@ -112,3 +112,21 @@ input[type="number"] {
   color: #fb7185 !important;
   background: #ffe4e6 !important;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: For Safari support */
+@supports (-webkit-touch-callout: none) {
+  html {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Optional: Disable smooth scroll for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
