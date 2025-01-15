@@ -4,7 +4,7 @@ import React from 'react'
 const Hero = () => {
     return (
         <>
-            <section className="relative h-[100dvh] w-full overflow-hidden">
+            <section className="relative lg:h-[100dvh] md:h-[100dvh] sm:h-[auto] w-full overflow-hidden pt-[100px] pb-5">
 
                 {/* Background Video */}
                 <video
@@ -19,10 +19,10 @@ const Hero = () => {
                     Your browser does not support the video tag.
                 </video>
                 {/* CTA Container */}
-                <div className="relative z-10 flex h-full w-[50%] items-center justify-center px-4 sm:px-6 lg:px-8 mt-5">
+                <div className="relative z-10 flex h-full lg:w-[50%] md:w-[50%] w-full items-center justify-center px-4 sm:px-6 lg:px-8 mt-5">
 
                     <div className='w-[100%] flex justify-center'>
-                        <div className='w-[80%]'>
+                        <div className='lg:w-[80%] md:w-[80%] w-[100%]'>
                             <div className="text-left flex flex-col items-start justify-start">
                                 <h1
                                     className=" uppercase mb-4 text-3xl font-extrabold tracking-tight text-black sm:text-5xl md:text-5xl animate-fade-down [animation-delay:200ms] [animation-fill-mode:forwards] opacity-0"
@@ -32,28 +32,46 @@ const Hero = () => {
                                     className="mb-8 text-lg text-black sm:text-xl animate-fade-down [animation-delay:400ms] [animation-fill-mode:forwards] opacity-0"
                                 >
                                     At Panacea Clinic, we put your health first. Learn about individualized therapies created to support your success.                                </p>
-                                <div className='flex gap-10 text-left'>
-                                    <span className='flex flex-col items-left'>
-                                        <h2 className='text-3xl font-extrabold tracking-tight text-black sm:text-5xl md:text-4xl'> 100%</h2>
-                                        <p className='text-sm uppercase'> Costumer <br />Satisfaction</p>
+                                <div className="flex gap-5 md:gap-10 lg:gap-10 text-left">
+                                    <span className="flex flex-col items-start">
+                                        <h2 className="text-xl font-extrabold tracking-tight text-black sm:text-4xl md:text-5xl">
+                                            100%
+                                        </h2>
+                                        <p className="text-xs sm:text-sm md:text-base uppercase">
+                                            Customer <br />
+                                            Satisfaction
+                                        </p>
                                     </span>
-                                    <span className='flex flex-col items-left'>
-                                        <h2 className='text-3xl font-extrabold tracking-tight text-black sm:text-5xl md:text-4xl'> 100%</h2>
-                                        <p className='text-sm uppercase'> Experties</p>
+                                    <span className="flex flex-col items-start">
+                                        <h2 className="text-xl font-extrabold tracking-tight text-black sm:text-4xl md:text-5xl">
+                                            100%
+                                        </h2>
+                                        <p className="text-xs sm:text-sm md:text-base uppercase">
+                                            Expertise
+                                        </p>
                                     </span>
-                                    <span className='flex flex-col  items-left'>
-                                        <h2 className='text-3xl font-extrabold tracking-tight text-black sm:text-5xl md:text-4xl'>0%</h2>
-                                        <p className='text-sm uppercase'> Complaints</p>
+                                    <span className="flex flex-col items-start">
+                                        <h2 className="text-xl font-extrabold tracking-tight text-black sm:text-4xl md:text-5xl">
+                                            0%
+                                        </h2>
+                                        <p className="text-xs sm:text-sm md:text-base uppercase">
+                                            Complaints
+                                        </p>
                                     </span>
-                                    <span className='flex flex-col  items-left'>
-                                        <h2 className='text-3xl font-extrabold tracking-tight text-black sm:text-5xl md:text-4xl'>100%</h2>
-                                        <p className='text-sm uppercase'> Efficiency</p>
+                                    <span className="flex flex-col items-start">
+                                        <h2 className="text-xl font-extrabold tracking-tight text-black sm:text-4xl md:text-5xl">
+                                            100%
+                                        </h2>
+                                        <p className="text-xs sm:text-sm md:text-base uppercase">
+                                            Efficiency
+                                        </p>
                                     </span>
                                 </div>
+
                                 <Link href={'/book-an-appointment'}>
                                     <button
                                         type="submit"
-                                        className="flex justify-center gap-2 mt-5 items-center shadow-xl text-lg bg-rose-300 backdrop-blur-md lg:font-semibold isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full  hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group animate-fade-up [animation-delay:600ms] [animation-fill-mode:forwards] opacity-0"
+                                        className="flex text-left justify-center gap-2 mt-5 items-center shadow-xl text-lg bg-rose-300 backdrop-blur-md lg:font-semibold isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full  hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-5 py-2 overflow-hidden border-2 rounded-full group animate-fade-up [animation-delay:600ms] [animation-fill-mode:forwards] opacity-0"
                                     >
                                         Book Your Appointment Today
                                         <svg

@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { Calendar } from "@nextui-org/calendar";
-import { parseDate } from '@internationalized/date';
+import { DayPicker } from "react-day-picker";
+import "react-day-picker/style.css";
 import { Button } from '@/components/ui/button';
 import {
     Select,
@@ -37,21 +37,28 @@ const services = [
 
 export default function MultiStepBooking() {
     const [step, setStep] = useState(1);
+
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
         email: '',
         mobile: '',
         service: '',
-        date: null,
+        date: new Date(), // Initialize with today's date
         time: '',
     });
     const [errors, setErrors] = useState({});
+
+    // Disable past dates
+    const disabledDays = [
+        { before: new Date() }
+    ];
+
     const formatDate = (date) => {
         if (!date) return null;
-        const { year, month, day } = date;
-        return `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        return date.toISOString().split('T')[0];
     };
+
     const validatePersonalInfo = () => {
         const newErrors = {};
         if (formData.firstName.length < 2)
@@ -86,8 +93,8 @@ export default function MultiStepBooking() {
         setFormData((prev) => ({ ...prev, service: value }));
     };
 
-    const handleDateChange = (date) => {
-        setFormData((prev) => ({ ...prev, date }));
+    const handleDateSelect = (date) => {
+        setFormData(prev => ({ ...prev, date }));
     };
 
     const handleTimeChange = (time) => {
@@ -126,13 +133,39 @@ export default function MultiStepBooking() {
         }
     };
 
+    const css = `
+    .rdp {
+        --rdp-cell-size: 40px;
+        --rdp-accent-color: #FB7185 !important;
+        --rdp-background-color: #FECDD3 !important;
+        margin: 0;
+    }
+    .rdp-day_selected:not(.rdp-day_outside) {
+        background-color: var(--rdp-accent-color);
+        color: white;
+    }
+    .rdp-day_selected:hover:not(.rdp-day_outside) {
+        background-color: #F43F5E !important;
+    }
+    .rdp-button:hover:not([disabled]):not(.rdp-day_selected) {
+        background-color: #FEE2E2 !important;
+        border: 2px solid #FB7185 !important;
+    }
+    .rdp-nav_button:hover {
+        background-color: #FEE2E2 !important;
+    }
+    .rdp-chevron svg {
+        fill: #FB7185 !important;
+    }
+`;
 
     return (
-        <section className="py-10 ">
+        <section className="py-10">
+            <style>{css}</style>
             <div className="mx-auto max-w-xl border border-rose-300 p-5 rounded-xl bg-white">
                 {/* Step Indicator */}
                 <div className="mb-8">
-                    <div className="relative mx-auto mb-4 flex max-w-[240px] justify-between ">
+                    <div className="relative mx-auto mb-4 flex max-w-[240px] justify-between">
                         <div
                             className={`h-8 w-8 rounded-full ${step >= 1 ? 'bg-rose-400' : 'bg-rose-200'
                                 } flex items-center justify-center text-white`}
@@ -155,6 +188,7 @@ export default function MultiStepBooking() {
 
                 {step === 1 ? (
                     <form onSubmit={handleNextStep} className="space-y-6">
+                        {/* First step form fields remain the same */}
                         <div>
                             <label className="block text-sm font-medium text-gray-700">First Name</label>
                             <Input name="firstName" value={formData.firstName} onChange={handleInputChange} placeholder="Enter your first name" />
@@ -201,9 +235,18 @@ export default function MultiStepBooking() {
                 ) : (
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div className="flex gap-6">
-                            <div className="w-1/2">
+                            <div className="w-full">
                                 <label className="block text-sm font-medium text-gray-700">Select Date</label>
-                                <Calendar aria-label="Appointment Date" selected={formData.date} onChange={handleDateChange} minValue={parseDate(new Date().toISOString().split('T')[0])} />
+                                <DayPicker
+                                    mode="single"
+                                    selected={formData.date}
+                                    onSelect={handleDateSelect}
+                                    disabled={disabledDays}
+                                // footer={formData.date ?
+                                //     `Selected: ${formData.date.toLocaleDateString()}` :
+                                //     "Please pick a date"
+                                // }
+                                />
                                 {errors.date && <p className="mt-1 text-sm text-red-600">{errors.date}</p>}
                             </div>
 

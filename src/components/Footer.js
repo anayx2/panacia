@@ -61,7 +61,7 @@ const Footer = () => {
                         {/* Quick Links */}
                         <div className={`transition-all duration-500 delay-200 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                             <h3 className="mb-6 text-2xl font-semibold">QUICK LINKS</h3>
-                            <ul className="space-y-4">
+                            <ul className="space-y-2">
                                 {[
                                     { name: 'About Us', href: '/about-us' },
                                     { name: 'Our Services', href: '/services' },
@@ -95,7 +95,7 @@ const Footer = () => {
                             <h3 className="mb-6 text-2xl font-semibold uppercase">Working Hours
 
                             </h3>
-                            <ul className="space-y-4 ">
+                            <ul className="space-y-2 ">
                                 {[
                                     { name: 'Mon: 11 am - 7 pm', href: '' },
                                     { name: 'Wed: 11 am - 7 pm', href: '' },

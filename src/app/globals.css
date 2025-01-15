@@ -100,3 +100,15 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="number"] {
   -moz-appearance: textfield; /* For Firefox */
 }
+
+.rdp-chevron {
+  fill: #fb7185 !important;
+}
+.rdp-today:not(.rdp-outside) {
+  color: #fb7185 !important;
+}
+.rdp-selected .rdp-day_button {
+  border: #000 !important;
+  color: #fb7185 !important;
+  background: #ffe4e6 !important;
+}

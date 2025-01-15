@@ -30,7 +30,8 @@ const about = () => {
                     {/* Content */}
                     <div className="space-y-6">
                         <h1 className="">
-                            Empowering Your Health with Expert Care                        </h1>
+                            Empowering Your Health with Expert care
+                        </h1>
 
                         <p className="">
                             Welcome to Panacea Clinic, where personalized care meets cutting-edge healthcare solutions. Our mission is to empower individuals with exceptional medical services designed to nurture health and well-being. With a team of highly skilled doctors and healthcare specialists, we are committed to delivering tailored care for every patient.
@@ -150,7 +151,7 @@ const about = () => {
                         </div>
 
                         {/* Second Image */}
-                        <div className="absolute bottom-10 right-0 aspect-[4/3] w-2/3 overflow-hidden rounded-3xl">
+                        <div className="absolute -top-10 right-0 aspect-[4/3] w-2/3 overflow-hidden rounded-3xl">
                             <Image
                                 src="/aboutcover.jpg"
                                 alt="TMAN Clinic signage"
