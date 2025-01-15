@@ -111,16 +111,16 @@ const page = () => {
         <div className='flex lg:flex-row md:flex-row sm:flex-col justify-center items-center gap-6 p-2 w-[90%]'>
 
           <ImageComparison
-            beforeImage="/image1.jpg"
-            afterImage="/services/Dermal.jpg"
+            beforeImage="/comp/before1.png"
+            afterImage="/comp/after1.png"
           />
           <ImageComparison
-            beforeImage="/image1.jpg"
-            afterImage="/services/Dermal.jpg"
+            beforeImage="/comp/befor2.png"
+            afterImage="/comp/after2.png"
           />
           <ImageComparison
-            beforeImage="/image1.jpg"
-            afterImage="/services/Dermal.jpg"
+            beforeImage="/comp/befor3.png"
+            afterImage="/comp/after3.png"
           />
         </div>
       </section>
