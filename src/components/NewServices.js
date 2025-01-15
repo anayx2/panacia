@@ -305,7 +305,7 @@ const TreatmentsSection = () => {
                                     <div className="box">
                                         <div className="imgBox">
                                             <img
-                                                src="https://www.ghbclinic.co.uk/home/DermaFillers.webp"
+                                                src="/services1/wrinke.jpg"
                                                 alt="dermal Fillers"
                                             />
                                             <div className="treatments-list">
@@ -402,7 +402,7 @@ const TreatmentsSection = () => {
                                     <div className="box">
                                         <div className="imgBox">
                                             <img
-                                                src="https://www.ghbclinic.co.uk/home/DermaFillers.webp"
+                                                src="/services1/b12.jpg"
                                                 alt="Acne &amp; Facial Treatments"
                                             />
                                             <div className="treatments-list">
@@ -500,7 +500,7 @@ const TreatmentsSection = () => {
                                     <div className="box">
                                         <div className="imgBox">
                                             <img
-                                                src="https://www.ghbclinic.co.uk/home/DermaFillers.webp"
+                                                src="/services1/fatdissolving.jpg"
                                                 alt="Chemical Peels"
                                             />
                                             <div className="treatments-list">
@@ -589,7 +589,7 @@ const TreatmentsSection = () => {
                                     <div className="box">
                                         <div className="imgBox">
                                             <img
-                                                src="https://www.ghbclinic.co.uk/home/DermaFillers.webp"
+                                                src="/services1/microneedling.jpg"
                                                 alt="Laser Skin &amp; Lesion Treatments"
                                             />
                                             <div className="treatments-list">
@@ -687,7 +687,7 @@ const TreatmentsSection = () => {
                                     <div className="box">
                                         <div className="imgBox">
                                             <img
-                                                src="https://www.ghbclinic.co.uk/home/DermaFillers.webp"
+                                                src="/services1/young-woman-getting-prp-treatment-high-angle.jpg"
                                                 alt="Skin Rejuvenation &amp; Anti Aging"
                                             />
                                             <div className="treatments-list">
@@ -785,7 +785,7 @@ const TreatmentsSection = () => {
                                     <div className="box">
                                         <div className="imgBox">
                                             <img
-                                                src="https://www.ghbclinic.co.uk/home/DermaFillers.webp"
+                                                src="/services1/hopiearcandle.jpg"
                                                 alt="Skin Rejuvenation &amp; Anti Aging"
                                             />
                                             <div className="treatments-list">

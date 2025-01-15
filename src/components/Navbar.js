@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
-import { ChevronDown, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { Card } from "./ui/card";
 
 const navItems = [
@@ -76,7 +76,7 @@ const Navbar = () => {
                         className="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                     >
                         <span className="sr-only">Toggle navigation</span>
-                        <HamburgerIcon />
+                        <Menu className="text-white" />
                     </button>
 
                     {/* Navigation Links */}

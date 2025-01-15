@@ -23,7 +23,7 @@ const page = () => {
         {/* Image Column */}
         <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-rose-100">
           <Image
-            src="/image1.jpg"
+            src="/homesec2.jpg"
             alt="Beauty treatment demonstration"
             fill
             className="object-cover"
@@ -137,7 +137,7 @@ const page = () => {
         <ContactSection />
         {/* <ContactNew /> */}
       </section>
-   
+
       {/* <Footer /> */}
     </>)
 }

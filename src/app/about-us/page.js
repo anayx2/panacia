@@ -46,9 +46,9 @@ const about = () => {
                     </div>
 
                     {/* Image */}
-                    <div className="relative aspect-[4/3] overflow-hidden rounded-lg lg:aspect-[16/12] shadow-lg">
+                    <div className="relative aspect-[2/3] overflow-hidden rounded-lg lg:aspect-[2/2] shadow-lg">
                         <Image
-                            src="/about-img1.jpg"
+                            src="/homesec2.jpg"
                             alt="Biolite Aesthetic Clinic Interior"
                             fill
                             className="object-cover"
@@ -94,7 +94,7 @@ const about = () => {
                             <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
                                 <div className="relative h-[300px] overflow-hidden rounded-lg lg:h-[400px] lg:order-1">
                                     <Image
-                                        src="/aboutcover.jpg"
+                                        src="/stateoftheart.png"
                                         alt="Advanced treatment procedure"
                                         fill
                                         className="object-cover"
@@ -123,7 +123,7 @@ const about = () => {
                                 </div>
                                 <div className="relative h-[300px] overflow-hidden rounded-lg lg:h-[400px]">
                                     <Image
-                                        src="/aboutcover.jpg"
+                                        src="/professionals.jpg"
                                         alt="Gentle aesthetic treatment"
                                         fill
                                         className="object-cover"

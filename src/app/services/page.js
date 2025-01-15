@@ -7,7 +7,7 @@ const services = [
         id: 1,
         title: "Anti-Wrinkle Treatments",
         description: "Smooth away wrinkles with our effective anti-wrinkle treatments, designed to rejuvenate your skin and restore a youthful, radiant appearance",
-        image: "/blog.png",
+        image: "/services1/wrinke.jpg",
         href: "/services/wellness-consultation"
     },
     {
@@ -21,77 +21,77 @@ const services = [
         id: 3,
         title: "Fat Dissolving",
         description: "Say goodbye to stubborn fat with our safe and effective fat-dissolving treatments, tailored to sculpt your body effortlessly.",
-        image: "/aboutcover.jpg",
+        image: "/services1/fatdissolving.jpg",
         href: "/services/shirodhara"
     },
     {
         id: 4,
         title: "Microneedling",
         description: "Revitalize your skin with Microneedling, promoting collagen production to reduce scars, fine lines, and improve skin texture.",
-        image: "/aboutcover.jpg",
+        image: "/services1/microneedling.jpg",
         href: "/services/kati-basti"
     },
     {
         id: 5,
         title: "Vitamin B12 Injection",
         description: "Boost your energy and enhance your overall well-being with our Vitamin B12 injections, essential for vitality and health.",
-        image: "/blog.png",
+        image: "/services1/cosmetologist-making-injections-face-woman-beauty-salon.jpg",
         href: "/services/prushta-basti"
     },
     {
         id: 6,
         title: "Hopi Ear Candle",
         description: "Experience relaxation and improved ear health with Hopi Ear Candling, a natural therapy to clear blockages and restore balance.",
-        image: "/blog1.png",
+        image: "/services1/hopiearcandle.jpg",
         href: "/services/netra-basti"
     },
     {
         id: 7,
         title: "IV Drip",
         description: "Rehydrate, rejuvenate, and replenish essential nutrients with our custom IV Drip therapies for optimal wellness.",
-        image: "/blog.png",
+        image: "/services1/ivdrip.jpg",
         href: "/services/wellness-consultation"
     },
     {
         id: 8,
         title: "Bio Filler",
         description: "Enjoy natural, non-surgical facial enhancement with Bio Fillers, restoring volume and smoothing out fine lines effectively.",
-        image: "/blog1.png",
+        image: "/services1/biofillers.jpg",
         href: "/services/abhyanga"
     },
     {
         id: 9,
         title: "PRP Hair Losss",
         description: "Combat hair loss with PRP treatments, stimulating hair growth and strengthening follicles for thicker, healthier hair.",
-        image: "/aboutcover.jpg",
+        image: "/services1/hairloss.jpg",
         href: "/services/shirodhara"
     },
     {
         id: 10,
         title: "PRP Facial",
         description: "Rejuvenate your skin with PRP Facials, boosting collagen and delivering a radiant, youthful complexion.",
-        image: "/aboutcover.jpg",
+        image: "/services1/PRPFacial.jpg",
         href: "/services/kati-basti"
     },
     {
         id: 11,
         title: "PDO threads",
         description: "Lift and tighten sagging skin with PDO threads, a non-invasive solution for a firmer and rejuvenated appearance.",
-        image: "/blog.png",
+        image: "/services1/threadspds.jpg",
         href: "/services/prushta-basti"
     },
     {
         id: 12,
         title: "Skin Booster",
         description: "Hydrate and refresh your skin with Skin Boosters, enhancing elasticity and restoring your natural glow effortlessly.",
-        image: "/blog1.png",
+        image: "/services1/skinbooster.jpg",
         href: "/services/netra-basti"
     },
     {
         id: 13,
         title: "Dermaplaning",
         description: "Exfoliate dead skin and remove peach fuzz with Dermaplaning, leaving your skin smooth, radiant, and makeup-ready.",
-        image: "/blog1.png",
+        image: "/services1/dermaplanning.jpgs",
         href: "/services/netra-basti"
     }
 ]
