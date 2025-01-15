@@ -13,7 +13,7 @@ const about = () => {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
-                        backgroundImage: "url('/aboutcover.jpg')"
+                        backgroundImage: "url('/sample/5.png')"
                     }}
                 />
                 <div className="absolute inset-0 bg-black/60" />
@@ -151,7 +151,7 @@ const about = () => {
                         </div>
 
                         {/* Second Image */}
-                        <div className="absolute -top-10 right-0 aspect-[4/3] w-2/3 overflow-hidden rounded-3xl">
+                        <div className="absolute top-10 right-0 aspect-[4/3] w-2/3 overflow-hidden rounded-3xl">
                             <Image
                                 src="/aboutcover.jpg"
                                 alt="TMAN Clinic signage"

@@ -15,8 +15,8 @@ import {
 const blogs = [
     {
         id: 1,
-        title: "Top dos & don't's for Valentine's Day with your pet",
-        excerpt: "Valentine's Day is a day when people celebrate their relationships with loved ones. And for man...",
+        title: "The Benefits of Facial Rejuvenation Treatments for Aging Skin",
+        excerpt: "Ageing is inevitable, but who says we can’t age gracefully? Facial rejuvenation treatments...",
         date: "August 23, 2024",
         image: "/about-img1.jpg",
         categories: ["Educational", "Healthy Food"],
@@ -25,7 +25,7 @@ const blogs = [
     },
     {
         id: 2,
-        title: "5 Questions you might have about dehydrated dog food",
+        title: "Polynucleotide Treatment: The Next Big Step in Skin Rejuvenation",
         excerpt: "Valentine's Day is a day when people celebrate their relationships with loved ones. And for man...",
         date: "August 23, 2024",
         image: "/image1.jpg",

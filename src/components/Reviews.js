@@ -58,15 +58,15 @@ export default function Reviews() {
                         delay: 2000,
                     }),
                 ]}
-                className="lg:max-w-7xl md:max-w-6xl sm:max-w-auto"
+                className="lg:max-w-7xl md:max-w-6xl sm:max-w-auto relative"
             >
                 <CarouselContent className="-ml-2 md:-ml-4">
                     {testimonials.map((testimonial, index) => (
                         <CarouselItem
                             key={index}
-                            className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/4"
+                            className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/4 basis-1/3"
                         >
-                            <div className="h-full rounded-2xl bg-gradient-to-b from-rose-100 to-rose-300 p-6 shadow-sm flex flex-col justify-between">
+                            <div className=" h-full rounded-2xl bg-gradient-to-b from-rose-100 to-rose-300 p-6 shadow-sm flex flex-col justify-between">
                                 {/* Quote Icon */}
                                 <Quote className="mb-4 h-6 w-6 text-rose-500" />
 
@@ -93,8 +93,10 @@ export default function Reviews() {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <div className="absolute bottom-0 right-20">
+                    <CarouselPrevious className="p-5" />
+                    <CarouselNext className="p-5" />
+                </div>
             </Carousel>
         </section>
     )
