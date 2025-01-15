@@ -2,7 +2,6 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 
 const Hero = () => {
-    const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
     return (
         <>
@@ -15,7 +14,6 @@ const Hero = () => {
                     muted
                     playsInline
                     preload="metadata"
-                    onLoadedData={() => setIsVideoLoaded(true)}
 
                     className="absolute top-0 left-0 min-h-full min-w-full object-cover"
                     aria-hidden="true"
@@ -23,9 +21,7 @@ const Hero = () => {
                     <source src="/website_31.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                {!isVideoLoaded && (
-                    <div className="absolute inset-0 bg-gray-100 animate-pulse" />
-                )}
+           
                 {/* CTA Container */}
                 <div className="relative z-10 flex h-full lg:w-[50%] md:w-[50%] w-full items-center justify-center px-4 sm:px-6 lg:px-8 mt-5">
 
