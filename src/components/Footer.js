@@ -81,7 +81,7 @@ const Footer = () => {
                                     >
                                         <Link
                                             href={item.href}
-                                            className="text-black transition-colors hover:text-white"
+                                            className="text-black transition-colors hover:text-rose-400"
                                         >
                                             {item.name}
                                         </Link>
@@ -101,7 +101,6 @@ const Footer = () => {
                                     { name: 'Wed: 11 am - 7 pm', href: '' },
                                     { name: 'Fri: 11 am - 7 pm', href: '' },
                                     { name: 'Sat: 11 am - 7 pm', href: '' },
-
                                     // { name: 'Anti-Wrinkle Treatments', href: '/services/anti-wrinkle-treatments' },
                                     // { name: 'Mesotherapy', href: '/services/mesotherapy' },
                                     // { name: 'Fat Dissolving', href: '/services/fat-dissolving' },
@@ -119,7 +118,7 @@ const Footer = () => {
                                     >
                                         <span
                                             // href={item.href}
-                                            className="text-black transition-colors hover:text-white"
+                                            className="text-black transition-colors hover:text-rose-400"
                                         >
                                             {item.name}
                                         </span>

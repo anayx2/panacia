@@ -1,5 +1,6 @@
 
 'use client'
+import { Butcherman } from 'next/font/google';
 import Image from 'next/image';
 import React, { useRef, useState, useEffect } from 'react';
 
@@ -147,12 +148,15 @@ const InstagramFeed = () => {
             {/* iPhone Mockup */}
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[275px] hidden md:block py-10">
                 <div className="instagram__mockup">
-
                     <img decoding="async"
                         src="https://p-de-p.co.uk/wp-content/themes/pdp/assets/img/iphone-mockup/border.png" alt=""
                         className="instagram__mockup-border" />
-
                 </div>
+            </div>
+            <div className="absolute left-1/2 -ml-2 -mt-2 -translate-x-1/2 -translate-y-1/2 w-[275px] hidden md:block py-10">
+                <button className='w-[200px] p-2 rounded-full bg-black text-white'>
+                    Instagram
+                </button>
             </div>
             {/* <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-[275px] hidden md:block py-20">
                 <div className="instagram__mockup">

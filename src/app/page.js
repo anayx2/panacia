@@ -108,7 +108,7 @@ const page = () => {
           Transformations at Panacea<br /> Health & Beauty Clinic
         </h2> */}
 
-        <div className='flex lg:flex-row md:flex-row sm:flex-col justify-center items-center gap-6 p-2 w-[90%]'>
+        <div className='flex lg:flex-row md:flex-row flex-col justify-center items-center gap-6 p-2 w-[90%]'>
 
           <ImageComparison
             beforeImage="/comp/before1.png"
@@ -137,8 +137,7 @@ const page = () => {
         <ContactSection />
         {/* <ContactNew /> */}
       </section>
-      <section className='mt-20'>
-      </section>
+   
       {/* <Footer /> */}
     </>)
 }

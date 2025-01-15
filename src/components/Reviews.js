@@ -93,9 +93,9 @@ export default function Reviews() {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <div className="absolute bottom-0 right-20">
-                    <CarouselPrevious className="p-5" />
-                    <CarouselNext className="p-5" />
+                <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2">
+                    <CarouselPrevious className="p-5 bg-rose-400 text-white" />
+                    <CarouselNext className="p-5 bg-rose-400 text-white" />
                 </div>
             </Carousel>
         </section>

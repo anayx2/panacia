@@ -24,7 +24,7 @@ const page = () => {
             <section>
                 <MultiStepBooking />
             </section>
-            <section className="container mx-auto px-4 py-16 lg:w-[80%] md:w-[80%] sm:w-[95%] ">
+            <section className="container mx-auto px-4 py-10 lg:w-[80%] md:w-[80%] sm:w-[95%] ">
                 {/* Initial Discussion */}
                 <div className="mb-24 flex flex-col items-start gap-12 lg:flex-row lg:items-center justify-between">
                     <div className="max-w-xl">
@@ -124,9 +124,8 @@ const page = () => {
                     />
 
                 </div>
-
             </section>
-            <section className='flex flex-col text-center items-center justify-center py-10 mt-20 gap-10'>
+            <section className='flex flex-col text-center items-center justify-center pb-10 gap-10'>
                 <ContactSection />
             </section>
         </>)
