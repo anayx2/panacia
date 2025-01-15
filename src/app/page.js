@@ -1,27 +1,83 @@
-import ImageComparison from '@/components/Compare'
-import ContactSection from '@/components/Contact'
-import Hero from '@/components/Hero'
-import InstagramFeed from '@/components/InstagramPost'
-import Navbar from '@/components/Navbar'
-import TreatmentsSection from '@/components/NewServices'
-import Reviews from '@/components/Reviews'
-import Testimonial from '@/components/Testimonial'
-import { Button } from '@/components/ui/button'
-import Whyus from '@/components/Whyus'
-import { Check } from 'lucide-react'
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-const page = () => {
+'use client';
+
+import { motion } from 'framer-motion';
+import ImageComparison from '@/components/Compare';
+import ContactSection from '@/components/Contact';
+import Hero from '@/components/Hero';
+import InstagramFeed from '@/components/InstagramPost';
+import Navbar from '@/components/Navbar';
+import TreatmentsSection from '@/components/NewServices';
+import Reviews from '@/components/Reviews';
+import Testimonial from '@/components/Testimonial';
+import { Button } from '@/components/ui/button';
+import Whyus from '@/components/Whyus';
+import { Check } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+
+// Create motion components
+const MotionSection = motion.section;
+const MotionDiv = motion.div;
+const MotionUl = motion.ul;
+const MotionLi = motion.li;
+const MotionH2 = motion.h2;
+const MotionP = motion.p;
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: 'easeOut' }
+  }
+};
+
+const fadeIn = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.6, ease: 'easeOut' }
+  }
+};
+
+const slideIn = {
+  hidden: { opacity: 0, x: -50 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.6, ease: 'easeOut' }
+  }
+};
+
+const staggerChildren = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2
+    }
+  }
+};
+
+const Page = () => {
   return (
     <>
       <section className='absolute z-50 top-0 w-full'>
         <Navbar />
       </section>
       <Hero />
-      <section className="container mx-auto grid gap-12 px-4 py-16 md:grid-cols-2 md:items-center md:gap-16 lg:gap-24 max-w-[90%] ">
-        {/* Image Column */}
-        <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-rose-100">
+
+      {/* About Section */}
+      <MotionSection
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+        className="container mx-auto grid gap-12 px-4 py-16 md:grid-cols-2 md:items-center md:gap-16 lg:gap-24 max-w-[90%]"
+      >
+        <MotionDiv
+          variants={slideIn}
+          className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-rose-100"
+        >
           <Image
             src="/homesec2.jpg"
             alt="Beauty treatment demonstration"
@@ -29,47 +85,53 @@ const page = () => {
             className="object-cover"
             priority
           />
-        </div>
-        {/* Content Column */}
-        <div className="space-y-6">
-          {/* Section Label */}
-          <div className="space-y-3">
-            {/* <p className="text-lg font-medium text-gray-600">{'>'}Who We Are</p> */}
-            <h2>
-              Your Health, Our Commitment
-            </h2>
-          </div>
-          {/* Description */}
-          <p className="text-lg leading-relaxed text-gray-600">
-            At Panacea Clinic, we're committed to offering top-notch healthcare with a human touch. Our team of skilled experts is dedicated to treating your medical issues with empathy and knowledge. We make sure that every stage of your trip is smooth, whether you're looking for specialist treatments or preventative care. Our first priorities are your health and wellbeing.           </p>
-          {/* Features List */}
-          <ul className="space-y-4">
+        </MotionDiv>
+
+        <MotionDiv
+          variants={staggerChildren}
+          className="space-y-6"
+        >
+          <MotionDiv variants={fadeInUp} className="space-y-3">
+            <h2>Your Health, Our Commitment</h2>
+          </MotionDiv>
+
+          <MotionP variants={fadeInUp} className="text-lg leading-relaxed text-gray-600">
+            At Panacea Clinic, we're committed to offering top-notch healthcare with a human touch...
+          </MotionP>
+
+          <MotionUl variants={staggerChildren} className="space-y-4">
             {[
               'Comprehensive and personalized medical services for all ages.',
               'A team of highly qualified doctors and healthcare professionals.',
               'A patient-centered approach focused on trust, care, and results.'
             ].map((feature, index) => (
-              <li key={index} className="flex items-center gap-3">
+              <MotionLi
+                key={index}
+                variants={fadeInUp}
+                className="flex items-center gap-3"
+              >
                 <div className="flex p-2 items-center justify-center rounded-full bg-rose-100">
                   <Check className="h-4 w-4 text-rose-600" />
-
                 </div>
                 <span className="text-lg text-gray-600">{feature}</span>
-              </li>
+              </MotionLi>
             ))}
-          </ul>
+          </MotionUl>
 
-          {/* CTA Button */}
-          <Link href={'/about-us'}>
-            <Button
-              variant="default"
-              className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black"
-            >
-              READ MORE →
-            </Button>
-          </Link>
-        </div>
-      </section>
+          <MotionDiv variants={fadeInUp}>
+            <Link href={'/about-us'}>
+              <Button
+                variant="default"
+                className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black"
+              >
+                READ MORE →
+              </Button>
+            </Link>
+          </MotionDiv>
+        </MotionDiv>
+      </MotionSection>
+
+      {/* Treatments Section */}
       <section className='flex flex-col text-center items-center justify-center bg-rose-50 py-20 gap-10'>
         <h2>
           Discover Our Comprehensive Range <br />of  Aesthetic Treatments
@@ -77,29 +139,34 @@ const page = () => {
         {/* <Services /> */}
         <TreatmentsSection />
       </section>
-      <section className='mt-20 flex flex-col text-center gap-5'>
-        <h2 className='text-center'> Why Panacea</h2>
-        <Whyus />
-      </section>
-      {/* <section className='flex w-full justify-center items-center'>
-        <div className='w-[90%] bg-green-50 flex items-center rounded-2xl justify-evenly py-12'>
-          <h2 className='text-3xl'>
-            Unleash Your Radiance
-          </h2>
-          <Button className='text-2xl p-8'>
-            Book An Appointment
-          </Button>
-        </div>
-      </section> */}
 
-      <section className='flex flex-col text-center items-center justify-center py-10 gap-20'>
-        <h2>
-          Our Treatments in Action
-        </h2>
-        <div className='w-[90%]'>
+      {/* Why Us Section */}
+      <MotionSection
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInUp}
+        className='mt-20 flex flex-col text-center gap-5'
+      >
+        <MotionH2 variants={fadeInUp} className='text-center'>Why Panacea</MotionH2>
+        <Whyus />
+      </MotionSection>
+
+      {/* Testimonials Section */}
+      <MotionSection
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInUp}
+        className='flex flex-col text-center items-center justify-center py-10 gap-20'
+      >
+        <MotionH2 variants={fadeInUp}>Our Treatments in Action</MotionH2>
+        <MotionDiv variants={fadeIn} className='w-[90%]'>
           <Testimonial />
-        </div>
-      </section>
+        </MotionDiv>
+      </MotionSection>
+
+      {/* Before/After Section */}
       <section className='mt-20 flex flex-col text-center gap-20 items-center'>
         <h2>
           See the Incredible Results: Before and After
@@ -124,22 +191,42 @@ const page = () => {
           />
         </div>
       </section>
-      <section className='py-20 mt-20 text-center'>
+
+      {/* Instagram Feed Section */}
+      <MotionSection
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInUp}
+        className='py-20 mt-20 text-center'
+      >
         <InstagramFeed />
-      </section>
-      <section className='flex flex-col text-center items-center justify-center  '>
-        <h2>
-          Google Reviews
-        </h2>
+      </MotionSection>
+
+      {/* Reviews Section */}
+      <MotionSection
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInUp}
+        className='flex flex-col text-center items-center justify-center'
+      >
+        <MotionH2 variants={fadeInUp}>Google Reviews</MotionH2>
         <Reviews />
-      </section>
-      <section className='flex flex-col text-center items-center justify-center py-10 mt-10 gap-10'>
+      </MotionSection>
+
+      {/* Contact Section */}
+      <MotionSection
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInUp}
+        className='flex flex-col text-center items-center justify-center py-10 mt-10 gap-10'
+      >
         <ContactSection />
-        {/* <ContactNew /> */}
-      </section>
+      </MotionSection>
+    </>
+  );
+};
 
-      {/* <Footer /> */}
-    </>)
-}
-
-export default page
+export default Page; 
