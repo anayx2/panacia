@@ -15,7 +15,7 @@ const Hero = () => {
                     className="absolute top-0 left-0 min-h-full min-w-full object-cover"
                     aria-hidden="true"
                 >
-                    <source src="/website_3.mp4" type="video/mp4" />
+                    <source src="/website_31.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 {/* CTA Container */}
