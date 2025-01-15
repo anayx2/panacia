@@ -65,7 +65,7 @@ const Navbar = () => {
                             width={400}
                             height={400}
                             priority
-                            className="h-14 w-auto"
+                            className="h-auto w-[130px]"
                         />
                     </Link>
 
