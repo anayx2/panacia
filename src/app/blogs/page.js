@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
@@ -11,6 +12,7 @@ import {
     PaginationNext,
     PaginationPrevious,
 } from "@/components/ui/pagination"
+import { motion } from 'framer-motion'
 
 const blogs = [
     {
@@ -84,23 +86,70 @@ const categoryColors = {
     "Tip & Tricks": "bg-rose-400"
 }
 
+
+// Create motion components
+const MotionSection = motion.section;
+const MotionDiv = motion.div;
+const MotionUl = motion.ul;
+const MotionLi = motion.li;
+const MotionH2 = motion.h2;
+const MotionP = motion.p;
+
+const fadeInUp = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.8, ease: 'easeOut' }
+    }
+};
+
+const fadeIn = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: { duration: 0.8, ease: 'easeOut' }
+    }
+};
+const slideIn = {
+    hidden: { opacity: 0, x: -60 },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: { duration: 1.0, ease: 'easeOut' }
+    }
+};
+
 export default function BlogSection() {
     return (<>
-        <section className='relative h-[60dvh] w-full'>
-            <div
+
+        <motion.section
+            className='relative h-[60dvh] w-full'
+            initial="hidden"
+            animate="visible"
+            variants={fadeIn}
+        >            <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style={{
                     backgroundImage: "url('/sample/1.png')"
                 }}
             />
             <div className="absolute inset-0 bg-black/60" />
-            <div className="relative z-10 flex h-full items-center justify-center px-4 text-white">
-                <h2>
+            <motion.div
+                className="relative z-10 flex h-full items-center justify-center px-4 text-white"
+                variants={fadeInUp}
+            >
+                <motion.h2 variants={fadeInUp}>
                     Blogs
-                </h2>
-            </div>
-        </section>
-        <section className="container mx-auto px-4 py-16 flex justify-center">
+                </motion.h2>
+            </motion.div>
+        </motion.section>
+        <MotionSection
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={slideIn}
+            className="container mx-auto px-4 py-16 flex justify-center">
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-[95%]">
                 {blogs.map((blog) => (
                     <Link
@@ -110,7 +159,7 @@ export default function BlogSection() {
                     >
                         <article className={`h-full border border-1 rounded-2xl`}>
                             {/* Image */}
-                            <div className="relative aspect-[16/10] overflow-hidden ">
+                            <MotionDiv variants={fadeIn} className="relative aspect-[16/10] overflow-hidden ">
                                 <Image
                                     src={blog.image}
                                     alt={blog.title}
@@ -129,7 +178,7 @@ export default function BlogSection() {
                                         </span>
                                     ))}
                                 </div>
-                            </div>
+                            </MotionDiv>
 
                             {/* Content */}
                             <div className="space-y-4 p-6">
@@ -152,7 +201,7 @@ export default function BlogSection() {
                     </Link>
                 ))}
             </div>
-        </section>
+        </MotionSection>
         <section className='py-10'>
             <Pagination>
                 <PaginationContent>

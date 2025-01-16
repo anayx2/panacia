@@ -1,11 +1,71 @@
 'use client'
 import React, { useState } from 'react'
 import { MapPin, Mail, Phone, User2 } from 'lucide-react'
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Textarea } from '@/components/ui/textarea'
 import { Card, CardContent } from "@/components/ui/card"
-import Link from 'next/link';
+import Link from 'next/link'
+import { motion } from 'framer-motion'
+
+// Animation variants
+const fadeIn = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: { duration: 0.8, ease: 'easeOut' }
+    }
+}
+
+const slideUp = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.8, ease: 'easeOut' }
+    }
+}
+
+const staggerCards = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.2
+        }
+    }
+}
+
+const cardVariant = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+        opacity: 1,
+        scale: 1,
+        transition: { duration: 0.5, ease: 'easeOut' }
+    }
+}
+
+const formVariant = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.6,
+            ease: 'easeOut',
+            staggerChildren: 0.1
+        }
+    }
+}
+
+const inputVariant = {
+    hidden: { opacity: 0, x: -20 },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: { duration: 0.5 }
+    }
+}
 
 const contacts = [
     {
@@ -27,30 +87,35 @@ const contacts = [
         href: 'tel:07388869697'
     },
 ]
-const page = () => {
+
+const Page = () => {
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
         mobile: '',
         message: '',
-    });
+    })
 
     const handleSubmit = async (e) => {
-        e.preventDefault();
-        // Handle form submission here
-        console.log('Form submitted:', formData);
-    };
+        e.preventDefault()
+        console.log('Form submitted:', formData)
+    }
 
     const handleChange = (e) => {
         setFormData((prev) => ({
             ...prev,
             [e.target.name]: e.target.value,
-        }));
-    };
+        }))
+    }
 
     return (
         <>
-            <section className='relative h-[60dvh] w-full'>
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={fadeIn}
+                className='relative h-[60dvh] w-full'
+            >
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
@@ -58,41 +123,64 @@ const page = () => {
                     }}
                 />
                 <div className="absolute inset-0 bg-black/60" />
-                <div className="relative z-10 flex h-full items-center justify-center px-4 text-white">
-                    <h2>Get in Touch with Us
-                    </h2>
-                </div>
-            </section>
-            <section className="py-12 md:py-16 flex justify-center">
-                <div className="container w-[90%]">
-                    <h4 className='text-center my-10'>
-                        We'd love to hear from you! Whether you have a question, want to book a consultation, or need more information about our services, our team is here to help.
-                    </h4>
-                    <div className="grid gap-6 md:grid-cols-3">
-                        {contacts.map((contact, index) => (
+                <motion.div
+                    variants={slideUp}
+                    className="relative z-10 flex h-full items-center justify-center px-4 text-white"
+                >
+                    <h2>Get in Touch with Us</h2>
+                </motion.div>
+            </motion.section>
 
-                            <Card key={index} className="border-none bg-gradient-to-r from-rose-100 to-rose-300">
-                                <Link href={contact.href}>
-                                    <CardContent className="flex flex-col items-center p-6 text-center">
-                                        <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-sm">
-                                            <contact.icon className="h-8 w-8 text-rose-400" />
-                                        </div>
-                                        <h3 className="mb-2 text-xl font-semibold text-gray-900">{contact.title}</h3>
-                                        <div className="space-y-1">
-                                            {contact.details.map((detail, idx) => (
-                                                <p key={idx} className="text-muted-foreground">
-                                                    {detail}
-                                                </p>
-                                            ))}
-                                        </div>
-                                    </CardContent>
-                                </Link>
-                            </Card>
+            <motion.section
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeIn}
+                className="py-12 md:py-16 flex justify-center"
+            >
+                <div className="container w-[90%]">
+                    <motion.h4
+                        variants={slideUp}
+                        className='text-center my-10'
+                    >
+                        We'd love to hear from you! Whether you have a question, want to book a consultation, or need more information about our services, our team is here to help.
+                    </motion.h4>
+
+                    <motion.div
+                        variants={staggerCards}
+                        className="grid gap-6 md:grid-cols-3"
+                    >
+                        {contacts.map((contact, index) => (
+                            <motion.div key={index} variants={cardVariant}>
+                                <Card className="border-none bg-gradient-to-r from-rose-100 to-rose-300">
+                                    <Link href={contact.href}>
+                                        <CardContent className="flex flex-col items-center p-6 text-center">
+                                            <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-sm">
+                                                <contact.icon className="h-8 w-8 text-rose-400" />
+                                            </div>
+                                            <h3 className="mb-2 text-xl font-semibold text-gray-900">{contact.title}</h3>
+                                            <div className="space-y-1">
+                                                {contact.details.map((detail, idx) => (
+                                                    <p key={idx} className="text-muted-foreground">
+                                                        {detail}
+                                                    </p>
+                                                ))}
+                                            </div>
+                                        </CardContent>
+                                    </Link>
+                                </Card>
+                            </motion.div>
                         ))}
-                    </div>
+                    </motion.div>
                 </div>
-            </section>
-            <section>
+            </motion.section>
+
+            <motion.section
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeIn}
+            >
                 <div className='h-[70dvh]'>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19862.214288866795!2d-0.166726!3d51.517311!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ab507196af5%3A0xe5cfb58af2aabf40!2sPharmacentre!5e0!3m2!1sen!2sus!4v1736402860884!5m2!1sen!2sus"
@@ -105,15 +193,28 @@ const page = () => {
                         title="Panacea Health & Beauty Clinic Location"
                     />
                 </div>
-            </section>
-            <section className="w-full py-16 md:py-24 lg:py-32 flex justify-center ">
+            </motion.section>
+
+            <motion.section
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeIn}
+                className="w-full py-16 md:py-24 lg:py-32 flex justify-center"
+            >
                 <div className="container px-4 md:px-6 max-w-6xl bg-rose-50 py-10 rounded-2xl">
-                    <div className="flex flex-col items-center space-y-4 text-center">
+                    <motion.div
+                        variants={formVariant}
+                        className="flex flex-col items-center space-y-4 text-center"
+                    >
                         <h2 className="">SEND US MESSAGE</h2>
                         <div className="w-full max-w-3xl">
                             <form onSubmit={handleSubmit} className="grid gap-6">
-                                <div className="grid gap-4 sm:grid-cols-3">
-                                    <div className="w-full relative">
+                                <motion.div
+                                    variants={formVariant}
+                                    className="grid gap-4 sm:grid-cols-3"
+                                >
+                                    <motion.div variants={inputVariant} className="w-full relative">
                                         <Input
                                             name="fullName"
                                             placeholder="Full Name"
@@ -123,8 +224,8 @@ const page = () => {
                                             required
                                         />
                                         <User2 className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
-                                    </div>
-                                    <div className="w-full relative">
+                                    </motion.div>
+                                    <motion.div variants={inputVariant} className="w-full relative">
                                         <Input
                                             name="email"
                                             type="email"
@@ -135,8 +236,8 @@ const page = () => {
                                             required
                                         />
                                         <Mail className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
-                                    </div>
-                                    <div className="w-full relative">
+                                    </motion.div>
+                                    <motion.div variants={inputVariant} className="w-full relative">
                                         <Input
                                             name="Phone"
                                             type="number"
@@ -144,13 +245,13 @@ const page = () => {
                                             value={formData.phone}
                                             onChange={handleChange}
                                             className="w-full bg-white border-gray-200 pr-10 appearance-none"
-                                            style={{ MozAppearance: 'textfield' }} // Hides arrows in Firefox
+                                            style={{ MozAppearance: 'textfield' }}
                                         />
                                         <Phone className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
-                                    </div>
+                                    </motion.div>
+                                </motion.div>
 
-                                </div>
-                                <div className="w-full">
+                                <motion.div variants={inputVariant} className="w-full">
                                     <Textarea
                                         name="message"
                                         placeholder="Write Message"
@@ -159,19 +260,27 @@ const page = () => {
                                         className="w-full min-h-[200px] bg-white border-gray-200"
                                         required
                                     />
-                                </div>
-                                <Button
-                                    type="submit"
-                                    className="w-full bg-rose-400 text-white font-medium py-6"
+                                </motion.div>
+
+                                <motion.div
+                                    variants={inputVariant}
+                                    whileHover={{ scale: 1.02 }}
+                                    whileTap={{ scale: 0.98 }}
                                 >
-                                    SEND MESSAGE →
-                                </Button>
+                                    <Button
+                                        type="submit"
+                                        className="w-full bg-rose-400 text-white font-medium py-6"
+                                    >
+                                        SEND MESSAGE →
+                                    </Button>
+                                </motion.div>
                             </form>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
-            </section>
-        </>)
+            </motion.section>
+        </>
+    )
 }
 
-export default page
+export default Page

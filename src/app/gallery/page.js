@@ -1,6 +1,43 @@
 'use client'
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion'
+
+
+const fadeIn = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: { duration: 1.0, ease: 'easeOut' }
+    }
+};
+
+const slideIn = {
+    hidden: { opacity: 0, x: -60 },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: { duration: 1.0, ease: 'easeOut' }
+    }
+};
+const fadeInUp = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 1.0, ease: 'easeOut' }
+    }
+};
+
+const staggerChildren = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.2
+        }
+    }
+};
 
 const FilteredGallery = () => {
     const galleryData = [
@@ -58,18 +95,27 @@ const FilteredGallery = () => {
 
     return (
         <>
-            <section className='relative h-[60dvh] w-full'>
-                <div
+            <motion.section
+                className='relative h-[60dvh] w-full'
+                initial="hidden"
+                animate="visible"
+                variants={fadeIn}
+            >                <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
                         backgroundImage: "url('/sample/6.png')"
                     }}
                 />
                 <div className="absolute inset-0 bg-black/60" />
-                <div className="relative z-10 flex h-full items-center justify-center px-4 text-white">
-                    <h2>Gallery</h2>
-                </div>
-            </section>
+                <motion.div
+                    className="relative z-10 flex h-full items-center justify-center px-4 text-white"
+                    variants={fadeInUp}
+                >
+                    <motion.h2 variants={fadeInUp}>Gallery
+
+                    </motion.h2>
+                </motion.div>
+            </motion.section>
 
             <section className='py-10 flex flex-col justify-center items-center'>
                 <div className="flex flex-wrap justify-center gap-2 my-10">
@@ -88,10 +134,14 @@ const FilteredGallery = () => {
                 </div>
 
                 <div className='w-[90%]'>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                    <motion.div
+                        variants={fadeInUp} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                         {Object.values(columns).map((column, colIndex) => (
                             column.length > 0 && (
-                                <div key={colIndex} className="flex flex-col gap-4">
+                                <motion.div
+                                    variants={fadeInUp}
+
+                                    key={colIndex} className="flex flex-col gap-4">
                                     {column.map((image) => (
                                         <div key={image.id} className="relative w-full group">
                                             <Image
@@ -110,10 +160,10 @@ const FilteredGallery = () => {
                                             </div>
                                         </div>
                                     ))}
-                                </div>
+                                </ motion.div>
                             )
                         ))}
-                    </div>
+                    </motion.div>
                 </div>
             </section>
         </>

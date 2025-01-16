@@ -1,3 +1,5 @@
+'use client'
+
 import {
     Accordion,
     AccordionContent,
@@ -5,6 +7,63 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion"
 import React from 'react'
+import { motion } from 'framer-motion'
+
+// Animation variants
+const fadeIn = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: { duration: 0.8, ease: 'easeOut' }
+    }
+}
+
+const slideIn = {
+    hidden: { opacity: 0, x: -60 },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: { duration: 0.8, ease: 'easeOut' }
+    }
+}
+
+const fadeInUp = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.8, ease: 'easeOut' }
+    }
+}
+
+const staggerContainer = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.1,
+            delayChildren: 0.3
+        }
+    }
+}
+
+const accordionItemVariant = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.5, ease: 'easeOut' }
+    }
+}
+
+const textReveal = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.6, ease: 'easeOut' }
+    }
+}
 
 const faqItems = [
     {
@@ -31,8 +90,7 @@ const faqItems = [
         question: "Is there any downtime after treatments?",
         answer: "Most treatments have minimal to no downtime, though some may cause mild redness temporarily."
     },
-
-];
+]
 
 const faq2 = [
     {
@@ -53,11 +111,15 @@ const faq2 = [
     }
 ]
 
-
-const page = () => {
+const Page = () => {
     return (
         <>
-            <section className='relative h-[60dvh] w-full'>
+            <motion.section
+                className='relative h-[60dvh] w-full'
+                initial="hidden"
+                animate="visible"
+                variants={fadeIn}
+            >
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
@@ -65,73 +127,124 @@ const page = () => {
                     }}
                 />
                 <div className="absolute inset-0 bg-black/60" />
-                <div className="relative z-10 flex h-full items-center justify-center px-4 text-white">
-                    <h2>Frequently Asked Questions </h2>
-                </div>
-            </section>
-            <section className=" mx-auto px-4 py-16 flex justify-center items-center">
-                <div className="w-[90%]">
+                <motion.div
+                    className="relative z-10 flex h-full items-center justify-center px-4 text-white"
+                    variants={fadeInUp}
+                >
+                    <motion.h2
+                        variants={textReveal}
+                        initial="hidden"
+                        animate="visible"
+                    >
+                        Frequently Asked Questions
+                    </motion.h2>
+                </motion.div>
+            </motion.section>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        {/* Left Column - Text Content */}
-                        <div>
-                            <span className="text-sm text-gray-600 mb-2 block">
+            <motion.section
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="mx-auto px-4 py-16 flex justify-center items-center"
+            >
+                <motion.div
+                    variants={staggerContainer}
+                    className="w-[90%]"
+                >
+                    <motion.div
+                        variants={fadeInUp}
+                        className="grid grid-cols-1 md:grid-cols-2 gap-8"
+                    >
+                        <motion.div variants={textReveal}>
+                            <motion.span
+                                variants={fadeInUp}
+                                className="text-sm text-gray-600 mb-2 block"
+                            >
                                 Asked Questions
-                            </span>
-                            <h2 className="text-4xl font-bold mb-6">
-                                Got Questions on Your Mind? Check Out Our Company FAQs                        </h2>
-
-                        </div>
-                        <div>
+                            </motion.span>
+                            <motion.h2
+                                variants={fadeInUp}
+                                className="text-4xl font-bold mb-6"
+                            >
+                                Got Questions on Your Mind? Check Out Our Company FAQs
+                            </motion.h2>
+                        </motion.div>
+                        <motion.div
+                            variants={fadeInUp}
+                            className="flex items-center"
+                        >
                             <p className="text-gray-600">
-                                Enhance your appearance with our professional and effective aesthetic treatments at Panacea Health & Beauty.                        </p>
-                        </div>
-                        {/* Right Column - FAQ Accordion */}
-                    </div>
-                    <div className="flex gap-10 mt-10 lg:flex-row md:flex-row flex-col">
-                        <Accordion type="single" collapsible className="w-full space-y-4">
-                            {faqItems.map((item, index) => (
-                                <AccordionItem
-                                    key={index}
-                                    value={`item-${index}`}
-                                    className="border rounded-lg bg-rose-300 hover:bg-gradient-to-r from-rose-100 to-rose-300 transition-colors"
-                                >
-                                    <AccordionTrigger className="hover:no-underline px-6 py-4 [&[data-state=open]>div>svg]:rotate-180">
-                                        <div className="flex items-center justify-between w-full">
-                                            <span className="text-left font-medium pr-4">{item.question}</span>
+                                Enhance your appearance with our professional and effective aesthetic treatments at Panacea Health & Beauty.
+                            </p>
+                        </motion.div>
+                    </motion.div>
 
-                                        </div>
-                                    </AccordionTrigger>
-                                    <AccordionContent className="px-6 pb-4 text-gray-600">
-                                        {item.answer}
-                                    </AccordionContent>
-                                </AccordionItem>
-                            ))}
-                        </Accordion>
-                        <Accordion type="single" collapsible className="w-full space-y-4">
-                            {faq2.map((item, index) => (
-                                <AccordionItem
-                                    key={index}
-                                    value={`item-${index}`}
-                                    className="border rounded-lg bg-rose-300 hover:bg-gradient-to-r from-rose-100 to-rose-300 transition-colors"
-                                >
-                                    <AccordionTrigger className="hover:no-underline px-6 py-4 [&[data-state=open]>div>svg]:rotate-180">
-                                        <div className="flex items-center justify-between w-full">
-                                            <span className="text-left font-medium pr-4">{item.question}</span>
+                    <motion.div
+                        variants={staggerContainer}
+                        className="flex gap-10 mt-10 lg:flex-row md:flex-row flex-col"
+                    >
+                        <motion.div
+                            variants={fadeInUp}
+                            className="w-full"
+                        >
+                            <Accordion type="single" collapsible className="w-full space-y-4">
+                                {faqItems.map((item, index) => (
+                                    <motion.div
+                                        key={index}
+                                        variants={accordionItemVariant}
+                                        custom={index}
+                                    >
+                                        <AccordionItem
+                                            value={`item-${index}`}
+                                            className="border rounded-lg bg-rose-300 hover:bg-gradient-to-r from-rose-100 to-rose-300 transition-colors duration-300"
+                                        >
+                                            <AccordionTrigger className="hover:no-underline px-6 py-4 [&[data-state=open]>div>svg]:rotate-180">
+                                                <div className="flex items-center justify-between w-full">
+                                                    <span className="text-left font-medium pr-4">{item.question}</span>
+                                                </div>
+                                            </AccordionTrigger>
+                                            <AccordionContent className="px-6 pb-4 text-gray-600">
+                                                {item.answer}
+                                            </AccordionContent>
+                                        </AccordionItem>
+                                    </motion.div>
+                                ))}
+                            </Accordion>
+                        </motion.div>
 
-                                        </div>
-                                    </AccordionTrigger>
-                                    <AccordionContent className="px-6 pb-4 text-gray-600">
-                                        {item.answer}
-                                    </AccordionContent>
-                                </AccordionItem>
-                            ))}
-                        </Accordion>
-                    </div>
-                </div>
-            </section>
+                        <motion.div
+                            variants={fadeInUp}
+                            className="w-full"
+                        >
+                            <Accordion type="single" collapsible className="w-full space-y-4">
+                                {faq2.map((item, index) => (
+                                    <motion.div
+                                        key={index}
+                                        variants={accordionItemVariant}
+                                        custom={index}
+                                    >
+                                        <AccordionItem
+                                            value={`item-${index}`}
+                                            className="border rounded-lg bg-rose-300 hover:bg-gradient-to-r from-rose-100 to-rose-300 transition-colors duration-300"
+                                        >
+                                            <AccordionTrigger className="hover:no-underline px-6 py-4 [&[data-state=open]>div>svg]:rotate-180">
+                                                <div className="flex items-center justify-between w-full">
+                                                    <span className="text-left font-medium pr-4">{item.question}</span>
+                                                </div>
+                                            </AccordionTrigger>
+                                            <AccordionContent className="px-6 pb-4 text-gray-600">
+                                                {item.answer}
+                                            </AccordionContent>
+                                        </AccordionItem>
+                                    </motion.div>
+                                ))}
+                            </Accordion>
+                        </motion.div>
+                    </motion.div>
+                </motion.div>
+            </motion.section>
         </>
     )
 }
 
-export default page
+export default Page

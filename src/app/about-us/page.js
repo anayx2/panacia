@@ -1,15 +1,58 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import Navbar from '@/components/Navbar'
 import CounterSection from '@/components/about/Counter'
 import TeamSlider from '@/components/about/Team'
 import Link from 'next/link'
 
-const about = () => {
+const fadeInUp = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 1.0, ease: 'easeOut' }
+    }
+};
+
+const fadeIn = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: { duration: 1.0, ease: 'easeOut' }
+    }
+};
+
+const slideIn = {
+    hidden: { opacity: 0, x: -60 },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: { duration: 1.0, ease: 'easeOut' }
+    }
+};
+
+const staggerChildren = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.2
+        }
+    }
+};
+
+export default function AboutPage() {
     return (
         <>
-            <section className='relative h-[60dvh] w-full'>
+            <motion.section
+                className='relative h-[60dvh] w-full'
+                initial="hidden"
+                animate="visible"
+                variants={fadeIn}
+            >
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
@@ -17,36 +60,46 @@ const about = () => {
                     }}
                 />
                 <div className="absolute inset-0 bg-black/60" />
-                <div className="relative z-10 flex h-full items-center justify-center px-4 text-white">
-                    <h2>
+                <motion.div
+                    className="relative z-10 flex h-full items-center justify-center px-4 text-white"
+                    variants={fadeInUp}
+                >
+                    <motion.h2 variants={fadeInUp}>
                         About Us
-                    </h2>
-                </div>
-            </section>
+                    </motion.h2>
+                </motion.div>
+            </motion.section>
 
-
-            <section className="container mx-auto px-4 py-10 lg:min-h-[80vh] lg:py-20 max-w-[90%]">
+            <motion.section
+                className="container mx-auto px-4 py-10 lg:min-h-[80vh] lg:py-20 max-w-[90%]"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={staggerChildren}
+            >
                 <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-                    {/* Content */}
-                    <div className="space-y-6">
+                    <motion.div className="space-y-6" variants={slideIn}>
                         <h1 className="">
                             Empowering Your Health with Expert care
                         </h1>
-
-                        <p className="">
+                        <motion.p variants={fadeInUp}>
                             Welcome to Panacea Clinic, where personalized care meets cutting-edge healthcare solutions. Our mission is to empower individuals with exceptional medical services designed to nurture health and well-being. With a team of highly skilled doctors and healthcare specialists, we are committed to delivering tailored care for every patient.
-                            By combining the latest advancements in medical technology with a compassionate approach, we ensure the best possible outcomes. At Panacea Clinic, we believe every patient’s journey to health is unique, and we are here to guide you every step of the way. Choose Panacea Clinic for expertise, trust, and unparalleled care that prioritizes your well-being. Together, let’s build a healthier, happier future.
-                        </p>
+                            By combining the latest advancements in medical technology with a compassionate approach, we ensure the best possible outcomes. At Panacea Clinic, we believe every patient's journey to health is unique, and we are here to guide you every step of the way. Choose Panacea Clinic for expertise, trust, and unparalleled care that prioritizes your well-being. Together, let's build a healthier, happier future.
+                        </motion.p>
                         <Link href="/book-an-appointment">
                             <Button
-                                variant="default" className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black">
+                                variant="default"
+                                className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black"
+                            >
                                 Book Your Consultation Today
                             </Button>
                         </Link>
-                    </div>
+                    </motion.div>
 
-                    {/* Image */}
-                    <div className="relative aspect-[2/3] overflow-hidden rounded-lg lg:aspect-[2/2] ">
+                    <motion.div
+                        className="relative aspect-[2/3] overflow-hidden rounded-lg lg:aspect-[2/2]"
+                        variants={fadeInUp}
+                    >
                         <Image
                             src="/about.png"
                             alt="Biolite Aesthetic Clinic Interior"
@@ -54,29 +107,54 @@ const about = () => {
                             className="object-cover"
                             priority
                         />
-                    </div>
+                    </motion.div>
                 </div>
-            </section>
-            <section>
+            </motion.section>
+
+            <motion.section
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeIn}
+            >
                 <CounterSection />
-            </section>
-            <section className='flex justify-center w-full flex-col items-center '>
-                <h2>
+            </motion.section>
+
+            <motion.section
+                className='flex justify-center w-full flex-col items-center'
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={staggerChildren}
+            >
+                <motion.h2 variants={fadeInUp}>
                     Our Promise of Excellence
-                </h2>
+                </motion.h2>
                 <div className="relative overflow-hidden w-[90%]">
                     <div className="container relative z-10 mx-auto px-4 py-16">
-                        {/* Consultation Section */}
-                        <section className="mb-20">
+                        <motion.section
+                            className="mb-20"
+                            variants={fadeInUp}
+                        >
                             <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
-                                <div className="flex flex-col justify-center space-y-4">
+                                <motion.div
+                                    className="flex flex-col justify-center space-y-4"
+                                    variants={slideIn}
+                                >
                                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                                        Comprehensive Care for All                                    </h2>
-                                    <p className="text-lg leading-relaxed text-muted-foreground">
+                                        Comprehensive Care for All
+                                    </h2>
+                                    <motion.p
+                                        className="text-lg leading-relaxed text-muted-foreground"
+                                        variants={fadeInUp}
+                                    >
                                         Panacea Clinic delivers personalized healthcare services designed to meet individual needs. From preventive care to advanced treatments, we ensure a patient-centered approach. Our holistic methods focus on physical, mental, and emotional well-being, offering complete solutions under one roof. Trust us to prioritize your health with compassion and unmatched expertise.
-                                    </p>
-                                </div>
-                                <div className="relative h-[300px] overflow-hidden rounded-lg lg:h-[400px]">
+                                    </motion.p>
+                                </motion.div>
+                                <motion.div
+                                    className="relative h-[300px] overflow-hidden rounded-lg lg:h-[400px]"
+                                    variants={fadeInUp}
+                                >
                                     <Image
                                         src="/Comprehensive.jpg"
                                         alt="Professional consultation session"
@@ -85,14 +163,19 @@ const about = () => {
                                         sizes="(max-width: 768px) 100vw, 50vw"
                                         priority
                                     />
-                                </div>
+                                </motion.div>
                             </div>
-                        </section>
+                        </motion.section>
 
-                        {/* Advanced Techniques Section */}
-                        <section className="mb-20">
+                        <motion.section
+                            className="mb-20"
+                            variants={fadeInUp}
+                        >
                             <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
-                                <div className="relative h-[300px] overflow-hidden rounded-lg lg:h-[400px] lg:order-1">
+                                <motion.div
+                                    className="relative h-[300px] overflow-hidden rounded-lg lg:h-[400px] lg:order-1"
+                                    variants={fadeInUp}
+                                >
                                     <Image
                                         src="/stateoftheart.png"
                                         alt="Advanced treatment procedure"
@@ -100,28 +183,46 @@ const about = () => {
                                         className="object-cover"
                                         sizes="(max-width: 768px) 100vw, 50vw"
                                     />
-                                </div>
-                                <div className="flex flex-col justify-center space-y-4 lg:order-2">
+                                </motion.div>
+                                <motion.div
+                                    className="flex flex-col justify-center space-y-4 lg:order-2"
+                                    variants={slideIn}
+                                >
                                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                                        State-of-the-Art Facilities                                    </h2>
-                                    <p className="text-lg leading-relaxed text-muted-foreground">
+                                        State-of-the-Art Facilities
+                                    </h2>
+                                    <motion.p
+                                        className="text-lg leading-relaxed text-muted-foreground"
+                                        variants={fadeInUp}
+                                    >
                                         Experience world-class healthcare at Panacea Clinic, equipped with cutting-edge medical technologies. Our advanced tools enable precise diagnostics and effective treatments. We consistently update our facilities to align with the latest healthcare innovations, ensuring you receive the highest standard of care. Modern technology meets compassionate service for optimal patient outcomes.
-                                    </p>
-                                </div>
+                                    </motion.p>
+                                </motion.div>
                             </div>
-                        </section>
+                        </motion.section>
 
-                        {/* Holistic Approach Section */}
-                        <section>
+                        <motion.section
+                            variants={fadeInUp}
+                        >
                             <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
-                                <div className="flex flex-col justify-center space-y-4">
+                                <motion.div
+                                    className="flex flex-col justify-center space-y-4"
+                                    variants={slideIn}
+                                >
                                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                                        Experienced Medical Professionals                                    </h2>
-                                    <p className="text-lg leading-relaxed text-muted-foreground">
-                                        Our team of skilled doctors and specialists brings unparalleled expertise to your care. With years of experience and dedication, they provide accurate diagnoses and effective treatments tailored to your needs. At Panacea Clinic, you’ll benefit from a collaborative approach that ensures the best outcomes for your overall health and wellness.
-                                    </p>
-                                </div>
-                                <div className="relative h-[300px] overflow-hidden rounded-lg lg:h-[400px]">
+                                        Experienced Medical Professionals
+                                    </h2>
+                                    <motion.p
+                                        className="text-lg leading-relaxed text-muted-foreground"
+                                        variants={fadeInUp}
+                                    >
+                                        Our team of skilled doctors and specialists brings unparalleled expertise to your care. With years of experience and dedication, they provide accurate diagnoses and effective treatments tailored to your needs. At Panacea Clinic, you'll benefit from a collaborative approach that ensures the best outcomes for your overall health and wellness.
+                                    </motion.p>
+                                </motion.div>
+                                <motion.div
+                                    className="relative h-[300px] overflow-hidden rounded-lg lg:h-[400px]"
+                                    variants={fadeInUp}
+                                >
                                     <Image
                                         src="/professionals.jpg"
                                         alt="Gentle aesthetic treatment"
@@ -129,17 +230,25 @@ const about = () => {
                                         className="object-cover"
                                         sizes="(max-width: 768px) 100vw, 50vw"
                                     />
-                                </div>
+                                </motion.div>
                             </div>
-                        </section>
+                        </motion.section>
                     </div>
                 </div>
-            </section>
-            <section className="container mx-auto px-4 py-16 w-[90%]">
+            </motion.section>
+
+            <motion.section
+                className="container mx-auto px-4 py-16 w-[90%]"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={staggerChildren}
+            >
                 <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
-                    {/* Images Container */}
-                    <div className="relative mx-auto w-full max-w-2xl">
-                        {/* First Image */}
+                    <motion.div
+                        className="relative mx-auto w-full max-w-2xl"
+                        variants={fadeInUp}
+                    >
                         <div className="relative aspect-square w-4/5 overflow-hidden rounded-3xl">
                             <Image
                                 src="/Commitment1.jpg"
@@ -149,8 +258,6 @@ const about = () => {
                                 priority
                             />
                         </div>
-
-                        {/* Second Image */}
                         <div className="absolute -bottom-20 right-0 aspect-[4/3] w-2/3 overflow-hidden rounded-3xl">
                             <Image
                                 src="/Commitment.jpg"
@@ -159,17 +266,21 @@ const about = () => {
                                 className="object-cover"
                             />
                         </div>
-                    </div>
+                    </motion.div>
 
-                    {/* Content */}
-                    <div className="space-y-6">
+                    <motion.div
+                        className="space-y-6"
+                        variants={slideIn}
+                    >
                         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                            Commitment to Patient Satisfaction                        </h2>
-
-                        <p className="text-lg ">
+                            Commitment to Patient Satisfaction
+                        </h2>
+                        <motion.p
+                            className="text-lg"
+                            variants={fadeInUp}
+                        >
                             Patient satisfaction drives everything we do at Panacea Clinic. We prioritize building trust by delivering compassionate, high-quality care. Our goal is to exceed expectations, creating a positive healthcare experience for every individual. From your first visit to follow-ups, we are here to support your journey toward better health and well-being.
-                        </p>
-
+                        </motion.p>
                         <Link href={'/services'}>
                             <Button
                                 variant="default"
@@ -178,14 +289,18 @@ const about = () => {
                                 READ MORE →
                             </Button>
                         </Link>
-                    </div>
+                    </motion.div>
                 </div>
-            </section>
-            <section>
+            </motion.section>
+
+            <motion.section
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeIn}
+            >
                 <TeamSlider />
-            </section>
+            </motion.section>
         </>
     )
 }
-
-export default about
