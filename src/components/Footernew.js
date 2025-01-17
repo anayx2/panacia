@@ -12,7 +12,7 @@ const topMenuItems = [
 ]
 
 const bottomMenuItems = [
-    { name: 'Faq', href: '/faq' },
+    { name: 'FAQ\'s', href: '/faq' },
     { name: 'Gallery', href: '/gallery' },
     { name: 'Contact Us', href: '/contact-us' },
 ]
