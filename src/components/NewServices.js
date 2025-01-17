@@ -888,7 +888,7 @@ const TreatmentsSection = () => {
                     variant="default"
                     className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black"
                 >
-                    VIEW MORE
+                    VIEW MORE →
                 </Button>
             </Link>
         </section>

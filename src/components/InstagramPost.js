@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Image from "next/image";
+import Link from 'next/link';
 
 const posts = [
     { id: 1, image: '/about-img1.jpg' },
@@ -170,10 +171,12 @@ const MarqueeCarousel = () => {
                 </div>
 
                 {/* Instagram Button */}
-                <div className="absolute left-1/2 -bottom-[2rem] -translate-x-1/2 -translate-y-1/2 w-[300px] hidden md:block py-10">
-                    <button className="w-[200px] p-2 rounded-full bg-black text-white">
-                        Instagram
-                    </button>
+                <div className="absolute left-1/2 -bottom-[1.8rem] -translate-x-1/2 -translate-y-1/2 w-[300px] block py-10">
+                    <Link href={'https://www.instagram.com/panaceaskinclinic/'}>
+                        <button className="w-[230px] p-2 rounded-full bg-black text-white">
+                            Instagram
+                        </button>
+                    </Link>
                 </div>
             </div>
         </>

@@ -37,20 +37,20 @@ export function Footer() {
 
                     {/* Contact Information */}
                     <div className="flex flex-col items-center gap-4 mb-8">
-                        <div className="hidden md:flex items-center gap-2 text-black">
+                        <div className="hidden md:flex items-center gap-2 text-black hover:text-rose-400 transition-colors">
                             <MapPin className="w-5 h-5" />
                             <span>Pharmacentre Pharmacy,149 Edgware Rd, Tyburnia, London W2 2HU</span>
                         </div>
                         <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8">
-                            <div className="flex items-center gap-2">
-                                <Phone className="w-5 h-5" />
-                                <a href="tel:07388869697" className="hover:text-[#C8A97E] transition-colors">
+                            <div className="flex items-center gap-2 hover:text-rose-400 transition-colors">
+                                <Phone className="w-5 h-5 " />
+                                <a href="tel:07388869697" className="">
                                     07388869697
                                 </a>
                             </div>
-                            <div className="flex items-center gap-2">
-                                <Mail className="w-5 h-5" />
-                                <a href="mailto:info@panacea-clinic.co.uk" className="hover:text-[#C8A97E] transition-colors">
+                            <div className="flex items-center gap-2 hover:text-rose-400  transition-colors">
+                                <Mail className="w-5 h-5 " />
+                                <a href="mailto:info@panacea-clinic.co.uk" className="">
                                     info@panacea-clinic.co.uk                                </a>
                             </div>
                         </div>
@@ -65,7 +65,7 @@ export function Footer() {
                             <Link
                                 key={item.label}
                                 href={item.href}
-                                className="hover:text-white transition-colors"
+                                className="hover:text-rose-400 transition-colors"
                             >
                                 {item.name}
                             </Link>
@@ -82,16 +82,16 @@ export function Footer() {
                                 <Link
                                     key={item.label}
                                     href={item.href}
-                                    className="hover:text-white transition-colors"
+                                    className="hover:text-rose-400 transition-colors"
                                 >
                                     {item.name}
                                 </Link>
                             ))}
                         </nav>
                         {/* Copyright */}
-                        <div className="text-center text-sm text-black w-full">
-                            <p className="w-auto">Copyright © 2024 Ayurbalance, LLC. All Rights Reserved.</p>
-                        </div>
+                        {/* <div className="text-center text-sm text-black w-full">
+                            <p className="w-auto">Copyright © 2024 Panacea, LLC. All Rights Reserved.</p>
+                        </div> */}
                     </div>
                 </div>
             </div>

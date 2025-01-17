@@ -89,9 +89,9 @@ export default function AboutPage() {
                         <Link href="/book-an-appointment">
                             <Button
                                 variant="default"
-                                className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black"
+                                className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 "
                             >
-                                Book Your Consultation Today
+                                Book Your Consultation Today →
                             </Button>
                         </Link>
                     </motion.div>
@@ -284,7 +284,7 @@ export default function AboutPage() {
                         <Link href={'/services'}>
                             <Button
                                 variant="default"
-                                className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black"
+                                className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 "
                             >
                                 READ MORE →
                             </Button>

@@ -129,14 +129,24 @@ const Navbar = () => {
                     <Link href="/" className="relative flex items-center">
                         {/* Soft shadow blending with background */}
                         {/* <div className="absolute inset-0 translate-x-0 translate-y-1 bg-white rounded-full blur-2xl opacity-60"></div> */}
-                        <Image
-                            src="/logo.png"
-                            alt="Logo"
-                            width={400}
-                            height={400}
-                            priority
-                            className="h-auto w-[130px] relative"
-                        />
+
+                        {isHomepage ?
+                            <Image
+                                src="/logo.png"
+                                alt="Logo"
+                                width={400}
+                                height={400}
+                                priority
+                                className="h-auto w-[130px] relative"
+                            /> : <Image
+                                src="/Logo_white.png"
+                                alt="Logo"
+                                width={400}
+                                height={400}
+                                priority
+                                className="h-auto w-[130px] relative"
+                            />
+                        }
                     </Link>
 
 
@@ -190,8 +200,8 @@ const Navbar = () => {
                                                 whileHover={{ scale: 1.05 }}
                                                 onClick={toggleDropdown}
                                                 className={`flex items-center py-2 px-3 md:p-0 text-[#fff] text-xl relative transition-all duration-300 ${isActive
-                                                        ? "border-b-2 border-white font-semibold"
-                                                        : "hover:text-rose-300"
+                                                    ? "border-b-2 border-white font-semibold"
+                                                    : "hover:text-rose-300"
                                                     }`}
                                             >
                                                 Services
