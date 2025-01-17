@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply font-poppins;
+  @apply font-sans; /* Since we configured Roboto as the sans font in Tailwind config */
 }
 
 @layer base {

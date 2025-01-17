@@ -91,7 +91,7 @@ const services = [
         id: 13,
         title: "Dermaplaning",
         description: "Exfoliate dead skin and remove peach fuzz with Dermaplaning, leaving your skin smooth, radiant, and makeup-ready.",
-        image: "/services1/dermaplanning.jpgs",
+        image: "/services1/dermaplanning.jpg",
         href: "/services/netra-basti"
     }
 ]

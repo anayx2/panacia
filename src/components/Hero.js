@@ -17,10 +17,10 @@ const Hero = () => {
                     className="absolute top-0 left-0 min-h-full min-w-full object-cover"
                     aria-hidden="true"
                 >
-                    <source src="/website_31.mp4" type="video/mp4" />
+                    <source src="/website_312.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-           
+
                 {/* CTA Container */}
                 <div className="relative z-10 flex h-full lg:w-[50%] md:w-[50%] w-full items-center justify-center px-4 sm:px-6 lg:px-8 mt-5">
 
@@ -74,7 +74,7 @@ const Hero = () => {
                                 <Link href={'/book-an-appointment'}>
                                     <button
                                         type="submit"
-                                        className="flex text-left justify-center gap-2 mt-5 items-center shadow-xl text-lg bg-rose-300 backdrop-blur-md lg:font-semibold isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full  hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-5 py-2 overflow-hidden border-2 rounded-full group animate-fade-up [animation-delay:600ms] [animation-fill-mode:forwards] opacity-0"
+                                        className="flex text-left justify-center gap-2 mt-5 items-center shadow-xl text-lg bg-rose-300 backdrop-blur-md lg:font-semibold isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full   before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-5 py-2 overflow-hidden border-2 rounded-full group animate-fade-up [animation-delay:600ms] [animation-fill-mode:forwards] opacity-0"
                                     >
                                         Book Your Appointment Today
                                         <svg

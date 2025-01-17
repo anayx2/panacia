@@ -9,7 +9,7 @@ export default function ImageComparison({
     afterLabel = 'After',
 }) {
     const [isResizing, setIsResizing] = useState(false);
-    const [position, setPosition] = useState(50);
+    const [position, setPosition] = useState(30);
     const containerRef = useRef(null);
 
     const handleMove = (event) => {

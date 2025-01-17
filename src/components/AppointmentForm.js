@@ -121,11 +121,11 @@ export default function MultiStepBooking() {
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(formattedData),
                 });
-                if (response.ok) {
-                    alert('Appointment booked successfully!');
-                } else {
-                    alert('Failed to book the appointment. Please try again.');
-                }
+                // if (response.ok) {
+                //     alert('Appointment booked successfully!');
+                // } else {
+                //     alert('Failed to book the appointment. Please try again.');
+                // }
             } catch (error) {
                 console.error('Error:', error);
                 alert('An error occurred. Please try again.');

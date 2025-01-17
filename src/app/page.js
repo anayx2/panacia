@@ -76,13 +76,14 @@ const Page = () => {
       >
         <MotionDiv
           variants={slideIn}
-          className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-rose-100"
+          className="flex items-center justify-center p-2 overflow-hidden rounded-2xl bg-rose-200"
         >
           <Image
-            src="/homesec2.jpg"
+            src="/sec2imghome.jpg"
             alt="Beauty treatment demonstration"
-            fill
-            className="object-cover"
+            height={900}
+            width={900}
+            className="w-full h-auto rounded-2xl"
             priority
           />
         </MotionDiv>
@@ -122,7 +123,7 @@ const Page = () => {
             <Link href={'/about-us'}>
               <Button
                 variant="default"
-                className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black"
+                className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 "
               >
                 READ MORE →
               </Button>

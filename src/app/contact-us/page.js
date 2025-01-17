@@ -71,7 +71,7 @@ const contacts = [
     {
         icon: MapPin,
         title: "Location",
-        details: ["Pharmacentre Pharmacy 149 Edgware Rd", " Tyburnia London W2 2HU"],
+        details: ["Pharmacentre Pharmacy 149 Edgware Rd Tyburnia London W2 2HU"],
         href: 'https://www.google.com/maps/dir//Pharmacentre+149+Edgware+Rd+Tyburnia,+London+W2+2HU+United+Kingdom/@51.5173113,-0.1667256,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x48761ab507196af5:0xe5cfb58af2aabf40!2m2!1d-0.1666838!2d51.5173291?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D'
     },
     {
@@ -119,7 +119,7 @@ const Page = () => {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
-                        backgroundImage: "url('/sample/8.png')"
+                        backgroundImage: "url('/sample/contact_banner.jpg')"
                     }}
                 />
                 <div className="absolute inset-0 bg-black/60" />
@@ -139,20 +139,20 @@ const Page = () => {
                 className="py-12 md:py-16 flex justify-center"
             >
                 <div className="container w-[90%]">
-                    <motion.h4
+                    {/* <motion.h4
                         variants={slideUp}
                         className='text-center my-10'
                     >
                         We'd love to hear from you! Whether you have a question, want to book a consultation, or need more information about our services, our team is here to help.
-                    </motion.h4>
+                    </motion.h4> */}
 
                     <motion.div
                         variants={staggerCards}
-                        className="grid gap-6 md:grid-cols-3"
+                        className="grid gap-6 md:grid-cols-3 "
                     >
                         {contacts.map((contact, index) => (
-                            <motion.div key={index} variants={cardVariant}>
-                                <Card className="border-none bg-gradient-to-r from-rose-100 to-rose-300">
+                            <motion.div key={index} variants={cardVariant} className=''>
+                                <Card className="border-none bg-gradient-to-r from-rose-100 to-rose-300 flex items-stretch justify-center h-full">
                                     <Link href={contact.href}>
                                         <CardContent className="flex flex-col items-center p-6 text-center">
                                             <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-sm">

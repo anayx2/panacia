@@ -56,7 +56,7 @@ export default function AboutPage() {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
-                        backgroundImage: "url('/sample/5.png')"
+                        backgroundImage: "url('/sample/about.png')"
                     }}
                 />
                 <div className="absolute inset-0 bg-black/60" />
@@ -127,7 +127,7 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 variants={staggerChildren}
             >
-                <motion.h2 variants={fadeInUp}>
+                <motion.h2 variants={fadeInUp} className='text-center'>
                     Our Promise of Excellence
                 </motion.h2>
                 <div className="relative overflow-hidden w-[90%]">
@@ -246,7 +246,7 @@ export default function AboutPage() {
             >
                 <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
                     <motion.div
-                        className="relative mx-auto w-full max-w-2xl"
+                        className="relative mx-auto w-full max-w-2xl mb-20"
                         variants={fadeInUp}
                     >
                         <div className="relative aspect-square w-4/5 overflow-hidden rounded-3xl">

@@ -1,12 +1,14 @@
-import { Poppins } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import "./globals.css";
-import Footer from '@/components/Footer';
+// import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
+import { Footer } from '@/components/Footernew';
 
-const poppins = Poppins({
-  subsets: ['latin'], // Specify the subsets you need
-  weight: ['400', '700'], // Optional: include weights as needed
-  variable: '--font-poppins', // Optional: use as a CSS variable
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'], // Added 500 for medium weight
+  variable: '--font-roboto',
+  display: 'swap', // Ensures text remains visible during font load
 });
 
 export const metadata = {
@@ -18,10 +20,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} antialiased`}
+        className={`${roboto.variable} font-sans antialiased`}
       >
         <Navbar />
         {children}
+        {/* <Footer /> */}
         <Footer />
       </body>
     </html>
