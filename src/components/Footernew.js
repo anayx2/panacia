@@ -89,9 +89,9 @@ export function Footer() {
                             ))}
                         </nav>
                         {/* Copyright */}
-                        {/* <div className="text-center text-sm text-black w-full">
-                            <p className="w-auto">Copyright © 2024 Panacea, LLC. All Rights Reserved.</p>
-                        </div> */}
+                        <div className="text-center text-sm text-black w-full">
+                            <p className="w-auto">Copyright © 2025 Panacea Health & Beauty Clinic . All rights reserved.</p>
+                        </div>
                     </div>
                 </div>
             </div>

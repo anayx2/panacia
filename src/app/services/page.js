@@ -61,7 +61,7 @@ const services = [
     },
     {
         id: 9,
-        title: "PRP Hair Losss",
+        title: "PRP Hair Loss",
         description: "Combat hair loss with PRP treatments, stimulating hair growth and strengthening follicles for thicker, healthier hair.",
         image: "/services1/hairloss.jpg",
         href: "/services/shirodhara"

@@ -6,6 +6,7 @@ import { useRouter, usePathname } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Card } from "./ui/card";
 import { motion, AnimatePresence } from "framer-motion"
+import { Button } from "./ui/button";
 
 
 const navItems = [
@@ -23,6 +24,100 @@ const dropdownItems = [
     { href: "/services/#", label: "Mesotherapy" },
     { href: "/services/#", label: "Fat Dissolving" },
 ];
+
+const services = [
+    {
+        id: 1,
+        title: "Anti-Wrinkle Treatments",
+        description: "Smooth away wrinkles with our effective anti-wrinkle treatments, designed to rejuvenate your skin and restore a youthful, radiant appearance",
+        image: "/services1/wrinke.jpg",
+        href: "/services/wellness-consultation"
+    },
+    {
+        id: 2,
+        title: "Mesotherapy",
+        description: "Achieve glowing, nourished skin with Mesotherapy, a technique delivering vitamins and nutrients directly to your skin for remarkable results.",
+        image: "/blog1.png",
+        href: "/services/abhyanga"
+    },
+    {
+        id: 3,
+        title: "Fat Dissolving",
+        description: "Say goodbye to stubborn fat with our safe and effective fat-dissolving treatments, tailored to sculpt your body effortlessly.",
+        image: "/services1/fatdissolving.jpg",
+        href: "/services/shirodhara"
+    },
+    {
+        id: 4,
+        title: "Microneedling",
+        description: "Revitalize your skin with Microneedling, promoting collagen production to reduce scars, fine lines, and improve skin texture.",
+        image: "/services1/microneedling.jpg",
+        href: "/services/kati-basti"
+    },
+    {
+        id: 5,
+        title: "Vitamin B12 Injection",
+        description: "Boost your energy and enhance your overall well-being with our Vitamin B12 injections, essential for vitality and health.",
+        image: "/services1/cosmetologist-making-injections-face-woman-beauty-salon.jpg",
+        href: "/services/prushta-basti"
+    },
+    {
+        id: 6,
+        title: "Hopi Ear Candle",
+        description: "Experience relaxation and improved ear health with Hopi Ear Candling, a natural therapy to clear blockages and restore balance.",
+        image: "/services1/hopiearcandle.jpg",
+        href: "/services/netra-basti"
+    },
+    {
+        id: 7,
+        title: "IV Drip",
+        description: "Rehydrate, rejuvenate, and replenish essential nutrients with our custom IV Drip therapies for optimal wellness.",
+        image: "/services1/ivdrip.jpg",
+        href: "/services/wellness-consultation"
+    },
+    {
+        id: 8,
+        title: "Bio Filler",
+        description: "Enjoy natural, non-surgical facial enhancement with Bio Fillers, restoring volume and smoothing out fine lines effectively.",
+        image: "/services1/biofillers.jpg",
+        href: "/services/abhyanga"
+    },
+    {
+        id: 9,
+        title: "PRP Hair Losss",
+        description: "Combat hair loss with PRP treatments, stimulating hair growth and strengthening follicles for thicker, healthier hair.",
+        image: "/services1/hairloss.jpg",
+        href: "/services/shirodhara"
+    },
+    {
+        id: 10,
+        title: "PRP Facial",
+        description: "Rejuvenate your skin with PRP Facials, boosting collagen and delivering a radiant, youthful complexion.",
+        image: "/services1/PRPFacial.jpg",
+        href: "/services/kati-basti"
+    },
+    {
+        id: 11,
+        title: "PDO threads",
+        description: "Lift and tighten sagging skin with PDO threads, a non-invasive solution for a firmer and rejuvenated appearance.",
+        image: "/services1/threadspds.jpg",
+        href: "/services/prushta-basti"
+    },
+    {
+        id: 12,
+        title: "Skin Booster",
+        description: "Hydrate and refresh your skin with Skin Boosters, enhancing elasticity and restoring your natural glow effortlessly.",
+        image: "/services1/skinbooster.jpg",
+        href: "/services/netra-basti"
+    },
+    {
+        id: 13,
+        title: "Dermaplaning",
+        description: "Exfoliate dead skin and remove peach fuzz with Dermaplaning, leaving your skin smooth, radiant, and makeup-ready.",
+        image: "/services1/dermaplanning.jpg",
+        href: "/services/netra-basti"
+    }
+]
 
 const Navbar = () => {
     const router = useRouter();
@@ -195,22 +290,21 @@ const Navbar = () => {
                                     };
 
                                     return (
-                                        <li key={label} className="relative" ref={dropdownRef}>
+                                        <li key={label} className="" ref={dropdownRef}>
                                             <motion.button
-                                                whileHover={{ scale: 1.05 }}
                                                 onClick={toggleDropdown}
-                                                className={`flex items-center py-2 px-3 md:p-0 text-[#fff] text-xl relative transition-all duration-300 ${isActive
+                                                className={`flex items-center py-2 px-3 md:p-0 text-[#fff] text-xl transition-all duration-300 ${isActive
                                                     ? "border-b-2 border-white font-semibold"
                                                     : "hover:text-rose-300"
                                                     }`}
                                             >
                                                 Services
-                                                <motion.div
+                                                <div
                                                     animate={{ rotate: isDropdownOpen ? 180 : 0 }}
                                                     transition={{ duration: 0.3 }}
                                                 >
                                                     <ChevronDown className="ml-2" />
-                                                </motion.div>
+                                                </div>
                                             </motion.button>
                                             <AnimatePresence>
                                                 {isDropdownOpen && (
@@ -219,40 +313,33 @@ const Navbar = () => {
                                                         animate="visible"
                                                         exit="exit"
                                                         variants={dropdownAnimation}
+                                                        className="absolute left-0 right-0 mt-4"
                                                     >
-                                                        <Card>
-                                                            <ul className="absolute left-0 mt-2 bg-white text-black shadow-lg rounded-md w-48">
-                                                                {dropdownItems.map(({ href, label }) => (
-                                                                    <motion.li
-                                                                        key={label}
+                                                        <div className="w-full">
+                                                            <ul className="rounded-lg shadow-lg w-[80%] mx-auto p-4 text-black bg-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                                                                {services.map(({ image, title }, index) => (
+                                                                    <li
+                                                                        key={index}
                                                                         whileHover={{
-                                                                            backgroundColor: "#fff1f2",
-                                                                            transition: { duration: 0.2 }
+                                                                            scale: 1.05,
+                                                                            transition: { duration: 0.2 },
                                                                         }}
+                                                                        className="flex flex-col items-center p-4 bg-rose-100 rounded-lg shadow-md"
                                                                     >
-                                                                        <Link
-                                                                            href={href}
-                                                                            className="block px-4 py-2 transition-colors"
-                                                                        >
-                                                                            {label}
-                                                                        </Link>
-                                                                    </motion.li>
+                                                                        <div className="w-16 h-16 mb-2">
+                                                                            <Image
+                                                                                src={image}
+                                                                                alt={title}
+                                                                                width={200}
+                                                                                height={200}
+                                                                                className="w-full h-full object-cover rounded-full" />
+                                                                        </div>
+                                                                        <h3 className="text-sm font-medium text-gray-800">{title}</h3>
+                                                                    </li>
                                                                 ))}
-                                                                <motion.li
-                                                                    whileHover={{
-                                                                        backgroundColor: "#f3f4f6",
-                                                                        transition: { duration: 0.2 }
-                                                                    }}
-                                                                >
-                                                                    <Link
-                                                                        href="/services"
-                                                                        className="block px-4 py-2 text-rose-500 font-semibold transition-colors"
-                                                                    >
-                                                                        View More
-                                                                    </Link>
-                                                                </motion.li>
+                                                                {/* <Button></Button> */}
                                                             </ul>
-                                                        </Card>
+                                                        </div>
                                                     </motion.div>
                                                 )}
                                             </AnimatePresence>
