@@ -8,7 +8,6 @@ const topMenuItems = [
     { name: 'About Us', href: '/about-us' },
     { name: 'Our Services', href: '/services' },
     { name: 'Blogs', href: '/blogs' },
-
 ]
 
 const bottomMenuItems = [
@@ -19,7 +18,7 @@ const bottomMenuItems = [
 
 export function Footer() {
     return (
-        <footer className="bg-gradient-to-b from-rose-100 to-rose-300 text-black py-12">
+        <footer className="bg-gradient-to-b from-rose-100 to-rose-300 text-black pt-12">
             <div className="container mx-auto px-4">
                 {/* Logo and Main Content */}
                 <div className="flex flex-col items-center mb-12">
