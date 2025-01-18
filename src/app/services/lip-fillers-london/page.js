@@ -257,7 +257,7 @@ const page = () => {
             </section>
             <section className="max-w-7xl mx-auto px-4 py-12 md:py-16 w-[90%]">
                 <h2 className='text-center mb-10'>
-                    Frequently asked questions about dermal fillers? </h2>
+                    Frequently asked questions about Skin Rejuvenation </h2>
                 <div className="mx-auto">
                     <Accordion type="single" collapsible className="space-y-2">
                         {faqData.map((faq, index) => (

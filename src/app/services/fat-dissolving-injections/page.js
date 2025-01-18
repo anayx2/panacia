@@ -35,8 +35,8 @@ const faqData = [
 
 
 export const metadata = {
-    title: 'Skin Booster Treatment | Panacea Health & Beauty Clinic',
-    description: 'Achieve radiant skin with advanced skin rejuvenation treatments at Panacea Health & Beauty Clinic. IPL, fractional lasers, Botox, dermal fillers, and more!!',
+    title: 'Fat Dissolving Injections | Non-Surgical Fat Reduction',
+    description: 'Achieve a sculpted body with fat dissolving injections at Panacea Health & Beauty Clinic. Target stubborn fat areas for permanent results without surgery!',
 }
 const page = () => {
     return (
@@ -50,7 +50,7 @@ const page = () => {
                 />
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative z-10 flex h-full items-center justify-center px-4 text-white">
-                    <h1 className='text-4xl font-bold tracking-tight lg:text-5xl'> Best Skin Booster</h1>
+                    <h1 className='text-4xl font-bold tracking-tight lg:text-5xl'> Fat Dissolving</h1>
                 </div>
             </section>
             <section className="max-w-7xl mx-auto px-4 py-12 md:py-16 w-[90%]">
@@ -58,16 +58,16 @@ const page = () => {
                     <div className="space-y-8">
                         <div className="space-y-4">
                             <h2 className="text-rose-400">
-                                Hydrate Your Skin                               </h2>
+                                Fat Dissolving Injections                              </h2>
                             <h3 className="">
-                                with Advanced Skin Boosters
+                                Target Stubborn Fat with Advanced Fat Dissolving Treatments
                             </h3>
                         </div>
 
                         <p className="mt-5 ">
                             At <span className='font-bold mx-1'>
-                                Panacea Health & Beauty Clinic,</span>we offer<span className='font-bold mx-1'>skin booster treatments</span>designed to rejuvenate and hydrate your skin, giving you a radiant, youthful glow. Whether you're dealing with dry skin, fine lines, or dull complexion, our skin boosters provide a long-lasting solution that improves skin quality from within.
-                            <br /><span className='font-bold'>Skin booster treatments</span>   are an advanced skincare solution that involves the injection of a hyaluronic acid-based product directly into the skin. These treatments are designed to deeply hydrate and rejuvenate the skin, improving its texture, elasticity, and overall appearance.
+                                Panacea Health & Beauty Clinic,</span>we offer<span className='font-bold mx-1'>fat dissolving injections</span>designed to target and reduce stubborn pockets of fat that are resistant to diet and exercise. Whether you’re struggling with areas like the chin, abdomen, or thighs, our fat dissolving treatments provide a non-surgical, minimally invasive solution for achieving a more sculpted, toned appearance.
+                            <br /><span className='font-bold'>Fat dissolving injections</span> are a non-surgical treatment that uses a specialized solution, usually based on a naturally occurring compound, to break down and permanently remove stubborn fat cells. The active ingredient, commonly <span className='font-bold'>deoxycholic acid</span>, is injected directly into areas with excess fat.
                             <br /> key benefits include:
 
                         </p>
@@ -78,20 +78,20 @@ const page = () => {
                                     <span>
                                         <CheckCircle2 className="w-5 h-5 text-rose-400 flex-shrink-0 mt-1" />
                                     </span>
-                                    <span>Deep Hydration</span>
+                                    <span>Quick Procedure and Minimal Downtime</span>
                                 </li>
                                 <li className="flex items-center space-x-2">
                                     <span>
                                         <CheckCircle2 className="w-5 h-5 text-rose-400 flex-shrink-0 mt-1" />
                                     </span>
-                                    <span>Improved Skin Texture
+                                    <span>Customizable Treatment Areas
                                     </span>
                                 </li>
                                 <li className="flex items-center space-x-2">
                                     <span>
                                         <CheckCircle2 className="w-5 h-5 text-rose-400 flex-shrink-0 mt-1" />
                                     </span>
-                                    <span>Natural-Looking Results
+                                    <span>Long-Lasting Results
                                     </span>
                                 </li>
                             </ul>
@@ -101,7 +101,7 @@ const page = () => {
                                         <CheckCircle2 className="w-5 h-5 text-rose-400 flex-shrink-0 mt-1" />
 
                                     </span>
-                                    <span>Stimulates Collagen Production
+                                    <span>Target Stubborn Fat
                                     </span>
                                 </li>
                                 <li className="flex items-center space-x-2">
@@ -155,7 +155,7 @@ const page = () => {
                     Why Choose Panacea Health & Beauty Clinic? </h2>
 
                 <p className="mt-5 text-center">
-                    At<span className='font-bold mx-1'>Panacea Health & Beauty Clinic,</span>we are committed to delivering exceptional skincare treatments tailored to your individual needs. Here’s why we’re the preferred choice for <span className='font-bold mx-1'> skin booster treatments</span>:               </p>
+                    At<span className='font-bold mx-1'>Panacea Health & Beauty Clinic,</span>we offer expert care and customized treatment plans to help you achieve your desired body shape. Here’s why clients choose us for their <span className='font-bold mx-1'> fat dissolving injections</span> </p>
 
                 <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
                     <div className="relative aspect-[5/3] w-full">
@@ -172,27 +172,9 @@ const page = () => {
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
                             <p className="text-lg ">
                                 <span className='font-bold text-rose-400'>
-                                    Experienced Professionals {' '}
+                                    Experienced Practitioners: {' '}
                                 </span>
-                                Our team of skilled practitioners has extensive experience in administering skin booster treatments, ensuring safe and effective results.                            </p>
-                        </div>
-
-                        <div className="flex items-center gap-4">
-                            <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
-                            <p className="text-lg ">
-                                <span className='font-bold text-rose-400'>
-                                    Personalized Approach: {' '}
-                                </span>
-                                We take the time to understand your unique skincare concerns and customize each treatment to meet your specific goals.                            </p>
-                        </div>
-
-                        <div className="flex items-center gap-4">
-                            <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
-                            <p className="text-lg ">
-                                <span className='font-bold text-rose-400'>
-                                    High-Quality Products:{' '}
-                                </span>
-                                We only use top-of-the-line, clinically tested products to ensure the best results for our clients.
+                                Our team consists of skilled professionals who have extensive experience in administering fat dissolving injections. You can trust us to deliver safe and effective results.
                             </p>
                         </div>
 
@@ -200,17 +182,36 @@ const page = () => {
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
                             <p className="text-lg ">
                                 <span className='font-bold text-rose-400'>
-                                    Comfortable and Safe Environment:  {' '}
+                                    Personalized Care: {' '}
                                 </span>
-                                We provide a relaxing, safe, and welcoming environment, prioritizing your comfort and well-being throughout the treatment process.                                            </p>
+                                We tailor each treatment to meet your specific needs, ensuring that your goals are achieved with natural-looking, sculpted results.                           </p>
+                        </div>
+
+                        <div className="flex items-center gap-4">
+                            <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
+                            <p className="text-lg ">
+                                <span className='font-bold text-rose-400'>
+                                    FDA-Approved Treatments:{' '}
+                                </span>
+                                We only use high-quality, FDA-approved products to ensure safety and effectiveness during your treatment.
+                            </p>
+                        </div>
+
+                        <div className="flex items-center gap-4">
+                            <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
+                            <p className="text-lg ">
+                                <span className='font-bold text-rose-400'>
+                                    Comfortable Environment:  {' '}
+                                </span>
+                                We prioritize your comfort and well-being, providing a relaxing, professional atmosphere where you can feel at ease throughout the procedure.                                            </p>
                         </div>
                         <div className="flex items-center gap-4">
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
                             <p className="text-lg ">
                                 <span className='font-bold text-rose-400'>
-                                    Long-Lasting Results:  {' '}
+                                    Minimal Downtime:  {' '}
                                 </span>
-                                With regular treatments, you can maintain healthy, hydrated, and glowing skin that continues to improve over time.                                            </p>
+                                Our <span className='font-bold mx-1'>fat dissolving injections</span> offer quick results with little to no downtime, allowing you to return to your daily activities with ease.                                            </p>
                         </div>
                     </div>
                 </div>
@@ -219,35 +220,39 @@ const page = () => {
                 <div className="grid md:grid-cols-[1fr,500px] gap-8 items-center">
                     <div className="space-y-5">
                         <h2>
-                            Areas Treated with Skin Boosters </h2>
+                            Areas Treated with Fat Dissolving Injections </h2>
                         <p className=" leading-relaxed">
-                            While <span className='font-bold mx-1'>lip fillers in London</span>  are most commonly used on the face, they can also be effective in treating other areas of the body:
-
+                            Fat dissolving injections can be used on various areas of the body, including:
                         </p>
                         <div className="space-y-1">
                             <h4 className="text-2xl text-rose-400 font-medium">
-                                Face:                           </h4>
+                                Double Chin:                           </h4>
                             <p className=" leading-relaxed">
-                                Target the forehead, cheeks, under-eye area, and jawline to improve hydration, smooth fine lines, and rejuvenate the skin.                            </p></div>
+                                The most popular treatment area, fat dissolving injections can target and reduce fat under the chin, improving the jawline and neck contour.                            </p></div>
                         <div className="space-y-1">
                             <h4 className="text-2xl text-rose-400 font-medium">
-                                Neck and Décolletage:                         </h4>
+                                Stomach Area:                         </h4>
                             <p className=" leading-relaxed">
-                                These areas are often prone to signs of aging and can benefit from enhanced hydration and collagen stimulation.
+                                Treat stubborn pockets of fat around the abdomen, including love handles and muffin tops.                            </p>
+                        </div>
+                        <div className="space-y-1">
+                            <h4 className="text-2xl text-rose-400 font-medium">
+                                Thighs:                           </h4>
+                            <p className=" leading-relaxed">
+                                Reduce fat deposits in the inner and outer thigh areas to help contour and shape the legs.
                             </p>
                         </div>
                         <div className="space-y-1">
                             <h4 className="text-2xl text-rose-400 font-medium">
-                                Hands:                           </h4>
+                                Arms:                          </h4>
                             <p className=" leading-relaxed">
-                                Improve the appearance of the hands, restoring moisture and youthful smoothness.                            </p>
+                                Target fat under the arms (bat wings) for a more toned appearance.                            </p>
                         </div>
                         <div className="space-y-1">
                             <h4 className="text-2xl text-rose-400 font-medium">
-                                Body:                           </h4>
+                                Back and Bra Line:                         </h4>
                             <p className=" leading-relaxed">
-                                Skin boosters can also be used on other areas of the body to address skin quality, elasticity, and overall texture.
-                            </p>
+                                Sculpt the back and eliminate unwanted fat along the bra line.                            </p>
                         </div>
                     </div>
 
@@ -269,7 +274,7 @@ const page = () => {
             </section>
             <section className="max-w-7xl mx-auto px-4 py-12 md:py-16 w-[90%]">
                 <h2 className='text-center mb-10'>
-                    Frequently asked questions about dermal fillers? </h2>
+                    Frequently asked questions about Fat Dissolving Injections </h2>
                 <div className="mx-auto">
                     <Accordion type="single" collapsible className="space-y-2">
                         {faqData.map((faq, index) => (
