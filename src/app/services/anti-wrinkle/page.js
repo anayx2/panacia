@@ -76,24 +76,34 @@ const page = () => {
 
                         <div className="grid md:grid-cols-2 gap-6">
                             <ul className="space-y-4 list-none">
-                                <li className="flex items-start space-x-2">
-                                    <span className="text-[#2B5D7C] mt-1">•</span>
+                                <li className="flex items-center space-x-2">
+                                    <span>
+                                        <CheckCircle2 className="w-5 h-5 text-rose-400 flex-shrink-0 mt-1" />
+                                    </span>
                                     <span>Non-invasive</span>
                                 </li>
-                                <li className="flex items-start space-x-2">
-                                    <span className="text-[#2B5D7C] mt-1">•</span>
-                                    <span>Natural results
+                                <li className="flex items-center space-x-2">
+                                    <span>
+                                        <CheckCircle2 className="w-5 h-5 text-rose-400 flex-shrink-0 mt-1" />
                                     </span>
-                                </li>
-                                <li className="flex items-start space-x-2">
-                                    <span className="text-[#2B5D7C] mt-1">•</span>
-                                    <span>Quick recovery
+                                    <span>Natural results
                                     </span>
                                 </li>
                             </ul>
                             <ul className="space-y-4 list-none">
-                                <li className="flex items-start space-x-2">
-                                    <span className="text-[#2B5D7C] mt-1">•</span>
+                                <li className="flex items-center space-x-2">
+                                    <span>
+                                        <CheckCircle2 className="w-5 h-5 text-rose-400 flex-shrink-0 mt-1" />
+
+                                    </span>
+                                    <span>Quick recovery
+                                    </span>
+                                </li>
+                                <li className="flex items-center space-x-2">
+                                    <span>
+                                        <CheckCircle2 className="w-5 h-5 text-rose-400 flex-shrink-0 mt-1" />
+
+                                    </span>
                                     <span>Long-lasting effects</span>
                                 </li>
 
@@ -101,15 +111,16 @@ const page = () => {
                         </div>
                     </div>
 
-                    <div className="relative aspect-video w-full h-auto rounded-lg overflow-hidden bg-gray-100">
-                        <video
-                            className="w-full h-full object-cover"
-                            controls
-                            poster={`https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-duEPVXWJQut3QT9JOSvI6miL1xPE3R.png`}
-                        >
-                            <source src="/your-video-source.mp4" type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
+                    <div className="flex items-center w-full h-auto rounded-lg">
+                        <Image
+                            src={'/services1/wrinke.jpg'}
+                            width={800}
+                            height={800}
+                            className='w-full h-auto rounded-lg'
+                            alt='service '
+
+                        />
+
                     </div>
                 </div>
             </section>
@@ -157,8 +168,8 @@ const page = () => {
                     <div className="space-y-6 flex flex-col">
                         <div className="flex items-center gap-4">
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
-                            <p className="text-lg text-rose-400">
-                                <span className='font-bold'>
+                            <p className="text-lg ">
+                                <span className='font-bold text-rose-400'>
                                     Experienced Practitioners: {' '}
                                 </span>
                                 Our skilled and trained professionals customize each treatment with anti-wrinkle injections to suit your unique needs, ensuring natural-looking results.
@@ -167,8 +178,8 @@ const page = () => {
 
                         <div className="flex items-center gap-4">
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
-                            <p className="text-lg text-rose-400">
-                                <span className='font-bold'>
+                            <p className="text-lg ">
+                                <span className='font-bold text-rose-400'>
                                     Personalized Care: {' '}
                                 </span>
                                 We take time to understand your goals and create a tailored plan for the best outcome with anti-wrinkle injections.                            </p>
@@ -176,8 +187,8 @@ const page = () => {
 
                         <div className="flex items-center gap-4">
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
-                            <p className="text-lg text-rose-400">
-                                <span className='font-bold'>
+                            <p className="text-lg ">
+                                <span className='font-bold text-rose-400'>
                                     Safe and Trusted Products:{' '}
                                 </span>
                                 We use FDA-approved injectables for anti-wrinkle injections and adhere to the highest standards of hygiene and safety.                            </p>
@@ -185,8 +196,8 @@ const page = () => {
 
                         <div className="flex items-center gap-4">
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
-                            <p className="text-lg text-rose-400">
-                                <span className='font-bold'>
+                            <p className="text-lg ">
+                                <span className='font-bold text-rose-400'>
                                     Comfortable Environment: {' '}
                                 </span>
                                 Our clinic offers a relaxed and professional setting where you can feel at ease throughout your treatment journey with anti-wrinkle injections.                                            </p>

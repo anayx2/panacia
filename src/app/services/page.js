@@ -110,7 +110,7 @@ export default function ServicesPage() {
                 className="relative z-10 flex h-full items-center justify-center px-4 text-rose-400"
             >
                 <h2>
-                    Services                </h2>
+                    Services  </h2>
             </div>
         </section>
         <section className=" px-4 py-20">
