@@ -48,7 +48,7 @@ export default function AboutPage() {
     return (
         <>
             <motion.section
-                className='relative h-[60dvh] w-full'
+                className='relative h-[50dvh] w-full'
                 initial="hidden"
                 animate="visible"
                 variants={fadeIn}
@@ -59,19 +59,21 @@ export default function AboutPage() {
                         backgroundImage: "url('/banner-pages.png')"
                     }}
                 />
-                {/* <div className="absolute inset-0 bg-black/20 "  /> */}
+                <div className="absolute inset-0 bg-black/20 " />
                 <motion.div
-                    className="relative z-10 flex h-full items-center justify-center px-4 text-rose-400"
+                    className="relative z-10 flex h-full items-center justify-center px-4 text-white"
                     variants={fadeInUp}
                 >
-                    <motion.h2 variants={fadeInUp}>
+                    <motion.h2 variants={fadeInUp}
+                        className="sm:text-4xl md:text-6xl lg:text-6xl"
+                    >
                         About Us
                     </motion.h2>
                 </motion.div>
             </motion.section>
 
             <motion.section
-                className="container mx-auto px-4 py-10 lg:min-h-[80vh] lg:py-20 max-w-[90%]"
+                className="container mx-auto px-4 py-5 lg:min-h-[80vh] lg:py-20 max-w-[90%]"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}

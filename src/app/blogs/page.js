@@ -124,7 +124,7 @@ export default function BlogSection() {
     return (<>
 
         <motion.section
-            className='relative h-[60dvh] w-full'
+            className='relative h-[50dvh] w-full'
             initial="hidden"
             animate="visible"
             variants={fadeIn}
@@ -134,12 +134,14 @@ export default function BlogSection() {
                     backgroundImage: "url('/banner-pages.png')"
                 }}
             />
-            {/* <div className="absolute inset-0 bg-black/60" /> */}
+            <div className="absolute inset-0 bg-black/20" />
             <motion.div
-                className="relative z-10 flex h-full items-center justify-center px-4 text-rose-400"
+                className="relative z-10 flex h-full items-center justify-center px-4 text-white"
                 variants={fadeInUp}
             >
-                <motion.h2 variants={fadeInUp}>
+                <motion.h2 variants={fadeInUp}
+                    className="sm:text-4xl md:text-6xl lg:text-6xl"
+                >
                     Blogs
                 </motion.h2>
             </motion.div>

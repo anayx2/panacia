@@ -18,6 +18,7 @@ const MarqueeCarousel = () => {
     const [startX, setStartX] = useState(0);
     const [scrollLeft, setScrollLeft] = useState(0);
     const animationRef = useRef(null);
+    const [isHovered, setIsHovered] = useState(false);
     const duplicatedPosts = [...posts, ...posts, ...posts];
 
     useEffect(() => {
@@ -25,7 +26,7 @@ const MarqueeCarousel = () => {
         let scrollPosition = 0;
 
         const scroll = () => {
-            if (!isMouseDown) {
+            if (!isMouseDown && !isHovered) {  // Add isHovered check here
                 scrollPosition += 1.5;
                 if (scrollPosition >= scroller.scrollWidth / 3) {
                     scrollPosition = 0;
@@ -42,7 +43,7 @@ const MarqueeCarousel = () => {
                 cancelAnimationFrame(animationRef.current);
             }
         };
-    }, [isMouseDown]);
+    }, [isMouseDown, isHovered]);  // Add isHovered to dependency array
 
     const handleMouseDown = (e) => {
         e.preventDefault(); // Prevent default dragging behavior
@@ -105,6 +106,8 @@ const MarqueeCarousel = () => {
                                 <div
                                     key={`${post.id}-${index}`}
                                     className="flex-none w-[300px] md:w-[300px] p-4 transform transition-transform duration-300 hover:scale-105"
+                                    onMouseEnter={() => setIsHovered(true)}
+                                    onMouseLeave={() => setIsHovered(false)}
                                     onDragStart={preventDragHandler}
                                 >
                                     <div className="relative rounded-xl overflow-hidden bg-white shadow-lg hover:shadow-xl transition-all duration-300">

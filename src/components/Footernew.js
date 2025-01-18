@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { MapPin, Phone, Mail } from 'lucide-react'
+import { MapPin, Phone, Mail, Pin, Music2, Linkedin, Facebook } from 'lucide-react'
 
 
 const topMenuItems = [
@@ -18,10 +18,10 @@ const bottomMenuItems = [
 
 export function Footer() {
     return (
-        <footer className="bg-gradient-to-b from-rose-100 to-rose-300 text-black pt-12">
+        <footer className="bg-gradient-to-b from-rose-100 to-rose-300 text-black pt-5">
             <div className="container mx-auto ">
                 {/* Logo and Main Content */}
-                <div className="flex flex-col items-center mb-12">
+                <div className="flex flex-col items-center mb-5">
                     <Image
                         src="/logo.png"
                         alt="Ayurbalance Logo"
@@ -54,22 +54,76 @@ export function Footer() {
                             </div>
                         </div>
                     </div>
+                    <div className="block md:hidden lg:hidden">
+                        <div className='flex w-auto gap-5 '>
+                            <span className='bg-rose-400 p-2 rounded-full'>
+                                <Link href={'#'}>
+                                    <Facebook />
+                                </Link>
+                            </span>
+                            <span className='bg-rose-400 p-2 rounded-full'>
+                                <Link href={'https://www.instagram.com/panaceaskinclinic/'}>
+
+                                    <Linkedin />
+                                </Link>
+                            </span>
+                            <span className='bg-rose-400 p-2 rounded-full'>
+                                <Link href={'https://www.tiktok.com/@panaceaskinclinic'}>
+                                    <Music2 />
+                                </Link>
+                            </span>
+
+                            <span className='bg-rose-400 p-2 rounded-full'>
+                                <Link href={'#'}>
+                                    <Pin />
+                                </Link>
+                            </span>
+                        </div>
+                    </div>
                 </div>
 
                 {/* Navigation Links */}
                 <div className="flex justify-center items-center w-full flex-col ">
                     {/* Top Menu Items */}
-                    <nav className="flex items-start w-[90%] gap-8">
-                        {topMenuItems.map((item) => (
-                            <Link
-                                key={item.label}
-                                href={item.href}
-                                className="hover:text-rose-400 transition-colors"
-                            >
-                                {item.name}
-                            </Link>
-                        ))}
-                    </nav>
+                    <div className="flex justify-between items-center w-[90%]">
+                        <nav className="flex items-start w-auto gap-8">
+                            {topMenuItems.map((item) => (
+                                <Link
+                                    key={item.label}
+                                    href={item.href}
+                                    className="hover:text-rose-400 transition-colors"
+                                >
+                                    {item.name}
+                                </Link>
+                            ))}
+                        </nav>
+                        <div className="hidden md:block lg:block">
+                            <div className='flex w-auto gap-5 '>
+                                <span className='bg-rose-400 p-2 rounded-full'>
+                                    <Link href={'#'}>
+                                        <Facebook />
+                                    </Link>
+                                </span>
+                                <span className='bg-rose-400 p-2 rounded-full'>
+                                    <Link href={'https://www.instagram.com/panaceaskinclinic/'}>
+
+                                        <Linkedin />
+                                    </Link>
+                                </span>
+                                <span className='bg-rose-400 p-2 rounded-full'>
+                                    <Link href={'https://www.tiktok.com/@panaceaskinclinic'}>
+                                        <Music2 />
+                                    </Link>
+                                </span>
+
+                                <span className='bg-rose-400 p-2 rounded-full'>
+                                    <Link href={'#'}>
+                                        <Pin />
+                                    </Link>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
 
                     {/* Divider Line */}
                     <div className="w-[90%] h-px bg-[#000]/30 my-4" />
@@ -88,7 +142,8 @@ export function Footer() {
                             ))}
                         </nav>
                         {/* Copyright */}
-                        <div className="text-center text-sm text-black w-full">
+
+                        <div className="text-center md:text-right lg:text-right text-sm text-black w-full">
                             <p className="w-auto">Copyright © 2025 Panacea Health & Beauty Clinic . All rights reserved.</p>
                         </div>
                     </div>

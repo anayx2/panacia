@@ -41,14 +41,14 @@ export const metadata = {
 const page = () => {
     return (
         <>
-            <section className='relative h-[60dvh] w-full'>
+            <section className='relative h-[50dvh] w-full'>
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
-                        backgroundImage: "url('/aboutcover.jpg')"
+                        backgroundImage: "url('/banner-pages.png')"
                     }}
                 />
-                <div className="absolute inset-0 bg-black/60" />
+                <div className="absolute inset-0 bg-black/20" />
                 <div className="relative z-10 flex h-full items-center justify-center px-4 text-white">
                     <h1 className='text-4xl font-bold tracking-tight lg:text-5xl'> Fat Dissolving</h1>
                 </div>

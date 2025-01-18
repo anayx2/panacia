@@ -15,7 +15,7 @@ const navItems = [
     { href: "/services", label: "Services" },
     { href: "/blogs", label: "Blogs" },
     { href: "/gallery", label: "Gallery" },
-    { href: "/faq", label: "FAQ's" },
+    { href: "/faq", label: "FAQs" },
     { href: "/contact-us", label: "Contact" },
 ];
 
@@ -31,101 +31,124 @@ const services = [
         title: "Anti-Wrinkle Treatments",
         description: "Smooth away wrinkles with our effective anti-wrinkle treatments, designed to rejuvenate your skin and restore a youthful, radiant appearance",
         image: "/services1/wrinke.jpg",
-        href: "/services/wellness-consultation"
+        href: "/services/anti-wrinkle"
     },
     {
         id: 2,
         title: "Mesotherapy",
         description: "Achieve glowing, nourished skin with Mesotherapy, a technique delivering vitamins and nutrients directly to your skin for remarkable results.",
         image: "/blog1.png",
-        href: "/services/abhyanga"
+        href: "/services/#"
     },
     {
         id: 3,
         title: "Fat Dissolving",
         description: "Say goodbye to stubborn fat with our safe and effective fat-dissolving treatments, tailored to sculpt your body effortlessly.",
         image: "/services1/fatdissolving.jpg",
-        href: "/services/shirodhara"
+        href: "/services/fat-dissolving-injections"
     },
     {
         id: 4,
         title: "Microneedling",
         description: "Revitalize your skin with Microneedling, promoting collagen production to reduce scars, fine lines, and improve skin texture.",
         image: "/services1/microneedling.jpg",
-        href: "/services/kati-basti"
+        href: "/services/#"
     },
     {
         id: 5,
         title: "Vitamin B12 Injection",
         description: "Boost your energy and enhance your overall well-being with our Vitamin B12 injections, essential for vitality and health.",
         image: "/services1/cosmetologist-making-injections-face-woman-beauty-salon.jpg",
-        href: "/services/prushta-basti"
+        href: "/services/vitamin-b12-deficiency"
     },
     {
         id: 6,
         title: "Hopi Ear Candle",
         description: "Experience relaxation and improved ear health with Hopi Ear Candling, a natural therapy to clear blockages and restore balance.",
         image: "/services1/hopiearcandle.jpg",
-        href: "/services/netra-basti"
+        href: "/services/#"
     },
     {
         id: 7,
         title: "IV Drip",
         description: "Rehydrate, rejuvenate, and replenish essential nutrients with our custom IV Drip therapies for optimal wellness.",
         image: "/services1/ivdrip.jpg",
-        href: "/services/wellness-consultation"
+        href: "/services/#"
     },
     {
         id: 8,
         title: "Bio Filler",
         description: "Enjoy natural, non-surgical facial enhancement with Bio Fillers, restoring volume and smoothing out fine lines effectively.",
         image: "/services1/biofillers.jpg",
-        href: "/services/abhyanga"
+        href: "/services/lip-fillers-london"
     },
     {
         id: 9,
         title: "PRP Hair Losss",
         description: "Combat hair loss with PRP treatments, stimulating hair growth and strengthening follicles for thicker, healthier hair.",
         image: "/services1/hairloss.jpg",
-        href: "/services/shirodhara"
+        href: "/services/#"
     },
     {
         id: 10,
         title: "PRP Facial",
         description: "Rejuvenate your skin with PRP Facials, boosting collagen and delivering a radiant, youthful complexion.",
         image: "/services1/PRPFacial.jpg",
-        href: "/services/kati-basti"
+        href: "/services/prp-treatment-london"
     },
     {
         id: 11,
         title: "PDO threads",
         description: "Lift and tighten sagging skin with PDO threads, a non-invasive solution for a firmer and rejuvenated appearance.",
         image: "/services1/threadspds.jpg",
-        href: "/services/prushta-basti"
+        href: "/services/face-threads-lifting"
     },
     {
         id: 12,
         title: "Skin Booster",
         description: "Hydrate and refresh your skin with Skin Boosters, enhancing elasticity and restoring your natural glow effortlessly.",
         image: "/services1/skinbooster.jpg",
-        href: "/services/netra-basti"
+        href: "/services/skin-booster"
     },
     {
         id: 13,
         title: "Dermaplaning",
         description: "Exfoliate dead skin and remove peach fuzz with Dermaplaning, leaving your skin smooth, radiant, and makeup-ready.",
         image: "/services1/dermaplanning.jpg",
-        href: "/services/netra-basti"
+        href: "/services/#"
     }
 ]
 
 const Navbar = () => {
     const router = useRouter();
     const pathname = usePathname();
-    const isHomepage = pathname === "/about";
+    const isHomepage = pathname === "/";
     const [isDropdownOpen, setDropdownOpen] = useState(false);
     const [isMenuOpen, setMenuOpen] = useState(false);
     const dropdownRef = useRef(null);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (isDropdownOpen) {
+                setDropdownOpen(false);
+            }
+            if (window.scrollY > 0) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [isDropdownOpen]);
+
+    // Handle service card click
+    const handleServiceClick = (href) => {
+        setDropdownOpen(false);  // Close dropdown
+        router.push(href);       // Navigate to service page
+    };
 
     const toggleDropdown = () => {
         setDropdownOpen((prev) => !prev);
@@ -216,31 +239,27 @@ const Navbar = () => {
     }, []);
 
     return (
-        <section className={`absolute z-50 top-0 w-full bg-black bg-opacity-10`}>
+        <section className={`fixed w-full transition-all duration-300 z-50 
+            ${isScrolled
+                ? 'bg-white shadow-md shadow-rose-50'
+                : isHomepage
+                    ? 'bg-black bg-opacity-10'
+                    : 'bg-transparent'
+            }`}>
             <nav className="z-60">
                 <div className="max-w-[90%] mx-auto flex items-center justify-between p-4">
                     {/* Logo */}
                     <Link href="/" className="relative flex items-center">
                         {/* Soft shadow blending with background */}
                         {/* <div className="absolute inset-0 translate-x-0 translate-y-1 bg-white rounded-full blur-2xl opacity-60"></div> */}
-
-                        {isHomepage ?
-                            <Image
-                                src="/logo.png"
-                                alt="Logo"
-                                width={400}
-                                height={400}
-                                priority
-                                className="h-auto w-[130px] relative"
-                            /> : <Image
-                                src="/Logo_white.png"
-                                alt="Logo"
-                                width={400}
-                                height={400}
-                                priority
-                                className="h-auto w-[130px] relative"
-                            />
-                        }
+                        <Image
+                            src="/logo.png"
+                            alt="Logo"
+                            width={400}
+                            height={400}
+                            priority
+                            className="h-auto w-[130px] relative"
+                        />
                     </Link>
 
 
@@ -251,8 +270,7 @@ const Navbar = () => {
                         className="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                     >
                         <span className="sr-only">Toggle navigation</span>
-                        <Menu className="text-white" />
-                    </button>
+                        <Menu className={`${isScrolled ? 'text-gray-800' : 'text-white hover:bg-transparent'}`} />                    </button>
 
                     {/* Navigation Links */}
                     <div className="hidden w-full md:flex md:w-auto" id="navbar-default" role="navigation">
@@ -290,11 +308,16 @@ const Navbar = () => {
 
                                     return (
                                         <li key={label} className="" ref={dropdownRef}>
+                                            { }
                                             <motion.button
                                                 onClick={toggleDropdown}
-                                                className={`flex items-center py-2 px-3 md:p-0 text-[#fff] text-xl transition-all duration-300 ${isActive
-                                                    ? "border-b-2 border-white font-semibold"
-                                                    : "hover:text-rose-300"
+                                                className={`flex items-center py-2 px-3 md:p-0 text-xl transition-all duration-300 
+        ${isScrolled ? 'text-gray-800' : 'text-[#fff]'}
+        ${isActive
+                                                        ? isScrolled
+                                                            ? "border-b-2 border-rose-400 font-semibold"
+                                                            : "border-b-2 border-white font-semibold"
+                                                        : "hover:text-rose-300"
                                                     }`}
                                             >
                                                 Services
@@ -316,14 +339,11 @@ const Navbar = () => {
                                                     >
                                                         <div className="w-full">
                                                             <ul className="rounded-lg shadow-lg w-[80%] mx-auto p-4 text-black bg-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                                                                {services.map(({ image, title }, index) => (
+                                                                {services.map(({ image, title, href }, index) => (
                                                                     <li
                                                                         key={index}
-                                                                        whileHover={{
-                                                                            scale: 1.05,
-                                                                            transition: { duration: 0.2 },
-                                                                        }}
-                                                                        className="flex flex-col items-center p-4 bg-rose-100 rounded-lg shadow-md"
+                                                                        onClick={() => handleServiceClick(href)}
+                                                                        className="flex flex-col items-center p-4 bg-rose-100 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:bg-rose-200 hover:scale-105"
                                                                     >
                                                                         <div className="w-16 h-16 mb-2">
                                                                             <Image
@@ -331,12 +351,12 @@ const Navbar = () => {
                                                                                 alt={title}
                                                                                 width={200}
                                                                                 height={200}
-                                                                                className="w-full h-full object-cover rounded-full" />
+                                                                                className="w-full h-full object-cover rounded-full"
+                                                                            />
                                                                         </div>
                                                                         <h3 className="text-sm font-medium text-gray-800">{title}</h3>
                                                                     </li>
                                                                 ))}
-                                                                {/* <Button></Button> */}
                                                             </ul>
                                                         </div>
                                                     </motion.div>
@@ -350,9 +370,13 @@ const Navbar = () => {
                                     <li key={label}>
                                         <Link
                                             href={href}
-                                            className={`block py-2 px-3 md:p-0 text-[#fff] text-xl relative transition-all duration-300 ${isActive
-                                                ? "border-b-2 border-white font-semibold"
-                                                : "hover:text-rose-300"
+                                            className={`block py-2 px-3 md:p-0 text-xl relative transition-all duration-300 
+                                            ${isScrolled ? 'text-gray-800' : 'text-white'}
+                                            ${isActive
+                                                    ? isScrolled
+                                                        ? "border-b-2 border-rose-400 font-semibold"
+                                                        : "border-b-2 border-white font-semibold"
+                                                    : "hover:text-rose-300"
                                                 }`}
                                             aria-current={isActive ? "page" : undefined}
                                         >
