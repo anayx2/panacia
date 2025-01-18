@@ -12,39 +12,35 @@ import {
 
 const faqData = [
     {
-        question: "What are anti-wrinkle injections?",
-        answer: "They are treatments that relax facial muscles to reduce the appearance of wrinkles."
+        question: "Which is better: Botox or dermal fillers?",
+        answer: "Botox relaxes muscles to reduce expression lines, while dermal fillers restore volume and smooth deeper wrinkles. Both can be used together for comprehensive rejuvenation."
     },
     {
-        question: "How long do the results last?",
-        answer: "Results typically last 3-6 months, depending on the individual."
+        question: "Is dermal filler a surgery?",
+        answer: "No, dermal fillers are non-surgical injections to restore volume or smooth wrinkles."
     },
     {
-        question: "Is the treatment painful?",
-        answer: "Most people experience minimal discomfort, with only a slight pinch during injection."
+        question: "What are the risks of fillers?",
+        answer: "Risks include bruising, swelling, infection, and in rare cases, allergic reactions or lumps."
     },
     {
-        question: "How soon will I see results?",
-        answer: "Results usually appear within 3-7 days after treatment."
+        question: "What is the age limit for fillers?",
+        answer: "There’s no strict age limit, but fillers are typically used by those over 21 to address aging or enhance features."
     },
     {
-        question: "Are there any side effects?",
-        answer: "Side effects are rare but may include swelling or bruising at the injection site."
+        question: "Are fillers good for the face?",
+        answer: "Yes, dermal fillers are great for adding volume, smoothing wrinkles, and enhancing facial features."
     },
     {
-        question: "Who is suitable for anti-wrinkle injections?",
-        answer: "Healthy adults looking to reduce wrinkles and fine lines are ideal candidates."
-    },
-    {
-        question: "Can I go back to work after treatment?",
-        answer: "Yes, you can typically resume normal activities immediately."
-    },
+        question: "Are dermal fillers permanent?",
+        answer: "No, dermal fillers are temporary and typically last between 6 months to 2 years."
+    }
+];
 
-]
 
 export const metadata = {
-    title: 'Anti-Wrinkle Treatments at Panacea Health & Beauty Clinic',
-    description: ' Smooth out wrinkles and fine lines with expert anti-wrinkle injections. Achieve a youthful, refreshed look with safe, effective treatments. Contact Us!',
+    title: 'Dermal Fillers Treatments | Panacea Health & Beauty Clinic',
+    description: ' Enhance lips, cheeks, & jawline with dermal filler treatments at Panacea Health & Beauty Clinic. Restore volume and smooth wrinkles using top-quality products.',
 }
 const page = () => {
     return (
@@ -58,7 +54,7 @@ const page = () => {
                 />
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative z-10 flex h-full items-center justify-center px-4 text-white">
-                    <h1 className='text-4xl font-bold tracking-tight lg:text-5xl'>  Anti-Wrinkle</h1>
+                    <h1 className='text-4xl font-bold tracking-tight lg:text-5xl'>  Dermal Fillers</h1>
                 </div>
             </section>
             <section className="max-w-7xl mx-auto px-4 py-12 md:py-16 w-[90%]">
@@ -66,16 +62,16 @@ const page = () => {
                     <div className="space-y-8">
                         <div className="space-y-4">
                             <h2 className="text-rose-400">
-                                Anti-Wrinkle Injectable</h2>
+                                Non-Surgical Dermal Fillers                                </h2>
                             <h3 className="">
-                                Safe and Effective Solution for Smoother Skin
-                            </h3>
+                                Smooth Wrinkles and Restore Volume Instantly                            </h3>
                         </div>
 
                         <p className="text-gray-700 leading-relaxed">
-                            At Panacea Health & Beauty Clinic, we understand the desire for youthful, radiant skin, and our anti-wrinkle injections are a key solution in achieving that goal. Anti-wrinkle injectables, often referred to as botulinum toxin treatments, are a popular non-invasive option for reducing the appearance of fine lines and wrinkles.
-                            <br />  One of the major reasons for the growing popularity of anti-wrinkle injectables is the convenience and minimal recovery time associated with the procedure. Unlike surgical options, which require significant downtime and a longer recovery period, injectable treatments can be done in as little as 15 minutes with little to no disruption to your daily routine.
-                            <br />  Other key benefits include:
+                            At Panacea Health & Beauty Clinic, we believe that everyone deserves to feel confident in their skin. Dermal fillers are a revolutionary solution for those looking to enhance their natural beauty and restore youthful volume.
+                            <br />Dermal fillers are innovative cosmetic treatments that have transformed the way we approach facial aesthetics. These injectable substances, typically composed of hyaluronic acid, collagen, or other biocompatible materials, are designed to restore volume and smooth out wrinkles in the skin. With their ability to enhance facial contours and provide a youthful appearance, dermal fillers have become a go-to solution for those seeking non-surgical options for rejuvenation.
+                            <br />key benefits include:
+
 
                         </p>
 
@@ -85,13 +81,13 @@ const page = () => {
                                     <span>
                                         <CheckCircle2 className="w-5 h-5 text-rose-400 flex-shrink-0 mt-1" />
                                     </span>
-                                    <span>Non-invasive</span>
+                                    <span>Instant Results</span>
                                 </li>
                                 <li className="flex items-center space-x-2">
                                     <span>
                                         <CheckCircle2 className="w-5 h-5 text-rose-400 flex-shrink-0 mt-1" />
                                     </span>
-                                    <span>Natural results
+                                    <span>Non-Surgical Treatment
                                     </span>
                                 </li>
                             </ul>
@@ -101,7 +97,7 @@ const page = () => {
                                         <CheckCircle2 className="w-5 h-5 text-rose-400 flex-shrink-0 mt-1" />
 
                                     </span>
-                                    <span>Quick recovery
+                                    <span>Natural-Looking Enhancements
                                     </span>
                                 </li>
                                 <li className="flex items-center space-x-2">
@@ -109,7 +105,7 @@ const page = () => {
                                         <CheckCircle2 className="w-5 h-5 text-rose-400 flex-shrink-0 mt-1" />
 
                                     </span>
-                                    <span>Long-lasting effects</span>
+                                    <span>Customizable Treatments</span>
                                 </li>
                             </ul>
                         </div>
@@ -152,11 +148,10 @@ const page = () => {
             </section>
             <section className="max-w-7xl mx-auto px-4 py-12 md:py-16 w-[90%]">
                 <h2 className="text-center">
-                    Why Choose Panacea Health & Beauty Clinic ?                </h2>
+                    Why Choose Panacea Health & Beauty Clinic ?              </h2>
 
-                <p className="mt-5">
-                    At Panacea Health & Beauty Clinic, we combine expertise, personalized care, and the latest technology to deliver exceptional anti-wrinkle injections. Here’s why you should choose us:
-                </p>
+                <p className="mt-5 text-center">
+                    At<span className='font-bold mx-1'>Panacea Health & Beauty Clinic,</span> our priority is providing exceptional care and natural results with <span className='font-bold mx-1'>dermal fillers.</span> Here's why our clients trust us for their aesthetic treatments:                </p>
 
                 <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
                     <div className="relative aspect-[5/3] w-full">
@@ -175,7 +170,7 @@ const page = () => {
                                 <span className='font-bold text-rose-400'>
                                     Experienced Practitioners: {' '}
                                 </span>
-                                Our skilled and trained professionals customize each treatment with anti-wrinkle injections to suit your unique needs, ensuring natural-looking results.
+                                Our experienced team of professionals specializes in dermal filler treatments, ensuring precise, safe, and effective results.
                             </p>
                         </div>
 
@@ -183,27 +178,27 @@ const page = () => {
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
                             <p className="text-lg ">
                                 <span className='font-bold text-rose-400'>
-                                    Personalized Care: {' '}
+                                    Personalized Approach {' '}
                                 </span>
-                                We take time to understand your goals and create a tailored plan for the best outcome with anti-wrinkle injections.                            </p>
+                                We take time to understand your goals, carefully selecting the right filler and treatment plan to achieve the best outcome for you.                            </p>
                         </div>
 
                         <div className="flex items-center gap-4">
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
                             <p className="text-lg ">
                                 <span className='font-bold text-rose-400'>
-                                    Safe and Trusted Products:{' '}
+                                    Advanced Techniques{' '}
                                 </span>
-                                We use FDA-approved injectables for anti-wrinkle injections and adhere to the highest standards of hygiene and safety.                            </p>
+                                We use the latest techniques to ensure that each treatment is comfortable and yields the most natural-looking results.                            </p>
                         </div>
 
                         <div className="flex items-center gap-4">
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
                             <p className="text-lg ">
                                 <span className='font-bold text-rose-400'>
-                                    Comfortable Environment: {' '}
+                                    FDA-Approved Products {' '}
                                 </span>
-                                Our clinic offers a relaxed and professional setting where you can feel at ease throughout your treatment journey with anti-wrinkle injections.                                            </p>
+                                We only use high-quality, FDA-approved dermal fillers, ensuring safety and lasting results.                                            </p>
                         </div>
                     </div>
                 </div>
@@ -212,37 +207,31 @@ const page = () => {
                 <div className="grid md:grid-cols-[1fr,500px] gap-8 items-center">
                     <div className="space-y-8">
                         <h2>
-                            What to Expect During Your Treatment? </h2>
+                            What to Expect During Your Dermal Filler Treatment? </h2>
                         <div className="space-y-4">
                             <h4 className="text-2xl text-rose-400 font-medium">
                                 Personalized Consultation
                             </h4>
                             <p className=" leading-relaxed">
-                                Your journey begins with a thorough consultation, where we take the time to understand your aesthetic goals and medical history. Our experienced professionals will assess your skin and discuss the areas you'd like to treat. We'll also explain how
-                                <span className='font-bold mx-1'>
-                                    anti-wrinkle injections
-                                </span>
-                                work, so you feel fully informed and confident in your decision.                             </p>
-                        </div>
+                                During your consultation, we’ll discuss your aesthetic goals, review your medical history, and assess the areas you want to treat. We’ll create a personalized plan that aligns with your desired outcome.
+
+                            </p></div>
 
                         <div className="space-y-4">
                             <h4 className="text-2xl text-rose-400 font-medium">
-                                The Treatment Procedure                            </h4>
+                                The Treatment:                         </h4>
                             <p className=" leading-relaxed">
-                                The procedure itself is quick and minimally invasive. Typically, it takes just
-                                <span className='font-bold mx-1'>
-                                    10 to 15 minutes</span>
-                                to complete. During the treatment, very fine needles are used to inject small amounts of botulinum toxin into the targeted muscles, which helps relax them and reduce the appearance of wrinkles. You may feel a slight pinch or pressure, but the process is generally well-tolerated and only requires minimal discomfort.                             </p>
+                                The procedure itself is quick and straightforward. Dermal fillers are injected into targeted areas using a fine needle. Most treatments take about   <span className='font-bold mx-1'>
+                                    10 to 15 minutes</span>, depending on the areas being treated. Local anesthetic is often used to minimize discomfort.</p>
                         </div>
+
 
                         <div className="space-y-4">
                             <h4 className="text-2xl text-rose-400 font-medium">
-                                Aftercare and No Downtime                            </h4>
+                                Aftercare                           </h4>
                             <p className=" leading-relaxed">
-                                One of the best things about                                 <span className='font-bold mx-1'>
-                                    anti-wrinkle </span> injections is that there's no downtime required. After your treatment, you can immediately return to your normal activities. We will provide simple aftercare instructions, such as avoiding vigorous physical activity for 24 hours and refraining from rubbing the treated areas. These easy guidelines help ensure optimal results.
-                                In just a few days, you'll begin to notice smoother, more youthful skin as the full effects of the treatment take shape, typically visible within                                 <span className='font-bold mx-1'>
-                                    3 to 7 days. </span>                           </p>
+                                After the treatment, there may be some mild swelling, bruising, or redness at the injection sites, but this typically resolves within a few hours to a few days. You can resume most of your daily activities immediately after the procedure, though we recommend avoiding intense physical activity for 24 hours. Our team will provide aftercare instructions to ensure you get the best results.
+                            </p>
                         </div>
                     </div>
 
@@ -263,9 +252,8 @@ const page = () => {
                 <Reviews />
             </section>
             <section className="max-w-7xl mx-auto px-4 py-12 md:py-16 w-[90%]">
-                <h3 className='text-center mb-10'>
-                    Frequently asked questions about Anti-Wrinkle?
-                </h3>
+                <h2 className='text-center mb-10'>
+                    Frequently asked questions about dermal fillers? </h2>
                 <div className="mx-auto">
                     <Accordion type="single" collapsible className="space-y-2">
                         {faqData.map((faq, index) => (
