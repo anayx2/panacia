@@ -18,15 +18,15 @@ const page = () => {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
-                        backgroundImage: "url('/sample/3.png')"
+                        backgroundImage: "url('/banner-pages.png')"
                     }}
                 />
-                <div className="absolute inset-0 bg-black/60" />
+                {/* <div className="absolute inset-0 bg-black/60" /> */}
                 <motion.div
                     initial={{ y: 50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.5, duration: 0.8 }}
-                    className="relative z-10 flex h-full items-center justify-center px-4 text-white"
+                    className="relative z-10 flex h-full items-center justify-center px-4 text-rose-400"
                 >
                     <h2>Book an Appointment</h2>
                 </motion.div>

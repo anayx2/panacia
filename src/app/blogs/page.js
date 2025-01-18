@@ -131,12 +131,12 @@ export default function BlogSection() {
         >            <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: "url('/sample/1.png')"
+                    backgroundImage: "url('/banner-pages.png')"
                 }}
             />
-            <div className="absolute inset-0 bg-black/60" />
+            {/* <div className="absolute inset-0 bg-black/60" /> */}
             <motion.div
-                className="relative z-10 flex h-full items-center justify-center px-4 text-white"
+                className="relative z-10 flex h-full items-center justify-center px-4 text-rose-400"
                 variants={fadeInUp}
             >
                 <motion.h2 variants={fadeInUp}>

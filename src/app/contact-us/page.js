@@ -119,13 +119,13 @@ const Page = () => {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
-                        backgroundImage: "url('/sample/contact_banner.jpg')"
+                        backgroundImage: "url('/banner-pages.png')"
                     }}
                 />
-                <div className="absolute inset-0 bg-black/60" />
+                {/* <div className="absolute inset-0 bg-black/60" /> */}
                 <motion.div
                     variants={slideUp}
-                    className="relative z-10 flex h-full items-center justify-center px-4 text-white"
+                    className="relative z-10 flex h-full items-center justify-center px-4 text-rose-400"
                 >
                     <h2>Get in Touch with Us</h2>
                 </motion.div>

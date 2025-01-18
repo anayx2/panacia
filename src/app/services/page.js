@@ -102,11 +102,13 @@ export default function ServicesPage() {
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: "url('/sample/4.png')"
+                    backgroundImage: "url('/banner-pages.png')"
                 }}
             />
-            <div className="absolute inset-0 bg-black/60" />
-            <div className="relative z-10 flex h-full items-center justify-center px-4 text-white">
+            {/* <div className="absolute inset-0 bg-black/60" /> */}
+            <div
+                className="relative z-10 flex h-full items-center justify-center px-4 text-rose-400"
+            >
                 <h2>
                     Services                </h2>
             </div>

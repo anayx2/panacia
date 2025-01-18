@@ -122,10 +122,9 @@ const services = [
 const Navbar = () => {
     const router = useRouter();
     const pathname = usePathname();
-    const isHomepage = pathname === "/";
+    const isHomepage = pathname === "/about";
     const [isDropdownOpen, setDropdownOpen] = useState(false);
     const [isMenuOpen, setMenuOpen] = useState(false);
-
     const dropdownRef = useRef(null);
 
     const toggleDropdown = () => {
@@ -217,7 +216,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <section className={`absolute z-50 top-0 w-full ${isHomepage ? 'bg-black bg-opacity-10' : ''}`}>
+        <section className={`absolute z-50 top-0 w-full bg-black bg-opacity-10`}>
             <nav className="z-60">
                 <div className="max-w-[90%] mx-auto flex items-center justify-between p-4">
                     {/* Logo */}
