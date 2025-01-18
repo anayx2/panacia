@@ -32,7 +32,7 @@ const TreatmentsSection = () => {
             }
                 /* Modify the base li styles */
 .card .card-inner .box .imgBox .treatments-list ul li {
-    background-color: #712a61c2 !important;
+    background-color: #fb7185 !important;
     width: 100%;
     opacity: 0;
     transform: translateY(20px);
@@ -208,7 +208,7 @@ const TreatmentsSection = () => {
     }
 
             .card .card-inner .box .imgBox .treatments-list ul li {
-                background-color: #712a61c2 !important;
+                background-color: #fb7185 !important;
                 width: 100%;
                 opacity: 0;
                 transform: scale(0.6);

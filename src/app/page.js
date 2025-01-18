@@ -149,7 +149,7 @@ const Page = () => {
         variants={fadeInUp}
         className='mt-20 flex flex-col text-center gap-5'
       >
-        <MotionH2 variants={fadeInUp} className='text-center'>Why Panacea</MotionH2>
+        <MotionH2 variants={fadeInUp} className='text-center'>Why Panacea?</MotionH2>
         <Whyus />
       </MotionSection>
 

@@ -83,8 +83,8 @@ const contacts = [
     {
         icon: Phone,
         title: "Call Us",
-        details: ["07388869697"],
-        href: 'tel:07388869697'
+        details: ["+44 7388 869697"],
+        href: 'tel:+44-7388869697'
     },
 ]
 

@@ -66,7 +66,7 @@ export default function Reviews() {
                             key={index}
                             className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/4 basis-1/3"
                         >
-                            <div className=" h-full rounded-2xl bg-gradient-to-b from-rose-100 to-rose-300 p-6 shadow-sm flex flex-col justify-between">
+                            <div className=" h-full rounded-2xl bg-rose-50 p-6 shadow-sm flex flex-col justify-between">
                                 {/* Quote Icon */}
                                 <Quote className="mb-4 h-6 w-6 text-rose-500" />
 

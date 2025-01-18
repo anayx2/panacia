@@ -345,7 +345,7 @@ const Navbar = () => {
                                                                         onClick={() => handleServiceClick(href)}
                                                                         className="flex flex-col items-center p-4 bg-rose-100 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:bg-rose-200 hover:scale-105"
                                                                     >
-                                                                        <div className="w-16 h-16 mb-2">
+                                                                        <div className="w-16 h-16 mb-2 relative group">
                                                                             <Image
                                                                                 src={image}
                                                                                 alt={title}
@@ -353,6 +353,7 @@ const Navbar = () => {
                                                                                 height={200}
                                                                                 className="w-full h-full object-cover rounded-full"
                                                                             />
+                                                                            <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300 rounded-full"></div>
                                                                         </div>
                                                                         <h3 className="text-sm font-medium text-gray-800">{title}</h3>
                                                                     </li>
