@@ -168,7 +168,7 @@ const page = () => {
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
                             <p className="text-lg ">
                                 <span className='font-bold text-rose-400'>
-                                    Personalized Approach: {' '}
+                                    personalisedApproach: {' '}
                                 </span>
                                 We take time to understand your goals and customize your treatment to achieve the perfect lip enhancement tailored to your unique features.
                             </p>
@@ -189,7 +189,7 @@ const page = () => {
                                 <span className='font-bold text-rose-400'>
                                     Comfort and Care:{' '}
                                 </span>
-                                We provide a comfortable, welcoming environment where you can relax during your treatment. We prioritize your comfort and satisfaction at every step.
+                                We provide a comfortable, welcoming environment where you can relax during your treatment. We prioritise your comfort and satisfaction at every step.
                             </p>
                         </div>
 
@@ -217,7 +217,7 @@ const page = () => {
                             <h4 className="text-2xl text-rose-400 font-medium">
                                 Consultation                            </h4>
                             <p className=" leading-relaxed">
-                                Your journey begins with a thorough consultation where we discuss your desired outcome and assess your lip shape and facial features. We'll ensure that your treatment plan is customized to suit your needs and goals.
+                                Your journey begins with a thorough consultation where we discuss your desired outcome and assess your lip shape and facial features. We'll ensure that your treatment plan is customised to suit your needs and goals.
                             </p></div>
 
                         <div className="space-y-4">

@@ -82,11 +82,11 @@ export default function AboutPage() {
                 <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
                     <motion.div className="space-y-6" variants={slideIn}>
                         <h1 className="">
-                            Empowering Your Health with Expert care
+                            Empowering Your Health with Expert Care
                         </h1>
                         <motion.p variants={fadeInUp}>
-                            Welcome to Panacea Clinic, where personalized care meets cutting-edge healthcare solutions. Our mission is to empower individuals with exceptional medical services designed to nurture health and well-being. With a team of highly skilled doctors and healthcare specialists, we are committed to delivering tailored care for every patient.
-                            By combining the latest advancements in medical technology with a compassionate approach, we ensure the best possible outcomes. At Panacea Clinic, we believe every patient's journey to health is unique, and we are here to guide you every step of the way. Choose Panacea Clinic for expertise, trust, and unparalleled care that prioritizes your well-being. Together, let's build a healthier, happier future.
+                            Welcome to Panacea Clinic, where personalisedcare meets cutting-edge healthcare solutions. Our mission is to empower individuals with exceptional medical services designed to nurture health and well-being. With a team of highly skilled doctors and healthcare specialists, we are committed to delivering tailored care for every patient.
+                            By combining the latest advancements in medical technology with a compassionate approach, we ensure the best possible outcomes. At Panacea Clinic, we believe every patient's journey to health is unique, and we are here to guide you every step of the way. Choose Panacea Clinic for expertise, trust, and unparalleled care that prioritises your well-being. Together, let's build a healthier, happier future.
                         </motion.p>
                         <Link href="/book-an-appointment">
                             <Button
@@ -150,7 +150,7 @@ export default function AboutPage() {
                                         className="text-lg leading-relaxed text-muted-foreground"
                                         variants={fadeInUp}
                                     >
-                                        Panacea Clinic delivers personalized healthcare services designed to meet individual needs. From preventive care to advanced treatments, we ensure a patient-centered approach. Our holistic methods focus on physical, mental, and emotional well-being, offering complete solutions under one roof. Trust us to prioritize your health with compassion and unmatched expertise.
+                                        Panacea Clinic delivers personalisedhealthcare services designed to meet individual needs. From preventive care to advanced treatments, we ensure a patient-centred approach. Our holistic methods focus on physical, mental, and emotional well-being, offering complete solutions under one roof. Trust us to prioritise your health with compassion and unmatched expertise.
                                     </motion.p>
                                 </motion.div>
                                 <motion.div
@@ -281,7 +281,7 @@ export default function AboutPage() {
                             className="text-lg"
                             variants={fadeInUp}
                         >
-                            Patient satisfaction drives everything we do at Panacea Clinic. We prioritize building trust by delivering compassionate, high-quality care. Our goal is to exceed expectations, creating a positive healthcare experience for every individual. From your first visit to follow-ups, we are here to support your journey toward better health and well-being.
+                            Patient satisfaction drives everything we do at Panacea Clinic. We prioritise building trust by delivering compassionate, high-quality care. Our goal is to exceed expectations, creating a positive healthcare experience for every individual. From your first visit to follow-ups, we are here to support your journey toward better health and well-being.
                         </motion.p>
                         <Link href={'/services'}>
                             <Button

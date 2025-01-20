@@ -7,12 +7,12 @@ const features = [
     {
         icon: '/icons/ExpertiseandExperience.svg',
         title: "Expertise and Experience",
-        description: "Our team consists of highly qualified professionals with extensive experience in delivering effective and personalized treatments."
+        description: "Our team consists of highly qualified professionals with extensive experience in delivering effective and personalisedtreatments."
     },
     {
         icon: '/icons/TailoredSolutions.svg',
         title: "Tailored Solutions",
-        description: "We offer treatments customized to your unique needs, ensuring optimal results for your health and aesthetic goals."
+        description: "We offer treatments customised to your unique needs, ensuring optimal results for your health and aesthetic goals."
     },
     {
         icon: '/icons/ArtTechnology.svg',
@@ -22,7 +22,7 @@ const features = [
     {
         icon: '/icons/CommitmenttoCare.svg',
         title: "Commitment to Care",
-        description: "We prioritize your well-being with a compassionate, patient-centered approach, ensuring you feel supported at every stage of your journey."
+        description: "We prioritise your well-being with a compassionate, patient-centred approach, ensuring you feel supported at every stage of your journey."
     }
 ]
 const Whyus = () => {

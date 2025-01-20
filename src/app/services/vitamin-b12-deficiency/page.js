@@ -159,7 +159,7 @@ const page = () => {
                     Why Choose Panacea Health & Beauty Clinic? </h2>
 
                 <p className="mt-5 text-center">
-                    At Panacea Health & Beauty Clinic, we provide professional and personalized care to address Vitamin B12 deficiency and help you feel revitalized and healthy. Here’s why you should trust us with your treatment:
+                    At Panacea Health & Beauty Clinic, we provide professional and personalisedcare to address Vitamin B12 deficiency and help you feel revitalized and healthy. Here’s why you should trust us with your treatment:
                 </p>
 
                 <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
@@ -189,7 +189,7 @@ const page = () => {
                                 <span className='font-bold text-rose-400'>
                                     Comprehensive Assessment: {' '}
                                 </span>
-                                We offer thorough assessments, including blood tests, to determine your Vitamin B12 levels and develop a customized treatment plan based on your unique needs.
+                                We offer thorough assessments, including blood tests, to determine your Vitamin B12 levels and develop a customised treatment plan based on your unique needs.
                             </p>
                         </div>
 

@@ -178,7 +178,7 @@ const page = () => {
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
                             <p className="text-lg ">
                                 <span className='font-bold text-rose-400'>
-                                    Personalized Approach {' '}
+                                    personalisedApproach {' '}
                                 </span>
                                 We take time to understand your goals, carefully selecting the right filler and treatment plan to achieve the best outcome for you.                            </p>
                         </div>
@@ -210,10 +210,10 @@ const page = () => {
                             What to Expect During Your Dermal Filler Treatment? </h2>
                         <div className="space-y-4">
                             <h4 className="text-2xl text-rose-400 font-medium">
-                                Personalized Consultation
+                                personalisedConsultation
                             </h4>
                             <p className=" leading-relaxed">
-                                During your consultation, we’ll discuss your aesthetic goals, review your medical history, and assess the areas you want to treat. We’ll create a personalized plan that aligns with your desired outcome.
+                                During your consultation, we’ll discuss your aesthetic goals, review your medical history, and assess the areas you want to treat. We’ll create a personalisedplan that aligns with your desired outcome.
 
                             </p></div>
 

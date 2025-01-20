@@ -180,7 +180,7 @@ const page = () => {
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
                             <p className="text-lg ">
                                 <span className='font-bold text-rose-400'>
-                                    Personalized Approach: {' '}
+                                    personalisedApproach: {' '}
                                 </span>
                                 We take the time to understand your unique skincare concerns and customize each treatment to meet your specific goals.                            </p>
                         </div>

@@ -155,7 +155,7 @@ const page = () => {
                     Why Choose Panacea Health & Beauty Clinic ?                </h2>
 
                 <p className="mt-5">
-                    At Panacea Health & Beauty Clinic, we combine expertise, personalized care, and the latest technology to deliver exceptional anti-wrinkle injections. Here’s why you should choose us:
+                    At Panacea Health & Beauty Clinic, we combine expertise, personalisedcare, and the latest technology to deliver exceptional anti-wrinkle injections. Here’s why you should choose us:
                 </p>
 
                 <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
@@ -183,7 +183,7 @@ const page = () => {
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
                             <p className="text-lg ">
                                 <span className='font-bold text-rose-400'>
-                                    Personalized Care: {' '}
+                                    personalisedCare: {' '}
                                 </span>
                                 We take time to understand your goals and create a tailored plan for the best outcome with anti-wrinkle injections.                            </p>
                         </div>
@@ -215,7 +215,7 @@ const page = () => {
                             What to Expect During Your Treatment? </h2>
                         <div className="space-y-4">
                             <h4 className="text-2xl text-rose-400 font-medium">
-                                Personalized Consultation
+                                personalisedConsultation
                             </h4>
                             <p className=" leading-relaxed">
                                 Your journey begins with a thorough consultation, where we take the time to understand your aesthetic goals and medical history. Our experienced professionals will assess your skin and discuss the areas you'd like to treat. We'll also explain how

@@ -102,9 +102,9 @@ const Page = () => {
 
           <MotionUl variants={staggerChildren} className="space-y-4">
             {[
-              'Comprehensive and personalized medical services for all ages.',
+              'Comprehensive and personalised medical services for all ages.',
               'A team of highly qualified doctors and healthcare professionals.',
-              'A patient-centered approach focused on trust, care, and results.'
+              'A patient-centred approach focused on trust, care, and results.'
             ].map((feature, index) => (
               <MotionLi
                 key={index}

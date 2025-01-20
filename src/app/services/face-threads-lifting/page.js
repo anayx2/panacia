@@ -211,7 +211,7 @@ const page = () => {
                                 <span className='font-bold text-rose-400'>
                                     Comfortable and Caring Environment: {' '}
                                 </span>
-                                We prioritize your comfort and safety throughout the treatment process, offering a welcoming and relaxing environment.                                            </p>
+                                We prioritise your comfort and safety throughout the treatment process, offering a welcoming and relaxing environment.                                            </p>
                         </div>
                     </div>
                 </div>

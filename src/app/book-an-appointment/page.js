@@ -91,7 +91,7 @@ const page = () => {
                             <h2 className="text-3xl">Book Your Free Consultation Today</h2>
                         </div>
                         <p className="text-lg leading-relaxed text-gray-600">
-                            Unlock personalized treatment options with a one-on-one consultation.
+                            Unlock personalisedtreatment options with a one-on-one consultation.
                             Our experts will guide you toward the best solution tailored to your needs.
                         </p>
                     </div>
@@ -118,7 +118,7 @@ const page = () => {
                                 transition={{ delay: 0.2 }}
                                 className='flex flex-col'
                             >
-                                <span className='font-bold'>Personalized Consultation</span>
+                                <span className='font-bold'>personalisedConsultation</span>
                                 <span className="text-lg text-gray-600">
                                     Expect a one-on-one session where our experts assess your unique needs,
                                     goals, and preferences to tailor the best treatment plan for you.

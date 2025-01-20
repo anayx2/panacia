@@ -80,7 +80,7 @@ const faqItems = [
     },
     {
         question: "Do you offer consultations?",
-        answer: "Yes, we offer personalized consultations to understand your needs and recommend suitable treatments."
+        answer: "Yes, we offer personalisedconsultations to understand your needs and recommend suitable treatments."
     },
     {
         question: "What are the benefits of mesotherapy?",
@@ -107,7 +107,7 @@ const faq2 = [
     },
     {
         question: "What makes Panacea Clinic different from others?",
-        answer: "We combine cutting-edge treatments with personalized care, ensuring the best results and patient satisfaction."
+        answer: "We combine cutting-edge treatments with personalisedcare, ensuring the best results and patient satisfaction."
     }
 ]
 

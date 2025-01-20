@@ -154,7 +154,7 @@ const page = () => {
                     Why Choose Panacea Health & Beauty Clinic? </h2>
 
                 <p className="mt-5 text-center">
-                    At Panacea Health & Beauty Clinic, we offer expert care and customized treatment plans to help you achieve your desired body shape. Here’s why clients choose us for their fat dissolving injections </p>
+                    At Panacea Health & Beauty Clinic, we offer expert care and customised treatment plans to help you achieve your desired body shape. Here’s why clients choose us for their fat dissolving injections </p>
 
                 <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
                     <div className="relative aspect-[5/3] w-full">
@@ -181,7 +181,7 @@ const page = () => {
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
                             <p className="text-lg ">
                                 <span className='font-bold text-rose-400'>
-                                    Personalized Care: {' '}
+                                    personalisedCare: {' '}
                                 </span>
                                 We tailor each treatment to meet your specific needs, ensuring that your goals are achieved with natural-looking, sculpted results.                           </p>
                         </div>
@@ -202,7 +202,7 @@ const page = () => {
                                 <span className='font-bold text-rose-400'>
                                     Comfortable Environment:  {' '}
                                 </span>
-                                We prioritize your comfort and well-being, providing a relaxing, professional atmosphere where you can feel at ease throughout the procedure.                                            </p>
+                                We prioritise your comfort and well-being, providing a relaxing, professional atmosphere where you can feel at ease throughout the procedure.                                            </p>
                         </div>
                         <div className="flex items-center gap-4">
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />

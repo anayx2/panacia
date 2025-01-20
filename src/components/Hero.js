@@ -34,7 +34,7 @@ const Hero = () => {
                                 <p
                                     className="mb-8 text-lg text-black sm:text-xl animate-fade-down [animation-delay:400ms] [animation-fill-mode:forwards] opacity-0"
                                 >
-                                    At Panacea Clinic, we put your health first. Learn about individualized therapies created to support your success.                                </p>
+                                    At Panacea Clinic, we put your health first. Learn about individualised therapies created to support your success.                                </p>
                                 <div className="flex gap-5 md:gap-10 lg:gap-10 text-left">
                                     <span className="flex flex-col items-start">
                                         <h2 className="text-xl font-extrabold tracking-tight text-black sm:text-4xl md:text-5xl">

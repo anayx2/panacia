@@ -187,7 +187,7 @@ const page = () => {
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
                             <p className="text-lg ">
                                 <span className='font-bold text-rose-400'>
-                                    Personalized Treatment Plans: {' '}
+                                    personalisedTreatment Plans: {' '}
                                 </span>
                                 We tailor each treatment to meet your specific needs, ensuring you achieve the most natural-looking, effective results.                           </p>
                         </div>
@@ -216,7 +216,7 @@ const page = () => {
                                 <span className='font-bold text-rose-400'>
                                     Comfortable Environment:  {' '}
                                 </span>
-                                We prioritize your comfort, offering a relaxing and welcoming environment throughout the treatment process.
+                                We prioritise your comfort, offering a relaxing and welcoming environment throughout the treatment process.
                             </p>
                         </div>
                     </div>
@@ -233,7 +233,7 @@ const page = () => {
                             <h4 className="text-2xl text-rose-400 font-medium">
                                 Consultation:                           </h4>
                             <p className=" leading-relaxed">
-                                Your journey begins with a personalized consultation where we discuss your goals, medical history, and any concerns you may have. Based on this, we will design a tailored treatment plan for you.                            </p></div>
+                                Your journey begins with a personalisedconsultation where we discuss your goals, medical history, and any concerns you may have. Based on this, we will design a tailored treatment plan for you.                            </p></div>
                         <div className="space-y-1">
                             <h4 className="text-2xl text-rose-400 font-medium">
                                 Blood Draw:                         </h4>

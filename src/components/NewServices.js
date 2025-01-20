@@ -295,7 +295,7 @@ const TreatmentsSection = () => {
 
             <section className="our-treatments testSection" style={{ width: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                 <p className="content" style={{ width: "80%", textAlign: "center" }} >
-                    At Panacea Clinic, we offer a wide range of treatments designed to rejuvenate, enhance, and maintain your natural beauty and well-being. Our expert team provides personalized care to help you look and feel your best.
+                    At Panacea Clinic, we offer a wide range of treatments designed to rejuvenate, enhance, and maintain your natural beauty and well-being. Our expert team provides personalisedcare to help you look and feel your best.
                 </p>
                 <div className="treatments-gallery">
                     <section className="whole-container">

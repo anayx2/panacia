@@ -15,7 +15,7 @@ const counterData = [
     },
     {
         endValue: 15,
-        label: 'Years Experience',
+        label: 'Years of Experience',
         color: 'fill-rose-200',
     },
     {

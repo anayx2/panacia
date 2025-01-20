@@ -186,7 +186,7 @@ const page = () => {
                                 <span className='font-bold text-rose-400'>
                                     Tailored Treatment Plans: {' '}
                                 </span>
-                                We take the time to understand your unique concerns and design a personalized treatment plan to meet your specific needs and goals.                           </p>
+                                We take the time to understand your unique concerns and design a personalisedtreatment plan to meet your specific needs and goals.                           </p>
                         </div>
 
                         <div className="flex items-center gap-4">
@@ -214,7 +214,7 @@ const page = () => {
                                 <span className='font-bold text-rose-400'>
                                     Comfortable and Safe Environment:  {' '}
                                 </span>
-                                We prioritize your well-being and comfort, providing a safe, professional, and welcoming environment for your treatments.
+                                We prioritise your well-being and comfort, providing a safe, professional, and welcoming environment for your treatments.
                             </p>
                         </div>
                     </div>
@@ -231,7 +231,7 @@ const page = () => {
                             <h4 className="text-2xl text-rose-400 font-medium">
                                 Consultation:                           </h4>
                             <p className=" leading-relaxed">
-                                Your treatment begins with a personalized consultation, where our expert practitioners will assess your skin or hair concerns, discuss your goals, and create a customized treatment plan tailored to your needs.                            </p></div>
+                                Your treatment begins with a personalisedconsultation, where our expert practitioners will assess your skin or hair concerns, discuss your goals, and create a customised treatment plan tailored to your needs.                            </p></div>
                         <div className="space-y-1">
                             <h4 className="text-2xl text-rose-400 font-medium">
                                 Preparation and Injection:                         </h4>
