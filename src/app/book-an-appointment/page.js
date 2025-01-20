@@ -1,19 +1,74 @@
 'use client'
 import MultiStepBooking from '@/components/AppointmentForm'
 import ContactSection from '@/components/Contact'
-import { Check } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion'
 
-const page = () => {
+// Animation variants
+const fadeIn = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: { duration: 0.8, ease: 'easeOut' }
+    }
+}
+
+const fadeInUp = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.8, ease: 'easeOut' }
+    }
+}
+
+const slideInLeft = {
+    hidden: { opacity: 0, x: -100 },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: { duration: 0.8, ease: 'easeOut' }
+    }
+}
+
+const slideInRight = {
+    hidden: { opacity: 0, x: 100 },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: { duration: 0.8, ease: 'easeOut' }
+    }
+}
+
+const staggerContainer = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.2,
+            delayChildren: 0.3
+        }
+    }
+}
+
+const staggerItem = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.5, ease: 'easeOut' }
+    }
+}
+
+const Page = () => {
     return (
         <>
             <motion.section
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
                 className='relative h-[50dvh] w-full'
+                initial="hidden"
+                animate="visible"
+                variants={fadeIn}
             >
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -23,19 +78,18 @@ const page = () => {
                 />
                 <div className="absolute inset-0 bg-black/20" />
                 <motion.div
-                    initial={{ y: 50, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 0.5, duration: 0.8 }}
-                    className="relative z-10 flex h-full items-center justify-center px-4 text-white"
+                    className="relative z-10 flex h-full items-center justify-center px-4 text-white text-center"
+                    variants={fadeInUp}
                 >
                     <h2>Book an Appointment</h2>
                 </motion.div>
             </motion.section>
 
             <motion.section
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.8 }}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeIn}
             >
                 <MultiStepBooking />
             </motion.section>
@@ -43,9 +97,10 @@ const page = () => {
             <section className="container mx-auto px-4 py-10 lg:w-[80%] md:w-[80%] sm:w-[95%]">
                 {/* First Section */}
                 <motion.div
-                    initial={{ x: -100, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 0.8 }}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    variants={slideInLeft}
                     className="mb-24 flex flex-col items-start gap-12 lg:flex-row lg:items-center justify-between"
                 >
                     <div className="max-w-xl">
@@ -71,9 +126,10 @@ const page = () => {
 
                 {/* Second Section */}
                 <motion.div
-                    initial={{ x: 100, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 0.8 }}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    variants={slideInRight}
                     className="flex flex-col-reverse items-start gap-12 lg:flex-row lg:items-center justify-between"
                 >
                     <Image
@@ -99,9 +155,10 @@ const page = () => {
 
                 {/* Third Section */}
                 <motion.div
-                    initial={{ y: 50, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.8 }}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    variants={fadeInUp}
                     className="mb-24 flex flex-col items-start gap-12 lg:flex-row lg:items-center justify-between"
                 >
                     <div className="max-w-xl mt-10">
@@ -111,23 +168,22 @@ const page = () => {
                             </div>
                             <h2 className="text-3xl">What To Expect During Your Consultation</h2>
                         </div>
-                        <div className='flex flex-col gap-5'>
+                        <motion.div
+                            variants={staggerContainer}
+                            className='flex flex-col gap-5'
+                        >
                             <motion.div
-                                initial={{ opacity: 0 }}
-                                whileInView={{ opacity: 1 }}
-                                transition={{ delay: 0.2 }}
+                                variants={staggerItem}
                                 className='flex flex-col'
                             >
-                                <span className='font-bold'>personalisedConsultation</span>
+                                <span className='font-bold'>personalised Consultation</span>
                                 <span className="text-lg text-gray-600">
                                     Expect a one-on-one session where our experts assess your unique needs,
                                     goals, and preferences to tailor the best treatment plan for you.
                                 </span>
                             </motion.div>
                             <motion.div
-                                initial={{ opacity: 0 }}
-                                whileInView={{ opacity: 1 }}
-                                transition={{ delay: 0.4 }}
+                                variants={staggerItem}
                                 className='flex flex-col'
                             >
                                 <span className='font-bold'>In-depth Skin Analysis</span>
@@ -137,9 +193,7 @@ const page = () => {
                                 </span>
                             </motion.div>
                             <motion.div
-                                initial={{ opacity: 0 }}
-                                whileInView={{ opacity: 1 }}
-                                transition={{ delay: 0.6 }}
+                                variants={staggerItem}
                                 className='flex flex-col'
                             >
                                 <span className='font-bold'>Treatment Recommendations</span>
@@ -148,7 +202,7 @@ const page = () => {
                                     and explain their benefits to ensure you make an informed decision.
                                 </span>
                             </motion.div>
-                        </div>
+                        </motion.div>
                     </div>
                     <Image
                         src="/about-img1.jpg"
@@ -161,9 +215,10 @@ const page = () => {
             </section>
 
             <motion.section
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.8 }}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeIn}
                 className='flex flex-col text-center items-center justify-center pb-10 gap-10'
             >
                 <ContactSection />
@@ -172,4 +227,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
