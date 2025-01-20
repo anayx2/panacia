@@ -4,9 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
-import { Card } from "./ui/card";
 import { motion, AnimatePresence } from "framer-motion"
-import { Button } from "./ui/button";
 
 
 const navItems = [
@@ -38,7 +36,7 @@ const services = [
         title: "Mesotherapy",
         description: "Achieve glowing, nourished skin with Mesotherapy, a technique delivering vitamins and nutrients directly to your skin for remarkable results.",
         image: "/blog1.png",
-        href: "/services/#"
+        href: "/services/Mesotherapy"
     },
     {
         id: 3,
@@ -52,7 +50,7 @@ const services = [
         title: "Microneedling",
         description: "Revitalize your skin with Microneedling, promoting collagen production to reduce scars, fine lines, and improve skin texture.",
         image: "/services1/microneedling.jpg",
-        href: "/services/#"
+        href: "/services/Microneedling"
     },
     {
         id: 5,
@@ -66,14 +64,14 @@ const services = [
         title: "Hopi Ear Candle",
         description: "Experience relaxation and improved ear health with Hopi Ear Candling, a natural therapy to clear blockages and restore balance.",
         image: "/services1/hopiearcandle.jpg",
-        href: "/services/#"
+        href: "/services/hopi-ear-candle"
     },
     {
         id: 7,
         title: "IV Drip",
         description: "Rehydrate, rejuvenate, and replenish essential nutrients with our custom IV Drip therapies for optimal wellness.",
         image: "/services1/ivdrip.jpg",
-        href: "/services/#"
+        href: "/services/IV-Drip"
     },
     {
         id: 8,
@@ -84,10 +82,10 @@ const services = [
     },
     {
         id: 9,
-        title: "PRP Hair Losss",
+        title: "PRP Hair Loss",
         description: "Combat hair loss with PRP treatments, stimulating hair growth and strengthening follicles for thicker, healthier hair.",
         image: "/services1/hairloss.jpg",
-        href: "/services/#"
+        href: "/services/prp-hair-loss"
     },
     {
         id: 10,
@@ -115,7 +113,7 @@ const services = [
         title: "Dermaplaning",
         description: "Exfoliate dead skin and remove peach fuzz with Dermaplaning, leaving your skin smooth, radiant, and makeup-ready.",
         image: "/services1/dermaplanning.jpg",
-        href: "/services/#"
+        href: "/services/Dermaplaning"
     }
 ]
 
@@ -358,6 +356,15 @@ const Navbar = () => {
                                                                         <h3 className="text-sm font-medium text-gray-800">{title}</h3>
                                                                     </li>
                                                                 ))}
+                                                                <li
+
+                                                                    onClick={() => handleServiceClick(href('/services'))}
+                                                                    className="flex flex-col items-center justify-center p-4 bg-rose-100 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:bg-rose-200 hover:scale-105"
+                                                                >
+                                                                    <h3 className="font-medium text-gray-800 text-xl">View All</h3>
+                                                                    {/* <div className="w-16 h-16 mb-2 relative group">
+                                                                    </div> */}
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </motion.div>
@@ -422,7 +429,7 @@ const Navbar = () => {
                                 </Link>
                             </li>
                         ))}
-                        <li>
+                        {/* <li>
                             <button
                                 onClick={toggleDropdown}
                                 className="flex items-center py-2 text-lg text-gray-800 hover:text-rose-500"
@@ -457,7 +464,7 @@ const Navbar = () => {
                                     </li>
                                 </ul>
                             )}
-                        </li>
+                        </li> */}
                         <li>
                             <Link href="/book-an-appointment">
                                 <button className="w-full rounded-lg text-white p-2 bg-rose-400 transition-all duration-300 hover:bg-rose-500">

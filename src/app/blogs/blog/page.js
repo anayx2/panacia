@@ -4,8 +4,8 @@ import Image from 'next/image'
 import { useState } from 'react'
 
 const categoryColors = {
-    Educational: "bg-zinc-800",
-    "Healthy Food": "bg-emerald-800"
+    Educational: "bg-rose-500",
+    "Healthy Food": "bg-rose-500"
 }
 
 const comments = [
@@ -46,9 +46,9 @@ export default function BlogPost() {
     })
     return (
         <>
-            <article className="prose prose-lg max-w-none space-y-2">
+            <article className="prose prose-lg max-w-none space-y- m">
                 {/* Categories */}
-                <div className="mb-6 flex gap-2 not-prose">
+                <div className="mb-6 flex gap-2 not-prose mt-5">
                     {["Educational", "Healthy Food"].map((category) => (
                         <span
                             key={category}
@@ -60,9 +60,9 @@ export default function BlogPost() {
                 </div>
 
                 {/* Title */}
-                <h1 className="mb-4 text-4xl font-bold">
+                {/* <h1 className="mb-4 text-4xl font-bold">
                     Top dos & don'ts for Valentine's Day with your pet
-                </h1>
+                </h1> */}
 
                 {/* Date */}
                 <time className="block text-sm text-gray-500">

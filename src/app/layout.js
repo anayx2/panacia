@@ -3,6 +3,8 @@ import "./globals.css";
 // import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import { Footer } from '@/components/Footernew';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -23,6 +25,17 @@ export default function RootLayout({ children }) {
         className={`${roboto.variable} font-sans antialiased`}
       >
         <Navbar />
+        <div className="fixed bottom-10 right-4 z-50">
+          <Link href="https://wa.me/447388869697" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/whatsapp.png" // Adjust the path if your image is in a subfolder
+              alt="WhatsApp"
+              width={50}
+              height={50}
+              className="hover:scale-105 transition-transform duration-300"
+            />
+          </Link>
+        </div>
         {children}
         {/* <Footer /> */}
         <Footer />

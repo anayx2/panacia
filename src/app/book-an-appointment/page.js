@@ -13,7 +13,7 @@ const page = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
-                className='relative h-[60dvh] w-full'
+                className='relative h-[50dvh] w-full'
             >
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -21,12 +21,12 @@ const page = () => {
                         backgroundImage: "url('/banner-pages.png')"
                     }}
                 />
-                {/* <div className="absolute inset-0 bg-black/60" /> */}
+                <div className="absolute inset-0 bg-black/20" />
                 <motion.div
                     initial={{ y: 50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.5, duration: 0.8 }}
-                    className="relative z-10 flex h-full items-center justify-center px-4 text-rose-400"
+                    className="relative z-10 flex h-full items-center justify-center px-4 text-white"
                 >
                     <h2>Book an Appointment</h2>
                 </motion.div>

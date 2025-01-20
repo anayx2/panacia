@@ -4,15 +4,20 @@ import Link from 'next/link'
 export default function BlogLayout({ children }) {
     return (
         <>
-            <section className='relative h-[60dvh] w-full mb-10'>
+            <section className='relative h-[50dvh] w-full'>
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
-                        backgroundImage: "url('/aboutcover.jpg')"
+                        backgroundImage: "url('/banner-pages.png')"
                     }}
                 />
-                <div className="absolute inset-0 bg-black/60" />
+                <div className="absolute inset-0 bg-black/20" />
                 <div className="relative z-10 flex h-full items-center justify-center px-4 text-white">
+                    <div>
+                        <h2 >
+                            Top dos & don'ts for Valentine's Day with your pet
+                        </h2>
+                    </div>
                 </div>
             </section>
             <div className="container mx-auto px-4 max-w-[90%]">
@@ -22,14 +27,20 @@ export default function BlogLayout({ children }) {
                         {children}
                     </main>
                     {/* Sidebar */}
-                    <aside className="w-full lg:w-[280px] space-y-8">
+                    <aside className="w-full lg:w-[280px] space-y-8 mt-20">
                         {/* Archives */}
                         <div>
                             <h2 className="text-xl font-semibold mb-4">Archives</h2>
                             <ul className="space-y-2">
                                 <li>
                                     <Link href="#" className="text-gray-600 hover:text-gray-900 flex items-center">
-                                        <span className="text-[#666666]">🐾</span>
+                                        <span className="text-[#666666]"><Image
+                                            src={'/beauty_icon.png'}
+                                            width={20}
+                                            height={20}
+                                            alt='icon'
+                                        />
+                                        </span>
                                         <span className="ml-2">August 2024</span>
                                     </Link>
                                 </li>
@@ -51,7 +62,12 @@ export default function BlogLayout({ children }) {
                                 ].map((category) => (
                                     <li key={category}>
                                         <Link href="#" className="text-gray-600 hover:text-gray-900 flex items-center">
-                                            <span className="text-[#666666]">🐾</span>
+                                            <span className="text-[#666666]"><Image
+                                                src={'/beauty_icon.png'}
+                                                width={20}
+                                                height={20}
+                                                alt='icon'
+                                            /></span>
                                             <span className="ml-2">{category}</span>
                                         </Link>
                                     </li>
@@ -129,11 +145,11 @@ export default function BlogLayout({ children }) {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <div>
+                                    {/* <div>
                                         <h3 className="line-clamp-2 text-sm font-medium text-gray-900 group-hover:text-gray-600">
                                             Top dos & don'ts for Valentine's Day with your pet
                                         </h3>
-                                    </div>
+                                    </div> */}
                                 </Link>
                             </div>
                         </div>
