@@ -305,7 +305,7 @@ const TreatmentsSection = () => {
                                     <div className="box">
                                         <div className="imgBox">
                                             <img
-                                                src="/services1/wrinke.jpg"
+                                                src="/HOME/antiwrinke.jpg"
                                                 alt="dermal Fillers"
                                             />
                                             <div className="treatments-list">
@@ -406,7 +406,7 @@ const TreatmentsSection = () => {
                                         <div className="imgBox">
                                             <img
                                                 // src="/services1/b12.jpg"
-                                                src="/services1/young-woman-getting-prp-treatment-high-angle.jpg"
+                                                src="/HOME/Mesotherapy.jpeg"
 
                                                 alt="Acne &amp; Facial Treatments"
                                             />
@@ -610,7 +610,7 @@ const TreatmentsSection = () => {
                                     <div className="box">
                                         <div className="imgBox">
                                             <img
-                                                src="/services1/microneedling.jpg"
+                                                src="/HOME/Microneedling.jpg"
                                                 alt="Laser Skin &amp; Lesion Treatments"
                                             />
                                             <div className="treatments-list">
@@ -812,7 +812,7 @@ const TreatmentsSection = () => {
                                     <div className="box">
                                         <div className="imgBox">
                                             <img
-                                                src="/services1/hopiearcandle.jpg"
+                                                src="/HOME/hopiearcandle.jpeg"
                                                 alt="Skin Rejuvenation &amp; Anti Aging"
                                             />
                                             <div className="treatments-list">

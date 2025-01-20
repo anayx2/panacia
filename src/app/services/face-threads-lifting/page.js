@@ -125,7 +125,7 @@ const page = () => {
 
                     <div className="flex items-center w-full h-auto rounded-lg">
                         <Image
-                            src={'/services1/wrinke.jpg'}
+                            src={'/servicesPage/pdo/1.jpg'}
                             width={800}
                             height={800}
                             className='w-full h-auto rounded-lg'
@@ -169,7 +169,7 @@ const page = () => {
                 <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
                     <div className="relative aspect-[5/3] w-full">
                         <Image
-                            src="/blog.png"
+                            src={'/servicesPage/pdo/2.jpg'}
                             alt="Facial profile showcasing natural skin texture and contours"
                             fill
                             className="object-cover rounded-lg"
@@ -250,7 +250,7 @@ const page = () => {
 
                     <div className="relative aspect-[4/3] w-full">
                         <Image
-                            src="/image1.jpg"
+                            src={'/servicesPage/pdo/3.jpg'}
                             alt="Panacea Health & Beauty Clinic consultation with practitioner"
                             fill
                             className="object-cover rounded-lg"

@@ -79,7 +79,7 @@ const Page = () => {
           className="flex items-center justify-center p-2 overflow-hidden rounded-2xl bg-rose-200"
         >
           <Image
-            src="/sec2imghome.jpg"
+            src="/HOME/homeabout.jpg"
             alt="Beauty treatment demonstration"
             height={900}
             width={900}
