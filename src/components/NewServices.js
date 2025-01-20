@@ -295,7 +295,7 @@ const TreatmentsSection = () => {
 
             <section className="our-treatments testSection" style={{ width: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                 <p className="content" style={{ width: "80%", textAlign: "center" }} >
-                    At Panacea Clinic, we offer a wide range of treatments designed to rejuvenate, enhance, and maintain your natural beauty and well-being. Our expert team provides personalisedcare to help you look and feel your best.
+                    At Panacea Clinic, we offer a wide range of treatments designed to rejuvenate, enhance, and maintain your natural beauty and well-being. Our expert team provides personalized care to help you look and feel your best.
                 </p>
                 <div className="treatments-gallery">
                     <section className="whole-container">
@@ -315,7 +315,8 @@ const TreatmentsSection = () => {
                                                             href="/servicesr"
                                                             aria-label="Learn more about Lip Filler treatment to enhance and volumize your lips."
                                                         >
-                                                            Lip Filler
+                                                            Forehead Lines Treatment
+
                                                         </a>
                                                     </li>
                                                     <li key="1">
@@ -323,7 +324,8 @@ const TreatmentsSection = () => {
                                                             href="/services"
                                                             aria-label="Discover Tear Trough Filler treatment to reduce under-eye hollows and rejuvenate your appearance."
                                                         >
-                                                            Tear Trough Filler
+                                                            Frown Lines (Glabella) Treatment
+
                                                         </a>
                                                     </li>
                                                     <li key="2">
@@ -331,7 +333,7 @@ const TreatmentsSection = () => {
                                                             href="/services"
                                                             aria-label="Explore Cheek Filler treatment to add volume and contour to your cheeks."
                                                         >
-                                                            Cheek Filler
+                                                            Crow's Feet Treatment
                                                         </a>
                                                     </li>
                                                     <li key="3">
@@ -339,17 +341,18 @@ const TreatmentsSection = () => {
                                                             href="/services"
                                                             aria-label="Explore Chin Correction Filler treatment to refine and balance your facial profile."
                                                         >
-                                                            Chin Correction Filler
+                                                            Eyebrow Lift Treatment
                                                         </a>
                                                     </li>
-                                                    <li key="4">
+                                                    {/* <li key="4">
                                                         <a
                                                             href="/services"
                                                             aria-label="Learn about Non-Surgical Nose Filler treatment for a straighter, smoother nose."
                                                         >
-                                                            Nose Filler
+                                                            Smoker's Lines Treatment
+
                                                         </a>
-                                                    </li>
+                                                    </li> */}
                                                 </ul>
                                             </div>
                                         </div>
@@ -414,7 +417,7 @@ const TreatmentsSection = () => {
                                                             href="/services"
                                                             aria-label="Discover our Deep Cleansing Facial treatment for purified and refreshed skin."
                                                         >
-                                                            Deep Cleansing Treatment
+                                                            Facial Mesotherapy
                                                         </a>
                                                     </li>
                                                     <li key="1">
@@ -422,8 +425,8 @@ const TreatmentsSection = () => {
                                                             href="/services"
                                                             aria-label="Explore our Brightening Treatment to reduce hyperpigmentation and achieve radiant, even-toned skin."
                                                         >
-                                                            Brightening Treatment
-                                                            for Hyperpigmentation
+                                                            Hair Restoration Mesotherapy
+
                                                         </a>
                                                     </li>
                                                     <li key="2">
@@ -431,7 +434,7 @@ const TreatmentsSection = () => {
                                                             href="/services"
                                                             aria-label="Learn more about our effective Acne Treatments for clear, healthy skin."
                                                         >
-                                                            Acne Treatments
+                                                            Skin Rejuvenation Mesotherapy
                                                         </a>
                                                     </li>
                                                     <li key="3">
@@ -439,17 +442,19 @@ const TreatmentsSection = () => {
                                                             href="/services"
                                                             aria-label="Experience the Red Carpet Facial for radiant, glowing skin before your next event."
                                                         >
-                                                            Red Carpet Facial
+                                                            Body Contouring Mesotherapy
+
                                                         </a>
                                                     </li>
-                                                    <li key="4">
+                                                    {/* <li key="4">
                                                         <a
                                                             href="/services"
                                                             aria-label="Hydrate and nourish your skin deeply with our Deep Hydration Facial treatment."
                                                         >
-                                                            Deep Hydration Facial
+                                                            Anti-Ageing Mesotherapy
+
                                                         </a>
-                                                    </li>
+                                                    </li> */}
                                                 </ul>
                                             </div>
                                         </div>
@@ -520,7 +525,8 @@ const TreatmentsSection = () => {
                                                             href="/services"
                                                             aria-label="Discover the P3 Chemical Peel for deep exfoliation and skin renewal."
                                                         >
-                                                            P3 Chemical Peel
+                                                            Double Chin Fat Dissolving
+
                                                         </a>
                                                     </li>
                                                     <li key="2">
@@ -528,7 +534,8 @@ const TreatmentsSection = () => {
                                                             href="/services"
                                                             aria-label="Explore the Green Peel for natural skin rejuvenation and glowing results."
                                                         >
-                                                            Green Peel
+                                                            Stomach Fat Dissolving
+
                                                         </a>
                                                     </li>
                                                     <li key="3">
@@ -536,9 +543,21 @@ const TreatmentsSection = () => {
                                                             href="/services"
                                                             aria-label="Find out about the Botanical Peel for gentle and effective skin renewal."
                                                         >
-                                                            Botanical Peel
+                                                            Thigh Fat Dissolving
+
                                                         </a>
                                                     </li>
+                                                    {/* <li key="4">
+                                                        <a
+                                                            href="/services"
+                                                            aria-label="Find out about the Botanical Peel for gentle and effective skin renewal."
+                                                        >
+                                                            Love Handle Fat Dissolving
+
+
+                                                        </a>
+                                                    </li> */}
+
                                                 </ul>
                                             </div>
                                         </div>
@@ -601,7 +620,8 @@ const TreatmentsSection = () => {
                                                             href="/treatments/laser-skin-resurfacing"
                                                             aria-label="Explore Laser Skin Resurfacing to reduce wrinkles, scars, and pigmentation for a refreshed look."
                                                         >
-                                                            Laser Skin Resurfacing
+                                                            Facial Microneedling
+
                                                         </a>
                                                     </li>
                                                     <li key="1">
@@ -609,7 +629,8 @@ const TreatmentsSection = () => {
                                                             href="/treatments/acne-laser-treatment"
                                                             aria-label="Learn about Acne Laser Treatment for effective acne reduction and smoother skin."
                                                         >
-                                                            Acne Laser Treatment
+                                                            Acne Scar Treatment
+
                                                         </a>
                                                     </li>
                                                     <li key="2">
@@ -617,8 +638,8 @@ const TreatmentsSection = () => {
                                                             href="/treatments/hyperpigmentation-laser-treatment"
                                                             aria-label="Discover Laser for Hyperpigmentation to achieve a more even skin tone."
                                                         >
-                                                            Laser for
-                                                            Hyperpigmentation
+                                                            Skin Rejuvenation Microneedling
+
                                                         </a>
                                                     </li>
                                                     <li key="3">
@@ -626,17 +647,18 @@ const TreatmentsSection = () => {
                                                             href="/treatments/laser-skin-tightening"
                                                             aria-label="Find out about Laser Skin Tightening to enhance skin elasticity and reduce sagging."
                                                         >
-                                                            Laser Skin Tightening
+                                                            Stretch Mark Microneedling
                                                         </a>
                                                     </li>
-                                                    <li key="4">
+                                                    {/* <li key="4">
                                                         <a
                                                             href="/treatments/acne-scarring-treatment"
                                                             aria-label="Learn about Scarring Laser Treatment to improve skin texture and reduce scars."
                                                         >
-                                                            Scarring Laser Treatment
+                                                            Hyperpigmentation Treatment
+
                                                         </a>
-                                                    </li>
+                                                    </li> */}
                                                 </ul>
                                             </div>
                                         </div>
@@ -700,7 +722,8 @@ const TreatmentsSection = () => {
                                                             href="/treatments/anti-wrinkle-injections"
                                                             aria-label="Discover Botox for Wrinkles treatment to smooth fine lines and rejuvenate your skin."
                                                         >
-                                                            Anti Wrinkle Injections
+                                                            Energy Boost with Vitamin B12
+
                                                         </a>
                                                     </li>
                                                     <li key="1">
@@ -708,7 +731,8 @@ const TreatmentsSection = () => {
                                                             href="/treatments/microneedling"
                                                             aria-label="Learn about Dermapen4 Microneedling for enhanced skin texture and collagen production."
                                                         >
-                                                            Dermapen4 Microneedling
+                                                            Vitamin B12 for Immune Support
+
                                                         </a>
                                                     </li>
                                                     <li key="2">
@@ -716,7 +740,7 @@ const TreatmentsSection = () => {
                                                             href="/treatments/plasma-pen-treatment"
                                                             aria-label="Find out about Plasma Pen Treatment for skin tightening and wrinkle reduction."
                                                         >
-                                                            Plasma Pen Treatment
+                                                            Vitamin B12 for Mood Enhancement
                                                         </a>
                                                     </li>
                                                     <li key="3">
@@ -724,17 +748,17 @@ const TreatmentsSection = () => {
                                                             href="/treatments/profhilo"
                                                             aria-label="Learn more about Profhilo treatment for deep skin hydration and elasticity improvement."
                                                         >
-                                                            Profhilo
+                                                            Vitamin B12 for Skin Health
                                                         </a>
                                                     </li>
-                                                    <li key="4">
+                                                    {/* <li key="4">
                                                         <a
                                                             href="/treatments/mesotherapy"
                                                             aria-label="Discover Mesotherapy treatment for revitalized and rejuvenated skin."
                                                         >
-                                                            Mesotherapy
+                                                            Vitamin B12 for Weight Loss Support
                                                         </a>
-                                                    </li>
+                                                    </li> */}
                                                 </ul>
                                             </div>
                                         </div>
@@ -798,7 +822,7 @@ const TreatmentsSection = () => {
                                                             href="/treatments/anti-wrinkle-injections"
                                                             aria-label="Discover Botox for Wrinkles treatment to smooth fine lines and rejuvenate your skin."
                                                         >
-                                                            Anti Wrinkle Injections
+                                                            Ear Wax Removal with Hopi Candles
                                                         </a>
                                                     </li>
                                                     <li key="1">
@@ -806,7 +830,7 @@ const TreatmentsSection = () => {
                                                             href="/treatments/microneedling"
                                                             aria-label="Learn about Dermapen4 Microneedling for enhanced skin texture and collagen production."
                                                         >
-                                                            Dermapen4 Microneedling
+                                                            Relaxation and Stress Relief
                                                         </a>
                                                     </li>
                                                     <li key="2">
@@ -814,7 +838,7 @@ const TreatmentsSection = () => {
                                                             href="/treatments/plasma-pen-treatment"
                                                             aria-label="Find out about Plasma Pen Treatment for skin tightening and wrinkle reduction."
                                                         >
-                                                            Plasma Pen Treatment
+                                                            Improved Sinus Health with Ear Candling
                                                         </a>
                                                     </li>
                                                     <li key="3">
@@ -822,17 +846,16 @@ const TreatmentsSection = () => {
                                                             href="/treatments/profhilo"
                                                             aria-label="Learn more about Profhilo treatment for deep skin hydration and elasticity improvement."
                                                         >
-                                                            Profhilo
-                                                        </a>
+                                                            Enhancing Hearing Clarity                                                        </a>
                                                     </li>
-                                                    <li key="4">
+                                                    {/* <li key="4">
                                                         <a
                                                             href="/treatments/mesotherapy"
                                                             aria-label="Discover Mesotherapy treatment for revitalized and rejuvenated skin."
                                                         >
-                                                            Mesotherapy
+                                                            Natural Ear Detoxification with Hopi Candles
                                                         </a>
-                                                    </li>
+                                                    </li> */}
                                                 </ul>
                                             </div>
                                         </div>

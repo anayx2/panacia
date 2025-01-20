@@ -187,7 +187,7 @@ const page = () => {
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
                             <p className="text-lg ">
                                 <span className='font-bold text-rose-400'>
-                                    personalisedTreatment Plans: {' '}
+                                    personalised treatment Plans: {' '}
                                 </span>
                                 We tailor each treatment to meet your specific needs, ensuring you achieve the most natural-looking, effective results.                           </p>
                         </div>

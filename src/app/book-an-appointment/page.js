@@ -91,7 +91,7 @@ const page = () => {
                             <h2 className="text-3xl">Book Your Free Consultation Today</h2>
                         </div>
                         <p className="text-lg leading-relaxed text-gray-600">
-                            Unlock personalisedtreatment options with a one-on-one consultation.
+                            Unlock personalised treatment options with a one-on-one consultation.
                             Our experts will guide you toward the best solution tailored to your needs.
                         </p>
                     </div>

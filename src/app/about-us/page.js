@@ -85,7 +85,7 @@ export default function AboutPage() {
                             Empowering Your Health with Expert Care
                         </h1>
                         <motion.p variants={fadeInUp}>
-                            Welcome to Panacea Clinic, where personalisedcare meets cutting-edge healthcare solutions. Our mission is to empower individuals with exceptional medical services designed to nurture health and well-being. With a team of highly skilled doctors and healthcare specialists, we are committed to delivering tailored care for every patient.
+                            Welcome to Panacea Clinic, where personalised care meets cutting-edge healthcare solutions. Our mission is to empower individuals with exceptional medical services designed to nurture health and well-being. With a team of highly skilled doctors and healthcare specialists, we are committed to delivering tailored care for every patient.
                             By combining the latest advancements in medical technology with a compassionate approach, we ensure the best possible outcomes. At Panacea Clinic, we believe every patient's journey to health is unique, and we are here to guide you every step of the way. Choose Panacea Clinic for expertise, trust, and unparalleled care that prioritises your well-being. Together, let's build a healthier, happier future.
                         </motion.p>
                         <Link href="/book-an-appointment">

@@ -186,7 +186,7 @@ const page = () => {
                                 <span className='font-bold text-rose-400'>
                                     Tailored Treatment Plans: {' '}
                                 </span>
-                                We take the time to understand your unique concerns and design a personalisedtreatment plan to meet your specific needs and goals.                           </p>
+                                We take the time to understand your unique concerns and design a personalised treatment plan to meet your specific needs and goals.                           </p>
                         </div>
 
                         <div className="flex items-center gap-4">

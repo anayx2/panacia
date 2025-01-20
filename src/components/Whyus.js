@@ -7,7 +7,7 @@ const features = [
     {
         icon: '/icons/ExpertiseandExperience.svg',
         title: "Expertise and Experience",
-        description: "Our team consists of highly qualified professionals with extensive experience in delivering effective and personalisedtreatments."
+        description: "Our team consists of highly qualified professionals with extensive experience in delivering effective and personalised treatments."
     },
     {
         icon: '/icons/TailoredSolutions.svg',
