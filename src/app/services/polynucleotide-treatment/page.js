@@ -66,10 +66,8 @@ const page = () => {
                         </div>
 
                         <p className="mt-5 ">
-                            At <span className='font-bold mx-1'>
-                                Panacea Health & Beauty Clinic,</span>we offer<span className='font-bold mx-1'> Polynucleotide Treatment </span> as a cutting-edge solution for rejuvenating your skin and promoting hair restoration. This advanced therapy uses naturally derived compounds to stimulate the body’s regenerative processes, improving skin texture, elasticity, and overall health. Whether you are looking to combat signs of aging or address thinning hair,<span className='font-bold mx-1'> Polynucleotide Treatment </span>is a non-surgical option designed to help you look and feel your best.
-                            <br /> At <span className='font-bold mx-1'>
-                                Panacea Health & Beauty Clinic,</span>we offer<span className='font-bold mx-1'> Polynucleotide Treatment </span>that provides a wide range of benefits for skin and hair:
+                            At Panacea Health & Beauty Clinic, we offer Polynucleotide Treatment as a cutting-edge solution for rejuvenating your skin and promoting hair restoration. This advanced therapy uses naturally derived compounds to stimulate the body’s regenerative processes, improving skin texture, elasticity, and overall health. Whether you are looking to combat signs of aging or address thinning hair, Polynucleotide Treatment is a non-surgical option designed to help you look and feel your best.
+                            <br /> At Panacea Health & Beauty Clinic, we offer Polynucleotide Treatment that provides a wide range of benefits for skin and hair:
 
 
                         </p>
@@ -159,7 +157,7 @@ const page = () => {
                     Why Choose Panacea Health & Beauty Clinic? </h2>
 
                 <p className="mt-5 text-center">
-                    At<span className='font-bold mx-1'>Panacea Health & Beauty Clinic,</span>we are proud to offer<span className='font-bold mx-1'> Polynucleotide Treatment</span> that helps our clients achieve their aesthetic goals with natural-looking, rejuvenated results. Here’s why we are the preferred choice:</p>
+                    At Panacea Health & Beauty Clinic, we are proud to offer Polynucleotide Treatment that helps our clients achieve their aesthetic goals with natural-looking, rejuvenated results. Here’s why we are the preferred choice:</p>
 
                 <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
                     <div className="relative aspect-[5/3] w-full">
@@ -228,7 +226,7 @@ const page = () => {
                         <h2>
                             How Does Polynucleotide Treatment Work? </h2>
                         <p className=" leading-relaxed">
-                            The PRP treatment process at  <span className='font-bold mx-1'>Panacea Health & Beauty Clinic</span> is straightforward and involves a few simple steps:</p>
+                            The PRP treatment process at Panacea Health & Beauty Clinic is straightforward and involves a few simple steps:</p>
                         <div className="space-y-1">
                             <h4 className="text-2xl text-rose-400 font-medium">
                                 Consultation:                           </h4>

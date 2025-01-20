@@ -151,7 +151,7 @@ const page = () => {
                     Why Choose Panacea Health & Beauty Clinic ?              </h2>
 
                 <p className="mt-5 text-center">
-                    At<span className='font-bold mx-1'>Panacea Health & Beauty Clinic,</span> our priority is providing exceptional care and natural results with <span className='font-bold mx-1'>dermal fillers.</span> Here's why our clients trust us for their aesthetic treatments:                </p>
+                    At Panacea Health & Beauty Clinic, our priority is providing exceptional care and natural results with dermal fillers. Here's why our clients trust us for their aesthetic treatments:                </p>
 
                 <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
                     <div className="relative aspect-[5/3] w-full">
@@ -221,8 +221,8 @@ const page = () => {
                             <h4 className="text-2xl text-rose-400 font-medium">
                                 The Treatment:                         </h4>
                             <p className=" leading-relaxed">
-                                The procedure itself is quick and straightforward. Dermal fillers are injected into targeted areas using a fine needle. Most treatments take about   <span className='font-bold mx-1'>
-                                    10 to 15 minutes</span>, depending on the areas being treated. Local anesthetic is often used to minimize discomfort.</p>
+                                The procedure itself is quick and straightforward. Dermal fillers are injected into targeted areas using a fine needle. Most treatments take about
+                                10 to 15 minutes, depending on the areas being treated. Local anesthetic is often used to minimize discomfort.</p>
                         </div>
 
 

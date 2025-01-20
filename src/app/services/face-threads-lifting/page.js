@@ -73,8 +73,7 @@ const page = () => {
                         </div>
 
                         <p className="mt-5 ">
-                            At <span className='font-bold mx-1'>
-                                Panacea Health & Beauty Clinic,</span>we offer <span className='font-bold mx-1'>Face Threads Lifting</span> as a revolutionary, non-surgical procedure to lift, tighten, and rejuvenate your face. This minimally invasive treatment provides an effective alternative to traditional facelifts, offering impressive results with minimal downtime. Whether you’re looking to reduce sagging skin, enhance facial contours, or restore youthful definition, <span className='font-bold mx-1'>face threads lifting</span> is an excellent option for those seeking a refreshed and more youthful appearance.
+                            At Panacea Health & Beauty Clinic, we offer Face Threads Lifting as a revolutionary, non-surgical procedure to lift, tighten, and rejuvenate your face. This minimally invasive treatment provides an effective alternative to traditional facelifts, offering impressive results with minimal downtime. Whether you’re looking to reduce sagging skin, enhance facial contours, or restore youthful definition, face threads lifting is an excellent option for those seeking a refreshed and more youthful appearance.
                             <br />This non-surgical lifting treatment helps to:
 
                         </p>
@@ -164,7 +163,7 @@ const page = () => {
                     Why Choose Panacea Health & Beauty Clinic?              </h2>
 
                 <p className="mt-5 text-center">
-                    At<span className='font-bold mx-1'>Panacea Health & Beauty Clinic,</span> we are committed to providing the highest quality of care and results with our <span className='font-bold mx-1'>face threads lifting</span> treatments. Here’s why we are a trusted choice for facial rejuvenation:
+                    At Panacea Health & Beauty Clinic, we are committed to providing the highest quality of care and results with our face threads lifting treatments. Here’s why we are a trusted choice for facial rejuvenation:
                 </p>
 
                 <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
@@ -223,7 +222,7 @@ const page = () => {
                         <h2>
                             What to Expect After Face Threads Lifting </h2>
                         <p className=" leading-relaxed">
-                            One of the main benefits of <span className='font-bold mx-1'>face threads lifting</span> is the minimal downtime required after the procedure. Here’s what you can expect:
+                            One of the main benefits of face threads lifting is the minimal downtime required after the procedure. Here’s what you can expect:
                         </p>
                         <div className="space-y-2">
                             <h4 className="text-2xl text-rose-400 font-medium">

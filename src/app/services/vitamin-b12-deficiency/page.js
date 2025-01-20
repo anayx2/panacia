@@ -86,8 +86,7 @@ const page = () => {
                         </div>
 
                         <p className="mt-5 ">
-                            At <span className='font-bold mx-1'>
-                                Panacea Health & Beauty Clinic,</span> we understand the significant impact that <span className='font-bold mx-1'>Vitamin B12 deficiency</span> can have on your overall health and well-being. Vitamin B12 is essential for proper nerve function, red blood cell production, and energy levels. If you’re experiencing fatigue, weakness, dizziness, or neurological symptoms, our<span className='font-bold mx-1'> treatment for Vitamin B12 deficiency</span> can help restore balance and improve your health.
+                            At Panacea Health & Beauty Clinic, we understand the significant impact that Vitamin B12 deficiency can have on your overall health and well-being. Vitamin B12 is essential for proper nerve function, red blood cell production, and energy levels. If you’re experiencing fatigue, weakness, dizziness, or neurological symptoms, our treatment for Vitamin B12 deficiency can help restore balance and improve your health.
                             <br />
                             Vitamin B12 is a vital nutrient that supports several important bodily functions, including:
                         </p>
@@ -160,7 +159,7 @@ const page = () => {
                     Why Choose Panacea Health & Beauty Clinic? </h2>
 
                 <p className="mt-5 text-center">
-                    At<span className='font-bold mx-1'>Panacea Health & Beauty Clinic,</span> we provide professional and personalized care to address<span className='font-bold mx-1'> Vitamin B12 deficiency </span>and help you feel revitalized and healthy. Here’s why you should trust us with your treatment:
+                    At Panacea Health & Beauty Clinic, we provide professional and personalized care to address Vitamin B12 deficiency and help you feel revitalized and healthy. Here’s why you should trust us with your treatment:
                 </p>
 
                 <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">

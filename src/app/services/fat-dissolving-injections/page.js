@@ -65,9 +65,8 @@ const page = () => {
                         </div>
 
                         <p className="mt-5 ">
-                            At <span className='font-bold mx-1'>
-                                Panacea Health & Beauty Clinic,</span>we offer<span className='font-bold mx-1'>fat dissolving injections</span>designed to target and reduce stubborn pockets of fat that are resistant to diet and exercise. Whether you’re struggling with areas like the chin, abdomen, or thighs, our fat dissolving treatments provide a non-surgical, minimally invasive solution for achieving a more sculpted, toned appearance.
-                            <br /><span className='font-bold'>Fat dissolving injections</span> are a non-surgical treatment that uses a specialized solution, usually based on a naturally occurring compound, to break down and permanently remove stubborn fat cells. The active ingredient, commonly <span className='font-bold'>deoxycholic acid</span>, is injected directly into areas with excess fat.
+                            At Panacea Health & Beauty Clinic, we offer fat dissolving injections designed to target and reduce stubborn pockets of fat that are resistant to diet and exercise. Whether you’re struggling with areas like the chin, abdomen, or thighs, our fat dissolving treatments provide a non-surgical, minimally invasive solution for achieving a more sculpted, toned appearance.
+                            <br /> Fat dissolving injections are a non-surgical treatment that uses a specialized solution, usually based on a naturally occurring compound, to break down and permanently remove stubborn fat cells. The active ingredient, commonly deoxycholic acid, is injected directly into areas with excess fat.
                             <br /> key benefits include:
 
                         </p>
@@ -155,7 +154,7 @@ const page = () => {
                     Why Choose Panacea Health & Beauty Clinic? </h2>
 
                 <p className="mt-5 text-center">
-                    At<span className='font-bold mx-1'>Panacea Health & Beauty Clinic,</span>we offer expert care and customized treatment plans to help you achieve your desired body shape. Here’s why clients choose us for their <span className='font-bold mx-1'> fat dissolving injections</span> </p>
+                    At Panacea Health & Beauty Clinic, we offer expert care and customized treatment plans to help you achieve your desired body shape. Here’s why clients choose us for their fat dissolving injections </p>
 
                 <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
                     <div className="relative aspect-[5/3] w-full">
@@ -211,7 +210,7 @@ const page = () => {
                                 <span className='font-bold text-rose-400'>
                                     Minimal Downtime:  {' '}
                                 </span>
-                                Our <span className='font-bold mx-1'>fat dissolving injections</span> offer quick results with little to no downtime, allowing you to return to your daily activities with ease.                                            </p>
+                                Our fat dissolving injections offer quick results with little to no downtime, allowing you to return to your daily activities with ease.                                            </p>
                         </div>
                     </div>
                 </div>

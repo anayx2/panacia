@@ -69,9 +69,8 @@ const page = () => {
                         </div>
 
                         <p className="mt-5 ">
-                            At <span className='font-bold mx-1'>
-                                Panacea Health & Beauty Clinic,</span> we specialize in providing expertly administered <span className='font-bold mx-1'>lip fillers in London</span> that enhance your natural lip shape and volume. Whether you're looking to restore youthful plumpness, define your lip contours, or add symmetry to your smile, our lip filler treatments are designed to give you beautiful, natural-looking results.
-                            <br /> <span className='font-bold mx-1'>Lip fillers</span> are a non-surgical cosmetic treatment used to enhance the volume and shape of the lips. The procedure involves the injection of dermal fillers, typically made from hyaluronic acid, into specific areas of the lips.
+                            At Panacea Health & Beauty Clinic, we specialize in providing expertly administered lip fillers in London that enhance your natural lip shape and volume. Whether you're looking to restore youthful plumpness, define your lip contours, or add symmetry to your smile, our lip filler treatments are designed to give you beautiful, natural-looking results.
+                            <br /> Lip fillers are a non-surgical cosmetic treatment used to enhance the volume and shape of the lips. The procedure involves the injection of dermal fillers, typically made from hyaluronic acid, into specific areas of the lips.
                             <br /> key benefits include:
 
                         </p>
@@ -152,7 +151,7 @@ const page = () => {
                     Why Choose Panacea Health & Beauty Clinic?              </h2>
 
                 <p className="mt-5 text-center">
-                    At<span className='font-bold mx-1'>Panacea Health & Beauty Clinic,</span> we are dedicated to providing exceptional care and beautiful, natural results with <span className='font-bold mx-1'>lip fillers in London</span>. Here's why our clients trust us:                </p>
+                    At Panacea Health & Beauty Clinic, we are dedicated to providing exceptional care and beautiful, natural results with lip fillers in London. Here's why our clients trust us:                </p>
 
                 <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
                     <div className="relative aspect-[5/3] w-full">
@@ -211,7 +210,7 @@ const page = () => {
                         <h2>
                             The Lip Filler Treatment Process </h2>
                         <p className=" leading-relaxed">
-                            When you choose <span className='font-bold mx-1'>lip fillers in London</span> at <span className='font-bold mx-1'>Panacea Health & Beauty Clinic</span>, you can expect a smooth and comfortable experience:
+                            When you choose lip fillers in London at Panacea Health & Beauty Clinic, you can expect a smooth and comfortable experience:
 
                         </p>
                         <div className="space-y-4">
@@ -225,8 +224,7 @@ const page = () => {
                             <h4 className="text-2xl text-rose-400 font-medium">
                                 Treatment:                         </h4>
                             <p className=" leading-relaxed">
-                                The procedure itself is quick, typically lasting about                                               <span className='font-bold mx-1'>
-                                    30 minutes</span>. Our experienced professionals will inject the filler into specific areas of the lips to add volume, smooth out wrinkles, and define the lip line. We use a topical numbing cream to minimize any discomfort during the procedure.
+                                The procedure itself is quick, typically lasting about 30 minutes. Our experienced professionals will inject the filler into specific areas of the lips to add volume, smooth out wrinkles, and define the lip line. We use a topical numbing cream to minimize any discomfort during the procedure.
                             </p>
                         </div>
 

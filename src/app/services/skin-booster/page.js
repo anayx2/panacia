@@ -65,9 +65,8 @@ const page = () => {
                         </div>
 
                         <p className="mt-5 ">
-                            At <span className='font-bold mx-1'>
-                                Panacea Health & Beauty Clinic,</span>we offer<span className='font-bold mx-1'>skin booster treatments</span>designed to rejuvenate and hydrate your skin, giving you a radiant, youthful glow. Whether you're dealing with dry skin, fine lines, or dull complexion, our skin boosters provide a long-lasting solution that improves skin quality from within.
-                            <br /><span className='font-bold'>Skin booster treatments</span>   are an advanced skincare solution that involves the injection of a hyaluronic acid-based product directly into the skin. These treatments are designed to deeply hydrate and rejuvenate the skin, improving its texture, elasticity, and overall appearance.
+                            At Panacea Health & Beauty Clinic, we offer skin booster treatments designed to rejuvenate and hydrate your skin, giving you a radiant, youthful glow. Whether you're dealing with dry skin, fine lines, or dull complexion, our skin boosters provide a long-lasting solution that improves skin quality from within.
+                            <br />Skin booster treatments are an advanced skincare solution that involves the injection of a hyaluronic acid-based product directly into the skin. These treatments are designed to deeply hydrate and rejuvenate the skin, improving its texture, elasticity, and overall appearance.
                             <br /> key benefits include:
 
                         </p>
@@ -155,7 +154,7 @@ const page = () => {
                     Why Choose Panacea Health & Beauty Clinic? </h2>
 
                 <p className="mt-5 text-center">
-                    At<span className='font-bold mx-1'>Panacea Health & Beauty Clinic,</span>we are committed to delivering exceptional skincare treatments tailored to your individual needs. Here’s why we’re the preferred choice for <span className='font-bold mx-1'> skin booster treatments</span>:               </p>
+                    At Panacea Health & Beauty Clinic, we are committed to delivering exceptional skincare treatments tailored to your individual needs. Here’s why we’re the preferred choice for skin booster treatments:</p>
 
                 <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
                     <div className="relative aspect-[5/3] w-full">
@@ -221,7 +220,7 @@ const page = () => {
                         <h2>
                             Areas Treated with Skin Boosters </h2>
                         <p className=" leading-relaxed">
-                            While <span className='font-bold mx-1'>lip fillers in London</span>  are most commonly used on the face, they can also be effective in treating other areas of the body:
+                            While lip fillers in London are most commonly used on the face, they can also be effective in treating other areas of the body:
 
                         </p>
                         <div className="space-y-1">

@@ -130,3 +130,103 @@ html {
     scroll-behavior: auto;
   }
 }
+
+.dummy-positioning {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Variables */
+:root {
+  --green: #4cc93f;
+  --icon-base-size: 10px; /* Reduced by 50% */
+}
+
+/* Structure */
+.success-icon {
+  display: inline-block;
+  width: 4em; /* Reduced by 50% */
+  height: 4em; /* Reduced by 50% */
+  font-size: var(--icon-base-size);
+  border-radius: 50%;
+  border: 2px solid #66d559; /* Border thickness reduced */
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  transform-origin: center;
+  animation: showSuccess 180ms ease-in-out;
+  transform: scale(1);
+}
+
+/* Elements */
+.success-icon__tip,
+.success-icon__long {
+  display: block;
+  position: absolute;
+  height: 2px; /* Reduced by 50% */
+  background-color: #66d559;
+  border-radius: 10px;
+}
+
+.success-icon__tip {
+  width: 1.2em; /* Reduced by 50% */
+  top: 2.15em; /* Reduced by 50% */
+  left: 0.7em; /* Reduced by 50% */
+  transform: rotate(45deg);
+  animation: tipInPlace 300ms ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 220ms;
+  visibility: hidden;
+}
+
+.success-icon__long {
+  width: 2em; /* Reduced by 50% */
+  transform: rotate(-45deg);
+  top: 1.85em; /* Reduced by 50% */
+  left: 1.375em; /* Reduced by 50% */
+  animation: longInPlace 140ms ease-in-out;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  animation-delay: calc(300ms + 140ms);
+}
+
+/* Keyframes */
+@keyframes showSuccess {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes tipInPlace {
+  from {
+    width: 0em;
+    top: 0em;
+    left: -0.8em; /* Reduced by 50% */
+  }
+  to {
+    width: 1.2em; /* Reduced by 50% */
+    top: 2.15em; /* Reduced by 50% */
+    left: 0.7em; /* Reduced by 50% */
+    visibility: visible;
+  }
+}
+
+@keyframes longInPlace {
+  from {
+    width: 0em;
+    top: 2.55em; /* Reduced by 50% */
+    left: 1.6em; /* Reduced by 50% */
+  }
+  to {
+    width: 2em; /* Reduced by 50% */
+    top: 1.85em; /* Reduced by 50% */
+    left: 1.375em; /* Reduced by 50% */
+    visibility: visible;
+  }
+}

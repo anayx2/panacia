@@ -69,8 +69,7 @@ const page = () => {
                         </div>
 
                         <p className="mt-5 ">
-                            At <span className='font-bold mx-1'>
-                                Panacea Health & Beauty Clinic,</span>we offer advanced <span className='font-bold mx-1'>PRP Treatment in London</span>to rejuvenate your skin, restore your hair’s thickness, and promote natural healing. Platelet-Rich Plasma (PRP) therapy is a cutting-edge, non-surgical treatment that uses your body’s own blood to stimulate regeneration, providing natural results for a youthful appearance and thicker hair.
+                            At Panacea Health & Beauty Clinic, we offer advanced PRP Treatment in London to rejuvenate your skin, restore your hair’s thickness, and promote natural healing. Platelet-Rich Plasma (PRP) therapy is a cutting-edge, non-surgical treatment that uses your body’s own blood to stimulate regeneration, providing natural results for a youthful appearance and thicker hair.
                             <br /><span className='font-bold'>PRP (Platelet-Rich Plasma) Treatment</span> involves using your own blood to extract concentrated platelets, which are then injected into the targeted areas of your skin or scalp. Platelets contain growth factors that are essential for tissue healing and regeneration.
                             <br /> key benefits include:
 
@@ -161,7 +160,7 @@ const page = () => {
                     Why Choose Panacea Health & Beauty Clinic? </h2>
 
                 <p className="mt-5 text-center">
-                    At<span className='font-bold mx-1'>Panacea Health & Beauty Clinic,</span>we are committed to providing high-quality<span className='font-bold mx-1'> PRP treatments in London</span> to help you achieve your aesthetic goals safely and effectively. Here’s why clients trust us:</p>
+                    At Panacea Health & Beauty Clinic, we are committed to providing high-quality  PRP treatments in London to help you achieve your aesthetic goals safely and effectively. Here’s why clients trust us:</p>
 
                 <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
                     <div className="relative aspect-[5/3] w-full">
@@ -229,7 +228,7 @@ const page = () => {
                         <h2>
                             How Does PRP Treatment Work? </h2>
                         <p className=" leading-relaxed">
-                            The PRP treatment process at <span className='font-bold mx-1'>Panacea Health & Beauty Clinic</span>is straightforward and involves a few simple steps:         </p>
+                            The PRP treatment process at Panacea Health & Beauty Clinic is straightforward and involves a few simple steps:         </p>
                         <div className="space-y-1">
                             <h4 className="text-2xl text-rose-400 font-medium">
                                 Consultation:                           </h4>
