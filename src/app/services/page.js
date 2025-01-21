@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import MultiStepBooking from '@/components/AppointmentForm';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 const services = [
     {
@@ -166,9 +167,12 @@ export default function ServicesPage() {
                                             </p>
                                             <Link
                                                 href="/services/dermal-fillers"
-                                                className="inline-block rounded-md bg-rose-500 px-6 py-2 text-sm font-medium text-white"
+                                                className="inline-block rounded-md bg-rose-500 text-sm font-medium text-white"
                                             >
-                                                Read More
+                                                <Button className="px-6 py-2 ">
+
+                                                    Read More
+                                                </Button>
                                             </Link>
                                         </div>
                                     </div>
