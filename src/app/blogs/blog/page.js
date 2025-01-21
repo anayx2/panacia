@@ -4,8 +4,8 @@ import Image from 'next/image'
 import { useState } from 'react'
 
 const categoryColors = {
-    Educational: "bg-rose-500",
-    "Healthy Food": "bg-rose-500"
+    "Skin Care": "bg-rose-500",
+    "Beauty": "bg-rose-500"
 }
 
 const comments = [
@@ -13,30 +13,28 @@ const comments = [
         id: 1,
         author: "Joe Doe",
         date: "September 13, 2024",
-        content: "This is exactly what i was looking for, thank you so much for these tutorials"
+        content: "This is exactly what i was looking for, thank you so much for the detailed information about facial treatments!"
     },
     {
         id: 2,
         author: "Mike",
         date: "September 13, 2024",
-        content: "It would be great to try this theme for my businesses"
+        content: "Great explanation of the different treatment options available."
     },
     {
         id: 3,
         author: "Elicia",
         date: "September 13, 2024",
-        content: "What a nice article. It keeps me reading more and more!"
+        content: "The skincare tips are really helpful. Looking forward to trying these treatments!"
     }
 ]
 
 const handleSubmit = () => {
     e.preventDefault()
-    // Handle form submission
     console.log(formData)
 }
 
 export default function BlogPost() {
-
     const [rememberMe, setRememberMe] = useState(false)
     const [formData, setFormData] = useState({
         name: '',
@@ -46,10 +44,10 @@ export default function BlogPost() {
     })
     return (
         <>
-            <article className="prose prose-lg max-w-none space-y- m">
+            <article className="prose prose-lg max-w-none space-y-m">
                 {/* Categories */}
                 <div className="mb-6 flex gap-2 not-prose mt-5">
-                    {["Educational", "Healthy Food"].map((category) => (
+                    {["Skin Care", "Beauty"].map((category) => (
                         <span
                             key={category}
                             className={`rounded-full ${categoryColors[category]} px-3 py-1 text-xs font-medium text-white`}
@@ -59,113 +57,95 @@ export default function BlogPost() {
                     ))}
                 </div>
 
-                {/* Title */}
-                {/* <h1 className="mb-4 text-4xl font-bold">
-                    Top dos & don'ts for Valentine's Day with your pet
-                </h1> */}
-
                 {/* Date */}
                 <time className="block text-sm text-gray-500">
-                    August 23, 2024
+                    January 21, 2025
                 </time>
 
                 {/* Featured Image */}
                 <div className="my-8 aspect-[16/10] overflow-hidden rounded-xl">
                     <Image
                         src="/image1.jpg"
-                        alt="Cute hamster eating"
+                        alt="Facial rejuvenation treatment"
                         width={1200}
                         height={750}
                         className="object-cover"
                     />
                 </div>
 
-                {/* Content */}
+                {/* Introduction Content */}
                 <p>
-                    Valentine's Day is a day when people celebrate their relationships with loved ones. And for many people, this includes their pets. Pets are a big part of our lives because they spread so much joy and happiness. So, what can you do to celebrate this love-filled day with your furry friend?
-                </p>
-
-                <h3>Things You'll Need to Get Started</h3>
-                <p>
-                    Before you start training, it's important to have the right tools. Here are a few essentials:
+                    Ageing is inevitable, but who says we can't age gracefully? Facial rejuvenation treatments are now more accessible, effective and are tailored to individual needs with groundbreaking advanced skincare treatments.
                 </p>
 
                 <p>
-                    While training your dog can mean teaching them fun party tricks, most dog training is for practical purposes. Teaching your dog a few basic commands helps build their confidence, strengthens your relationship, and most importantly keeps them safe in dangerous situations.
+                    There is now a solution for almost all types of skin problems from smoothing fine lines to restoring your youthful glow. Let's learn more about skin rejuvenation treatment and find answers for questions that are a facial rejuvenation treatment?
                 </p>
             </article>
+
             <article className="prose prose-lg max-w-none mt-5 space-y-2">
-                {/* Introduction */}
+                {/* Main Content Sections */}
+                <h2 className="text-2xl font-semibold text-gray-900">What is a Facial Rejuvenation Treatment?</h2>
                 <p className="text-gray-600">
-                    While training your dog can mean teaching them fun party tricks, most dog training is for practical purposes. Teaching your dog a few basic commands helps build their confidence, strengthens your relationship, and most importantly keeps them safe in dangerous situations.
+                    Facial rejuvenation treatment is a procedure or therapy that is specifically designed to improve the texture and appearance of your skin to tackle concerns like pigmentation, wrinkles, ageing and also dullness. Facial rejuvenation treatment can range from non-invasive skin care treatments to surgical options for more dramatic and fascinating results.
                 </p>
 
-                {/* Getting Started Section */}
-                <h2 className="text-2xl font-semibold text-gray-900">Things You'll Need to Get Started</h2>
-                <p className="text-gray-600">
-                    Before you start training, it's important to have the right tools. Here are a few essentials:
-                </p>
+                <h2 className="text-2xl font-semibold text-gray-900">Cutting-Edge Innovations in Facial Rejuvenation Treatment</h2>
 
                 <ul className="space-y-4">
                     <li className="flex items-start gap-3">
                         <Check className="mt-1 h-5 w-5 flex-shrink-0 text-rose-400" />
                         <div>
-                            <span className="font-medium text-gray-900">Training treats:</span>
-                            <span className="text-gray-600"> These should be small, tasty treats that your dog will find irresistible.</span>
+                            <span className="font-medium text-gray-900">HydraFacial – The Ultimate Glow Getter:</span>
+                            <span className="text-gray-600"> This treatment is famous for deep cleaning, exfoliating and hydrating your skin in one go.</span>
                         </div>
                     </li>
                     <li className="flex items-start gap-3">
                         <Check className="mt-1 h-5 w-5 flex-shrink-0 text-rose-400" />
                         <div>
-                            <span className="font-medium text-gray-900">A dog treat bag:</span>
-                            <span className="text-gray-600"> A treat pouch or bag can help you keep treats handy while you're training.</span>
+                            <span className="font-medium text-gray-900">Microneedling with Radiofrequency (RF):</span>
+                            <span className="text-gray-600"> Uses tiny needles to create controlled treatment of your skin to stimulate collagen production.</span>
                         </div>
                     </li>
                     <li className="flex items-start gap-3">
                         <Check className="mt-1 h-5 w-5 flex-shrink-0 text-rose-400" />
                         <div>
-                            <span className="font-medium text-gray-900">A sturdy leash and collar:</span>
-                            <span className="text-gray-600"> Make sure they fit your dog snugly and comfortably.</span>
+                            <span className="font-medium text-gray-900">LED Light Therapy:</span>
+                            <span className="text-gray-600"> Different wavelengths of lights are used to target specific areas of your face to address problems.</span>
                         </div>
                     </li>
                 </ul>
 
-                {/* Sit Command Section */}
-                <h2 className="text-2xl font-semibold text-gray-900">How to Teach Your Dog to Sit</h2>
-                <p className="text-gray-600">
-                    Sitting is incompatible with many of your pup's unwanted behaviors, like jumping up on visitors or counter-surfing. If your dog starts to display these unwanted behaviors, you can put them into the "sit" position and reward them for their good behavior.
-                </p>
-
                 {/* Testimonial */}
                 <blockquote className="my-8 border-l-4 border-rose-400 bg-rose-50 p-6">
                     <p className="mb-2 text-lg italic text-gray-700">
-                        "My dog takes these willingly as a treat. I give him one a day. They seem to help his tummy."
+                        "The journey of having radiant and glowing skin begins with choosing the right clinic and the right treatment. With the latest innovations available, there has never been a better time to invest in your own self."
                     </p>
                     <footer className="text-sm text-gray-600">
-                        — Noemi Medina
+                        — Panacea Health and Beauty Clinic
                     </footer>
                 </blockquote>
 
-                {/* Lie Down Command Section */}
-                <h2 className="text-2xl font-semibold text-gray-900">How to Teach Your Dog to Lie Down</h2>
+                {/* Additional Content */}
+                <h2 className="text-2xl font-semibold text-gray-900">Actual Skincare Beyond Treatments</h2>
                 <p className="text-gray-600">
-                    Lie down is another command that's easily taught with lure training, and it's a great natural next step from "sit." With your dog in a seated position, hold a treat in front of their nose. Slowly move the treat toward the ground and closer to you, encouraging your dog to follow with their nose. If your dog struggles to get all the way down, try pulling the treat further away from their body.
+                    Facial rejuvenation treatment can give you a fresh start where your skin is plumped, hydrated and radiating but the actual task comes after where maintaining those results requires a long and ongoing care.
                 </p>
 
                 {/* Images Grid */}
                 <div className="mt-8 grid gap-6 sm:grid-cols-2">
                     <div className="relative aspect-square overflow-hidden rounded-lg">
                         <Image
-                            src="/doc1.jpg"
-                            alt="Close up of a pug looking at the camera"
+                            src="/services1/wrinke.jpg"
+                            alt="Facial rejuvenation procedure"
                             fill
                             className="object-cover"
                         />
                     </div>
                     <div className="relative aspect-square overflow-hidden rounded-lg">
                         <Image
-                            src="/doc1.jpg"
-                            alt="Chocolate labrador against blue background"
+                            src="/services1/skinbooster.jpg"
+                            alt="Skincare treatment results"
                             fill
                             className="object-cover"
                         />

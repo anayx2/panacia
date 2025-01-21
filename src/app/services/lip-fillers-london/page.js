@@ -105,7 +105,7 @@ const page = () => {
                                         <CheckCircle2 className="w-5 h-5 text-rose-400 flex-shrink-0 mt-1" />
 
                                     </span>
-                                    <span>Customizable Results</span>
+                                    <span>Customisable Results</span>
                                 </li>
                             </ul>
                         </div>
@@ -168,9 +168,9 @@ const page = () => {
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
                             <p className="text-lg ">
                                 <span className='font-bold text-rose-400'>
-                                    personalisedApproach: {' '}
+                                    Personalised Approach: {' '}
                                 </span>
-                                We take time to understand your goals and customize your treatment to achieve the perfect lip enhancement tailored to your unique features.
+                                We take time to understand your goals and customise your treatment to achieve the perfect lip enhancement tailored to your unique features.
                             </p>
                         </div>
 
@@ -206,7 +206,7 @@ const page = () => {
             </section>
             <section className="max-w-7xl mx-auto px-4 py-12 md:py-16 w-[90%]">
                 <div className="grid md:grid-cols-[1fr,500px] gap-8 items-center">
-                    <div className="space-y-8">
+                    <div className="space-y-4">
                         <h2>
                             The Lip Filler Treatment Process </h2>
                         <p className=" leading-relaxed">
@@ -222,9 +222,9 @@ const page = () => {
 
                         <div className="space-y-4">
                             <h4 className="text-2xl text-rose-400 font-medium">
-                                Treatment:                         </h4>
+                                Treatment                       </h4>
                             <p className=" leading-relaxed">
-                                The procedure itself is quick, typically lasting about 30 minutes. Our experienced professionals will inject the filler into specific areas of the lips to add volume, smooth out wrinkles, and define the lip line. We use a topical numbing cream to minimize any discomfort during the procedure.
+                                The procedure itself is quick, typically lasting about 30 minutes. Our experienced professionals will inject the filler into specific areas of the lips to add volume, smooth out wrinkles, and define the lip line. We use a topical numbing cream to Minimise any discomfort during the procedure.
                             </p>
                         </div>
 

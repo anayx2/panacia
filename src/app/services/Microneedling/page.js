@@ -33,7 +33,7 @@ const faqData = [
     },
     {
         question: "Is microneedling painful?",
-        answer: "There can be mild discomfort, but a numbing cream is typically applied to minimize pain."
+        answer: "There can be mild discomfort, but a numbing cream is typically applied to Minimise pain."
     },
     {
         question: "Does microneedling work permanently?",

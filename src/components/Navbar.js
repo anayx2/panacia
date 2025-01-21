@@ -336,7 +336,7 @@ const Navbar = () => {
                                                         className="absolute left-0 right-0 mt-4"
                                                     >
                                                         <div className="w-full">
-                                                            <ul className="rounded-lg shadow-lg w-[80%] mx-auto p-4 text-black bg-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                                                            <ul className="rounded-lg shadow-lg w-[90%] mx-auto p-4 text-black bg-white grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-4 text-centerr">
                                                                 {services.map(({ image, title, href }, index) => (
                                                                     <li
                                                                         key={index}
@@ -353,12 +353,12 @@ const Navbar = () => {
                                                                             />
                                                                             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300 rounded-full"></div>
                                                                         </div>
-                                                                        <h3 className="text-sm font-medium text-gray-800">{title}</h3>
+                                                                        <h3 className="text-sm text-center font-medium text-gray-800">{title}</h3>
                                                                     </li>
                                                                 ))}
                                                                 <li
 
-                                                                    onClick={() => handleServiceClick(href('/services'))}
+                                                                    onClick={() => router.push('/services')}
                                                                     className="flex flex-col items-center justify-center p-4 bg-rose-100 rounded-lg shadow-md cursor-pointer transition-all duration-300 hover:bg-rose-200 hover:scale-105"
                                                                 >
                                                                     <h3 className="font-medium text-gray-800 text-xl">View All</h3>

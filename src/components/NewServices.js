@@ -295,7 +295,7 @@ const TreatmentsSection = () => {
 
             <section className="our-treatments testSection" style={{ width: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                 <p className="content" style={{ width: "80%", textAlign: "center" }} >
-                    At Panacea Clinic, we offer a wide range of treatments designed to rejuvenate, enhance, and maintain your natural beauty and well-being. Our expert team provides personalized care to help you look and feel your best.
+                    At Panacea Clinic, we offer a wide range of treatments designed to rejuvenate, enhance, and maintain your natural beauty and well-being. Our expert team provides personalised care to help you look and feel your best.
                 </p>
                 <div className="treatments-gallery">
                     <section className="whole-container">
@@ -713,7 +713,7 @@ const TreatmentsSection = () => {
                                             <img
                                                 src="/services1/b12.jpg"
 
-                                                alt="Skin Rejuvenation &amp; Anti Aging"
+                                                alt="Skin Rejuvenation &amp; Anti ageing"
                                             />
                                             <div className="treatments-list">
                                                 <ul>
@@ -754,7 +754,7 @@ const TreatmentsSection = () => {
                                                     {/* <li key="4">
                                                         <a
                                                             href="/treatments/mesotherapy"
-                                                            aria-label="Discover Mesotherapy treatment for revitalized and rejuvenated skin."
+                                                            aria-label="Discover Mesotherapy treatment for revitalised and rejuvenated skin."
                                                         >
                                                             Vitamin B12 for Weight Loss Support
                                                         </a>
@@ -813,7 +813,7 @@ const TreatmentsSection = () => {
                                         <div className="imgBox">
                                             <img
                                                 src="/HOME/hopiearcandle.jpeg"
-                                                alt="Skin Rejuvenation &amp; Anti Aging"
+                                                alt="Skin Rejuvenation &amp; Anti ageing"
                                             />
                                             <div className="treatments-list">
                                                 <ul>
@@ -851,7 +851,7 @@ const TreatmentsSection = () => {
                                                     {/* <li key="4">
                                                         <a
                                                             href="/treatments/mesotherapy"
-                                                            aria-label="Discover Mesotherapy treatment for revitalized and rejuvenated skin."
+                                                            aria-label="Discover Mesotherapy treatment for revitalised and rejuvenated skin."
                                                         >
                                                             Natural Ear Detoxification with Hopi Candles
                                                         </a>

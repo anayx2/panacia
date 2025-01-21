@@ -17,7 +17,7 @@ const faqData = [
     },
     {
         question: "Is skin rejuvenation worth it?",
-        answer: "Yes, it can improve skin texture, reduce aging signs, and address issues like scars and pigmentation, providing lasting results with minimal downtime."
+        answer: "Yes, it can improve skin texture, reduce ageing signs, and address issues like scars and pigmentation, providing lasting results with minimal downtime."
     },
     {
         question: "What is the new treatment for skin rejuvenation?",
@@ -66,7 +66,7 @@ const page = () => {
 
                         <p className="mt-5 ">
                             At Panacea Health & Beauty Clinic, we offer fat dissolving injections designed to target and reduce stubborn pockets of fat that are resistant to diet and exercise. Whether you’re struggling with areas like the chin, abdomen, or thighs, our fat dissolving treatments provide a non-surgical, minimally invasive solution for achieving a more sculpted, toned appearance.
-                            <br /> Fat dissolving injections are a non-surgical treatment that uses a specialized solution, usually based on a naturally occurring compound, to break down and permanently remove stubborn fat cells. The active ingredient, commonly deoxycholic acid, is injected directly into areas with excess fat.
+                            <br /> Fat dissolving injections are a non-surgical treatment that uses a specialised solution, usually based on a naturally occurring compound, to break down and permanently remove stubborn fat cells. The active ingredient, commonly deoxycholic acid, is injected directly into areas with excess fat.
                             <br /> key benefits include:
 
                         </p>
@@ -83,7 +83,7 @@ const page = () => {
                                     <span>
                                         <CheckCircle2 className="w-5 h-5 text-rose-400 flex-shrink-0 mt-1" />
                                     </span>
-                                    <span>Customizable Treatment Areas
+                                    <span>Customisable Treatment Areas
                                     </span>
                                 </li>
                                 <li className="flex items-center space-x-2">
@@ -181,7 +181,7 @@ const page = () => {
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
                             <p className="text-lg ">
                                 <span className='font-bold text-rose-400'>
-                                    personalisedCare: {' '}
+                                    Personalised Care: {' '}
                                 </span>
                                 We tailor each treatment to meet your specific needs, ensuring that your goals are achieved with natural-looking, sculpted results.                           </p>
                         </div>

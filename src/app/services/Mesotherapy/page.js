@@ -36,7 +36,7 @@ const faqData = [
 
 export const metadata = {
     title: 'Mesotherapy for Skin Rejuvenation | Panacea Health & Beauty',
-    description: 'Rejuvenate your skin with Mesotherapy at Panacea Health & Beauty Clinic. Target wrinkles, aging, and cellulite for a youthful, refreshed look. Contact Us!',
+    description: 'Rejuvenate your skin with Mesotherapy at Panacea Health & Beauty Clinic. Target wrinkles, ageing, and cellulite for a youthful, refreshed look. Contact Us!',
 }
 const page = () => {
     return (
@@ -66,7 +66,7 @@ const page = () => {
                         <p className="text-gray-700 leading-relaxed">
                             Welcome to Panacea Health & Beauty Clinic, where we offer advanced, effective, and non-invasive treatments designed to enhance your natural beauty. One of our most popular services is Mesotherapy Treatment, a revolutionary procedure that targets various skin concerns, leaving you with glowing, rejuvenated skin.
                             <br />
-                            Mesotherapy Treatment is a non-surgical procedure that involves the injection of a customized blend of vitamins, minerals, amino acids, and hyaluronic acid directly into the mesodermal layer of your skin. Benefits of Mesotherapy Treatment:
+                            Mesotherapy Treatment is a non-surgical procedure that involves the injection of a customised blend of vitamins, minerals, amino acids, and hyaluronic acid directly into the mesodermal layer of your skin. Benefits of Mesotherapy Treatment:
 
 
                         </p>
@@ -204,10 +204,11 @@ const page = () => {
                             Mesotherapy Injections: What to Expect </h2>
                         <div className="space-y-4">
                             {/* <h4 className="text-2xl text-rose-400 font-medium">
-                                personalisedConsultation
+                                Personalised Consultation
+
                             </h4> */}
                             <p className=" leading-relaxed">
-                                When you come to Panacea Health & Beauty Clinic for mesotherapy injections, our skilled and experienced practitioners will start by discussing your skin concerns and goals. After a thorough consultation, we will create a personalized treatment plan that best suits your needs.
+                                When you come to Panacea Health & Beauty Clinic for mesotherapy injections, our skilled and experienced practitioners will start by discussing your skin concerns and goals. After a thorough consultation, we will create a personalised treatment plan that best suits your needs.
                             </p></div>
 
                         <div className="space-y-4">

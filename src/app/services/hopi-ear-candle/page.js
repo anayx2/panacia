@@ -17,7 +17,7 @@ const faqData = [
     },
     {
         question: "Who should not do PRP treatment?",
-        answer: "PRP should be avoided by individuals with blood disorders, active infections, or certain scalp conditions like alopecia areata or severe anemia."
+        answer: "PRP should be avoided by individuals with blood disorders, active infections, or certain scalp conditions like alopecia areata or severe anaemia."
     },
     {
         question: "Is PRP very painful?",
@@ -25,7 +25,7 @@ const faqData = [
     },
     {
         question: "Why is PRP so expensive?",
-        answer: "PRP is costly due to the specialized process of extracting and preparing the plasma, as well as the need for multiple sessions and skilled practitioners."
+        answer: "PRP is costly due to the specialised process of extracting and preparing the plasma, as well as the need for multiple sessions and skilled practitioners."
     },
     {
         question: "Does PRP have bad side effects?",

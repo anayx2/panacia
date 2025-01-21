@@ -17,7 +17,7 @@ const faqData = [
     },
     {
         question: "Is skin rejuvenation worth it?",
-        answer: "Yes, it can improve skin texture, reduce aging signs, and address issues like scars and pigmentation, providing lasting results with minimal downtime."
+        answer: "Yes, it can improve skin texture, reduce ageing signs, and address issues like scars and pigmentation, providing lasting results with minimal downtime."
     },
     {
         question: "What is the new treatment for skin rejuvenation?",
@@ -180,9 +180,9 @@ const page = () => {
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
                             <p className="text-lg ">
                                 <span className='font-bold text-rose-400'>
-                                    personalisedApproach: {' '}
+                                    Personalised Approach: {' '}
                                 </span>
-                                We take the time to understand your unique skincare concerns and customize each treatment to meet your specific goals.                            </p>
+                                We take the time to understand your unique skincare concerns and customise each treatment to meet your specific goals.                            </p>
                         </div>
 
                         <div className="flex items-center gap-4">
@@ -232,7 +232,7 @@ const page = () => {
                             <h4 className="text-2xl text-rose-400 font-medium">
                                 Neck and Décolletage:                         </h4>
                             <p className=" leading-relaxed">
-                                These areas are often prone to signs of aging and can benefit from enhanced hydration and collagen stimulation.
+                                These areas are often prone to signs of ageing and can benefit from enhanced hydration and collagen stimulation.
                             </p>
                         </div>
                         <div className="space-y-1">

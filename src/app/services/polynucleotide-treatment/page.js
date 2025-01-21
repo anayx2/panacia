@@ -66,7 +66,7 @@ const page = () => {
                         </div>
 
                         <p className="mt-5 ">
-                            At Panacea Health & Beauty Clinic, we offer Polynucleotide Treatment as a cutting-edge solution for rejuvenating your skin and promoting hair restoration. This advanced therapy uses naturally derived compounds to stimulate the body’s regenerative processes, improving skin texture, elasticity, and overall health. Whether you are looking to combat signs of aging or address thinning hair, Polynucleotide Treatment is a non-surgical option designed to help you look and feel your best.
+                            At Panacea Health & Beauty Clinic, we offer Polynucleotide Treatment as a cutting-edge solution for rejuvenating your skin and promoting hair restoration. This advanced therapy uses naturally derived compounds to stimulate the body’s regenerative processes, improving skin texture, elasticity, and overall health. Whether you are looking to combat signs of ageing or address thinning hair, Polynucleotide Treatment is a non-surgical option designed to help you look and feel your best.
                             <br /> At Panacea Health & Beauty Clinic, we offer Polynucleotide Treatment that provides a wide range of benefits for skin and hair:
 
 
@@ -231,7 +231,8 @@ const page = () => {
                             <h4 className="text-2xl text-rose-400 font-medium">
                                 Consultation:                           </h4>
                             <p className=" leading-relaxed">
-                                Your treatment begins with a personalisedconsultation, where our expert practitioners will assess your skin or hair concerns, discuss your goals, and create a customised treatment plan tailored to your needs.                            </p></div>
+                                Your treatment begins with a Personalised Consultation
+, where our expert practitioners will assess your skin or hair concerns, discuss your goals, and create a customised treatment plan tailored to your needs.                            </p></div>
                         <div className="space-y-1">
                             <h4 className="text-2xl text-rose-400 font-medium">
                                 Preparation and Injection:                         </h4>

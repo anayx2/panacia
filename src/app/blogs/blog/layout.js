@@ -15,7 +15,7 @@ export default function BlogLayout({ children }) {
                 <div className="relative z-10 flex h-full items-center justify-center px-4 text-white">
                     <div>
                         <h2 >
-                            Top dos & don'ts for Valentine's Day with your pet
+                            Single Blog Page
                         </h2>
                     </div>
                 </div>
@@ -34,12 +34,13 @@ export default function BlogLayout({ children }) {
                             <ul className="space-y-2">
                                 <li>
                                     <Link href="#" className="text-gray-600 hover:text-gray-900 flex items-center">
-                                        <span className="text-[#666666]"><Image
-                                            src={'/beauty_icon.png'}
-                                            width={20}
-                                            height={20}
-                                            alt='icon'
-                                        />
+                                        <span className="text-[#666666]">
+                                            <Image
+                                                src={'/beauty_icon.png'}
+                                                width={20}
+                                                height={20}
+                                                alt='icon'
+                                            />
                                         </span>
                                         <span className="ml-2">August 2024</span>
                                     </Link>
@@ -122,7 +123,14 @@ export default function BlogLayout({ children }) {
                                     <li key={category.name}>
                                         <Link href="#" className="text-gray-600 hover:text-gray-900 flex items-center justify-between">
                                             <div className="flex items-center">
-                                                <span className="text-[#666666]">🐾</span>
+                                                <span className="text-[#666666]">
+                                                    <Image
+                                                        src={'/beauty_icon.png'}
+                                                        width={20}
+                                                        height={20}
+                                                        alt='icon'
+                                                    />
+                                                </span>
                                                 <span className="ml-2">{category.name}</span>
                                             </div>
                                             <span className="text-gray-400">({category.count})</span>

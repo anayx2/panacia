@@ -33,7 +33,7 @@ const faqData = [
     },
     {
         question: "Is PRP painful?",
-        answer: "Some discomfort during the procedure, but numbing cream helps minimize pain."
+        answer: "Some discomfort during the procedure, but numbing cream helps Minimise pain."
     }
 ];
 
@@ -233,7 +233,8 @@ const page = () => {
                             <h4 className="text-2xl text-rose-400 font-medium">
                                 Consultation:                           </h4>
                             <p className=" leading-relaxed">
-                                Your journey begins with a personalisedconsultation where we discuss your goals, medical history, and any concerns you may have. Based on this, we will design a tailored treatment plan for you.                            </p></div>
+                                Your journey begins with a Personalised Consultation
+ where we discuss your goals, medical history, and any concerns you may have. Based on this, we will design a tailored treatment plan for you.                            </p></div>
                         <div className="space-y-1">
                             <h4 className="text-2xl text-rose-400 font-medium">
                                 Blood Draw:                         </h4>

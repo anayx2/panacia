@@ -17,13 +17,13 @@ import { motion } from 'framer-motion'
 const blogs = [
     {
         id: 1,
-        title: "The Benefits of Facial Rejuvenation Treatments for Aging Skin",
+        title: "The Benefits of Facial Rejuvenation Treatments for ageing Skin",
         excerpt: "Ageing is inevitable, but who says we can’t age gracefully? Facial rejuvenation treatments...",
         date: "August 23, 2024",
         image: "/about-img1.jpg",
         categories: ["Educational", "Healthy Food"],
         bgColor: "bg-orange-100",
-        href: "#"
+        href: "/blogs/blog"
     },
     {
         id: 2,
@@ -33,7 +33,7 @@ const blogs = [
         image: "/image1.jpg",
         categories: ["Healthy Food", "Lifestyles"],
         bgColor: "bg-sky-100",
-        href: "#"
+        href: "/blogs/blog"
     },
     {
         id: 3,
@@ -43,7 +43,7 @@ const blogs = [
         image: "/image1.jpg",
         categories: ["Lifestyles", "News"],
         bgColor: "bg-red-100",
-        href: "#"
+        href: "/blogs/blog"
     },
     {
         id: 4,
@@ -53,7 +53,7 @@ const blogs = [
         image: "/about-img1.jpg",
         categories: ["Educational", "Healthy Food"],
         bgColor: "bg-orange-100",
-        href: "#"
+        href: "/blogs/blog"
     },
     {
         id: 5,
@@ -63,7 +63,7 @@ const blogs = [
         image: "/image1.jpg",
         categories: ["Healthy Food", "Lifestyles"],
         bgColor: "bg-sky-100",
-        href: "#"
+        href: "/blogs/blog"
     },
     {
         id: 6,
@@ -73,7 +73,7 @@ const blogs = [
         image: "/image1.jpg",
         categories: ["Lifestyles", "News"],
         bgColor: "bg-red-100",
-        href: "#"
+        href: "/blogs/blog"
     }
 ]
 
@@ -208,24 +208,24 @@ export default function BlogSection() {
             <Pagination>
                 <PaginationContent>
                     <PaginationItem>
-                        <PaginationPrevious href="#" />
+                        <PaginationPrevious href="/blogs/blog" />
                     </PaginationItem>
                     <PaginationItem>
-                        <PaginationLink href="#" isActive>1</PaginationLink>
+                        <PaginationLink href="/blogs/blog" isActive>1</PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
-                        <PaginationLink href="#" >
+                        <PaginationLink href="/blogs/blog" >
                             2
                         </PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
-                        <PaginationLink href="#">3</PaginationLink>
+                        <PaginationLink href="/blogs/blog">3</PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
                         <PaginationEllipsis />
                     </PaginationItem>
                     <PaginationItem>
-                        <PaginationNext href="#" />
+                        <PaginationNext href="/blogs/blog" />
                     </PaginationItem>
                 </PaginationContent>
             </Pagination>

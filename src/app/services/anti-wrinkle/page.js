@@ -155,7 +155,7 @@ const page = () => {
                     Why Choose Panacea Health & Beauty Clinic ?                </h2>
 
                 <p className="mt-5">
-                    At Panacea Health & Beauty Clinic, we combine expertise, personalisedcare, and the latest technology to deliver exceptional anti-wrinkle injections. Here’s why you should choose us:
+                    At Panacea Health & Beauty Clinic, we combine expertise, Personalised Care, and the latest technology to deliver exceptional anti-wrinkle injections. Here’s why you should choose us:
                 </p>
 
                 <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
@@ -175,7 +175,7 @@ const page = () => {
                                 <span className='font-bold text-rose-400'>
                                     Experienced Practitioners: {' '}
                                 </span>
-                                Our skilled and trained professionals customize each treatment with anti-wrinkle injections to suit your unique needs, ensuring natural-looking results.
+                                Our skilled and trained professionals customise each treatment with anti-wrinkle injections to suit your unique needs, ensuring natural-looking results.
                             </p>
                         </div>
 
@@ -183,7 +183,7 @@ const page = () => {
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
                             <p className="text-lg ">
                                 <span className='font-bold text-rose-400'>
-                                    personalisedCare: {' '}
+                                    Personalised Care: {' '}
                                 </span>
                                 We take time to understand your goals and create a tailored plan for the best outcome with anti-wrinkle injections.                            </p>
                         </div>
@@ -215,14 +215,12 @@ const page = () => {
                             What to Expect During Your Treatment? </h2>
                         <div className="space-y-4">
                             <h4 className="text-2xl text-rose-400 font-medium">
-                                personalisedConsultation
+                                Personalised Consultation
+
                             </h4>
                             <p className=" leading-relaxed">
                                 Your journey begins with a thorough consultation, where we take the time to understand your aesthetic goals and medical history. Our experienced professionals will assess your skin and discuss the areas you'd like to treat. We'll also explain how
-                                <span className='font-bold mx-1'>
-                                    anti-wrinkle injections
-                                </span>
-                                work, so you feel fully informed and confident in your decision.                             </p>
+                                anti-wrinkle injections work, so you feel fully informed and confident in your decision.                             </p>
                         </div>
 
                         <div className="space-y-4">
@@ -230,19 +228,15 @@ const page = () => {
                                 The Treatment Procedure                            </h4>
                             <p className=" leading-relaxed">
                                 The procedure itself is quick and minimally invasive. Typically, it takes just
-                                <span className='font-bold mx-1'>
-                                    10 to 15 minutes</span>
-                                to complete. During the treatment, very fine needles are used to inject small amounts of botulinum toxin into the targeted muscles, which helps relax them and reduce the appearance of wrinkles. You may feel a slight pinch or pressure, but the process is generally well-tolerated and only requires minimal discomfort.                             </p>
+                                10 to 15 minutes to complete. During the treatment, very fine needles are used to inject small amounts of botulinum toxin into the targeted muscles, which helps relax them and reduce the appearance of wrinkles. You may feel a slight pinch or pressure, but the process is generally well-tolerated and only requires minimal discomfort.                             </p>
                         </div>
 
                         <div className="space-y-4">
                             <h4 className="text-2xl text-rose-400 font-medium">
                                 Aftercare and No Downtime                            </h4>
                             <p className=" leading-relaxed">
-                                One of the best things about                                 <span className='font-bold mx-1'>
-                                    anti-wrinkle </span> injections is that there's no downtime required. After your treatment, you can immediately return to your normal activities. We will provide simple aftercare instructions, such as avoiding vigorous physical activity for 24 hours and refraining from rubbing the treated areas. These easy guidelines help ensure optimal results.
-                                In just a few days, you'll begin to notice smoother, more youthful skin as the full effects of the treatment take shape, typically visible within                                 <span className='font-bold mx-1'>
-                                    3 to 7 days. </span>                           </p>
+                                One of the best things about anti-wrinkle injections is that there's no downtime required. After your treatment, you can immediately return to your normal activities. We will provide simple aftercare instructions, such as avoiding vigorous physical activity for 24 hours and refraining from rubbing the treated areas. These easy guidelines help ensure optimal results.
+                                In just a few days, you'll begin to notice smoother, more youthful skin as the full effects of the treatment take shape, typically visible within 3 to 7 days. </p>
                         </div>
                     </div>
 

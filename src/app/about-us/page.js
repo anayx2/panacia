@@ -150,7 +150,7 @@ export default function AboutPage() {
                                         className="text-lg leading-relaxed text-muted-foreground"
                                         variants={fadeInUp}
                                     >
-                                        Panacea Clinic delivers personalisedhealthcare services designed to meet individual needs. From preventive care to advanced treatments, we ensure a patient-centred approach. Our holistic methods focus on physical, mental, and emotional well-being, offering complete solutions under one roof. Trust us to prioritise your health with compassion and unmatched expertise.
+                                        Panacea Clinic delivers personalised health care services designed to meet individual needs. From preventive care to advanced treatments, we ensure a patient-centred approach. Our holistic methods focus on physical, mental, and emotional well-being, offering complete solutions under one roof. Trust us to prioritise your health with compassion and unmatched expertise.
                                     </motion.p>
                                 </motion.div>
                                 <motion.div

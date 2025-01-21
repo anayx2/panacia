@@ -17,7 +17,7 @@ const faqData = [
     },
     {
         question: "Who should not do PRP treatment?",
-        answer: "PRP should be avoided by individuals with blood disorders, active infections, or certain scalp conditions like alopecia areata or severe anemia."
+        answer: "PRP should be avoided by individuals with blood disorders, active infections, or certain scalp conditions like alopecia areata or severe anaemia."
     },
     {
         question: "Is PRP very painful?",
@@ -25,7 +25,7 @@ const faqData = [
     },
     {
         question: "Why is PRP so expensive?",
-        answer: "PRP is costly due to the specialized process of extracting and preparing the plasma, as well as the need for multiple sessions and skilled practitioners."
+        answer: "PRP is costly due to the specialised process of extracting and preparing the plasma, as well as the need for multiple sessions and skilled practitioners."
     },
     {
         question: "Does PRP have bad side effects?",
@@ -156,7 +156,7 @@ const page = () => {
                     Why Choose Panacea Health & Beauty Clinic for Your PRP Hair Treatment?</h2>
 
                 <p className="mt-5 text-center">
-                    At Panacea Health & Beauty Clinic, we offer a personalized approach to hair restoration with PRP hair treatment. Our experienced professionals use the latest techniques and equipment to ensure you receive the highest standard of care. We take the time to understand your concerns and tailor the treatment to suit your unique needs.
+                    At Panacea Health & Beauty Clinic, we offer a personalised approach to hair restoration with PRP hair treatment. Our experienced professionals use the latest techniques and equipment to ensure you receive the highest standard of care. We take the time to understand your concerns and tailor the treatment to suit your unique needs.
                 </p>
 
                 <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">

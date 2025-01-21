@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { MapPin, Phone, Mail, Pin, Music2, Linkedin, Facebook } from 'lucide-react'
+import { MapPin, Phone, Mail, Pin, Music2, Linkedin, Facebook, Instagram } from 'lucide-react'
 
 
 const topMenuItems = [
@@ -58,27 +58,21 @@ export function Footer() {
                     </div>
                     <div className="block md:hidden lg:hidden">
                         <div className='flex w-auto gap-5 '>
-                            <span className='bg-rose-400 p-2 rounded-full'>
+                            <span className='bg-rose-400 p-2 rounded-full inline-flex hover:bg-rose-500 transition-colors duration-300'>
                                 <Link href={'#'}>
-                                    <Facebook />
+                                    <Facebook className="text-black hover:text-white hover:scale-105 transition-transform duration-300" />
                                 </Link>
                             </span>
+
+                            <span className='bg-rose-400 p-2 rounded-full inline-flex hover:bg-rose-500 transition-colors duration-300'>
+                                <Link href={'#'}>
+                                    <Music2 className="text-black hover:text-white hover:scale-105 transition-transform duration-300" />
+                                </Link>
+                            </span>
+
                             <span className='bg-rose-400 p-2 rounded-full'>
                                 <Link href={'https://www.instagram.com/panaceaskinclinic/'}>
-
-                                    <Linkedin />
-                                </Link>
-                            </span>
-                            <span className='bg-rose-400 p-2 rounded-full'>
-                                <Link href={'https://www.tiktok.com/@panaceaskinclinic'}>
-                                    <Music2 />
-                                </Link>
-                            </span>
-
-                            <span className='bg-rose-400 p-2 rounded-full'>
-                                <Link href={'#'}>
-                                    <Pin />
-                                </Link>
+                                    <Instagram />                                </Link>
                             </span>
                         </div>
                     </div>
@@ -93,7 +87,7 @@ export function Footer() {
                                 <Link
                                     key={item.label}
                                     href={item.href}
-                                    className="hover:text-rose-400 transition-colors"
+                                    className="hover:text-rose-500 transition-colors"
                                 >
                                     {item.name}
                                 </Link>
@@ -101,27 +95,27 @@ export function Footer() {
                         </nav>
                         <div className="hidden md:block lg:block">
                             <div className='flex w-auto gap-5 '>
-                                <span className='bg-rose-400 p-2 rounded-full'>
+                                <span className='bg-rose-500 p-2 rounded-full inline-flex hover:scale-105 transition-transform duration-300'>
                                     <Link href={'#'}>
-                                        <Facebook />
-                                    </Link>
-                                </span>
-                                <span className='bg-rose-400 p-2 rounded-full'>
-                                    <Link href={'https://www.instagram.com/panaceaskinclinic/'}>
-
-                                        <Linkedin />
-                                    </Link>
-                                </span>
-                                <span className='bg-rose-400 p-2 rounded-full'>
-                                    <Link href={'https://www.tiktok.com/@panaceaskinclinic'}>
-                                        <Music2 />
+                                        <Facebook
+                                            className="text-black hover:text-white hover:scale-105 transition-transform duration-300" />
                                     </Link>
                                 </span>
 
-                                <span className='bg-rose-400 p-2 rounded-full'>
+                                <span
+                                    className='bg-rose-500 p-2 rounded-full inline-flex hover:scale-105 transition-transform duration-300'>
                                     <Link href={'#'}>
-                                        <Pin />
+                                        <Music2
+                                            className="text-black hover:text-white hover:scale-105 transition-transform duration-300" />
                                     </Link>
+                                </span>
+
+                                <span
+                                    className='bg-rose-500 p-2 rounded-full inline-flex hover:scale-105 transition-transform duration-300'>
+                                    <Link
+                                        className="text-black hover:text-white hover:scale-105 transition-transform duration-300"
+                                        href={'https://www.instagram.com/panaceaskinclinic/'}>
+                                        <Instagram />                                </Link>
                                 </span>
                             </div>
                         </div>
@@ -137,7 +131,7 @@ export function Footer() {
                                 <Link
                                     key={item.label}
                                     href={item.href}
-                                    className="hover:text-rose-400 transition-colors"
+                                    className="hover:text-rose-500 transition-colors"
                                 >
                                     {item.name}
                                 </Link>

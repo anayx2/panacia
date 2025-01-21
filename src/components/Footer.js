@@ -33,9 +33,9 @@ const Footer = () => {
                                     Tyburnia, London W2 2HU </p>
                             </div>
                             <div className='flex w-full gap-5'>
-                                <span className='bg-rose-400 p-2 rounded-full'>
+                                <span className='bg-rose-400 p-2 rounded-full inline-flex hover:bg-rose-500 transition-colors duration-300'>
                                     <Link href={'#'}>
-                                        <Facebook />
+                                        <Facebook className="text-black hover:text-white hover:scale-105 transition-transform duration-300" />
                                     </Link>
                                 </span>
                                 <span className='bg-rose-400 p-2 rounded-full'>

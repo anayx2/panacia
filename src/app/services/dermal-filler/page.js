@@ -25,7 +25,7 @@ const faqData = [
     },
     {
         question: "What is the age limit for fillers?",
-        answer: "There’s no strict age limit, but fillers are typically used by those over 21 to address aging or enhance features."
+        answer: "There’s no strict age limit, but fillers are typically used by those over 21 to address ageing or enhance features."
     },
     {
         question: "Are fillers good for the face?",
@@ -105,7 +105,7 @@ const page = () => {
                                         <CheckCircle2 className="w-5 h-5 text-rose-400 flex-shrink-0 mt-1" />
 
                                     </span>
-                                    <span>Customizable Treatments</span>
+                                    <span>Customisable Treatments</span>
                                 </li>
                             </ul>
                         </div>
@@ -178,7 +178,7 @@ const page = () => {
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
                             <p className="text-lg ">
                                 <span className='font-bold text-rose-400'>
-                                    personalisedApproach {' '}
+                                    Personalised Approach {' '}
                                 </span>
                                 We take time to understand your goals, carefully selecting the right filler and treatment plan to achieve the best outcome for you.                            </p>
                         </div>
@@ -210,7 +210,8 @@ const page = () => {
                             What to Expect During Your Dermal Filler Treatment? </h2>
                         <div className="space-y-4">
                             <h4 className="text-2xl text-rose-400 font-medium">
-                                personalisedConsultation
+                                Personalised Consultation
+
                             </h4>
                             <p className=" leading-relaxed">
                                 During your consultation, we’ll discuss your aesthetic goals, review your medical history, and assess the areas you want to treat. We’ll create a personalisedplan that aligns with your desired outcome.
@@ -222,7 +223,7 @@ const page = () => {
                                 The Treatment:                         </h4>
                             <p className=" leading-relaxed">
                                 The procedure itself is quick and straightforward. Dermal fillers are injected into targeted areas using a fine needle. Most treatments take about
-                                10 to 15 minutes, depending on the areas being treated. Local anesthetic is often used to minimize discomfort.</p>
+                                10 to 15 minutes, depending on the areas being treated. Local anaestheticis often used to Minimise discomfort.</p>
                         </div>
 
 

@@ -80,7 +80,7 @@ const faqItems = [
     },
     {
         question: "Do you offer consultations?",
-        answer: "Yes, we offer personalisedconsultations to understand your needs and recommend suitable treatments."
+        answer: "Yes, we offer Personalised Consultations to understand your needs and recommend suitable treatments."
     },
     {
         question: "What are the benefits of mesotherapy?",
@@ -99,7 +99,7 @@ const faq2 = [
     },
     {
         question: "Are your treatments suitable for all skin types?",
-        answer: "Yes, we customize treatments to suit different skin types and individual needs."
+        answer: "Yes, we customise treatments to suit different skin types and individual needs."
     },
     {
         question: "How experienced are your staff?",
@@ -107,7 +107,7 @@ const faq2 = [
     },
     {
         question: "What makes Panacea Clinic different from others?",
-        answer: "We combine cutting-edge treatments with personalisedcare, ensuring the best results and patient satisfaction."
+        answer: "We combine cutting-edge treatments with Personalised Care, ensuring the best results and patient satisfaction."
     }
 ]
 
