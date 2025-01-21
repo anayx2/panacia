@@ -148,7 +148,7 @@ const Page = () => {
                         </div>
                         <p className="text-lg leading-relaxed text-gray-600">
                             Unlock personalised treatment options with a one-on-one consultation.
-                            Our experts will guide you toward the best solution tailored to your needs.
+                            Our experts will guide you toward's the best solution tailored to your needs.
                         </p>
                     </div>
                 </motion.div>
