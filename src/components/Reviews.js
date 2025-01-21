@@ -27,7 +27,7 @@ export default function Reviews() {
             image: "/avatar-male.png"
         },
         {
-            quote: "I went in for a Vitamin B12 injection, and I’ve never felt more Energised. The staff was so welcoming, and I’ll definitely be coming back for more treatments.",
+            quote: "I went in for a Vitamin B12 injection, and I’ve never felt more energised. The staff was so welcoming, and I’ll definitely be coming back for more treatments.",
             name: "David P.",
             location: "Nairobi, Kenya",
             image: "/avatar.png"
