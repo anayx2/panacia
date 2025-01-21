@@ -78,7 +78,7 @@ const services = [
         title: "Bio Filler",
         description: "Enjoy natural, non-surgical facial enhancement with Bio Fillers, restoring volume and smoothing out fine lines effectively.",
         image: "/services1/biofillers.jpg",
-        href: "/services/lip-fillers-london"
+        href: "/services/bio-filler"
     },
     {
         id: 9,

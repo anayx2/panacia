@@ -49,7 +49,7 @@ const FilteredGallery = () => {
         { id: 6, src: "/sample/6.png", category: "Anti Wrinkle" },
         { id: 7, src: "/sample/7.png", category: "Mesotherapy" },
         { id: 8, src: "/sample/5.png", category: "Fat Dissolving" },
-        { id: 9, src: "/sample/filer.png", category: "Microneedling" },
+        // { id: 9, src: "/sample/filer.png", category: "Microneedling" },
         { id: 10, src: "/sample/2.png", category: "Bio Filler" },
         { id: 11, src: "/sample/4.png", category: "Anti Wrinkle" },
         { id: 12, src: "/sample/8.png", category: "Mesotherapy" },
