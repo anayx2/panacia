@@ -312,7 +312,7 @@ const TreatmentsSection = () => {
                                                 <ul>
                                                     <li key="0">
                                                         <a
-                                                            href="/servicesr"
+                                                            href="/services/anti-wrinkle"
                                                             aria-label="Learn more about Lip Filler treatment to enhance and volumize your lips."
                                                         >
                                                             Forehead Lines Treatment
@@ -321,7 +321,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="1">
                                                         <a
-                                                            href="/services"
+                                                            href="/services/anti-wrinkle"
                                                             aria-label="Discover Tear Trough Filler treatment to reduce under-eye hollows and rejuvenate your appearance."
                                                         >
                                                             Frown Lines (Glabella) Treatment
@@ -330,7 +330,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="2">
                                                         <a
-                                                            href="/services"
+                                                            href="/services/anti-wrinkle"
                                                             aria-label="Explore Cheek Filler treatment to add volume and contour to your cheeks."
                                                         >
                                                             Crow's Feet Treatment
@@ -338,7 +338,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="3">
                                                         <a
-                                                            href="/services"
+                                                            href="/services/anti-wrinkle"
                                                             aria-label="Explore Chin Correction Filler treatment to refine and balance your facial profile."
                                                         >
                                                             Eyebrow Lift Treatment
@@ -358,7 +358,7 @@ const TreatmentsSection = () => {
                                         </div>
                                         <div className="icon">
                                             <a
-                                                href="/services"
+                                                href="/services/anti-wrinkle"
                                                 aria-label="Explore Our Range Of Treatments at GHB Clinic London - Enhance Your Natural Beauty"
                                                 className="iconBox"
                                             >
@@ -414,7 +414,7 @@ const TreatmentsSection = () => {
                                                 <ul>
                                                     <li key="0">
                                                         <a
-                                                            href="/services"
+                                                            href="/services/Mesotherapy"
                                                             aria-label="Discover our Deep Cleansing Facial treatment for purified and refreshed skin."
                                                         >
                                                             Facial Mesotherapy
@@ -422,7 +422,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="1">
                                                         <a
-                                                            href="/services"
+                                                            href="/services/Mesotherapy"
                                                             aria-label="Explore our Brightening Treatment to reduce hyperpigmentation and achieve radiant, even-toned skin."
                                                         >
                                                             Hair Restoration Mesotherapy
@@ -431,7 +431,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="2">
                                                         <a
-                                                            href="/services"
+                                                            href="/services/Mesotherapy"
                                                             aria-label="Learn more about our effective Acne Treatments for clear, healthy skin."
                                                         >
                                                             Skin Rejuvenation Mesotherapy
@@ -439,7 +439,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="3">
                                                         <a
-                                                            href="/services"
+                                                            href="/services/Mesotherapy"
                                                             aria-label="Experience the Red Carpet Facial for radiant, glowing skin before your next event."
                                                         >
                                                             Body Contouring Mesotherapy
@@ -460,7 +460,7 @@ const TreatmentsSection = () => {
                                         </div>
                                         <div className="icon">
                                             <a
-                                                href="/services"
+                                                href="/services/Mesotherapy"
                                                 aria-label="Explore Our Range Of Treatments at GHB Clinic London - Enhance Your Natural Beauty"
                                                 className="iconBox"
                                             >
@@ -514,7 +514,7 @@ const TreatmentsSection = () => {
                                                 <ul>
                                                     <li key="0">
                                                         <a
-                                                            href="/services"
+                                                            href="/services/fat-dissolving-injections"
                                                             aria-label="Learn more about the P2 Chemical Peel to rejuvenate and refresh your skin."
                                                         >
                                                             P2 Chemical Peel
@@ -522,7 +522,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="1">
                                                         <a
-                                                            href="/services"
+                                                            href="/services/fat-dissolving-injections"
                                                             aria-label="Discover the P3 Chemical Peel for deep exfoliation and skin renewal."
                                                         >
                                                             Double Chin Fat Dissolving
@@ -531,7 +531,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="2">
                                                         <a
-                                                            href="/services"
+                                                            href="/services/fat-dissolving-injections"
                                                             aria-label="Explore the Green Peel for natural skin rejuvenation and glowing results."
                                                         >
                                                             Stomach Fat Dissolving
@@ -540,7 +540,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="3">
                                                         <a
-                                                            href="/services"
+                                                            href="/services/fat-dissolving-injections"
                                                             aria-label="Find out about the Botanical Peel for gentle and effective skin renewal."
                                                         >
                                                             Thigh Fat Dissolving
@@ -563,7 +563,7 @@ const TreatmentsSection = () => {
                                         </div>
                                         <div className="icon">
                                             <a
-                                                href="/services"
+                                                href="/services/fat-dissolving-injections"
                                                 aria-label="Explore Our Range Of Treatments at GHB Clinic London - Enhance Your Natural Beauty"
                                                 className="iconBox"
                                             >
@@ -617,7 +617,7 @@ const TreatmentsSection = () => {
                                                 <ul>
                                                     <li key="0">
                                                         <a
-                                                            href="/treatments/laser-skin-resurfacing"
+                                                            href="/services/Microneedling"
                                                             aria-label="Explore Laser Skin Resurfacing to reduce wrinkles, scars, and pigmentation for a refreshed look."
                                                         >
                                                             Facial Microneedling
@@ -626,7 +626,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="1">
                                                         <a
-                                                            href="/treatments/acne-laser-treatment"
+                                                            href="/services/Microneedling"
                                                             aria-label="Learn about Acne Laser Treatment for effective acne reduction and smoother skin."
                                                         >
                                                             Acne Scar Treatment
@@ -635,7 +635,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="2">
                                                         <a
-                                                            href="/treatments/hyperpigmentation-laser-treatment"
+                                                            href="/services/Microneedling"
                                                             aria-label="Discover Laser for Hyperpigmentation to achieve a more even skin tone."
                                                         >
                                                             Skin Rejuvenation Microneedling
@@ -644,7 +644,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="3">
                                                         <a
-                                                            href="/treatments/laser-skin-tightening"
+                                                            href="/services/Microneedling"
                                                             aria-label="Find out about Laser Skin Tightening to enhance skin elasticity and reduce sagging."
                                                         >
                                                             Stretch Mark Microneedling
@@ -664,7 +664,7 @@ const TreatmentsSection = () => {
                                         </div>
                                         <div className="icon">
                                             <a
-                                                href="/services"
+                                                href="/services/Microneedling"
                                                 aria-label="Explore Our Range Of Treatments at GHB Clinic London - Enhance Your Natural Beauty"
                                                 className="iconBox"
                                             >
@@ -712,14 +712,13 @@ const TreatmentsSection = () => {
                                         <div className="imgBox">
                                             <img
                                                 src="/services1/b12.jpg"
-
                                                 alt="Skin Rejuvenation &amp; Anti ageing"
                                             />
                                             <div className="treatments-list">
                                                 <ul>
                                                     <li key="0">
                                                         <a
-                                                            href="/treatments/anti-wrinkle-injections"
+                                                            href="/services/vitamin-b12-deficiency"
                                                             aria-label="Discover Botox for Wrinkles treatment to smooth fine lines and rejuvenate your skin."
                                                         >
                                                             Energy Boost with Vitamin B12
@@ -728,7 +727,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="1">
                                                         <a
-                                                            href="/treatments/microneedling"
+                                                            href="/services/vitamin-b12-deficiency"
                                                             aria-label="Learn about Dermapen4 Microneedling for enhanced skin texture and collagen production."
                                                         >
                                                             Vitamin B12 for Immune Support
@@ -737,7 +736,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="2">
                                                         <a
-                                                            href="/treatments/plasma-pen-treatment"
+                                                            href="/services/vitamin-b12-deficiency"
                                                             aria-label="Find out about Plasma Pen Treatment for skin tightening and wrinkle reduction."
                                                         >
                                                             Vitamin B12 for Mood Enhancement
@@ -745,7 +744,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="3">
                                                         <a
-                                                            href="/treatments/profhilo"
+                                                            href="/services/vitamin-b12-deficiency"
                                                             aria-label="Learn more about Profhilo treatment for deep skin hydration and elasticity improvement."
                                                         >
                                                             Vitamin B12 for Skin Health
@@ -764,7 +763,7 @@ const TreatmentsSection = () => {
                                         </div>
                                         <div className="icon">
                                             <a
-                                                href="/services"
+                                                href="/services/vitamin-b12-deficiency"
                                                 aria-label="Explore Our Range Of Treatments at GHB Clinic London - Enhance Your Natural Beauty"
                                                 className="iconBox"
                                             >
@@ -819,7 +818,7 @@ const TreatmentsSection = () => {
                                                 <ul>
                                                     <li key="0">
                                                         <a
-                                                            href="/treatments/anti-wrinkle-injections"
+                                                            href="/services/hopi-ear-candle"
                                                             aria-label="Discover Botox for Wrinkles treatment to smooth fine lines and rejuvenate your skin."
                                                         >
                                                             Ear Wax Removal with Hopi Candles
@@ -827,7 +826,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="1">
                                                         <a
-                                                            href="/treatments/microneedling"
+                                                            href="/services/hopi-ear-candle"
                                                             aria-label="Learn about Dermapen4 Microneedling for enhanced skin texture and collagen production."
                                                         >
                                                             Relaxation and Stress Relief
@@ -835,7 +834,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="2">
                                                         <a
-                                                            href="/treatments/plasma-pen-treatment"
+                                                            href="/services/hopi-ear-candle"
                                                             aria-label="Find out about Plasma Pen Treatment for skin tightening and wrinkle reduction."
                                                         >
                                                             Improved Sinus Health with Ear Candling
@@ -843,7 +842,7 @@ const TreatmentsSection = () => {
                                                     </li>
                                                     <li key="3">
                                                         <a
-                                                            href="/treatments/profhilo"
+                                                            href="/services/hopi-ear-candle"
                                                             aria-label="Learn more about Profhilo treatment for deep skin hydration and elasticity improvement."
                                                         >
                                                             Enhancing Hearing Clarity                                                        </a>
@@ -861,7 +860,7 @@ const TreatmentsSection = () => {
                                         </div>
                                         <div className="icon">
                                             <a
-                                                href="/services"
+                                                href="/services/hopi-ear-candle"
                                                 aria-label="Explore Our Range Of Treatments at GHB Clinic London - Enhance Your Natural Beauty"
                                                 className="iconBox"
                                             >
