@@ -909,7 +909,7 @@ const TreatmentsSection = () => {
             <Link href={'/services'}>
                 <Button
                     variant="default"
-                    className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 hover:text-black"
+                    className="mt-4 px-8 py-6 text-base"
                 >
                     VIEW MORE →
                 </Button>
