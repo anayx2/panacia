@@ -127,7 +127,7 @@ const FilteredGallery = () => {
                             onClick={() => setActiveFilter(category)}
                             className={`px-4 py-2 rounded-md transition-all ${activeFilter === category
                                 ? 'bg-rose-400 text-white'
-                                : 'bg-rose-100 hover:bg-gray-200'
+                                : 'bg-rose-100 hover:bg-rose-200'
                                 }`}
                         >
                             {category}
