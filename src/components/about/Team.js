@@ -14,37 +14,38 @@ const teamMembers = [
     {
         name: "Dr. Sarah Johnson",
         role: "Aesthetic Dermatologist",
-        image: "/doc1.jpg",
+        image: "/about/doc1.jpg",
         qualification: "MBBS, MD (Dermatology)"
     },
+
     {
         name: "Dr. Michael Chen",
         role: "Plastic Surgeon",
-        image: "/doc2.jpg",
+        image: "/about/doc2.jpg",
         qualification: "MD, FACS"
     },
     {
         name: "Dr. Emma Williams",
         role: "Cosmetic Dentist",
-        image: "/doc1.jpg",
+        image: "/about/doc3.jpg",
         qualification: "DDS, FICOI"
     },
     {
         name: "Dr. James Anderson",
         role: "Skin Expert",
-        image: "/doc2.jpg",
+        image: "/about/doc2.jpg",
         qualification: "MD, FISHRS"
     },
     {
         name: "Dr. Maria Garcia",
         role: "Laser Specialist",
-        image: "/doc1.jpg",
+        image: "/about/doc1.jpg",
         qualification: "MD, PhD"
     },
     {
         name: "Dr. David Kim",
         role: "Aesthetic Physician",
-        image: "/doc2.jpg",
+        image: "/about/doc3.jpg",
         qualification: "MBBS, MSc"
     }
 ]

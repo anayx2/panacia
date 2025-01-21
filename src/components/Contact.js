@@ -1,3 +1,85 @@
+// import { Mail, MapPin, Phone } from 'lucide-react'
+// import Link from 'next/link'
+// import React from 'react'
+
+// const ContactNew = () => {
+//     return (
+//         <section className="relative w-full">
+//             {/* Container for mobile layout */}
+//             <div className="flex flex-col lg:block">
+//                 {/* Direction Card - First on mobile */}
+//                 <div className="absolute top-2 left-1/2 -translate-x-1/2 lg:absolute lg:left-[5%] lg:top-1/2 lg:-translate-y-1/2 lg:transform w-[90%] lg:w-[500px] p-4 lg:p-8 bg-white shadow-xl rounded-2xl mx-auto lg:mx-0 mb-4 lg:mb-0 z-10">
+//                     <div className="mb-6">
+//                         <h4 className="text-sm font-medium uppercase tracking-wider text-rose-300">
+//                             Our Location
+//                         </h4>
+//                         <h2 className="mt-2 text-2xl lg:text-4xl font-bold text-gray-900">
+//                             Visit the Aesthetic Clinic in London Today!
+//                         </h2>
+//                     </div>
+//                     <Link
+//                         href="https://www.google.com/maps/dir//Pharmacentre+149+Edgware+Rd+Tyburnia,+London+W2+2HU+United+Kingdom/@51.5173113,-0.1667256,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x48761ab507196af5:0xe5cfb58af2aabf40!2m2!1d-0.1666838!2d51.5173291?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D"
+//                         className="hover:shadow-md hover:scale-105 inline-block rounded-full bg-rose-400 px-8 py-3 text-center font-medium text-white transition-all duration-200"
+//                     >
+//                         Get Directions →
+//                     </Link>
+//                 </div>
+
+//                 {/* Map - Second on mobile */}
+//                 <div className="w-full md:w-[80%] h-[120dvh] lg:h-[80dvh] mb-4 lg:mb-0 relative">
+//                     <iframe
+//                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19862.214288866795!2d-0.166726!3d51.517311!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ab507196af5%3A0xe5cfb58af2aabf40!2sPharmacentre!5e0!3m2!1sen!2sus!4v1736402860884!5m2!1sen!2sus"
+//                         width="100%"
+//                         height="100%"
+//                         style={{ border: 0 }}
+//                         allowFullScreen
+//                         loading="lazy"
+//                         referrerPolicy="no-referrer-when-downgrade"
+//                         title="Panacea Health & Beauty Clinic Location"
+//                         className="w-full"
+//                     />
+//                 </div>
+
+//                 {/* Contact Card - Last on mobile */}
+//                 <div className="absolute bottom-2 left-1/2 -translate-x-1/2 lg:absolute lg:right-[10%] lg:top-1/2 lg:-translate-y-1/2 lg:transform w-[90%] lg:w-[400px] p-4 lg:p-8 bg-gradient-to-r from-rose-100 to-rose-300 rounded-2xl shadow-xl mx-auto lg:mx-0 mb-4 lg:mb-0 z-10">
+//                     <h2 className="mb-8 text-3xl lg:text-4xl font-bold">Visit Us</h2>
+//                     <div className="mb-8 space-y-4">
+//                         <div className="flex items-center gap-3">
+//                             <Phone className="h-5 w-5 text-rose-400" />
+//                             <Link href="tel:+44-7388869697" className="hover:text-rose-400">
+//                                 +44 7388 869697
+
+//                             </Link>
+//                         </div>
+
+//                         <div className="flex items-center gap-3">
+//                             <Mail className="h-5 w-5 text-rose-400" />
+//                             <Link href="mailto:info@panacea-clinic.co.uk" className="hover:text-rose-400">
+//                                 info@panacea-clinic.co.uk
+//                             </Link>
+//                         </div>
+
+//                         <div className="flex items-start text-left gap-2">
+//                             <MapPin className="h-5 w-5 flex-shrink-0 text-rose-400" />
+//                             <Link href="https://www.google.com/maps/dir//Pharmacentre+149+Edgware+Rd+Tyburnia,+London+W2+2HU+United+Kingdom/@51.5173113,-0.1667256,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x48761ab507196af5:0xe5cfb58af2aabf40!2m2!1d-0.1666838!2d51.5173291?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D" className="hover:text-rose-400">
+//                                 Pharmacentre Pharmacy,149 Edgware Rd, Tyburnia, London W2 2HU
+//                             </Link>
+//                         </div>
+//                     </div>
+
+//                     <Link
+//                         href="/book-an-appointment"
+//                         className="hover:shadow-md hover:scale-105 inline-block w-full rounded-full bg-rose-400 px-8 py-3 text-center font-medium text-white transition-all duration-200"
+//                     >
+//                         Book Your Visit →
+//                     </Link>
+//                 </div>
+//             </div>
+//         </section>
+//     )
+// }
+
+// export default ContactNew
 // 'use client';
 
 // import { useState } from 'react';
@@ -283,8 +365,8 @@ const ContactNew = () => {
                             <div className="mb-8 space-y-4">
                                 <div className="flex items-center gap-3">
                                     <Phone className="h-5 w-5 text-rose-400" />
-                                    <Link href="tel:07388869697" className="hover:text-rose-400">
-                                        07388869697                                    </Link>
+                                    <Link href="tel:+44-7388869697" className="hover:text-rose-400">
+                                    +44 7388 869697                                    </Link>
                                 </div>
 
                                 <div className="flex items-center gap-3">

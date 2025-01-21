@@ -1,6 +1,8 @@
-import MultiStepBooking from '@/components/AppointmentForm'
-import Image from 'next/image'
-import Link from 'next/link'
+'use client'
+import React, { useState, useEffect } from 'react';
+import MultiStepBooking from '@/components/AppointmentForm';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const services = [
     {
@@ -94,9 +96,22 @@ const services = [
         image: "/services1/dermaplanning.jpg",
         href: "/services/netra-basti"
     }
-]
+];
 
 export default function ServicesPage() {
+    const [hoveredId, setHoveredId] = useState(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (hoveredId !== null) {
+                setHoveredId(null);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [hoveredId]);
+
     return (<>
         <section className='relative h-[50dvh] w-full'>
             <div
@@ -111,17 +126,21 @@ export default function ServicesPage() {
             >
                 <h2 className="sm:text-4xl md:text-6xl lg:text-6xl"
                 >
-                    Services  </h2>
+                    Services
+                </h2>
             </div>
         </section>
-        <section className=" px-4 py-20">
+        <section className="px-4 py-20">
             <div className="container mx-auto w-[90%]">
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                     {services.map((service) => (
-                        <div key={service.id} className="group relative">
-                            {/* Card Container */}
-                            <div className="overflow-hidden rounded-2xl ">
-                                {/* Image - Static */}
+                        <div
+                            key={service.id}
+                            className="relative"
+                            onMouseEnter={() => setHoveredId(service.id)}
+                            onMouseLeave={() => setHoveredId(null)}
+                        >
+                            <div className="overflow-hidden rounded-2xl">
                                 <div className="relative">
                                     <Image
                                         src={service.image}
@@ -132,30 +151,28 @@ export default function ServicesPage() {
                                     />
                                 </div>
 
-                                {/* Content Container */}
-                                <div className='flex w-full justify-center -mt-5 z-50'>
-                                    <div className="bg-gradient-to-b from-rose-100 to-rose-300 w-[95%] z-50 rounded-2xl">
-                                        {/* Title - Static */}
+                                <div className='flex w-full justify-center -mt-5 z-20'>
+                                    <div className="bg-gradient-to-b from-rose-100 to-rose-300 w-[95%] z-30 rounded-2xl">
                                         <h3 className="p-4 text-center text-xl font-semibold text-black">
                                             {service.title}
                                         </h3>
 
-                                        {/* Description - Expandable */}
-                                        <div className="max-h-0 overflow-hidden px-6 text-center text-black transition-all duration-300 ease-in-out group-hover:max-h-[300px] group-hover:py-6">
+                                        <div
+                                            className={`overflow-hidden px-6 text-center text-black transition-all duration-300 ease-in-out ${hoveredId === service.id ? 'max-h-[300px] py-6' : 'max-h-0'
+                                                }`}
+                                        >
                                             <p className="mb-6">
                                                 {service.description}
                                             </p>
                                             <Link
-                                                // href={service.href}
-                                                href={'/services/dermal-fillers'}
-                                                className="inline-block rounded-md bg-rose-500 px-6 py-2 text-sm font-medium text-white "
+                                                href="/services/dermal-fillers"
+                                                className="inline-block rounded-md bg-rose-500 px-6 py-2 text-sm font-medium text-white"
                                             >
                                                 Read More
                                             </Link>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     ))}
@@ -165,11 +182,8 @@ export default function ServicesPage() {
         <section className='bg-rose-50 py-20'>
             <h2 className='text-center'>
                 Schedule Your Serenity
-
             </h2>
             <MultiStepBooking />
         </section>
-    </>
-    )
+    </>);
 }
-

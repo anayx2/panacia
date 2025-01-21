@@ -103,7 +103,7 @@ export default function AboutPage() {
                         variants={fadeInUp}
                     >
                         <Image
-                            src="/about.png"
+                            src="/about/aboutbanner.jpg"
                             alt="Biolite Aesthetic Clinic Interior"
                             fill
                             className="object-cover"
@@ -158,7 +158,7 @@ export default function AboutPage() {
                                     variants={fadeInUp}
                                 >
                                     <Image
-                                        src="/Comprehensive.jpg"
+                                        src="/about/ComprehensiveCare.jpg"
                                         alt="Professional consultation session"
                                         fill
                                         className="object-cover"
@@ -179,7 +179,7 @@ export default function AboutPage() {
                                     variants={fadeInUp}
                                 >
                                     <Image
-                                        src="/stateoftheart.png"
+                                        src="/about/State-of-the-Art Facilities.jpg"
                                         alt="Advanced treatment procedure"
                                         fill
                                         className="object-cover"
@@ -226,7 +226,7 @@ export default function AboutPage() {
                                     variants={fadeInUp}
                                 >
                                     <Image
-                                        src="/professionals.jpg"
+                                        src="/about/aboutbanner.jpg"
                                         alt="Gentle aesthetic treatment"
                                         fill
                                         className="object-cover"
@@ -253,7 +253,7 @@ export default function AboutPage() {
                     >
                         <div className="relative aspect-square w-4/5 overflow-hidden rounded-3xl">
                             <Image
-                                src="/Commitment1.jpg"
+                                src="/about/comitment.jpg"
                                 alt="Medical specialist performing treatment"
                                 fill
                                 className="object-cover"
