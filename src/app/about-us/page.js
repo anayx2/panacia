@@ -226,7 +226,7 @@ export default function AboutPage() {
                                     variants={fadeInUp}
                                 >
                                     <Image
-                                        src="/about/aboutbanner.jpg"
+                                        src="/sample/2.png"
                                         alt="Gentle aesthetic treatment"
                                         fill
                                         className="object-cover"
