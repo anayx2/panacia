@@ -11,93 +11,93 @@ const services = [
         title: "Anti-Wrinkle Treatments",
         description: "Smooth away wrinkles with our effective anti-wrinkle treatments, designed to rejuvenate your skin and restore a youthful, radiant appearance",
         image: "/services1/wrinke.jpg",
-        href: "/services/wellness-consultation"
+        href: "/services/anti-wrinkle"
     },
     {
         id: 2,
         title: "Mesotherapy",
         description: "Achieve glowing, nourished skin with Mesotherapy, a technique delivering vitamins and nutrients directly to your skin for remarkable results.",
         image: "/blog1.png",
-        href: "/services/abhyanga"
+        href: "/services/Mesotherapy"
     },
     {
         id: 3,
         title: "Fat Dissolving",
         description: "Say goodbye to stubborn fat with our safe and effective fat-dissolving treatments, tailored to sculpt your body effortlessly.",
         image: "/services1/fatdissolving.jpg",
-        href: "/services/shirodhara"
+        href: "/services/fat-dissolving-injections"
     },
     {
         id: 4,
         title: "Microneedling",
         description: "Revitalize your skin with Microneedling, promoting collagen production to reduce scars, fine lines, and improve skin texture.",
         image: "/services1/microneedling.jpg",
-        href: "/services/kati-basti"
+        href: "/services/Microneedling"
     },
     {
         id: 5,
         title: "Vitamin B12 Injection",
         description: "Boost your energy and enhance your overall well-being with our Vitamin B12 injections, essential for vitality and health.",
         image: "/services1/cosmetologist-making-injections-face-woman-beauty-salon.jpg",
-        href: "/services/prushta-basti"
+        href: "/services/vitamin-b12-deficiency"
     },
     {
         id: 6,
         title: "Hopi Ear Candle",
         description: "Experience relaxation and improved ear health with Hopi Ear Candling, a natural therapy to clear blockages and restore balance.",
         image: "/services1/hopiearcandle.jpg",
-        href: "/services/netra-basti"
+        href: "/services/hopi-ear-candle"
     },
     {
         id: 7,
         title: "IV Drip",
         description: "Rehydrate, rejuvenate, and replenish essential nutrients with our custom IV Drip therapies for optimal wellness.",
         image: "/services1/ivdrip.jpg",
-        href: "/services/wellness-consultation"
+        href: "/services/IV-Drip"
     },
     {
         id: 8,
         title: "Bio Filler",
         description: "Enjoy natural, non-surgical facial enhancement with Bio Fillers, restoring volume and smoothing out fine lines effectively.",
         image: "/services1/biofillers.jpg",
-        href: "/services/abhyanga"
+        href: "/services/bio-filler"
     },
     {
         id: 9,
         title: "PRP Hair Loss",
         description: "Combat hair loss with PRP treatments, stimulating hair growth and strengthening follicles for thicker, healthier hair.",
         image: "/services1/hairloss.jpg",
-        href: "/services/shirodhara"
+        href: "/services/prp-hair-loss"
     },
     {
         id: 10,
         title: "PRP Facial",
         description: "Rejuvenate your skin with PRP Facials, boosting collagen and delivering a radiant, youthful complexion.",
         image: "/services1/PRPFacial.jpg",
-        href: "/services/kati-basti"
+        href: "/services/prp-treatment-london"
     },
     {
         id: 11,
         title: "PDO threads",
         description: "Lift and tighten sagging skin with PDO threads, a non-invasive solution for a firmer and rejuvenated appearance.",
         image: "/services1/threadspds.jpg",
-        href: "/services/prushta-basti"
+        href: "/services/face-threads-lifting"
     },
     {
         id: 12,
         title: "Skin Booster",
         description: "Hydrate and refresh your skin with Skin Boosters, enhancing elasticity and restoring your natural glow effortlessly.",
         image: "/services1/skinbooster.jpg",
-        href: "/services/netra-basti"
+        href: "/services/skin-booster"
     },
     {
         id: 13,
         title: "Dermaplaning",
         description: "Exfoliate dead skin and remove peach fuzz with Dermaplaning, leaving your skin smooth, radiant, and makeup-ready.",
         image: "/services1/dermaplanning.jpg",
-        href: "/services/netra-basti"
+        href: "/services/Dermaplaning"
     }
-];
+]
 
 export default function ServicesPage() {
     const [hoveredId, setHoveredId] = useState(null);
@@ -166,7 +166,7 @@ export default function ServicesPage() {
                                                 {service.description}
                                             </p>
                                             <Link
-                                                href="/services/dermal-fillers"
+                                                href={service.href}
                                                 className="inline-block rounded-md bg-rose-500 text-sm font-medium text-white"
                                             >
                                                 <Button className="px-6 py-2 ">
