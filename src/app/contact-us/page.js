@@ -128,7 +128,7 @@ const Page = () => {
                     className="relative z-10 flex h-full items-center justify-center px-4 text-white"
                 >
                     <h2
-                        className="sm:text-4xl md:text-6xl lg:text-6xl"
+                        className="sm:text-4xl md:text-6xl lg:text-6xl text-white"
                     >Get in Touch with Us</h2>
                 </motion.div>
             </motion.section>

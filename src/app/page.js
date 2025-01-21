@@ -96,7 +96,7 @@ const Page = () => {
             <h2>Your Health, Our Commitment</h2>
           </MotionDiv>
 
-          <MotionP variants={fadeInUp} className="text-lg leading-relaxed text-gray-600">
+          <MotionP variants={fadeInUp} className="text-lg leading-relaxed ">
             At Panacea Clinic, we're committed to offering top-notch healthcare with a human touch...
           </MotionP>
 
@@ -114,7 +114,7 @@ const Page = () => {
                 <div className="flex p-2 items-center justify-center rounded-full bg-rose-100">
                   <Check className="h-4 w-4 text-rose-600" />
                 </div>
-                <span className="text-lg text-gray-600">{feature}</span>
+                <span className="text-lg ">{feature}</span>
               </MotionLi>
             ))}
           </MotionUl>

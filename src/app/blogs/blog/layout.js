@@ -14,7 +14,7 @@ export default function BlogLayout({ children }) {
                 <div className="absolute inset-0 bg-black/20" />
                 <div className="relative z-10 flex h-full items-center justify-center px-4 text-white">
                     <div>
-                        <h2 >
+                        <h2 className='text-white' >
                             Single Blog Page
                         </h2>
                     </div>

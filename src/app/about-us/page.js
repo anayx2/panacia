@@ -65,7 +65,7 @@ export default function AboutPage() {
                     variants={fadeInUp}
                 >
                     <motion.h2 variants={fadeInUp}
-                        className="sm:text-4xl md:text-6xl lg:text-6xl"
+                        className="sm:text-4xl md:text-6xl lg:text-6xl text-white"
                     >
                         About Us
                     </motion.h2>

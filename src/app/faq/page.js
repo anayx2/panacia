@@ -135,7 +135,7 @@ const Page = () => {
                         variants={textReveal}
                         initial="hidden"
                         animate="visible"
-                        className="sm:text-4xl md:text-6xl lg:text-6xl"
+                        className="sm:text-4xl md:text-6xl lg:text-6xl text-white"
 
                     >
                         Frequently Asked Questions

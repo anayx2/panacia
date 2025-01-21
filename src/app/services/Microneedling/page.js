@@ -58,7 +58,7 @@ const page = () => {
                 />
                 <div className="absolute inset-0 bg-black/20" />
                 <div className="relative z-10 flex h-full items-center justify-center px-4 text-white">
-                    <h1 className='text-4xl font-bold tracking-tight lg:text-5xl'> Microneedling </h1>
+                    <h1 className='text-4xl font-bold tracking-tight lg:text-5xl text-white'> Microneedling </h1>
                 </div>
             </section>
             <section className="max-w-7xl mx-auto px-4 py-12 md:py-16 w-[90%]">
