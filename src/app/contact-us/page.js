@@ -209,7 +209,7 @@ const Page = () => {
                         variants={formVariant}
                         className="flex flex-col items-center space-y-4 text-center"
                     >
-                        <h2 className="">SEND US MESSAGE</h2>
+                        <h2 className="py-5">Send Us A Message</h2>
                         <div className="w-full max-w-3xl">
                             <form onSubmit={handleSubmit} className="grid gap-6">
                                 <motion.div
