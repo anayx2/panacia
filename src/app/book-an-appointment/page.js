@@ -116,10 +116,10 @@ const Page = () => {
                         </p>
                     </div>
                     <Image
-                        src="/about-img1.jpg"
+                        src="/appoint3.jpg"
                         alt="Initial consultation with a medical professional"
-                        width={200}
-                        height={200}
+                        width={400}
+                        height={400}
                         className="rounded-lg"
                     />
                 </motion.div>
@@ -133,10 +133,10 @@ const Page = () => {
                     className="flex flex-col-reverse items-start gap-12 lg:flex-row lg:items-center justify-between"
                 >
                     <Image
-                        src="/about-img1.jpg"
+                        src="/appoint2.jpg"
                         alt="Initial consultation with a medical professional"
-                        width={200}
-                        height={200}
+                        width={400}
+                        height={400}
                         className="rounded-lg"
                     />
                     <div className="max-w-xl">
@@ -205,10 +205,10 @@ const Page = () => {
                         </motion.div>
                     </div>
                     <Image
-                        src="/about-img1.jpg"
+                        src="/appoint1.jpg"
                         alt="Initial consultation with a medical professional"
-                        width={200}
-                        height={200}
+                        width={300}
+                        height={400}
                         className="rounded-lg"
                     />
                 </motion.div>
