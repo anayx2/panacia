@@ -39,7 +39,7 @@ const faqData = [
 
 
 export const metadata = {
-    title: 'Best Lip Filler | London  | Panacea Health & Beauty Clinic',
+    title: 'Best Lip filler | London  | Panacea Health & Beauty Clinic',
     description: ' Discover the best lip filler treatments in London at Panacea Health & Beauty Clinic. Enhance your lips with expert care for natural-looking, beautiful results.',
 }
 const page = () => {
@@ -54,7 +54,7 @@ const page = () => {
                 />
                 <div className="absolute inset-0 bg-black/20" />
                 <div className="relative z-10 flex h-full items-center justify-center px-4 text-white">
-                    <h1 className='text-4xl font-bold tracking-tight lg:text-5xl text-white'> Lip Fillers in London</h1>
+                    <h1 className='text-4xl font-bold tracking-tight lg:text-5xl text-white'> Lip fillers in London</h1>
                 </div>
             </section>
             <section className="max-w-7xl mx-auto px-4 py-12 md:py-16 w-[90%]">
@@ -64,7 +64,7 @@ const page = () => {
                             <h2 className="text-rose-400">
                                 Enhance Your Smile                               </h2>
                             <h3 className="">
-                                Beautiful, Natural-Looking Lip Fillers in London
+                                Beautiful, Natural-Looking Lip fillers in London
                             </h3>
                         </div>
 
@@ -127,7 +127,7 @@ const page = () => {
                 <div className='flex flex-col justify-center items-center w-[100%]'>
 
                     <h3 className='text-center my-5'>
-                        Real Results: Cheek Filler Before & After
+                        Real Results: Cheek filler Before & After
                     </h3>
                     <div className='flex lg:flex-row md:flex-row sm:flex-col justify-center items-center gap-6 p-2 w-[90%]'>
                         <ImageComparison
@@ -178,7 +178,7 @@ const page = () => {
                             <CheckCircle2 className="w-6 h-6 text-rose-400 flex-shrink-0 mt-1" />
                             <p className="text-lg ">
                                 <span className='font-bold text-rose-400'>
-                                    FDA-Approved Fillers: {' '}
+                                    FDA-Approved fillers: {' '}
                                 </span>
                                 We use only the highest quality, FDA-approved hyaluronic acid fillers for maximum safety and effectiveness.                            </p>
                         </div>
@@ -208,7 +208,7 @@ const page = () => {
                 <div className="grid md:grid-cols-[1fr,500px] gap-8 items-center">
                     <div className="space-y-4">
                         <h2>
-                            The Lip Filler Treatment Process </h2>
+                            The Lip filler Treatment Process </h2>
                         <p className=" leading-relaxed">
                             When you choose lip fillers in London at Panacea Health & Beauty Clinic, you can expect a smooth and comfortable experience:
 

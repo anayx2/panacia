@@ -45,17 +45,17 @@ const FilteredGallery = () => {
         { id: 2, src: "/about-img1.jpg", category: "Mesotherapy" },
         { id: 3, src: "/sample/3.png", category: "Fat Dissolving" },
         { id: 4, src: "/sample/filer.png", category: "Microneedling" },
-        { id: 5, src: "/sample/5.png", category: "Bio Filler" },
+        { id: 5, src: "/sample/5.png", category: "Bio filler" },
         { id: 6, src: "/sample/6.png", category: "Anti Wrinkle" },
         { id: 7, src: "/sample/7.png", category: "Mesotherapy" },
         { id: 8, src: "/sample/5.png", category: "Fat Dissolving" },
         // { id: 9, src: "/sample/filer.png", category: "Microneedling" },
-        { id: 10, src: "/sample/2.png", category: "Bio Filler" },
+        { id: 10, src: "/sample/2.png", category: "Bio filler" },
         { id: 11, src: "/sample/4.png", category: "Anti Wrinkle" },
         { id: 12, src: "/sample/8.png", category: "Mesotherapy" },
     ];
 
-    const categories = ["Show All", "Anti Wrinkle", "Mesotherapy", "Fat Dissolving", "Microneedling", "Bio Filler"];
+    const categories = ["Show All", "Anti Wrinkle", "Mesotherapy", "Fat Dissolving", "Microneedling", "Bio filler"];
     const [activeFilter, setActiveFilter] = useState("Show All");
 
     const filteredImages = activeFilter === "Show All"

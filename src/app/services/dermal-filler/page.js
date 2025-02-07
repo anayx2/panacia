@@ -39,7 +39,7 @@ const faqData = [
 
 
 export const metadata = {
-    title: 'Dermal Fillers Treatments | Panacea Health & Beauty Clinic',
+    title: 'Dermal fillers Treatments | Panacea Health & Beauty Clinic',
     description: ' Enhance lips, cheeks, & jawline with dermal filler treatments at Panacea Health & Beauty Clinic. Restore volume and smooth wrinkles using top-quality products.',
 }
 const page = () => {
@@ -54,7 +54,7 @@ const page = () => {
                 />
                 <div className="absolute inset-0 bg-black/20" />
                 <div className="relative z-10 flex h-full items-center justify-center px-4 text-white">
-                    <h1 className='text-4xl font-bold tracking-tight lg:text-5xl text-white'>  Dermal Fillers</h1>
+                    <h1 className='text-4xl font-bold tracking-tight lg:text-5xl text-white'>  Dermal fillers</h1>
                 </div>
             </section>
             <section className="max-w-7xl mx-auto px-4 py-12 md:py-16 w-[90%]">
@@ -62,7 +62,7 @@ const page = () => {
                     <div className="space-y-8">
                         <div className="space-y-4">
                             <h2 className="text-rose-400">
-                                Non-Surgical Dermal Fillers                                </h2>
+                                Non-Surgical Dermal fillers                                </h2>
                             <h3 className="">
                                 Smooth Wrinkles and Restore Volume Instantly                            </h3>
                         </div>
@@ -127,7 +127,7 @@ const page = () => {
                 <div className='flex flex-col justify-center items-center w-[100%]'>
 
                     <h3 className='text-center my-5'>
-                        Real Results: Cheek Filler Before & After
+                        Real Results: Cheek filler Before & After
                     </h3>
                     <div className='flex lg:flex-row md:flex-row sm:flex-col justify-center items-center gap-6 p-2 w-[90%]'>
                         <ImageComparison
@@ -207,7 +207,7 @@ const page = () => {
                 <div className="grid md:grid-cols-[1fr,500px] gap-8 items-center">
                     <div className="space-y-8">
                         <h2>
-                            What to Expect During Your Dermal Filler Treatment? </h2>
+                            What to Expect During Your Dermal filler Treatment? </h2>
                         <div className="space-y-4">
                             <h4 className="text-2xl text-rose-400 font-medium">
                                 Personalised Consultation

@@ -118,7 +118,7 @@ const page = () => {
 
                     <div className="flex items-center w-full h-auto rounded-lg">
                         <Image
-                            src={'/servicesPage/Mesotherapy/image.png'}
+                            src={'/Mesotherapy/2.jpg'}
                             width={800}
                             height={800}
                             className='w-full h-auto rounded-lg'
@@ -132,7 +132,7 @@ const page = () => {
                 <div className='flex flex-col justify-center items-center w-[100%]'>
 
                     <h3 className='text-center my-5'>
-                        Real Results: Cheek Filler Before & After
+                        Real Results: Cheek filler Before & After
                     </h3>
                     <div className='flex lg:flex-row md:flex-row sm:flex-col justify-center items-center gap-6 p-2 w-[90%]'>
                         <ImageComparison
@@ -161,7 +161,7 @@ const page = () => {
                 <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
                     <div className="relative aspect-[5/3] w-full">
                         <Image
-                            src={'/servicesPage/Mesotherapy/woman-beauty-salon-having-needle-mesotherapy-treatment.png'}
+                            src={'/Mesotherapy/3.jpg'}
                             alt="Facial profile showcasing natural skin texture and contours"
                             fill
                             className="object-cover rounded-lg"
@@ -221,7 +221,7 @@ const page = () => {
 
                     <div className="relative aspect-[4/3] w-full">
                         <Image
-                            src={'/servicesPage/Mesotherapy/image-1.png'}
+                            src={'/Mesotherapy/4.jpg'}
                             alt="Panacea Health & Beauty Clinic consultation with practitioner"
                             fill
                             className="object-cover rounded-lg"

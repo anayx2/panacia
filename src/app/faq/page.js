@@ -106,7 +106,7 @@ const faq2 = [
         answer: "Our team consists of highly skilled professionals with years of experience in aesthetic treatments."
     },
     {
-        question: "What makes Panacea Clinic different from others?",
+        question: "What makes Panacea health and beauty clinic different from others?",
         answer: "We combine cutting-edge treatments with Personalised Care, ensuring the best results and patient satisfaction."
     }
 ]

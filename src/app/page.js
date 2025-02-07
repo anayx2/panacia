@@ -179,16 +179,16 @@ const Page = () => {
         <div className='flex lg:flex-row md:flex-row flex-col justify-center items-center gap-6 p-2 w-[90%]'>
 
           <ImageComparison
-            beforeImage="/comp/before1.png"
-            afterImage="/comp/after1.png"
+            beforeImage="/before-after/Chin Filler coarctation/Before.jpg"
+            afterImage="/before-after/Chin Filler coarctation/After.jpg"
           />
           <ImageComparison
-            beforeImage="/comp/befor2.png"
-            afterImage="/comp/after2.png"
+            beforeImage="/before-after/Hair Filler Dr CYG Before & After/1.jpg"
+            afterImage="/before-after/Hair Filler Dr CYG Before & After/2.jpg"
           />
           <ImageComparison
-            beforeImage="/comp/befor3.png"
-            afterImage="/comp/after3.png"
+            beforeImage="/before-after/PRP after 3 session/1.jpg"
+            afterImage="/before-after/PRP after 3 session/2.jpg"
           />
         </div>
       </section>

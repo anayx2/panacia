@@ -122,7 +122,7 @@ const page = () => {
 
                     <div className="flex items-center w-full h-auto rounded-lg">
                         <Image
-                            src={'/servicesPage/prp-face/1.jpg'}
+                            src={'/Hydeafacial-Pictures/12.jpg'}
                             width={800}
                             height={800}
                             className='w-full h-auto rounded-lg'
@@ -136,7 +136,7 @@ const page = () => {
                 <div className='flex flex-col justify-center items-center w-[100%]'>
 
                     <h3 className='text-center my-5'>
-                        Real Results: Cheek Filler Before & After
+                        Real Results: Cheek filler Before & After
                     </h3>
                     <div className='flex lg:flex-row md:flex-row sm:flex-col justify-center items-center gap-6 p-2 w-[90%]'>
                         <ImageComparison
@@ -234,7 +234,7 @@ const page = () => {
                                 Consultation:                           </h4>
                             <p className=" leading-relaxed">
                                 Your journey begins with a Personalised Consultation
- where we discuss your goals, medical history, and any concerns you may have. Based on this, we will design a tailored treatment plan for you.                            </p></div>
+                                where we discuss your goals, medical history, and any concerns you may have. Based on this, we will design a tailored treatment plan for you.                            </p></div>
                         <div className="space-y-1">
                             <h4 className="text-2xl text-rose-400 font-medium">
                                 Blood Draw:                         </h4>
@@ -262,9 +262,9 @@ const page = () => {
                         </div>
                     </div>
 
-                    <div className="relative aspect-[4/3] w-full">
+                    <div className="relative aspect-[4/4] w-full">
                         <Image
-                            src={'/servicesPage/prp-face/2.jpg'}
+                            src={'/Hydeafacial-Pictures/2.jpg'}
                             alt="Panacea Health & Beauty Clinic consultation with practitioner"
                             fill
                             className="object-cover rounded-lg"

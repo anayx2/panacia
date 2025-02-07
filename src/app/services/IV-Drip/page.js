@@ -12,28 +12,28 @@ import {
 
 const faqData = [
     {
-        question: "What is an IV drip used for?",
-        answer: "IV drips are used to deliver fluids, nutrients, vitamins, and medications directly into the bloodstream for hydration, recovery, or treatment of various conditions."
+        question: "What is an Iv drip used for?",
+        answer: "Iv drips are used to deliver fluids, nutrients, vitamins, and medications directly into the bloodstream for hydration, recovery, or treatment of various conditions."
     },
     {
         question: "What is the drip treatment for?",
         answer: "Drip treatments can be used for hydration, vitamin deficiency, immune support, detoxification, or recovery from illness or physical exertion."
     },
     {
-        question: "Do IV drips have side effects?",
+        question: "Do Iv drips have side effects?",
         answer: "Possible side effects include infection, vein irritation, fluid overload, or allergic reactions, though they are generally rare."
     },
     {
-        question: "Are IV drips safe?",
-        answer: "IV drips are generally safe when administered by trained professionals, but risks exist if not done correctly."
+        question: "Are Iv drips safe?",
+        answer: "Iv drips are generally safe when administered by trained professionals, but risks exist if not done correctly."
     },
     {
         question: "What are the risk factors of IV therapy?",
         answer: "Risk factors include infections, vein damage, blood clots, and allergic reactions to the fluids or medications being administered."
     },
     {
-        question: "Is IV drip good for skin?",
-        answer: "IV drips, especially those containing vitamins like vitamin C, can help improve skin hydration, appearance, and overall health."
+        question: "Is Iv drip good for skin?",
+        answer: "Iv drips, especially those containing vitamins like vitamin C, can help improve skin hydration, appearance, and overall health."
     },
     {
         question: "What are the benefits of the IV route?",
@@ -42,8 +42,8 @@ const faqData = [
 ];
 
 export const metadata = {
-    title: ' IV Drip Therapy for Wellness | Panacea Health & Beauty Clinic',
-    description: 'Boost your vitality with IV Drip Therapy at Panacea Health & Beauty Clinic. Replenish essential nutrients, and hydrate your body with our treatments. Book now!',
+    title: ' Iv drip Therapy for Wellness | Panacea Health & Beauty Clinic',
+    description: 'Boost your vitality with Iv drip Therapy at Panacea Health & Beauty Clinic. Replenish essential nutrients, and hydrate your body with our treatments. Book now!',
 }
 const page = () => {
     return (
@@ -57,7 +57,7 @@ const page = () => {
                 />
                 <div className="absolute inset-0 bg-black/20" />
                 <div className="relative z-10 flex h-full items-center justify-center px-4 text-white">
-                    <h1 className='text-4xl font-bold tracking-tight lg:text-5xl text-white'>  IV Drip </h1>
+                    <h1 className='text-4xl font-bold tracking-tight lg:text-5xl text-white'>  Iv drip </h1>
                 </div>
             </section>
             <section className="max-w-7xl mx-auto px-4 py-12 md:py-16 w-[90%]">
@@ -65,18 +65,18 @@ const page = () => {
                     <div className="space-y-8">
                         <div className="space-y-4">
                             <h2 className="text-rose-400">
-                                IV Drip Treatment at Panacea Health & Beauty Clinic                            </h2>
+                                Iv drip Treatment at Panacea Health & Beauty Clinic                            </h2>
                             {/* <h3 className="">
                                 Revitalize Your Skin and Hair with Platelet-Rich Plasma Therapy
                             </h3> */}
                         </div>
 
                         <p className="mt-5 ">
-                            At Panacea Health & Beauty Clinic, we are proud to offer IV Drip Treatment, a cutting-edge therapy designed to boost your overall health and well-being. Whether you're looking to recover from dehydration, enhance your energy levels, or support your immune system, our medical drips are tailored to meet your individual needs.
+                            At Panacea Health & Beauty Clinic, we are proud to offer Iv drip Treatment, a cutting-edge therapy designed to boost your overall health and well-being. Whether you're looking to recover from dehydration, enhance your energy levels, or support your immune system, our medical drips are tailored to meet your individual needs.
                         </p>
                         <br />
                         <p>
-                            IV Drip Treatment is a medical procedure where a specially formulated blend of vitamins, minerals, and nutrients is administered directly into your bloodstream via an intravenous (IV) drip. This method allows for faster and more efficient absorption of essential nutrients compared to oral supplements, providing your body with immediate nourishment and hydration. Benefits of IV Drip Treatment:
+                            Iv drip Treatment is a medical procedure where a specially formulated blend of vitamins, minerals, and nutrients is administered directly into your bloodstream via an intravenous (IV) drip. This method allows for faster and more efficient absorption of essential nutrients compared to oral supplements, providing your body with immediate nourishment and hydration. Benefits of Iv drip Treatment:
                         </p>
 
                         <div className="grid md:grid-cols-2 gap-6">
@@ -140,7 +140,7 @@ const page = () => {
                 <div className='flex flex-col justify-center items-center w-[100%]'>
 
                     <h3 className='text-center my-5'>
-                        Real Results: Cheek Filler Before & After
+                        Real Results: Cheek filler Before & After
                     </h3>
                     <div className='flex lg:flex-row md:flex-row sm:flex-col justify-center items-center gap-6 p-2 w-[90%]'>
                         <ImageComparison
@@ -169,7 +169,7 @@ const page = () => {
                 <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
                     <div className="relative aspect-[5/3] w-full">
                         <Image
-                            src={'/servicesPage/IVDrip/image-1.png'}
+                            src={'/anti-wrinkle/iv.jpg'}
                             alt="Facial profile showcasing natural skin texture and contours"
                             fill
                             className="object-cover rounded-lg"
@@ -221,13 +221,13 @@ const page = () => {
                         <h2>
                             How Does IV Drip Treatment Work? </h2>
                         <p className=" leading-relaxed">
-                            At Panacea Health & Beauty Clinic, the IV drip treatment process is simple and straightforward. Upon arrival, you will have a consultation with one of our experienced professionals to discuss your specific health goals and concerns. Based on this, we will customise the treatment to suit your needs.
+                            At Panacea Health & Beauty Clinic, the Iv drip treatment process is simple and straightforward. Upon arrival, you will have a consultation with one of our experienced professionals to discuss your specific health goals and concerns. Based on this, we will customise the treatment to suit your needs.
                         </p>
                         <p>
                             Once your treatment plan is in place, a small needle is gently inserted into a vein in your arm, and the IV drip is slowly administered. The treatment typically lasts between 30 to 60 minutes, during which you can relax in a comfortable environment.
                         </p>
                         <p>
-                            The nutrients in the IV drip are absorbed directly into your bloodstream, allowing for rapid and effective results. Many clients experience noticeable benefits immediately following the session, including improved hydration, increased energy, and a general sense of well-being.
+                            The nutrients in the Iv drip are absorbed directly into your bloodstream, allowing for rapid and effective results. Many clients experience noticeable benefits immediately following the session, including improved hydration, increased energy, and a general sense of well-being.
                         </p>
                     </div>
 
@@ -249,7 +249,7 @@ const page = () => {
             </section>
             <section className="max-w-7xl mx-auto px-4 py-12 md:py-16 w-[90%]">
                 <h2 className='text-center mb-10'>
-                    Frequently asked questions about IV Drip?</h2>
+                    Frequently asked questions about Iv drip?</h2>
                 <div className="mx-auto">
                     <Accordion type="single" collapsible className="space-y-2">
                         {faqData.map((faq, index) => (

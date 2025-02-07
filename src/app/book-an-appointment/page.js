@@ -5,6 +5,7 @@ import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion'
 
+
 // Animation variants
 const fadeIn = {
     hidden: { opacity: 0 },

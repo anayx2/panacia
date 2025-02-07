@@ -103,7 +103,7 @@ export default function AboutPage() {
                         variants={fadeInUp}
                     >
                         <Image
-                            src="/about/aboutbanner.jpg"
+                            src="/Hydeafacial-Pictures/1.jpg"
                             alt="Biolite Aesthetic Clinic Interior"
                             fill
                             className="object-cover"
@@ -226,7 +226,7 @@ export default function AboutPage() {
                                     variants={fadeInUp}
                                 >
                                     <Image
-                                        src="/sample/2.png"
+                                        src="/Hydeafacial-Pictures/5.jpg"
                                         alt="Gentle aesthetic treatment"
                                         fill
                                         className="object-cover"
@@ -253,7 +253,7 @@ export default function AboutPage() {
                     >
                         <div className="relative aspect-square w-4/5 overflow-hidden rounded-3xl">
                             <Image
-                                src="/about/comitment.jpg"
+                                src="/Hydeafacial-Pictures/6.jpg"
                                 alt="Medical specialist performing treatment"
                                 fill
                                 className="object-cover"
@@ -262,7 +262,7 @@ export default function AboutPage() {
                         </div>
                         <div className="absolute -bottom-20 right-0 aspect-[4/3] w-2/3 overflow-hidden rounded-3xl">
                             <Image
-                                src="/Commitment.jpg"
+                                src="/Hydeafacial-Pictures/10.jpg"
                                 alt="TMAN Clinic signage"
                                 fill
                                 className="object-cover"

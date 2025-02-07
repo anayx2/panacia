@@ -133,7 +133,7 @@ const page = () => {
                 <div className='flex flex-col justify-center items-center w-[100%]'>
 
                     <h3 className='text-center my-5'>
-                        Real Results: Cheek Filler Before & After
+                        Real Results: Cheek filler Before & After
                     </h3>
                     <div className='flex lg:flex-row md:flex-row sm:flex-col justify-center items-center gap-6 p-2 w-[90%]'>
                         <ImageComparison
@@ -232,7 +232,7 @@ const page = () => {
                                 Consultation:                           </h4>
                             <p className=" leading-relaxed">
                                 Your treatment begins with a Personalised Consultation
-, where our expert practitioners will assess your skin or hair concerns, discuss your goals, and create a customised treatment plan tailored to your needs.                            </p></div>
+                                , where our expert practitioners will assess your skin or hair concerns, discuss your goals, and create a customised treatment plan tailored to your needs.                            </p></div>
                         <div className="space-y-1">
                             <h4 className="text-2xl text-rose-400 font-medium">
                                 Preparation and Injection:                         </h4>
