@@ -28,7 +28,7 @@ const services = [
         id: 1,
         title: "Anti-Wrinkle Treatments",
         description: "Smooth away wrinkles with our effective anti-wrinkle treatments, designed to rejuvenate your skin and restore a youthful, radiant appearance",
-        image: "/services1/wrinke.jpg",
+        image: "/anti-wrinkle/1.jpg",
         href: "/services/anti-wrinkle"
     },
     {
@@ -49,7 +49,7 @@ const services = [
         id: 4,
         title: "Microneedling",
         description: "Revitalize your skin with Microneedling, promoting collagen production to reduce scars, fine lines, and improve skin texture.",
-        image: "/services1/microneedling.jpg",
+        image: "/Microneedling/1.jpg",
         href: "/services/Microneedling"
     },
     {
@@ -63,20 +63,20 @@ const services = [
         id: 6,
         title: "Hopi Ear Candle",
         description: "Experience relaxation and improved ear health with Hopi Ear Candling, a natural therapy to clear blockages and restore balance.",
-        image: "/services1/hopiearcandle.jpg",
+        image: "/Hipo-ear-candle/1.jpg",
         href: "/services/hopi-ear-candle"
     },
     {
         id: 7,
-        title: "IV Drip",
-        description: "Rehydrate, rejuvenate, and replenish essential nutrients with our custom IV Drip therapies for optimal wellness.",
+        title: "Iv drip",
+        description: "Rehydrate, rejuvenate, and replenish essential nutrients with our custom Iv drip therapies for optimal wellness.",
         image: "/services1/ivdrip.jpg",
         href: "/services/IV-Drip"
     },
     {
         id: 8,
-        title: "Bio Filler",
-        description: "Enjoy natural, non-surgical facial enhancement with Bio Fillers, restoring volume and smoothing out fine lines effectively.",
+        title: "Bio filler",
+        description: "Enjoy natural, non-surgical facial enhancement with Bio fillers, restoring volume and smoothing out fine lines effectively.",
         image: "/services1/biofillers.jpg",
         href: "/services/bio-filler"
     },

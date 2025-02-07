@@ -7,15 +7,15 @@ import Link from 'next/link';
 // const treatmentsData = [
 //     {
 //         id: 0,
-//         title: "Dermal Fillers",
-//         image: "https://www.ghbclinic.co.uk/home/DermaFillers.webp",
+//         title: "Dermal fillers",
+//         image: "https://www.ghbclinic.co.uk/home/Dermafillers.webp",
 //         description: "Enhance your natural beauty with expert dermal filler treatments, tailored for volume, contour, and youthful rejuvenation.",
 //         treatments: [
-//             { id: 0, name: "Lip Filler", link: "/treatments/lip-filler", ariaLabel: "Learn more about Lip Filler treatment to enhance and volumize your lips." },
-//             { id: 1, name: "Tear Trough Filler", link: "/treatments/tear-trough", ariaLabel: "Discover Tear Trough Filler treatment to reduce under-eye hollows and rejuvenate your appearance." },
-//             { id: 2, name: "Cheek Filler", link: "/treatments/cheek-filler", ariaLabel: "Explore Cheek Filler treatment to add volume and contour to your cheeks." },
-//             { id: 3, name: "Chin Correction Filler", link: "/treatments/chin-filler", ariaLabel: "Explore Chin Correction Filler treatment to refine and balance your facial profile." },
-//             { id: 4, name: "Nose Filler", link: "/treatments/nose-filler", ariaLabel: "Learn about Non-Surgical Nose Filler treatment for a straighter, smoother nose." }
+//             { id: 0, name: "Lip filler", link: "/treatments/lip-filler", ariaLabel: "Learn more about Lip filler treatment to enhance and volumize your lips." },
+//             { id: 1, name: "Tear Trough filler", link: "/treatments/tear-trough", ariaLabel: "Discover Tear Trough filler treatment to reduce under-eye hollows and rejuvenate your appearance." },
+//             { id: 2, name: "Cheek filler", link: "/treatments/cheek-filler", ariaLabel: "Explore Cheek filler treatment to add volume and contour to your cheeks." },
+//             { id: 3, name: "Chin Correction filler", link: "/treatments/chin-filler", ariaLabel: "Explore Chin Correction filler treatment to refine and balance your facial profile." },
+//             { id: 4, name: "Nose filler", link: "/treatments/nose-filler", ariaLabel: "Learn about Non-Surgical Nose filler treatment for a straighter, smoother nose." }
 //         ]
 //     },
 //     // Add all other treatments data following the same structure...
@@ -305,15 +305,15 @@ const TreatmentsSection = () => {
                                     <div className="box">
                                         <div className="imgBox">
                                             <img
-                                                src="/HOME/antiwrinke.jpg"
-                                                alt="dermal Fillers"
+                                                src="/anti-wrinkle/3.jpg"
+                                                alt="dermal fillers"
                                             />
                                             <div className="treatments-list">
                                                 <ul>
                                                     <li key="0">
                                                         <a
                                                             href="/services/anti-wrinkle"
-                                                            aria-label="Learn more about Lip Filler treatment to enhance and volumize your lips."
+                                                            aria-label="Learn more about Lip filler treatment to enhance and volumize your lips."
                                                         >
                                                             Forehead Lines Treatment
 
@@ -322,7 +322,7 @@ const TreatmentsSection = () => {
                                                     <li key="1">
                                                         <a
                                                             href="/services/anti-wrinkle"
-                                                            aria-label="Discover Tear Trough Filler treatment to reduce under-eye hollows and rejuvenate your appearance."
+                                                            aria-label="Discover Tear Trough filler treatment to reduce under-eye hollows and rejuvenate your appearance."
                                                         >
                                                             Frown Lines (Glabella) Treatment
 
@@ -331,7 +331,7 @@ const TreatmentsSection = () => {
                                                     <li key="2">
                                                         <a
                                                             href="/services/anti-wrinkle"
-                                                            aria-label="Explore Cheek Filler treatment to add volume and contour to your cheeks."
+                                                            aria-label="Explore Cheek filler treatment to add volume and contour to your cheeks."
                                                         >
                                                             Crow's Feet Treatment
                                                         </a>
@@ -339,7 +339,7 @@ const TreatmentsSection = () => {
                                                     <li key="3">
                                                         <a
                                                             href="/services/anti-wrinkle"
-                                                            aria-label="Explore Chin Correction Filler treatment to refine and balance your facial profile."
+                                                            aria-label="Explore Chin Correction filler treatment to refine and balance your facial profile."
                                                         >
                                                             Eyebrow Lift Treatment
                                                         </a>
@@ -347,7 +347,7 @@ const TreatmentsSection = () => {
                                                     {/* <li key="4">
                                                         <a
                                                             href="/services"
-                                                            aria-label="Learn about Non-Surgical Nose Filler treatment for a straighter, smoother nose."
+                                                            aria-label="Learn about Non-Surgical Nose filler treatment for a straighter, smoother nose."
                                                         >
                                                             Smoker's Lines Treatment
 
@@ -406,7 +406,7 @@ const TreatmentsSection = () => {
                                         <div className="imgBox">
                                             <img
                                                 // src="/services1/b12.jpg"
-                                                src="/HOME/Mesotherapy.jpeg"
+                                                src="/Mesotherapy/2.jpg"
 
                                                 alt="Acne &amp; Facial Treatments"
                                             />
@@ -610,7 +610,7 @@ const TreatmentsSection = () => {
                                     <div className="box">
                                         <div className="imgBox">
                                             <img
-                                                src="/HOME/Microneedling.jpg"
+                                                src="/Microneedling/1.jpg"
                                                 alt="Laser Skin &amp; Lesion Treatments"
                                             />
                                             <div className="treatments-list">
@@ -811,7 +811,7 @@ const TreatmentsSection = () => {
                                     <div className="box">
                                         <div className="imgBox">
                                             <img
-                                                src="/HOME/hopiearcandle.jpeg"
+                                                src="/Hipo-ear-candle/1.jpg"
                                                 alt="Skin Rejuvenation &amp; Anti ageing"
                                             />
                                             <div className="treatments-list">

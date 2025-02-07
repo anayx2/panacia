@@ -4,14 +4,14 @@ import Image from "next/image";
 const services = [
     {
 
-        title: "Dermal Fillers",
+        title: "Dermal fillers",
         description: "Enhance your natural beauty with expert dermal filler treatments, tailored for volume, contour, and youthful rejuvenation.",
         features: [
-            "Lip Filler",
-            "Tear Trough Filler",
-            "Cheek Filler",
-            "Chin Correction Filler",
-            "Nose Filler",
+            "Lip filler",
+            "Tear Trough filler",
+            "Cheek filler",
+            "Chin Correction filler",
+            "Nose filler",
         ],
     },
     {
