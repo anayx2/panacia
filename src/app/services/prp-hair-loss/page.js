@@ -137,12 +137,12 @@ const page = () => {
                     </h3>
                     <div className='flex lg:flex-row md:flex-row sm:flex-col justify-center items-center gap-6 p-2 w-[90%]'>
                         <ImageComparison
-                            beforeImage="/image1.jpg"
-                            afterImage="/services/Dermal.jpg"
+                            beforeImage="/before-after/Hair Filler Dr CYG Before & After/1.jpg"
+                            afterImage="/before-after/Hair Filler Dr CYG Before & After/2.jpg"
                         />
                         <ImageComparison
-                            beforeImage="/image1.jpg"
-                            afterImage="/services/Dermal.jpg"
+                            beforeImage="/before-after/PRP after 3 session/1.jpg"
+                            afterImage="/before-after/PRP after 3 session/2.jpg"
                         />
                         <ImageComparison
                             beforeImage="/image1.jpg"
