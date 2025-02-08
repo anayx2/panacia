@@ -252,7 +252,7 @@ const page = () => {
 
                     <div className="relative aspect-[4/3] w-full">
                         <Image
-                            src={'/Injectable-Skin-Boosters.jpeg'}
+                            src={'/4.jpg'}
                             alt="Panacea Health & Beauty Clinic consultation with practitioner"
                             fill
                             className="object-cover rounded-lg"

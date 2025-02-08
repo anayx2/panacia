@@ -103,7 +103,7 @@ export default function AboutPage() {
                         variants={fadeInUp}
                     >
                         <Image
-                            src="/Hydeafacial-Pictures/1.jpg"
+                            src="/ab.jpeg"
                             alt="Biolite Aesthetic Clinic Interior"
                             fill
                             className="object-cover"
