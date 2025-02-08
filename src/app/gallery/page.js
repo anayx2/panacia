@@ -1,14 +1,42 @@
-'use client'
-import React, { useState } from 'react';
-import Image from 'next/image';
-import { motion } from 'framer-motion'
+'use client';
 
+import { motion } from 'framer-motion';
+import ImageComparison from '@/components/Compare';
+import ContactSection from '@/components/Contact';
+import Hero from '@/components/Hero';
+import InstagramFeed from '@/components/InstagramPost';
+import Navbar from '@/components/Navbar';
+import TreatmentsSection from '@/components/NewServices';
+import Reviews from '@/components/Reviews';
+import Testimonial from '@/components/Testimonial';
+import { Button } from '@/components/ui/button';
+import Whyus from '@/components/Whyus';
+import { Check } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+
+// Create motion components
+const MotionSection = motion.section;
+const MotionDiv = motion.div;
+const MotionUl = motion.ul;
+const MotionLi = motion.li;
+const MotionH2 = motion.h2;
+const MotionP = motion.p;
+
+const fadeInUp = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.8, ease: 'easeOut' }
+    }
+};
 
 const fadeIn = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
-        transition: { duration: 1.0, ease: 'easeOut' }
+        transition: { duration: 0.8, ease: 'easeOut' }
     }
 };
 
@@ -17,15 +45,7 @@ const slideIn = {
     visible: {
         opacity: 1,
         x: 0,
-        transition: { duration: 1.0, ease: 'easeOut' }
-    }
-};
-const fadeInUp = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: { duration: 1.0, ease: 'easeOut' }
+        transition: { duration: 0.8, ease: 'easeOut' }
     }
 };
 
@@ -39,153 +59,175 @@ const staggerChildren = {
     }
 };
 
-const FilteredGallery = () => {
-    const galleryData = [
-        { id: 1, src: "/anti-wrinkle/1.jpg", category: "Anti Wrinkle" },
-        { id: 2, src: "/anti-wrinkle/2.jpg", category: "Anti Wrinkle" },
-        { id: 3, src: "/anti-wrinkle/3.jpg", category: "Anti Wrinkle" },
-        { id: 4, src: "/anti-wrinkle/4.jpg", category: "Anti Wrinkle" },
-        { id: 7, src: "/anti-wrinkle/7.jpg", category: "Anti Wrinkle" },
-        { id: 8, src: "/anti-wrinkle/8.jpg", category: "Anti Wrinkle" },
-        { id: 9, src: "/Hipo-ear-candle/1.jpg", category: "Hipo Ear Candle" },
-        { id: 10, src: "/Hipo-ear-candle/2.jpg", category: "Hipo Ear Candle" },
-        { id: 10, src: "/Mesotherapy/4.jpg", category: "Mesotherapy" },
-        { id: 11, src: "/Mesotherapy/2.jpg", category: "Mesotherapy" },
-        { id: 12, src: "/Mesotherapy/3.jpg", category: "Mesotherapy" },
-        { id: 13, src: "/Microneedling/1.jpg", category: "Microneedling" },
-        { id: 14, src: "/Microneedling/2.jpg", category: "Microneedling" },
-        { id: 15, src: "/Skin-booster/1.jpg", category: "Skin Booster" },
-        { id: 16, src: "/Skin-booster/2.jpg", category: "Skin Booster" },
-        { id: 17, src: "/Skin-booster/3.jpg", category: "Skin Booster" },
-        { id: 18, src: "/Skin-booster/4.jpg", category: "Skin Booster" },
-        { id: 19, src: "/Hydeafacial-Pictures/1.jpg", category: "Hydeafacial" },
-        { id: 20, src: "/Hydeafacial-Pictures/2.jpg", category: "Hydeafacial" },
-        { id: 21, src: "/Hydeafacial-Pictures/3.jpg", category: "Hydeafacial" },
-        { id: 22, src: "/Hydeafacial-Pictures/4.jpg", category: "Hydeafacial" },
-        { id: 23, src: "/Hydeafacial-Pictures/5.jpg", category: "Hydeafacial" },
-        { id: 24, src: "/Hydeafacial-Pictures/6.jpg", category: "Hydeafacial" },
-        { id: 25, src: "/Hydeafacial-Pictures/7.jpg", category: "Hydeafacial" },
-        { id: 26, src: "/Hydeafacial-Pictures/8.jpg", category: "Hydeafacial" },
-        { id: 27, src: "/Hydeafacial-Pictures/9.jpg", category: "Hydeafacial" },
-        { id: 28, src: "/Hydeafacial-Pictures/10.jpg", category: "Hydeafacial" },
-        { id: 29, src: "/Hydeafacial-Pictures/11.jpg", category: "Hydeafacial" },
-    ];
-
-    const categories = ["Show All", "Anti Wrinkle", "Hipo Ear Candle", "Mesotherapy", "Microneedling", "Skin Booster", "Hydeafacial"];
-    const [activeFilter, setActiveFilter] = useState("Show All");
-
-    const filteredImages = activeFilter === "Show All"
-        ? galleryData
-        : galleryData.filter(img => img.category === activeFilter);
-
-    const distributeImages = () => {
-        const columns = {
-            col1: [],
-            col2: [],
-            col3: [],
-            col4: []
-        };
-
-        filteredImages.forEach((image, index) => {
-            const colIndex = index % 4;
-            switch (colIndex) {
-                case 0:
-                    columns.col1.push(image);
-                    break;
-                case 1:
-                    columns.col2.push(image);
-                    break;
-                case 2:
-                    columns.col3.push(image);
-                    break;
-                case 3:
-                    columns.col4.push(image);
-                    break;
-            }
-        });
-
-        return columns;
-    };
-
-    const columns = distributeImages();
-
+const Page = () => {
     return (
         <>
-            <motion.section
-                className='relative h-[50dvh] w-full'
+            <section className='absolute z-50 top-0 w-full'>
+                <Navbar />
+            </section>
+            <Hero />
+
+            {/* About Section */}
+            <MotionSection
                 initial="hidden"
-                animate="visible"
-                variants={fadeIn}
-            >                <div
-                    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                    style={{
-                        backgroundImage: "url('/banner-pages.png')"
-                    }}
-                />
-                <div className="absolute inset-0 bg-black/20" />
-                <motion.div
-                    className="relative z-10 flex h-full items-center justify-center px-4 text-white"
-                    variants={fadeInUp}
+                whileInView="visible"
+                viewport={{ once: true, margin: "-100px" }}
+                className="container mx-auto grid gap-12 px-4 py-16 md:grid-cols-2 md:items-center md:gap-16 lg:gap-24 max-w-[90%]"
+            >
+                <MotionDiv
+                    variants={slideIn}
+                    className="flex items-center justify-center p-2 overflow-hidden rounded-2xl bg-rose-200"
                 >
-                    <motion.h2 variants={fadeInUp}
-                        className="sm:text-4xl md:text-6xl lg:text-6xl text-white"
-                    >Gallery
+                    <Image
+                        src="/HOME/homeabout.jpg"
+                        alt="Beauty treatment demonstration"
+                        height={900}
+                        width={900}
+                        className="w-full h-auto rounded-2xl"
+                        priority
+                    />
+                </MotionDiv>
 
-                    </motion.h2>
-                </motion.div>
-            </motion.section>
+                <MotionDiv
+                    variants={staggerChildren}
+                    className="space-y-6"
+                >
+                    <MotionDiv variants={fadeInUp} className="space-y-3">
+                        <h2>Your Health, Our Commitment</h2>
+                    </MotionDiv>
 
-            <section className='py-10 flex flex-col justify-center items-center'>
-                <div className="flex flex-wrap justify-center gap-2 my-10">
-                    {categories.map((category) => (
-                        <button
-                            key={category}
-                            onClick={() => setActiveFilter(category)}
-                            className={`px-4 py-2 rounded-md transition-all ${activeFilter === category
-                                ? 'bg-rose-400 text-white'
-                                : 'bg-rose-100 hover:bg-rose-200'
-                                }`}
-                        >
-                            {category}
-                        </button>
-                    ))}
-                </div>
+                    <MotionP variants={fadeInUp} className="text-lg leading-relaxed ">
+                        At Panacea Clinic, we're committed to offering top-notch healthcare with a human touch...
+                    </MotionP>
 
-                <div className='w-[90%]'>
-                    <motion.div
-                        variants={fadeInUp} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-                        {Object.values(columns).map((column, colIndex) => (
-                            column.length > 0 && (
-                                <motion.div
-                                    variants={fadeInUp}
-
-                                    key={colIndex} className="flex flex-col gap-4">
-                                    {column.map((image) => (
-                                        <div key={image.id} className="relative w-full group">
-                                            <Image
-                                                className="h-auto w-full rounded-lg transition-all duration-300 group-hover:opacity-80"
-                                                width={500}
-                                                height={500}
-                                                src={image.src}
-                                                alt={`Gallery image - ${image.category}`}
-                                            />
-                                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                                <div className="bg-gradient-to-r from-rose-100 to-rose-300 px-4 py-2 rounded-md shadow-lg transform scale-95 group-hover:scale-100 transition-transform duration-300">
-                                                    <span className="text-gray-800 font-medium text-sm">
-                                                        {image.category}
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </ motion.div>
-                            )
+                    <MotionUl variants={staggerChildren} className="space-y-4">
+                        {[
+                            'Comprehensive and personalised medical services for all ages.',
+                            'A team of highly qualified doctors and healthcare professionals.',
+                            'A patient-centred approach focused on trust, care, and results.'
+                        ].map((feature, index) => (
+                            <MotionLi
+                                key={index}
+                                variants={fadeInUp}
+                                className="flex items-center gap-3"
+                            >
+                                <div className="flex p-2 items-center justify-center rounded-full bg-rose-100">
+                                    <Check className="h-4 w-4 text-rose-600" />
+                                </div>
+                                <span className="text-lg ">{feature}</span>
+                            </MotionLi>
                         ))}
-                    </motion.div>
+                    </MotionUl>
+
+                    <MotionDiv variants={fadeInUp}>
+                        <Link href={'/about-us'}>
+                            <Button
+                                variant="default"
+                                className="mt-4 bg-rose-400 px-8 py-6 text-base hover:bg-rose-400 "
+                            >
+                                READ MORE →
+                            </Button>
+                        </Link>
+                    </MotionDiv>
+                </MotionDiv>
+            </MotionSection>
+
+            {/* Treatments Section */}
+            <section className='flex flex-col text-center items-center justify-center bg-rose-50 py-20 gap-10'>
+                <h2>
+                    Discover Our Comprehensive Range <br />of  Aesthetic Treatments
+                </h2>
+                {/* <Services /> */}
+                <TreatmentsSection />
+            </section>
+
+            {/* Why Us Section */}
+            <MotionSection
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInUp}
+                className='mt-20 flex flex-col text-center gap-5'
+            >
+                <MotionH2 variants={fadeInUp} className='text-center'>Why Panacea?</MotionH2>
+                <Whyus />
+            </MotionSection>
+
+            {/* Testimonials Section */}
+            <MotionSection
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInUp}
+                className='flex flex-col text-center items-center justify-center py-10 gap-20'
+            >
+                <MotionH2 variants={fadeInUp}>Our Treatments in Action</MotionH2>
+                <MotionDiv variants={fadeIn} className='w-[90%]'>
+                    <Testimonial />
+                </MotionDiv>
+            </MotionSection>
+
+            {/* Before/After Section */}
+            <section className='mt-20 flex flex-col text-center gap-20 items-center'>
+                <h2>
+                    fillerBefore and After
+                </h2>
+                {/* <h2>
+          Transformations at Panacea<br /> Health & Beauty Clinic
+        </h2> */}
+
+                <div className='flex lg:flex-row md:flex-row flex-col justify-center items-center gap-6 p-2 w-[90%]'>
+
+                    <ImageComparison
+                        beforeImage="/before-after/Chin Filler coarctation/Before.jpg"
+                        afterImage="/before-after/Chin Filler coarctation/After.jpg"
+                    />
+                    <ImageComparison
+                        beforeImage="/before-after/Hair Filler Dr CYG Before & After/1.jpg"
+                        afterImage="/before-after/Hair Filler Dr CYG Before & After/2.jpg"
+                    />
+                    <ImageComparison
+                        beforeImage="/before-after/PRP after 3 session/1.jpg"
+                        afterImage="/before-after/PRP after 3 session/2.jpg"
+                    />
                 </div>
             </section>
+
+            {/* Instagram Feed Section */}
+            <MotionSection
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInUp}
+                className='py-20 mt-20 text-center'
+            >
+                <InstagramFeed />
+            </MotionSection>
+
+            {/* Reviews Section */}
+            <MotionSection
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInUp}
+                className='flex flex-col text-center items-center justify-center'
+            >
+                <MotionH2 variants={fadeInUp}>Google Reviews</MotionH2>
+                <Reviews />
+            </MotionSection>
+
+            {/* Contact Section */}
+            <MotionSection
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInUp}
+                className='flex flex-col text-center items-center justify-center py-10 mt-10 gap-10'
+            >
+                <ContactSection />
+            </MotionSection>
         </>
     );
 };
 
-export default FilteredGallery;
+export default Page; 

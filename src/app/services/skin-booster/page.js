@@ -116,7 +116,7 @@ const page = () => {
 
                     <div className="flex items-center w-full h-auto rounded-lg">
                         <Image
-                            src={'/Injectable-Skin-Boosters.jpeg'}
+                            src={'/Skin-booster/1.jpg'}
                             width={800}
                             height={800}
                             className='w-full h-auto rounded-lg'
@@ -130,7 +130,7 @@ const page = () => {
                 <div className='flex flex-col justify-center items-center w-[100%]'>
 
                     <h3 className='text-center my-5'>
-                        Real Results: Cheek Skin Booster Before & After
+                        Real Results: Before & After
                     </h3>
                     <div className='flex lg:flex-row md:flex-row sm:flex-col justify-center items-center gap-6 p-2 w-[90%]'>
                         <ImageComparison
@@ -252,7 +252,7 @@ const page = () => {
 
                     <div className="relative aspect-[4/3] w-full">
                         <Image
-                            src={'/Skin-booster/3.jpg'}
+                            src={'/Injectable-Skin-Boosters.jpeg'}
                             alt="Panacea Health & Beauty Clinic consultation with practitioner"
                             fill
                             className="object-cover rounded-lg"
