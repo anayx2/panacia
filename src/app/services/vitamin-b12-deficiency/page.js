@@ -121,7 +121,7 @@ const page = () => {
 
                     <div className="flex items-center w-full h-auto rounded-lg">
                         <Image
-                            src={'/servicesPage/VitaminB12/image.png'}
+                            src={'/vitamin b12.jpg'}
                             width={800}
                             height={800}
                             className='w-full h-auto rounded-lg'
@@ -135,7 +135,7 @@ const page = () => {
                 <div className='flex flex-col justify-center items-center w-[100%]'>
 
                     <h3 className='text-center my-5'>
-                        Real Results: Cheek filler Before & After
+                        Real Results: Cheek Vitamin B12 Injection Before & After
                     </h3>
                     <div className='flex lg:flex-row md:flex-row sm:flex-col justify-center items-center gap-6 p-2 w-[90%]'>
                         <ImageComparison

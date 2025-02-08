@@ -41,21 +41,37 @@ const staggerChildren = {
 
 const FilteredGallery = () => {
     const galleryData = [
-        { id: 1, src: "/sample/1.png", category: "Anti Wrinkle" },
-        { id: 2, src: "/about-img1.jpg", category: "Mesotherapy" },
-        { id: 3, src: "/sample/3.png", category: "Fat Dissolving" },
-        { id: 4, src: "/sample/filer.png", category: "Microneedling" },
-        { id: 5, src: "/sample/5.png", category: "Bio filler" },
-        { id: 6, src: "/sample/6.png", category: "Anti Wrinkle" },
-        { id: 7, src: "/sample/7.png", category: "Mesotherapy" },
-        { id: 8, src: "/sample/5.png", category: "Fat Dissolving" },
-        // { id: 9, src: "/sample/filer.png", category: "Microneedling" },
-        { id: 10, src: "/sample/2.png", category: "Bio filler" },
-        { id: 11, src: "/sample/4.png", category: "Anti Wrinkle" },
-        { id: 12, src: "/sample/8.png", category: "Mesotherapy" },
+        { id: 1, src: "/anti-wrinkle/1.jpg", category: "Anti Wrinkle" },
+        { id: 2, src: "/anti-wrinkle/2.jpg", category: "Anti Wrinkle" },
+        { id: 3, src: "/anti-wrinkle/3.jpg", category: "Anti Wrinkle" },
+        { id: 4, src: "/anti-wrinkle/4.jpg", category: "Anti Wrinkle" },
+        { id: 7, src: "/anti-wrinkle/7.jpg", category: "Anti Wrinkle" },
+        { id: 8, src: "/anti-wrinkle/8.jpg", category: "Anti Wrinkle" },
+        { id: 9, src: "/Hipo-ear-candle/1.jpg", category: "Hipo Ear Candle" },
+        { id: 10, src: "/Hipo-ear-candle/2.jpg", category: "Hipo Ear Candle" },
+        { id: 10, src: "/Mesotherapy/4.jpg", category: "Mesotherapy" },
+        { id: 11, src: "/Mesotherapy/2.jpg", category: "Mesotherapy" },
+        { id: 12, src: "/Mesotherapy/3.jpg", category: "Mesotherapy" },
+        { id: 13, src: "/Microneedling/1.jpg", category: "Microneedling" },
+        { id: 14, src: "/Microneedling/2.jpg", category: "Microneedling" },
+        { id: 15, src: "/Skin-booster/1.jpg", category: "Skin Booster" },
+        { id: 16, src: "/Skin-booster/2.jpg", category: "Skin Booster" },
+        { id: 17, src: "/Skin-booster/3.jpg", category: "Skin Booster" },
+        { id: 18, src: "/Skin-booster/4.jpg", category: "Skin Booster" },
+        { id: 19, src: "/Hydeafacial-Pictures/1.jpg", category: "Hydeafacial" },
+        { id: 20, src: "/Hydeafacial-Pictures/2.jpg", category: "Hydeafacial" },
+        { id: 21, src: "/Hydeafacial-Pictures/3.jpg", category: "Hydeafacial" },
+        { id: 22, src: "/Hydeafacial-Pictures/4.jpg", category: "Hydeafacial" },
+        { id: 23, src: "/Hydeafacial-Pictures/5.jpg", category: "Hydeafacial" },
+        { id: 24, src: "/Hydeafacial-Pictures/6.jpg", category: "Hydeafacial" },
+        { id: 25, src: "/Hydeafacial-Pictures/7.jpg", category: "Hydeafacial" },
+        { id: 26, src: "/Hydeafacial-Pictures/8.jpg", category: "Hydeafacial" },
+        { id: 27, src: "/Hydeafacial-Pictures/9.jpg", category: "Hydeafacial" },
+        { id: 28, src: "/Hydeafacial-Pictures/10.jpg", category: "Hydeafacial" },
+        { id: 29, src: "/Hydeafacial-Pictures/11.jpg", category: "Hydeafacial" },
     ];
 
-    const categories = ["Show All", "Anti Wrinkle", "Mesotherapy", "Fat Dissolving", "Microneedling", "Bio filler"];
+    const categories = ["Show All", "Anti Wrinkle", "Hipo Ear Candle", "Mesotherapy", "Microneedling", "Skin Booster", "Hydeafacial"];
     const [activeFilter, setActiveFilter] = useState("Show All");
 
     const filteredImages = activeFilter === "Show All"

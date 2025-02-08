@@ -82,7 +82,7 @@ const Page = () => {
                     className="relative z-10 flex h-full items-center justify-center px-4 text-white text-center"
                     variants={fadeInUp}
                 >
-                    <h2>Book an Appointment</h2>
+                    <h2 className='text-white'>Book an Appointment</h2>
                 </motion.div>
             </motion.section>
 
