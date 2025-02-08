@@ -121,7 +121,7 @@ const page = () => {
 
                     <div className="flex items-center w-full h-auto rounded-lg">
                         <Image
-                            src={'/vitamin b12.jpg'}
+                            src={'/servicesPage/VitaminB12/image.png'}
                             width={800}
                             height={800}
                             className='w-full h-auto rounded-lg'
@@ -135,8 +135,7 @@ const page = () => {
                 <div className='flex flex-col justify-center items-center w-[100%]'>
 
                     <h3 className='text-center my-5'>
-                        Real Results: Before & After
-
+                        Real Results: Cheek Vitamin B12 Injection Before & After
                     </h3>
                     <div className='flex lg:flex-row md:flex-row sm:flex-col justify-center items-center gap-6 p-2 w-[90%]'>
                         <ImageComparison
@@ -252,9 +251,9 @@ const page = () => {
                         </div>
                     </div>
 
-                    <div className="relative aspect-[4/3] w-full">
+                    <div className="relative aspect-[4/4] w-full">
                         <Image
-                            src={'/servicesPage/VitaminB12/image-1.png'}
+                            src={'/vitamin b12.jpg'}
                             alt="Panacea Health & Beauty Clinic consultation with practitioner"
                             fill
                             className="object-cover rounded-lg"
